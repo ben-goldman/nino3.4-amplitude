@@ -1,0 +1,593 @@
+
+Subject:
+Re: Collaboration on ENSO variance modulation
+From:
+John Fasullo <fasullos@gmail.com
+Date:
+12/3/20, 11:17 AM
+To:
+Ben Goldman <bg502257@live.wpcsd.k12.ny.us
+
+Attached are my initial results of aspects of the Bjerknes feedback strength. You’ll see that in a warmer climate the slope of the heating vs T anomaly is steeper (bottom panel), as one would expect in a moister atmosphere (more rainfall per unit convergence). As a result there is a greater change in surface winds per T anomaly (top panel). Also attached is a plot showing the change in variance by longitude and season. This shows where the variance is changing by season. There are some interesting structures. One thing we also need to check is why your plots show a decrease in variance in the FF LE after 2060 or so. I don’t see this in my analysis (also attached), but it does seem to exist in CESM2.
+
+
+
+
+
+ On Dec 3, 2020, at 9:07 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok, sounds good. The heat transfer idea sounds very interesting. Is there anything I could do to verify it with the data?
+
+
+ Regarding Dr. Gent, I didn't mean to exclude him from the authors list. I can add him right away if he is okay with that. It is very generous of him to allow only 2 authors, although I want to make sure he gets the due amount of credit.
+
+
+ On 12/3/20 11:00 AM, John Fasullo wrote:
+ Don’t worry about progress on the data yet as we are waiting for the CESM2 single forcing LE to finish (a month or two). For acknowledgements on the submitted version I’ll need to cite my funding sources. You should also acknowledge any teachers to whom you would like to show appreciation for their contributions or influences. I’m sure they’d feel honored. 
+
+ On the mechanisms front, one other aspect that I’ve done some work on is the strength of the Bjerknes feedback and its changes under warming. The idea is that the sensitivity of atmospheric heating (radiative + condensational) in the warm pool region increases with warming and therefore the response of zonal winds in the Nino3.4 region to SST anomalies increases as well. I have some results supporting this idea that I can share. You may want to add it to your key points.
+
+ Regarding Peter’s role, don’t interpret his silence as disinterest. I chatted with him the other day and he thought that it was important for there to be just two authors on the paper since you’ll get more recognition that way (as your name would be explicitly cited in any reference to the work). He is happy to advise on oceanography questions nonetheless.
+
+ Best,
+ John
+
+
+ On Dec 2, 2020, at 10:51 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi, thanks for checking in!
+
+
+ The paper is going pretty well. I got some feedback from classmates and teachers, and here is what it looks like now. I will be submitting a copy of it this week for an application to a science fair. They won't be judging the paper -- the competition managers just need to make sure that all the participants have real data to present, not just a proposed study. Once I write the supplementary information section, I will add appropriate references to those figures. What should I write in for the acknowledgements section? I can use the excerpt you sent me for the presentation if that works. I might also mention the school's science research program and my teacher.
+
+
+ Sorry I haven't made much progress on the data; right now my teacher has been having us focus more on presenting and documenting the research so far. I have figured out a way to concatenate all of the CESM output timeseries into single files with the NCO toolset, which I have been applying to my copy of the data.
+
+
+ On 12/2/20 12:40 PM, John Fasullo wrote:
+ Hi Ben - just checking in. How’s the paper going?
+
+ On Nov 12, 2020, at 8:57 AM, John Fasullo <fasullos@gmail.com wrote:
+
+ Note this is the MPI GE ref. No mention of perturbed physics. There were some perturbed physics ensembles that were produced through MPI. The goal there is to actually change the model parameterizations and test the impact on climate simulations. But these are more of a statistical exercise in climate projection uncertainty to limits in our physical understanding than to intrinsic variability. 
+
+ https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS001639
+
+ On Nov 7, 2020, at 3:55 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Thanks for the clarification! I saw that the MPI Grand Ensemble was using perturbed physics, so I was curious about whether the CESM2 has that too. What is the difference between RCP85 and SSP370? I guess I thought that RCP was a general term for any future projection of anthropogenic forcing levels.
+ On 11/7/20 2:18 PM, John Fasullo wrote:
+ OK. That is just some of the eventual CESM2 and CESM2SF data. More files will become available. For naming conventions, the first 4 digit number is the initialization year from the control and the following 3-digit number is the member from that start points (it is a little confusing I know). Part of the idea is that the ensemble uses micro perturbations (3 digit #) in addition to macro perturbations (4 digit #). I can describe it to you in more detail down the road. Perturbed physics is actually a distinct term that isn’t relevant to these runs so be aware of that, but I know what you mean. None of these use RCP85 so I’m curious where you might have seen that. They use historical (HIST) and 21st C (SSP370) forcings. 
+
+ Looking forward to seeing the paper as it matures. No rush. 
+
+ On Nov 5, 2020, at 6:11 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi Dr. Fasullo,
+
+ I got the CESM2 dataset. I think I will try using NCO to concatenate the timeseries and ensembles. I was wondering if you could explain to me or refer me to a resource regarding the naming conventions for the dataset. I looked at NCAR's page on the naming conventions, but I am still confused.
+
+ For example, for a file like this:
+
+ b.e21.BSSP370cmip6.f09_g17.LE2-1281.010.cam.h0.TREFHT.209501-210012.nc
+
+ Which number is the member number? There are 1281 and 10. Does one of them refer to perturbed physics and another to initial conditions member numbers? If so should I treat each combination of the 2 numbers as a separate member? I saw that the timeseries are divided into 2 sections, one with recorded forcing and one with RCP8.5.
+
+ PS. I have made some progress on the paper, although it is still very rough and incomplete. I would appreciate any feedback you might have if you have time. We have lots of time to refine the paper; I just have to make a rough draft for a science fair application due early December. I plan to fix the font size in the figures, it is just big temporarily because I increased it for the presentation last week.
+
+
+ Thank you so much!
+
+ Ben
+
+
+
+ On 10/26/20 11:42 AM, John Fasullo wrote:
+ OK - I’ve put them on our ftp site. These files will be actually be more fragmented rather than less as they span only about a decade each. 
+
+ On Oct 26, 2020, at 9:21 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi Dr. Fasullo,
+
+ I think I am ready to download the CESM2 dataset if you are ready. Does NCAR make datasets from the CESM where all the ensemble members are concatenated into one file? If that is not available, that’s ok, I can do it myself. 
+
+ Thanks!
+ Ben
+
+ On Oct 21, 2020, at 11:49 AM, John Fasullo <fasullos@gmail.com wrote:
+
+ Using both CESM1 and CESM2 has value in demonstrating the degree of model agreement. No one model is viewed as right but rather finding aspects that are robust across them is a good way to approach these questions. CESM2 should be superior in many respects but progress is never monotonic. Your checklist seems about right. Some of those tasks are big items. When you’re ready I’ll stage data on the ftp. It will take you a while to download I suspect.
+
+ On Oct 20, 2020, at 9:47 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi,
+
+ Thanks for all the feedback on the presentation!
+
+ Would it make sense to use the CESM2 LE/SF models instead of CESM1 for all of the analysis we have already done? It would take a little while to change the code, but the extended time period seems like a pretty big advantage. Also the paper might end up more important since the model is newer. How accurate is the CESM2 data, regarding biases and the like?
+
+ So the methodology things I have to do are:
+ - Incorporate CESM2
+ - Check other ENSO measurement regions
+ - Histogram comparing 20th vs 21st century variance
+ - Incorporate CMIP
+ - timeseries for stratification vs variance
+
+ What is the methodology I should use to measure stratification? What boxes are apropriate for the surface and subsurface layers, and should I find the difference or the ratio?
+
+ I cited Chen et. al. 2017 " A possible explanation for the divergent projection of enso amplitude change under global warming” for the conflicting increase vs. decrease question. 
+
+ Thank you so much!
+
+ On Oct 19, 2020, at 1:02 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ Hi Ben,
+
+ Your presentation looks great. It is quite an accomplishment for a high school student!
+
+ A good next step will be to test our finding that vertical stratification controls variance in other models. We might think of using the CESM2 LE and SF LE to do this - the ensembles should officially be available in the coming months and I can access them now, though they are not yet complete. If we have time, looking across some of the CMIP6 models would be useful.
+
+ A few notes on the presentation. 
+
+ AMOC, C is for circulation
+ AMO - there is debate about the extent to which it is forced by aerosols vs being an internal mode, most think mainly the former.
+ Maher et al. looked at full-forcing runs, not GHG only.
+ Should cite the conflicting studies on increase vs decrease
+ Regarding intensity - we should provide some estimate as to how the overall PDF of SST anomalies change - perhaps with a histogram of two periods (see attached).
+ It would be a good idea to test the robustness of changes in variance in Nino3.4 region to other nino regions.
+ Font size needs to be bigger on many figures - see mine attached.
+ Note the CEP region is averaged from 180-230E
+ Timeseries will be useful to interpret figure 10/11 to see what is driving the correlation. 
+ There is a difference in our estimates of variance in CESM1 for the late 20th C as I don’t find a decrease. We’ll need to track that down. Mine seems to agree better with the GHG+AER?
+ I would say that Peter contributed to ‘interpretation’ and likely will do more in this regard...
+
+ You’l find that the analysis of CESM2 won’t add much work since the data is in very similar format (although it covers 1850-2100 will all members, eventually N=100). When you’re ready, I’ll provide the data on our ftp site.
+
+ Best,
+ John
+
+
+
+
+
+ <CESM1_2_ENSO_var.png
+
+ On Oct 16, 2020, at 7:24 AM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi Dr. Fasullo,
+
+ Thanks for the feedback! Here is a copy of the presentation, still a work in progress. 
+ I was wondering what the next step in our project would be. There are a couple possible things you mentioned earlier. Should I be using potential density instead of salinity in the plots with the correlation coefficient? Also, you talked about measuring the timeseries for stratification in each ensemble. What regions should I use to calculate it? Also, I could keep analyzing the role of various modes of internal variability with the CVDP. Which of these is the most urgent?
+
+ Thanks!
+ Ben
+
+ On Oct 12, 2020, at 4:58 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ This doesn’t need to be long as there are standard references for the simulations. A mere citation of Kay et al. 2015 (for CESM-LE) and Deser et al. (2020) should suffice. Where the details are relevant to your analysis, it is a good idea to insert discussion of those or address them collectively in the discussions section, with references back to the manuscripts. 
+
+ A standard NCAR acknowledgement should suffice: 
+
+ “This material is based upon work supported by the National Center for Atmospheric Research, which is a major facility sponsored by the National Science Foundation under Cooperative Agreement No. 1852977.” And sure, I’d love to see the presentation!
+
+
+
+ On Oct 11, 2020, at 6:29 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi Dr. Fasullo,
+
+ I am beginning to draft the materials/data section of the paper. How detailed/long should this section be? Some of the longer articles talk about the gridding/resolution of the models and the ocean/atmosphere coupling, but others do not. I intend to talk about the forcing scenario of each model, the appropriate use of the single forcing models, the initial conditions, and anything else that is appropriate. Is our audience already familiar with how large ensembles work? I have Kay et. al. 2015 and Deser et. al. 2020 for reference on the ensemble setup.
+
+ I am preparing a powerpoint presentation on the study for a class assignment. For the acknowledgments slide, is what I have here ideal? I included the required citations for the datasets in my references slide (Deser et. al. 2020 and Kay et. al. 2015). Should I mention the NCAR's funding from the NSF? If you would like to see the rest of the presentation, I can send it to you. Thanks!
+
+ Ben
+
+ <PastedGraphic-2.png
+
+ On Sep 25, 2020, at 6:03 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ Looks good. Yes, the figure is in a strange format. The problem may be that python is creating a rasterized graphic? and then it gets packaged in a PDF or PS. In IDL, the graphical outputs can be created directly as vector .ps and I imagine the same is true of python but don’t know the details. 
+
+ Regarding additivity, my sense is that the stratification is not additive and that there is no simple relationship between forcing concentration and stratification. That is why the relationship is also not monotonic and (I think) can change over time even though the concentration does not. Perhaps we can show that in a 4xCO2 run as well.
+
+ On the bootstrap plot, probably good to put a zero line and (as you say) a range of uncertainty on each line so that we can say what differences are significant. I also think we’ll restrict our attention to GHG+AER and use their stderr ranges from the variance plot and the full LE range (variance1-a) as the uncertainty goes up a lot for the others and they don’t go to 2080. 
+
+ On Sep 25, 2020, at 3:28 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi Dr. Fasullo,
+
+ Here are some of the results I have so far. The labels are now better, and I rearranged the subplots to read more easily. For the bootstrap plot, I included the sum of all of the means of the +XXX runs, and the ff mean, centered at 0. It seems like the relationship is not additive. I wasn’t sure how to handle the standard error, so I left that out for now. Should I try any statistical testing? Why do you thing it isn’t additive? Ill do some research on why that might be the case.
+
+ For some reason the postscript converter (pdf2ps/Ghostscript) rasterizes the vector pdfs I input. What tool do you use to convert images?
+  
+
+
+ On Sep 23, 2020, at 7:34 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Great, glad we cleared that up. Thank you so much for devoting your time to helping me with this project!
+
+ On Sep 23, 2020, at 7:31 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ Not a problem. Go ahead and start drafting. I can break you in to the review process as I go through your text - it can be quite a brutal process to get used to, particularly as an early career scientist, depending on who your reviewer is. Typically the author that has conceptualized the study and guided the analysis is listed as first author, though there are some shades of grey. This has actually been a paper I had been working on for a bit as I had several of the figures drafted previous to our collaboration. I figured it would be a good exercise in any case. I’m looking forward to the full draft! 
+
+ On Sep 23, 2020, at 5:26 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok, thanks for clarifying. Regarding authorship, I’m pretty sure it doesn’t matter the order in which we are listed, but I have to draft most of the paper myself. Sorry if I caused any misunderstanding. 
+
+ On Sep 23, 2020, at 6:44 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ That’s right - on Fig. 3. We’ll also have to do some statistical analysis of the sum of the contributions to see if it is additive. I suspect it may not be. I am fine with you leading as much of the writing as you’re comfortable with. I think some aspects are best put in a supplement if they are not a central part of our story, particularly given the length requirements of GRL. The AMOC/AMO material was a null result for trying to find the cause for the low variability in the FF runs from 1920-1940. That is still a mystery. Materials and methods typically go in a section together, usually the 2nd. There are various length requirements to be aware of. I think the intro is 150 words and I think there can only be 4 figures. We can iterate on your draft and go from there. I thought we had discussed authorship previously - deciding I’d be 1st author. is being a 1st author a requirement for your science program?
+
+ On Sep 23, 2020, at 2:23 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Thanks for putting that together! I will definitely implement the changes you mentioned. Should I change figure 3 to conform to the caption you wrote?
+
+ I believe that the science research program at my school expects me to do most of the work when it comes to composing the paper. Sorry for any confusion about that. Do you want to talk on the phone about division of labor? Here is my current copy of the paper. I will add the captions you made.
+
+
+ I also can send the latex source if you want to see it.
+
+ Here is what I have so far for an informal outline of the paper. I have yet to expand the results and conclusion sections.
+
+ 1. Introduction
+   Already written
+ 2. Materials/data
+   1. CESM LE setup
+     - recorded forcing + RCP 8.5
+     - adds stastical robustness
+     - Single forcing ensembles
+     - PI control run
+ 3. Methods
+   - Nino 3.4 20-year variance
+   - Bootstrap difference between sf and ff
+   - Test influence of AMO/AMOC in control on Nino 3.4 20 year variance
+   - Correlation coefficient between ocean temperature and nino variance
+ 4. Results
+ 5. Conclusions/discussion
+
+
+
+ On Sep 23, 2020, at 3:28 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ This looks like progress. The file names should be a bit more descriptive, if just so that I have a better understanding. The journals also typically want vector graphics (.ps or .eps) rather than PDFs and these figures converted to pngs (for Word) look a bit blurry because I think they are smaller than page width size (so I’d change them to be 8 1/2” wide by default). Also we should get rid of all dead space at the side of the timeseries for example where the axes should run from 1930-2090. Lastly, the terminology needs to be made uniform - for example our acronyms could likely be LENS for CESM1-LE, xGHG, xBMB, xAER... xO3 … for the “all but” runs, and perhaps +GHG, +BMB, +AER…+O3 for the estimates of their contribution through differing with the CESM1-LE. These should be used consistently through the figures and text. 
+
+ For the next step I have put together a rough draft of the paper outline (attached). Could you add the relevant figures, or revised figures where suggested, and maybe a more detailed description of the specifics where needed? Note that I’ve reordered the panels in some cases and made suggestions about altering the figures to be more consistent with the discussion as I plan it. There are likely to be future changes as well. I’d love to explore the additivity of the contributions in Fig. 2. Once we get the figures and captions together I’ll work on the text and circulate to Peter. 
+
+ Best,
+ John
+
+
+
+ On Sep 22, 2020, at 3:56 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi Dr. Fasullo,
+
+ I’ve made some progress on cleaning up the figures. All text is Arial and the correct size, I’ve gotten rid of the titles, and added the subplot labels. Here are the results:
+
+ In the cross-section plots, I identified the region in the filename (but in the paper, I will use the caption).
+
+ Do you have any other suggestions? Are the lines an appropriate thickness? Are the colors appropriate? Should I add gridlines? Thank you for helping me with this.
+
+
+
+ On Sep 21, 2020, at 9:33 AM, John Fasullo <fasullos@gmail.com wrote:
+
+ That sounds plausible. I say go for it.
+
+ On Sep 21, 2020, at 6:51 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi Dr. Fasullo, 
+
+ I hope you had an enjoyable weekend. My science research teacher, Ms. Fleming suggested that I participate in WESEF, a local science competition this spring. What are your thoughts on this? I will need to submit a version of our paper by the application deadline in November. It doesn’t need to be complete, it just needs to demonstrate that we have conducted research and gotten results. I may need you to fill out some paperwork if I apply. Thanks!
+
+ Sincerely,
+ Ben
+
+ On Sep 10, 2020, at 4:58 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok, sounds good. I don’t think I'm ready to start on the cmip6 data yet, but I will keep that in mind.
+
+ On Sep 10, 2020, at 4:55 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ I think we should survey the CMIP6 simulations for similar relationships. That might be something that I need to do given the large amount of data involved but if you’d like to give it a shot I could probably send over at least some of the data. I think the shoaling of the mean state thermocline and increase in vertical stratification in the central Pacific is a reasonable hypothesis for what is driving the increase in ENSO variance. Is that how you read our results thus far? We can test this as an indicator of ENSO variance across models and in their time evolution of variance. 
+
+ On Sep 10, 2020, at 12:48 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok, I’ll see what I can do. One question — how many other big calculations you foresee being necessary between now and the completion of the project? If we have a lot left to do, then I will focus on rewriting code for generic calculations, but if we are nearly done, then I will keep the code as specific as it is now. It would also help me to know if it is worth trying to port most of it over to R for complicated statistical analysis, or to keep it in Python and use R for a possible next project.
+
+ On Sep 10, 2020, at 9:44 AM, John Fasullo <fasullos@gmail.com wrote:
+
+ Great - along with that we’d like to finalize the figures as much as possible to tell the storyline clearly. Have a look at some of the figures in papers published in GRL journals. Note the font size, line thicknesses, and layout. We’d like to adjust our figures to be more like the best ones you can find. It can be a tedious process but one that will pay dividends in the long run. Reviewers also appreciate it an it helps getting a manuscript accepted. Once your code is set up you can have a single routine that sets up your figure attributes that you reference from other routines. I’m not sure how to do this in python, in IDL it is just an independent routine that passes settings. NCL also has a nice gallery of (mostly) publication quality figures: https://www.ncl.ucar.edu/gallery.shtml The one change I’d note from some of these is that the title rarely goes on top of the plot in a paper but is usually inlaid within the axes such as here:
+
+ <ts_CMIP6_emiss_bb_40-70.sav_an_bb.png
+
+ On Sep 9, 2020, at 6:17 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Thanks for checking in. Classes start tomorrow. 
+
+ We really don’t need to rush on the paper; as as far as the science research class is concerned, the final copy isn’t due until a full year from now. (Much of my class hasn’t even started their experiments, mostly because all the labs are closed.) I just needed to get the intro drafted because the teacher assigned it to show that our background research is well-developed. Of course if you have a deadline for this paper, I will definitely adhere to it.
+
+ I would be happy to work on outlining the paper. For the science research class, we are required to select a few tasks to complete every 2 weeks, and making an outline could certainly be one of them. Other assignments I get include reading journal articles and putting together presentations.
+
+ On Sep 9, 2020, at 7:10 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ Just touching base on this work. I imagine your high school classes have begun again? I’ve been busy with other work but am going to get an outline set and being putting our paper together.
+
+ On Aug 31, 2020, at 2:28 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Never mind, found the figure. That is xghg, xaer, etc. I have an updated figure for that data, with letters that I will refer to in the caption. For now, a is ff, b is xghg, c is xaer, d is xbmb, e is xlulc, f is fixedO3. Control is the same for all.
+
+
+ I have the ff-xghg… in this figure, with the results from the 10000 random selections (bootstrap test). The dates are uneven between the 2 columns, which I can fix.
+
+
+
+ On Aug 31, 2020, at 4:21 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Sorry for the delay. Which figure do you mean?
+
+ On Aug 27, 2020, at 4:03 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ This looks good. Could you remind me if the titles on this figure are correct? Is “Greenhouse Gas” the allbutGHG or the FF-allbutGHG?
+
+
+
+ On Aug 27, 2020, at 12:03 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Here is a copy of the updated introduction. I tried to be more focused on past research directly related to our project, and I described our goals/hypothesis. Thanks so much for your feedback earlier!
+
+
+ On Aug 25, 2020, at 1:06 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi Dr. Fasullo,
+
+ I made a few more changes to the intro. Wanted to let you know that I am switching to saving it on GitHub because I need to use a few offline apps to compose it (bibdesk, vim, etc), and the only other option was buying an Overleaf plan. Let me know if you want access to view or edit the source, so I can invite you to the repository. Alternatively, I could email the PDF it to you or periodically copy the pdf to the shared dropbox folder.
+
+ On a side note, I’ve decided to learn R. The correlation computations were difficult to set up in Python, and I think I might have better luck with R. I will still use Python to prepare the datasets, but I might translate most of the math, or at least use R in the future. I think learning its stronger statistical api will pay off in the long run.
+
+ Sorry if these changes cause any inconvenience. Please let me know if you need anything.
+
+ PS. The reason I am focusing on the writing as opposed to more analysis is that my introduction is due when school starts and I want it to be ready by then. Once school starts, I will probably have a few more written assignments, and then I can continue processing the data.
+
+ Sincerely,
+ Ben
+
+ On Aug 19, 2020, at 7:39 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ Read through the Overleaf document - a bit overly focussed on ENSO/paleo which I’m afraid doesn’t provide much guidance for us aside from saying that we expect changes might occur. But a nice start.
+
+ On Aug 19, 2020, at 10:27 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok, great. I only have a few paragraphs so far, mostly about previous research. Do you mind if I share it with you on overleaf? If you don’t have overleaf, I can send a PDF.
+
+ On Aug 19, 2020, at 10:38 AM, John Fasullo <fasullos@gmail.com wrote:
+
+ On the intro, sure I’d love to see it. I don’t think you have to list Peter as a coauthor yet but feel free if you want.
+
+ On Aug 18, 2020, at 11:10 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok. By the way, I am beginning to work on the introduction for the paper for a science research class assignment. I can send a draft or the latex source if you would like. I am using the AGU’s template. Should I list Dr. Gent as a coauthor?
+
+ I believe that I am required by the class to do most of the writing of the paper, if you are ok with that. 
+
+ On Aug 18, 2020, at 12:59 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ For now let’s do it this way and perhaps go into finer detail for anything we go to publication with.
+
+ On Aug 18, 2020, at 10:11 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok, great. Just to be sure, it is adequate to take the p-values given by the Pearson’s correlation computation and overlay white for p.2, grey for p.1 and color for the correlation coefficient for p<.1?
+
+ This is a big relief. At first, I thought I would have to calculate the correlation coefficient at each grid-point for every ensemble member.
+
+ On Aug 18, 2020, at 12:03 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ That’s right. The p-value is suitable but note that your estimation of that likely assumes each data point is independent. Should be OK.
+
+ On Aug 18, 2020, at 9:58 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Could I just use the p-value from the correlation function and mask where it is <0.05, <0.1, and <0.2? Or is the significance calculation more complex? I’m not sure what to do with the degrees of freedom. Online, it says that to get confidence intervals, you transform r to z’ and then multiply by the standard error. Is that what you are describing? Or I should do a t-test using r, which I think uses the number of degrees of freedom?
+
+ On Aug 18, 2020, at 10:21 AM, John Fasullo <fasullos@gmail.com wrote:
+
+ Not a problem. Really all you have to do is compute the # of degrees of freedom and the correlation. Since the # of degrees of freedom is effectively constant for each point in our domain this will equate to just plotting the correlation values above/below a minimum absolute value - it doesn’t mean redoing your computations. For the 1920-2080 period we have what should be about 5 degrees of freedom for 30-yr windows - though you can test this by looking at the autocorrelation of the piControl runs. I guess this would also be a decent way to do this - compute correlations across 1000 randomly chosen intervals of the control of similar length and see what the bounds on the distribution of correlation are. If you just want to take a quick look, use levels of 0.4 and 0.6.
+
+ On Aug 17, 2020, at 11:43 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Hi, Dr. Fasullo. Sorry I don’t have the new figures. I am still having trouble calculating the confidence intervals. I tried getting the correlation arrays for entire ensembles, but that takes too long to execute. I have a few questions about confidence intervals. Are the confidence intervals the same over the entire array/cross section, or is it specific to each grid-point? Also, do you need to assemble a set of separate correlation coefficients to calculate it, or can you derive it from the r or p value?
+
+ My apologies for this interruption to our project.
+ Thank you for all your help!
+
+ On Aug 11, 2020, at 2:15 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok, great. I will be using the python data file format because it is more efficient.
+
+ On Aug 11, 2020, at 2:14 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ I think we can actually just link to the Earth System Grid. No need for submitting our processed data.
+
+ On Aug 11, 2020, at 12:12 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Thanks for clarifying, one other question: I saw that the journal requires us to submit all of our data. Does it matter what format I use? I can do text files or Python’s binary file type.
+
+ On Aug 10, 2020, at 11:45 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ Yup. And significance. 
+
+ On Aug 10, 2020, at 5:41 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok - sounds good. I am pretty sure the Matplotlib program that I use can do that. I will still have to calculate the correlation grid for each member though, right?
+
+ On Aug 10, 2020, at 7:39 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ no just screen out (with white or grey) any correlations for which significance is <80% <90%. One way to do this is to set such values to zero or missing values. Even better is to apply a transparency to a figure without doing so (in Illustrator for example) and then overlay the contours that are screened for significance - but that is a bit more advanced. the key point is to emphasize regions that are significant while covering the broader patterns and omitting values that are negligibly small.
+
+ On Aug 10, 2020, at 5:02 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Oh, sorry! I misinterpreted what you meant. All of my calculations have been using the ensemble mean so far. So I should calculate the correlations for each member, and then display the confidence limits for the entire ensemble at each grid point, correct?
+
+ On Aug 10, 2020, at 6:54 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ I’m not sure these are right. Recall that I was alluding to 80% and 90% confidence limits. Not 0.8 and 0.9 correlation coefficients. Perhaps read up on these. Do you have a book in statistics? If not, I found an old site here that describes the basics. https://www.sportsci.org/resource/stats/pvalues.html  
+
+ On Aug 7, 2020, at 2:12 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Here are the new figures:
+
+ As you can see, the correlation coefficients for all but the aer ensemble are nearly all negative.
+
+ I have also included the timeseries for the surface and subsurface layers for each ensemble for each cross-section. Surface is on the left column, subsurface is on the right. Temperature is in blue, Nino 3.4 is in green.
+
+ Keep in mind that all timeseries are linearly detrended and smoothed with a 30-year moving average. 
+
+ I have also included the correlation cross-sections with the colormap you mentioned in your last email. Very little of the data is correlated 90%, so much of the pattern is not displayed.
+ <Screen Shot 2020-08-07 at 3.11.11 PM.png
+ <Screen Shot 2020-08-07 at 3.15.23 PM.png
+ <Screen Shot 2020-08-07 at 3.20.16 PM.png
+ <Screen Shot 2020-08-07 at 3.24.34 PM.png
+
+ On Aug 5, 2020, at 6:04 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Yeah, I'll fix that asap. I will see if I can make that work. It will probably involve defining a custom colormap. Right now, the figures are somewhat misleading as the red areas are much less significant than the blue regions.
+
+ On Aug 5, 2020, at 5:52 PM, John Fasullo <fasullos@gmail.com wrote:
+
+ Just noticed the range of the contours. Should go from -0.9 to 0.9 with blues/reds at the extremes and insignificant levels in white and then grey - perhaps all significance levels < 80% in white, grey for 80-90. Does this make sense?
+
+ On Aug 5, 2020, at 11:48 AM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Here are the updated figures:
+
+ I limited the depth at 700 m, and used a finer gradient for the contour. Be aware that the range of the colormap varies between plots. I will fix that in the next “iteration".
+
+
+ On Aug 5, 2020, at 1:22 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Ok, that clears everything up. Sorry for the confusion!
+
+ On Aug 5, 2020, at 1:22 PM, Peter Gent <gent@ucar.edu wrote:
+
+ Ben, 
+
+ The depth unit in POP is cm, not m.  So the centers of the top two grid cells, which are both 10m thick, are at 5m and 15m. 
+
+ Cheers,  Peter. 
+
+
+ On Wed, Aug 5, 2020 at 10:40 AM Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+     Hi Dr. Gent!
+     Thank you so much for helping us! Please let me know if you need any information or data.
+
+
+     I’m pretty sure that the plots are the right way up. I’m unsure how to only plot the upper 700 meters, as the cross-sections begin at 500 meters, and then the next layer of data is at 1500 meters. Maybe I have the units wrong. The depth dimension is in meters, correct?
+
+     I should have the timeseries plots soon. Just to be sure, what depths should I be using for the surface and subsurface boxes? Also, aside from the surface and subsurface layers for each cross-section, should I include any other regions?
+
+     Thanks for interpreting these results for me. How does stratification regulate upwelling?
+
+      On Aug 5, 2020, at 10:02 AM, John Fasullo <fasullos@gmail.com wrote:
+      
+      Peter and Ben - I wanted to introduce you to each other and so I’ve included you both on this email. Attached is a picture of Peter sporting his stern British demeanor - perhaps Ben you have one on hand (without the sternness is fine)? As we’ve discussed, Peter is going to lend his oceanographic insights to our project. I have briefed him with a short powerpoint summarizing some of our results. 
+      
+      On the plots you recently sent, we need to plot them out with the vertical axis oriented with the surface on top and I think also want to restrict our attention to the ocean’s upper 700 m since that is where the physical mechanisms likely have to be acting. With any correlations that we think are important it is an important next step to take a look at the timeseries to see where the shared variance is coming from (e.g. variability or trends) and be sure that our broader interpretation of mechanisms is correct. Right now, it seems to me that the stratification in the central Pacific ocean is regulating the efficacy of upwelling in driving a surface temperature change (that is for a fixed vertical velocity anomaly, the greater stratification leads to a greater temperature change). But there is much we have left to do to justify / discredit this interpretation.
+      
+      Let’s take a look together at your new plots (showing both TEMPDT and TEMPCEP/EEP/WEP) once you’ve made the alterations above.
+      
+      Best to you both,
+      John
+      
+      
+      <gent.jpg
+
+
+
+ <19.pdf<21.pdf<22.pdf<23.pdf
+
+
+
+ <19.pdf<21.pdf<22.pdf<23.pdf<20.pdf<24.pdf<25.pdf<26.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <paper.pdf
+
+ <PastedGraphic-1.pdf
+
+
+ <2.pdf<4.pdf
+
+
+
+
+
+
+
+
+
+ <2.pdf<3.pdf<4.pdf<17.pdf<tempcep.pdf<tempdt.pdf<tempeep.pdf<tempwep.pdf
+
+ <Fasullo2020etalGRL.docx
+
+ <paper.pdf
+
+
+
+
+
+ <variance_1.ps<bootstrap_1.ps
+
+
+
+
+ <PRESENTATION.pptx
+
+
+
+
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+ <paper.pdf
+
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+ <paper.pdf
+
+
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+ <paper.pdf
+
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+ White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+ The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+
+White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
+The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
