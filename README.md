@@ -39,7 +39,6 @@ o888o        `Y8bod8P' d888b      "888" o888o   `Y8bod8P' o888o o888o `Y8bod8P'
                                                                                 
 
 ```
-
 # HOW TO USE:
 
 ## Option 1: Download entire repository to view in file explorer/finder.
