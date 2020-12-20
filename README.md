@@ -37,6 +37,22 @@ ooooooooo.                          .    .o88o.           oooo   o8o
  888         888   888  888       888 .  888    888   888  888   888  888   888 
 o888o        `Y8bod8P' d888b      "888" o888o   `Y8bod8P' o888o o888o `Y8bod8P' 
                                                                                 
+
+```
+
+# HOW TO USE:
+
+## Option 1: Download entire repository to view in file explorer/finder.
+![How To Download](readme_imgs/download.png)
+
+## Option 2: Navigate repository on website and download files individually as needed.
+
+- Navigate by clicking on folder links at top
+- Certain files cannot be viewed online, click "View Raw" to open offline.
+- ![How To Open Individual Files](readme_imgs/viewraw.png)
+
+
+```
                                                                                 
                                                                                 
                                                                                                                     
