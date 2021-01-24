@@ -1,18 +1,62 @@
+Subject: Re: Collaboration on ENSO variance modulation
+From: John Fasullo <fasullos@gmail.com
+Date: 1/11/21, 2:21 PM
+To: Ben Goldman <bg502257@live.wpcsd.k12.ny.us
 
-Subject:
-Re: Collaboration on ENSO variance modulation
-From:
-John Fasullo <fasullos@gmail.com
-Date:
-12/3/20, 11:17 AM
-To:
-Ben Goldman <bg502257@live.wpcsd.k12.ny.us
+'
 
-Attached are my initial results of aspects of the Bjerknes feedback strength. You’ll see that in a warmer climate the slope of the heating vs T anomaly is steeper (bottom panel), as one would expect in a moister atmosphere (more rainfall per unit convergence). As a result there is a greater change in surface winds per T anomaly (top panel). Also attached is a plot showing the change in variance by longitude and season. This shows where the variance is changing by season. There are some interesting structures. One thing we also need to check is why your plots show a decrease in variance in the FF LE after 2060 or so. I don’t see this in my analysis (also attached), but it does seem to exist in CESM2.
+[EXTERNAL EMAIL] EXTERNAL SENDER: This email originated from outside our school district. Do not click links or open attachments unless you recognize the sender and know the content is safe. If you are in doubt, contact the LHRIC Service Desk. Thank you.
+Hi Ben,
+
+Good to hear from you. Rainfall is one of the main sources of latent heating for the tropical atmosphere and this drives the Walker circulation. The idea therefore is that with more water vapor in the atmosphere (due to CC), moisture convergence and rainfall will also be greater, leading to a stronger heating and dynamical response for the same temperature gradient. Regarding variance, fall and winter are most relevant for ENSO but it will be interesting to see how the changes in variance in other seasons compare with the mechanisms we suggest. For example, do the changes in stratification show a similar pattern? or is something else driving those? The timeseries I sent ends in 2080 so as to jibe with the SF runs. Here it is to 2100 (2090 with 20-yr centered mean). No detectable change after 2050 or so (in the noise) whereas yours (FF) shows a significant decrease. 
+
+Regarding the TEMP relationships I’ll need to do some analysis and get back to you. It would be useful to see a timeseries for averages spanning the peaks of these relationships (i.e. one ts for ENSO variance, one for TEMP) in order to see the timescales that are driving each and intervals of interest. 
+
+Thanks for sending the presentation and paper. Note that internal variability can occur over very long timescales, but how much is debatable. Also internal variability isn’t necessary cycling/repetitive but rather noisy and chaotic (not simply feedbacks). For literature, also recommend a broader survey and re-reading of https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2012GL052759 https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2012GL053305  . A lot of recent work has been done that I’ll also need to read up on. I’ve placed some in our Dropbox folder so that you can access. Note also that we don’t really address the Gap you mention about whether variance will increase or decrease. We do however seek to identify mechanisms associated with each forcing. Also should mention the CESM SF-LE in methods. 
+
+Good luck with the presentation. This is pretty advanced work for high school!
+
+Best,
+John
 
 
 
 
+
+
+
+ On Jan 10, 2021, at 11:45 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
+
+ Dear Dr. Fasullo,
+
+ Sorry for my delayed response.  The analysis of the regression between bjerknes feedback and temperature change is very interesting. How does rainfall modulate that effect? Regarding the comparison of the zonal distribution of variance between different years, we can see that the change in variance is strongest in the central pacific during the fall and winter, and moves east in the summer. I'm not sure what this means, other than that the change in variance is strongest where the temperature anomaly is also strongest. I'm still not sure where the decrease in variance in the late 21st century is coming from. It looks like the timeseries you sent ends at 2060, while mine continues until 2100. Is it possible that both of ours decrease after that point?
+
+ I've attached my copy of that analysis for comparison under the file variance_1.pdf.
+
+
+ I've come up with a little bit of additional data regarding the correlation between ocean temperature and Nino3.4 variance. These figures show correlation coefficient between Nino3.4 variance and ocean temperature for the difference between the ff and xABC ensembles, using the bootstrap process from before for ENSO variance and the difference of the ensemble means for ocean temperature. Looking at the equatorial slice (TEMPDT), we can see that the +GHG ensemble indicates that greenhouse gas emissions have an opposite effect on the correlation in the central pacific around 200m from the fully-forced correlation. This is surprising, considering that previous analyses have shown that greenhouse gasses drive temperature anomalies in the same direction as overall forcing. Not sure why this is happening; I double-checked the signs in my calculations. Do your analyses show the same thing? Is this "supposed" to be happening? For reference, I've included the timeseries of the +ABC ensembles (full-forcing -- all-but-one with bootstrap process) under the file bootstrap_1.pdf, which seem at odds with the sign of the changes in the correlation charts.
+
+
+ On a side note, I'm delivering a presentation to the class this week. I've attached a copy of it, if you would like to see. I've also attached a copy of the paper as it is currently. There are no major changes other than a few edits. All the major elements of the project have been included so far except for the recent analysis you sent and the figures I made today.
+
+
+ Happy new year! I hope you and your family are doing well!
+
+
+ Sincerely,
+
+ Ben
+
+
+ PS. Sorry the images are not inline with the descriptions. My email client seems to have lost this capability.
+
+
+ On 12/3/20 11:17 AM, John Fasullo wrote:
+ Attached are my initial results of aspects of the Bjerknes feedback strength. You’ll see that in a warmer climate the slope of the heating vs T anomaly is steeper (bottom panel), as one would expect in a moister atmosphere (more rainfall per unit convergence). As a result there is a greater change in surface winds per T anomaly (top panel). Also attached is a plot showing the change in variance by longitude and season. This shows where the variance is changing by season. There are some interesting structures. One thing we also need to check is why your plots show a decrease in variance in the FF LE after 2060 or so. I don’t see this in my analysis (also attached), but it does seem to exist in CESM2.
+
+ <bjerknes_20_21.png
+
+ <hovv_season_TREFHT.png<tsv_sf_TS_-5190-5240.png
 
  On Dec 3, 2020, at 9:07 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
@@ -23,7 +67,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
 
  On 12/3/20 11:00 AM, John Fasullo wrote:
- Don’t worry about progress on the data yet as we are waiting for the CESM2 single forcing LE to finish (a month or two). For acknowledgements on the submitted version I’ll need to cite my funding sources. You should also acknowledge any teachers to whom you would like to show appreciation for their contributions or influences. I’m sure they’d feel honored. 
+ Don’t worry about progress on the data yet as we are waiting for the CESM2 single forcing LE to finish (a month or two). For acknowledgements on the submitted version I’ll need to cite my funding sources. You should also acknowledge any teachers to whom you would like to show appreciation for their contributions or influences. I’m sure they’d feel honored. 
 
  On the mechanisms front, one other aspect that I’ve done some work on is the strength of the Bjerknes feedback and its changes under warming. The idea is that the sensitivity of atmospheric heating (radiative + condensational) in the warm pool region increases with warming and therefore the response of zonal winds in the Nino3.4 region to SST anomalies increases as well. I have some results supporting this idea that I can share. You may want to add it to your key points.
 
@@ -49,7 +93,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Nov 12, 2020, at 8:57 AM, John Fasullo <fasullos@gmail.com wrote:
 
- Note this is the MPI GE ref. No mention of perturbed physics. There were some perturbed physics ensembles that were produced through MPI. The goal there is to actually change the model parameterizations and test the impact on climate simulations. But these are more of a statistical exercise in climate projection uncertainty to limits in our physical understanding than to intrinsic variability. 
+ Note this is the MPI GE ref. No mention of perturbed physics. There were some perturbed physics ensembles that were produced through MPI. The goal there is to actually change the model parameterizations and test the impact on climate simulations. But these are more of a statistical exercise in climate projection uncertainty to limits in our physical understanding than to intrinsic variability. 
 
  https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS001639
 
@@ -57,9 +101,9 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  Thanks for the clarification! I saw that the MPI Grand Ensemble was using perturbed physics, so I was curious about whether the CESM2 has that too. What is the difference between RCP85 and SSP370? I guess I thought that RCP was a general term for any future projection of anthropogenic forcing levels.
  On 11/7/20 2:18 PM, John Fasullo wrote:
- OK. That is just some of the eventual CESM2 and CESM2SF data. More files will become available. For naming conventions, the first 4 digit number is the initialization year from the control and the following 3-digit number is the member from that start points (it is a little confusing I know). Part of the idea is that the ensemble uses micro perturbations (3 digit #) in addition to macro perturbations (4 digit #). I can describe it to you in more detail down the road. Perturbed physics is actually a distinct term that isn’t relevant to these runs so be aware of that, but I know what you mean. None of these use RCP85 so I’m curious where you might have seen that. They use historical (HIST) and 21st C (SSP370) forcings. 
+ OK. That is just some of the eventual CESM2 and CESM2SF data. More files will become available. For naming conventions, the first 4 digit number is the initialization year from the control and the following 3-digit number is the member from that start points (it is a little confusing I know). Part of the idea is that the ensemble uses micro perturbations (3 digit #) in addition to macro perturbations (4 digit #). I can describe it to you in more detail down the road. Perturbed physics is actually a distinct term that isn’t relevant to these runs so be aware of that, but I know what you mean. None of these use RCP85 so I’m curious where you might have seen that. They use historical (HIST) and 21st C (SSP370) forcings. 
 
- Looking forward to seeing the paper as it matures. No rush. 
+ Looking forward to seeing the paper as it matures. No rush. 
 
  On Nov 5, 2020, at 6:11 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
@@ -83,13 +127,13 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
 
  On 10/26/20 11:42 AM, John Fasullo wrote:
- OK - I’ve put them on our ftp site. These files will be actually be more fragmented rather than less as they span only about a decade each. 
+ OK - I’ve put them on our ftp site. These files will be actually be more fragmented rather than less as they span only about a decade each. 
 
  On Oct 26, 2020, at 9:21 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
  Hi Dr. Fasullo,
 
- I think I am ready to download the CESM2 dataset if you are ready. Does NCAR make datasets from the CESM where all the ensemble members are concatenated into one file? If that is not available, that’s ok, I can do it myself. 
+ I think I am ready to download the CESM2 dataset if you are ready. Does NCAR make datasets from the CESM where all the ensemble members are concatenated into one file? If that is not available, that’s ok, I can do it myself. 
 
  Thanks!
  Ben
@@ -115,7 +159,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  What is the methodology I should use to measure stratification? What boxes are apropriate for the surface and subsurface layers, and should I find the difference or the ratio?
 
- I cited Chen et. al. 2017 " A possible explanation for the divergent projection of enso amplitude change under global warming” for the conflicting increase vs. decrease question. 
+ I cited Chen et. al. 2017 " A possible explanation for the divergent projection of enso amplitude change under global warming” for the conflicting increase vs. decrease question. 
 
  Thank you so much!
 
@@ -127,7 +171,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  A good next step will be to test our finding that vertical stratification controls variance in other models. We might think of using the CESM2 LE and SF LE to do this - the ensembles should officially be available in the coming months and I can access them now, though they are not yet complete. If we have time, looking across some of the CMIP6 models would be useful.
 
- A few notes on the presentation. 
+ A few notes on the presentation. 
 
  AMOC, C is for circulation
  AMO - there is debate about the extent to which it is forced by aerosols vs being an internal mode, most think mainly the former.
@@ -137,7 +181,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
  It would be a good idea to test the robustness of changes in variance in Nino3.4 region to other nino regions.
  Font size needs to be bigger on many figures - see mine attached.
  Note the CEP region is averaged from 180-230E
- Timeseries will be useful to interpret figure 10/11 to see what is driving the correlation. 
+ Timeseries will be useful to interpret figure 10/11 to see what is driving the correlation. 
  There is a difference in our estimates of variance in CESM1 for the late 20th C as I don’t find a decrease. We’ll need to track that down. Mine seems to agree better with the GHG+AER?
  I would say that Peter contributed to ‘interpretation’ and likely will do more in this regard...
 
@@ -156,7 +200,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  Hi Dr. Fasullo,
 
- Thanks for the feedback! Here is a copy of the presentation, still a work in progress. 
+ Thanks for the feedback! Here is a copy of the presentation, still a work in progress. 
  I was wondering what the next step in our project would be. There are a couple possible things you mentioned earlier. Should I be using potential density instead of salinity in the plots with the correlation coefficient? Also, you talked about measuring the timeseries for stratification in each ensemble. What regions should I use to calculate it? Also, I could keep analyzing the role of various modes of internal variability with the CVDP. Which of these is the most urgent?
 
  Thanks!
@@ -164,9 +208,9 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Oct 12, 2020, at 4:58 PM, John Fasullo <fasullos@gmail.com wrote:
 
- This doesn’t need to be long as there are standard references for the simulations. A mere citation of Kay et al. 2015 (for CESM-LE) and Deser et al. (2020) should suffice. Where the details are relevant to your analysis, it is a good idea to insert discussion of those or address them collectively in the discussions section, with references back to the manuscripts. 
+ This doesn’t need to be long as there are standard references for the simulations. A mere citation of Kay et al. 2015 (for CESM-LE) and Deser et al. (2020) should suffice. Where the details are relevant to your analysis, it is a good idea to insert discussion of those or address them collectively in the discussions section, with references back to the manuscripts. 
 
- A standard NCAR acknowledgement should suffice: 
+ A standard NCAR acknowledgement should suffice: 
 
  “This material is based upon work supported by the National Center for Atmospheric Research, which is a major facility sponsored by the National Science Foundation under Cooperative Agreement No. 1852977.” And sure, I’d love to see the presentation!
 
@@ -186,11 +230,11 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Sep 25, 2020, at 6:03 PM, John Fasullo <fasullos@gmail.com wrote:
 
- Looks good. Yes, the figure is in a strange format. The problem may be that python is creating a rasterized graphic? and then it gets packaged in a PDF or PS. In IDL, the graphical outputs can be created directly as vector .ps and I imagine the same is true of python but don’t know the details. 
+ Looks good. Yes, the figure is in a strange format. The problem may be that python is creating a rasterized graphic? and then it gets packaged in a PDF or PS. In IDL, the graphical outputs can be created directly as vector .ps and I imagine the same is true of python but don’t know the details. 
 
  Regarding additivity, my sense is that the stratification is not additive and that there is no simple relationship between forcing concentration and stratification. That is why the relationship is also not monotonic and (I think) can change over time even though the concentration does not. Perhaps we can show that in a 4xCO2 run as well.
 
- On the bootstrap plot, probably good to put a zero line and (as you say) a range of uncertainty on each line so that we can say what differences are significant. I also think we’ll restrict our attention to GHG+AER and use their stderr ranges from the variance plot and the full LE range (variance1-a) as the uncertainty goes up a lot for the others and they don’t go to 2080. 
+ On the bootstrap plot, probably good to put a zero line and (as you say) a range of uncertainty on each line so that we can say what differences are significant. I also think we’ll restrict our attention to GHG+AER and use their stderr ranges from the variance plot and the full LE range (variance1-a) as the uncertainty goes up a lot for the others and they don’t go to 2080. 
 
  On Sep 25, 2020, at 3:28 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
@@ -199,7 +243,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
  Here are some of the results I have so far. The labels are now better, and I rearranged the subplots to read more easily. For the bootstrap plot, I included the sum of all of the means of the +XXX runs, and the ff mean, centered at 0. It seems like the relationship is not additive. I wasn’t sure how to handle the standard error, so I left that out for now. Should I try any statistical testing? Why do you thing it isn’t additive? Ill do some research on why that might be the case.
 
  For some reason the postscript converter (pdf2ps/Ghostscript) rasterizes the vector pdfs I input. What tool do you use to convert images?
-  
+  
 
 
  On Sep 23, 2020, at 7:34 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
@@ -208,11 +252,11 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Sep 23, 2020, at 7:31 PM, John Fasullo <fasullos@gmail.com wrote:
 
- Not a problem. Go ahead and start drafting. I can break you in to the review process as I go through your text - it can be quite a brutal process to get used to, particularly as an early career scientist, depending on who your reviewer is. Typically the author that has conceptualized the study and guided the analysis is listed as first author, though there are some shades of grey. This has actually been a paper I had been working on for a bit as I had several of the figures drafted previous to our collaboration. I figured it would be a good exercise in any case. I’m looking forward to the full draft! 
+ Not a problem. Go ahead and start drafting. I can break you in to the review process as I go through your text - it can be quite a brutal process to get used to, particularly as an early career scientist, depending on who your reviewer is. Typically the author that has conceptualized the study and guided the analysis is listed as first author, though there are some shades of grey. This has actually been a paper I had been working on for a bit as I had several of the figures drafted previous to our collaboration. I figured it would be a good exercise in any case. I’m looking forward to the full draft! 
 
  On Sep 23, 2020, at 5:26 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
- Ok, thanks for clarifying. Regarding authorship, I’m pretty sure it doesn’t matter the order in which we are listed, but I have to draft most of the paper myself. Sorry if I caused any misunderstanding. 
+ Ok, thanks for clarifying. Regarding authorship, I’m pretty sure it doesn’t matter the order in which we are listed, but I have to draft most of the paper myself. Sorry if I caused any misunderstanding. 
 
  On Sep 23, 2020, at 6:44 PM, John Fasullo <fasullos@gmail.com wrote:
 
@@ -230,18 +274,18 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
  Here is what I have so far for an informal outline of the paper. I have yet to expand the results and conclusion sections.
 
  1. Introduction
-   Already written
+   Already written
  2. Materials/data
-   1. CESM LE setup
-     - recorded forcing + RCP 8.5
-     - adds stastical robustness
-     - Single forcing ensembles
-     - PI control run
+   1. CESM LE setup
+     - recorded forcing + RCP 8.5
+     - adds stastical robustness
+     - Single forcing ensembles
+     - PI control run
  3. Methods
-   - Nino 3.4 20-year variance
-   - Bootstrap difference between sf and ff
-   - Test influence of AMO/AMOC in control on Nino 3.4 20 year variance
-   - Correlation coefficient between ocean temperature and nino variance
+   - Nino 3.4 20-year variance
+   - Bootstrap difference between sf and ff
+   - Test influence of AMO/AMOC in control on Nino 3.4 20 year variance
+   - Correlation coefficient between ocean temperature and nino variance
  4. Results
  5. Conclusions/discussion
 
@@ -249,9 +293,9 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Sep 23, 2020, at 3:28 PM, John Fasullo <fasullos@gmail.com wrote:
 
- This looks like progress. The file names should be a bit more descriptive, if just so that I have a better understanding. The journals also typically want vector graphics (.ps or .eps) rather than PDFs and these figures converted to pngs (for Word) look a bit blurry because I think they are smaller than page width size (so I’d change them to be 8 1/2” wide by default). Also we should get rid of all dead space at the side of the timeseries for example where the axes should run from 1930-2090. Lastly, the terminology needs to be made uniform - for example our acronyms could likely be LENS for CESM1-LE, xGHG, xBMB, xAER... xO3 … for the “all but” runs, and perhaps +GHG, +BMB, +AER…+O3 for the estimates of their contribution through differing with the CESM1-LE. These should be used consistently through the figures and text. 
+ This looks like progress. The file names should be a bit more descriptive, if just so that I have a better understanding. The journals also typically want vector graphics (.ps or .eps) rather than PDFs and these figures converted to pngs (for Word) look a bit blurry because I think they are smaller than page width size (so I’d change them to be 8 1/2” wide by default). Also we should get rid of all dead space at the side of the timeseries for example where the axes should run from 1930-2090. Lastly, the terminology needs to be made uniform - for example our acronyms could likely be LENS for CESM1-LE, xGHG, xBMB, xAER... xO3 … for the “all but” runs, and perhaps +GHG, +BMB, +AER…+O3 for the estimates of their contribution through differing with the CESM1-LE. These should be used consistently through the figures and text. 
 
- For the next step I have put together a rough draft of the paper outline (attached). Could you add the relevant figures, or revised figures where suggested, and maybe a more detailed description of the specifics where needed? Note that I’ve reordered the panels in some cases and made suggestions about altering the figures to be more consistent with the discussion as I plan it. There are likely to be future changes as well. I’d love to explore the additivity of the contributions in Fig. 2. Once we get the figures and captions together I’ll work on the text and circulate to Peter. 
+ For the next step I have put together a rough draft of the paper outline (attached). Could you add the relevant figures, or revised figures where suggested, and maybe a more detailed description of the specifics where needed? Note that I’ve reordered the panels in some cases and made suggestions about altering the figures to be more consistent with the discussion as I plan it. There are likely to be future changes as well. I’d love to explore the additivity of the contributions in Fig. 2. Once we get the figures and captions together I’ll work on the text and circulate to Peter. 
 
  Best,
  John
@@ -266,7 +310,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  In the cross-section plots, I identified the region in the filename (but in the paper, I will use the caption).
 
- Do you have any other suggestions? Are the lines an appropriate thickness? Are the colors appropriate? Should I add gridlines? Thank you for helping me with this.
+ Do you have any other suggestions? Are the lines an appropriate thickness? Are the colors appropriate? Should I add gridlines? Thank you for helping me with this.
 
 
 
@@ -276,7 +320,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Sep 21, 2020, at 6:51 AM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
- Hi Dr. Fasullo, 
+ Hi Dr. Fasullo, 
 
  I hope you had an enjoyable weekend. My science research teacher, Ms. Fleming suggested that I participate in WESEF, a local science competition this spring. What are your thoughts on this? I will need to submit a version of our paper by the application deadline in November. It doesn’t need to be complete, it just needs to demonstrate that we have conducted research and gotten results. I may need you to fill out some paperwork if I apply. Thanks!
 
@@ -289,7 +333,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Sep 10, 2020, at 4:55 PM, John Fasullo <fasullos@gmail.com wrote:
 
- I think we should survey the CMIP6 simulations for similar relationships. That might be something that I need to do given the large amount of data involved but if you’d like to give it a shot I could probably send over at least some of the data. I think the shoaling of the mean state thermocline and increase in vertical stratification in the central Pacific is a reasonable hypothesis for what is driving the increase in ENSO variance. Is that how you read our results thus far? We can test this as an indicator of ENSO variance across models and in their time evolution of variance. 
+ I think we should survey the CMIP6 simulations for similar relationships. That might be something that I need to do given the large amount of data involved but if you’d like to give it a shot I could probably send over at least some of the data. I think the shoaling of the mean state thermocline and increase in vertical stratification in the central Pacific is a reasonable hypothesis for what is driving the increase in ENSO variance. Is that how you read our results thus far? We can test this as an indicator of ENSO variance across models and in their time evolution of variance. 
 
  On Sep 10, 2020, at 12:48 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
@@ -297,15 +341,15 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Sep 10, 2020, at 9:44 AM, John Fasullo <fasullos@gmail.com wrote:
 
- Great - along with that we’d like to finalize the figures as much as possible to tell the storyline clearly. Have a look at some of the figures in papers published in GRL journals. Note the font size, line thicknesses, and layout. We’d like to adjust our figures to be more like the best ones you can find. It can be a tedious process but one that will pay dividends in the long run. Reviewers also appreciate it an it helps getting a manuscript accepted. Once your code is set up you can have a single routine that sets up your figure attributes that you reference from other routines. I’m not sure how to do this in python, in IDL it is just an independent routine that passes settings. NCL also has a nice gallery of (mostly) publication quality figures: https://www.ncl.ucar.edu/gallery.shtml The one change I’d note from some of these is that the title rarely goes on top of the plot in a paper but is usually inlaid within the axes such as here:
+ Great - along with that we’d like to finalize the figures as much as possible to tell the storyline clearly. Have a look at some of the figures in papers published in GRL journals. Note the font size, line thicknesses, and layout. We’d like to adjust our figures to be more like the best ones you can find. It can be a tedious process but one that will pay dividends in the long run. Reviewers also appreciate it an it helps getting a manuscript accepted. Once your code is set up you can have a single routine that sets up your figure attributes that you reference from other routines. I’m not sure how to do this in python, in IDL it is just an independent routine that passes settings. NCL also has a nice gallery of (mostly) publication quality figures: https://www.ncl.ucar.edu/gallery.shtml The one change I’d note from some of these is that the title rarely goes on top of the plot in a paper but is usually inlaid within the axes such as here:
 
  <ts_CMIP6_emiss_bb_40-70.sav_an_bb.png
 
  On Sep 9, 2020, at 6:17 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
- Thanks for checking in. Classes start tomorrow. 
+ Thanks for checking in. Classes start tomorrow. 
 
- We really don’t need to rush on the paper; as as far as the science research class is concerned, the final copy isn’t due until a full year from now. (Much of my class hasn’t even started their experiments, mostly because all the labs are closed.) I just needed to get the intro drafted because the teacher assigned it to show that our background research is well-developed. Of course if you have a deadline for this paper, I will definitely adhere to it.
+ We really don’t need to rush on the paper; as as far as the science research class is concerned, the final copy isn’t due until a full year from now. (Much of my class hasn’t even started their experiments, mostly because all the labs are closed.) I just needed to get the intro drafted because the teacher assigned it to show that our background research is well-developed. Of course if you have a deadline for this paper, I will definitely adhere to it.
 
  I would be happy to work on outlining the paper. For the science research class, we are required to select a few tasks to complete every 2 weeks, and making an outline could certainly be one of them. Other assignments I get include reading journal articles and putting together presentations.
 
@@ -318,7 +362,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
  Never mind, found the figure. That is xghg, xaer, etc. I have an updated figure for that data, with letters that I will refer to in the caption. For now, a is ff, b is xghg, c is xaer, d is xbmb, e is xlulc, f is fixedO3. Control is the same for all.
 
 
- I have the ff-xghg… in this figure, with the results from the 10000 random selections (bootstrap test). The dates are uneven between the 2 columns, which I can fix.
+ I have the ff-xghg… in this figure, with the results from the 10000 random selections (bootstrap test). The dates are uneven between the 2 columns, which I can fix.
 
 
 
@@ -334,7 +378,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Aug 27, 2020, at 12:03 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
- Here is a copy of the updated introduction. I tried to be more focused on past research directly related to our project, and I described our goals/hypothesis. Thanks so much for your feedback earlier!
+ Here is a copy of the updated introduction. I tried to be more focused on past research directly related to our project, and I described our goals/hypothesis. Thanks so much for your feedback earlier!
 
 
  On Aug 25, 2020, at 1:06 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
@@ -368,7 +412,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  Ok. By the way, I am beginning to work on the introduction for the paper for a science research class assignment. I can send a draft or the latex source if you would like. I am using the AGU’s template. Should I list Dr. Gent as a coauthor?
 
- I believe that I am required by the class to do most of the writing of the paper, if you are ok with that. 
+ I believe that I am required by the class to do most of the writing of the paper, if you are ok with that. 
 
  On Aug 18, 2020, at 12:59 PM, John Fasullo <fasullos@gmail.com wrote:
 
@@ -413,7 +457,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Aug 10, 2020, at 11:45 PM, John Fasullo <fasullos@gmail.com wrote:
 
- Yup. And significance. 
+ Yup. And significance. 
 
  On Aug 10, 2020, at 5:41 PM, Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
@@ -429,7 +473,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Aug 10, 2020, at 6:54 PM, John Fasullo <fasullos@gmail.com wrote:
 
- I’m not sure these are right. Recall that I was alluding to 80% and 90% confidence limits. Not 0.8 and 0.9 correlation coefficients. Perhaps read up on these. Do you have a book in statistics? If not, I found an old site here that describes the basics. https://www.sportsci.org/resource/stats/pvalues.html  
+ I’m not sure these are right. Recall that I was alluding to 80% and 90% confidence limits. Not 0.8 and 0.9 correlation coefficients. Perhaps read up on these. Do you have a book in statistics? If not, I found an old site here that describes the basics. https://www.sportsci.org/resource/stats/pvalues.html  
 
  On Aug 7, 2020, at 2:12 PM, Benjamin Oren Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
 
@@ -439,7 +483,7 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  I have also included the timeseries for the surface and subsurface layers for each ensemble for each cross-section. Surface is on the left column, subsurface is on the right. Temperature is in blue, Nino 3.4 is in green.
 
- Keep in mind that all timeseries are linearly detrended and smoothed with a 30-year moving average. 
+ Keep in mind that all timeseries are linearly detrended and smoothed with a 30-year moving average. 
 
  I have also included the correlation cross-sections with the colormap you mentioned in your last email. Very little of the data is correlated 90%, so much of the pattern is not displayed.
  <Screen Shot 2020-08-07 at 3.11.11 PM.png
@@ -468,11 +512,11 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
 
  On Aug 5, 2020, at 1:22 PM, Peter Gent <gent@ucar.edu wrote:
 
- Ben, 
+ Ben, 
 
- The depth unit in POP is cm, not m.  So the centers of the top two grid cells, which are both 10m thick, are at 5m and 15m. 
+ The depth unit in POP is cm, not m.  So the centers of the top two grid cells, which are both 10m thick, are at 5m and 15m. 
 
- Cheers,  Peter. 
+ Cheers,  Peter. 
 
 
  On Wed, Aug 5, 2020 at 10:40 AM Ben Goldman <bg502257@live.wpcsd.k12.ny.us wrote:
@@ -488,106 +532,14 @@ Attached are my initial results of aspects of the Bjerknes feedback strength. Yo
      Thanks for interpreting these results for me. How does stratification regulate upwelling?
 
       On Aug 5, 2020, at 10:02 AM, John Fasullo <fasullos@gmail.com wrote:
-      
-      Peter and Ben - I wanted to introduce you to each other and so I’ve included you both on this email. Attached is a picture of Peter sporting his stern British demeanor - perhaps Ben you have one on hand (without the sternness is fine)? As we’ve discussed, Peter is going to lend his oceanographic insights to our project. I have briefed him with a short powerpoint summarizing some of our results. 
-      
+      
+      Peter and Ben - I wanted to introduce you to each other and so I’ve included you both on this email. Attached is a picture of Peter sporting his stern British demeanor - perhaps Ben you have one on hand (without the sternness is fine)? As we’ve discussed, Peter is going to lend his oceanographic insights to our project. I have briefed him with a short powerpoint summarizing some of our results. 
+      
       On the plots you recently sent, we need to plot them out with the vertical axis oriented with the surface on top and I think also want to restrict our attention to the ocean’s upper 700 m since that is where the physical mechanisms likely have to be acting. With any correlations that we think are important it is an important next step to take a look at the timeseries to see where the shared variance is coming from (e.g. variability or trends) and be sure that our broader interpretation of mechanisms is correct. Right now, it seems to me that the stratification in the central Pacific ocean is regulating the efficacy of upwelling in driving a surface temperature change (that is for a fixed vertical velocity anomaly, the greater stratification leads to a greater temperature change). But there is much we have left to do to justify / discredit this interpretation.
-      
+      
       Let’s take a look together at your new plots (showing both TEMPDT and TEMPCEP/EEP/WEP) once you’ve made the alterations above.
-      
+      
       Best to you both,
       John
-      
-      
-      <gent.jpg
-
-
-
- <19.pdf<21.pdf<22.pdf<23.pdf
-
-
-
- <19.pdf<21.pdf<22.pdf<23.pdf<20.pdf<24.pdf<25.pdf<26.pdf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <paper.pdf
-
- <PastedGraphic-1.pdf
-
-
- <2.pdf<4.pdf
-
-
-
-
-
-
-
-
-
- <2.pdf<3.pdf<4.pdf<17.pdf<tempcep.pdf<tempdt.pdf<tempeep.pdf<tempwep.pdf
-
- <Fasullo2020etalGRL.docx
-
- <paper.pdf
-
-
-
-
-
- <variance_1.ps<bootstrap_1.ps
-
-
-
-
- <PRESENTATION.pptx
-
-
-
-
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
-
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
- <paper.pdf
-
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
- <paper.pdf
-
-
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
- <paper.pdf
-
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
- White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
- The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
-
-White Plains School District - PERSONAL & CONFIDENTIAL DISCLOSURE STATEMENT
-The information transmitted herein may contain privileged and/or confidential material. Any disclosure, copying, distribution or other use of, or taking of any action in reliance upon, information contained herein or attached hereto by persons or entities other than the intended recipient(s) is prohibited. Any misdirection or other error in the transmission of this information is not and shall not be considered a waiver of any applicable privileges. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without saving, distributing or copying in any manner.
+      
+      

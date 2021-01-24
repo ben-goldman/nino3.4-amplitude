@@ -11,3 +11,9 @@
                                                                                                                          
 
 ```
+
+# List of Competitions:
+
+- Plan to attend WESEF competition; paperwork is in order
+    - Happens March 15-18 2021
+- Unlikely to attend Tri-County Fair
