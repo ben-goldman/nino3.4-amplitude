@@ -13,7 +13,7 @@ Junior
 ## Option 2: Navigate repository on website and download files individually as needed.
 
 - Navigate by clicking on folder links at top
-- Certain files cannot be viewed online, click "View Raw" to open offline.
+- Certain files cannot be viewed online, click "View Raw" to download and open offline.
 
 ![How To Open Individual Files](readme_imgs/viewraw.png)
 
