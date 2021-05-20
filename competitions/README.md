@@ -14,6 +14,8 @@
 
 # List of Competitions:
 
-- Plan to attend WESEF competition; paperwork is in order
-    - Happens March 15-18 2021
-- Unlikely to attend Tri-County Fair
+- Attended WESEF 2021 competition March 2021
+  - Won 2 awards (American Meterological Society Award, 4th place category award)
+- Unlikely to attend Tri-County Fair 2021
+- Plan to attend JSHS fair 2021
+- Plan to attend WESEF fair 2022

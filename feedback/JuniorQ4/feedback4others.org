@@ -1,0 +1,13 @@
+#+TITLE: Feedback For Others
+#+OPTIONS: title:nil toc:nil
+
+* Feedback 1
+Presenter: Jimena Perez
+Date: 27 April 2021
+Time: 7:00 PM
+** Feedback
+- Good slide organization
+- Slow down presentation
+- Good visuals
+- Clarify wordy slides
+- Very understandible
