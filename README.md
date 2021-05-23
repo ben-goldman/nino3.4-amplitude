@@ -6,6 +6,10 @@ Junior
 
 # HOW TO USE:
 
+## Important note:
+
+There are certain files with the extensions `.org` and `.md`. These files are used to create the `.pdf` files that have the same file name. They will have the same content but slightly different formatting compared to the `.pdf` files. They will also open more easily online and are much smaller in size. Files with the `.bbl`, `.tex`, and `.out' files are used as support files, and they may be unreadable.
+
 ## Option 1: Download entire repository to view in file explorer/finder.
 
 ![How To Download](readme_imgs/download.png)
