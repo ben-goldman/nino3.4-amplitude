@@ -1,6 +1,7 @@
 #+TITLE: Research Plan for the Impact of Anthropogenic Forcing on ENSO Amplitude
 #+AUTHOR: Benjamin Goldman
 #+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage[letterpaper, margin=1in]{geometry}
 #+OPTIONS: toc:nil
 
 

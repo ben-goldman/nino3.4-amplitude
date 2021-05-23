@@ -126,13 +126,21 @@
 #+CAPTION: 20-year variance of Niño 3.4 index for fully-forced ensemble. Grey bar shows control mean and standard errors
 [[./images/variance_2.pdf]]
 
+* Analysis of Individual Factors
+- Why is ENSO predicted to intensify? What human impacts play the largest role?
+  + Factors include: Greenhouse gasses, aerosols, natural factors.
+- Separate out individual influences in model output.
+- Single forcing ensembles: forced by all factors except for 1.
+- Subtract “all-but-one” ensembles from original “full-forcing” ensemble.
+- Resulting data represents influence of only one factor.
+
 * Role of Greenhouse and Aerosol Emissions
 ** Text :BMCOL:
 :PROPERTIES:
 :BEAMER_col: 0.5
 :END:
 - Greenhouse gasses and aerosols contribute to increase in variance.
-- Aerosols and greenhouse gasses have same sign: disagree with previous studies citep:deser2020isolating
+- Aerosols and greenhouse gasses have same sign: disagree with previous studies citep:deser2020isolating.
 - Greenhouse gasses and aerosols are both human-produced.
 
 ** Image :BMCOL:
