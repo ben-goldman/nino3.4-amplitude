@@ -1,0 +1,433 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Bjerknes%
+}{%
+Bjerknes%
+}{%
+{\protect \APACyear {1969}}%
+}]{%
+bjerknes1969atmospheric}
+\APACinsertmetastar {%
+bjerknes1969atmospheric}%
+\begin{APACrefauthors}%
+Bjerknes, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1969}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Atmospheric teleconnections from the equatorial Pacific}
+  {Atmospheric teleconnections from the equatorial pacific}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Mon. Wea. Rev}{97}{3}{163--172}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Boer%
+, Flato%
+\BCBL {}\ \BBA {} Ramsden%
+}{%
+Boer%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2000}}%
+}]{%
+boer2000transient}
+\APACinsertmetastar {%
+boer2000transient}%
+\begin{APACrefauthors}%
+Boer, G.%
+, Flato, G.%
+\BCBL {}\ \BBA {} Ramsden, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A transient climate change simulation with greenhouse
+  gas and aerosol forcing: projected climate to the twenty-first century} {A
+  transient climate change simulation with greenhouse gas and aerosol forcing:
+  projected climate to the twenty-first century}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Climate dynamics}{16}{6}{427--450}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Deser%
+\ \protect \BOthers {.}}{%
+Deser%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+deser2020isolating}
+\APACinsertmetastar {%
+deser2020isolating}%
+\begin{APACrefauthors}%
+Deser, C.%
+, Phillips, A\BPBI S.%
+, Simpson, I\BPBI R.%
+, Rosenbloom, N.%
+, Coleman, D.%
+, Lehner, F.%
+\BDBL {}Stevenson, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Isolating the evolving contributions of anthropogenic
+  aerosols and greenhouse gases: a new CESM1 large ensemble community resource}
+  {Isolating the evolving contributions of anthropogenic aerosols and
+  greenhouse gases: a new cesm1 large ensemble community resource}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Climate}{33}{18}{7835--7858}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dewitte%
+, Yeh%
+\BCBL {}\ \BBA {} Thual%
+}{%
+Dewitte%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+dewitte2013reinterpreting}
+\APACinsertmetastar {%
+dewitte2013reinterpreting}%
+\begin{APACrefauthors}%
+Dewitte, B.%
+, Yeh, S\BHBI W.%
+\BCBL {}\ \BBA {} Thual, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Reinterpreting the thermocline feedback in the
+  western-central equatorial Pacific and its relationship with the ENSO
+  modulation} {Reinterpreting the thermocline feedback in the western-central
+  equatorial pacific and its relationship with the enso modulation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Climate dynamics}{41}{3-4}{819--830}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jim{\'e}nez-Mu{\~n}oz%
+\ \protect \BOthers {.}}{%
+Jim{\'e}nez-Mu{\~n}oz%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+jimenez2016record}
+\APACinsertmetastar {%
+jimenez2016record}%
+\begin{APACrefauthors}%
+Jim{\'e}nez-Mu{\~n}oz, J\BPBI C.%
+, Mattar, C.%
+, Barichivich, J.%
+, Santamar{\'\i}a-Artigas, A.%
+, Takahashi, K.%
+, Malhi, Y.%
+\BDBL {}Van Der~Schrier, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Record-breaking warming and extreme drought in the
+  Amazon rainforest during the course of El Ni{\~n}o 2015--2016}
+  {Record-breaking warming and extreme drought in the amazon rainforest during
+  the course of el ni{\~n}o 2015--2016}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scientific reports}{6}{}{33130}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kay%
+\ \protect \BOthers {.}}{%
+Kay%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+kay2015community}
+\APACinsertmetastar {%
+kay2015community}%
+\begin{APACrefauthors}%
+Kay, J\BPBI E.%
+, Deser, C.%
+, Phillips, A.%
+, Mai, A.%
+, Hannay, C.%
+, Strand, G.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Community Earth System Model (CESM) large ensemble
+  project: A community resource for studying climate change in the presence of
+  internal climate variability} {The community earth system model (cesm) large
+  ensemble project: A community resource for studying climate change in the
+  presence of internal climate variability}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bulletin of the American Meteorological
+  Society}{96}{8}{1333--1349}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kohyama%
+, Hartmann%
+\BCBL {}\ \BBA {} Battisti%
+}{%
+Kohyama%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+kohyama2018weakening}
+\APACinsertmetastar {%
+kohyama2018weakening}%
+\begin{APACrefauthors}%
+Kohyama, T.%
+, Hartmann, D\BPBI L.%
+\BCBL {}\ \BBA {} Battisti, D\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Weakening of nonlinear ENSO under global warming}
+  {Weakening of nonlinear enso under global warming}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{45}{16}{8557--8567}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Levine%
+, McPhaden%
+\BCBL {}\ \BBA {} Frierson%
+}{%
+Levine%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+levine2017impact}
+\APACinsertmetastar {%
+levine2017impact}%
+\begin{APACrefauthors}%
+Levine, A\BPBI F.%
+, McPhaden, M\BPBI J.%
+\BCBL {}\ \BBA {} Frierson, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The impact of the AMO on multidecadal ENSO variability}
+  {The impact of the amo on multidecadal enso variability}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{44}{8}{3877--3886}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Maher%
+, Matei%
+, Milinski%
+\BCBL {}\ \BBA {} Marotzke%
+}{%
+Maher%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+maher2018enso}
+\APACinsertmetastar {%
+maher2018enso}%
+\begin{APACrefauthors}%
+Maher, N.%
+, Matei, D.%
+, Milinski, S.%
+\BCBL {}\ \BBA {} Marotzke, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {ENSO change in climate projections: Forced response or
+  internal variability?} {Enso change in climate projections: Forced response
+  or internal variability?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{45}{20}{11--390}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nowack%
+, Braesicke%
+, Luke~Abraham%
+\BCBL {}\ \BBA {} Pyle%
+}{%
+Nowack%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+nowack2017role}
+\APACinsertmetastar {%
+nowack2017role}%
+\begin{APACrefauthors}%
+Nowack, P\BPBI J.%
+, Braesicke, P.%
+, Luke~Abraham, N.%
+\BCBL {}\ \BBA {} Pyle, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On the role of ozone feedback in the ENSO amplitude
+  response under global warming} {On the role of ozone feedback in the enso
+  amplitude response under global warming}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical research letters}{44}{8}{3858--3866}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Phillips%
+, Deser%
+\BCBL {}\ \BBA {} Fasullo%
+}{%
+Phillips%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+phillips2014evaluating}
+\APACinsertmetastar {%
+phillips2014evaluating}%
+\begin{APACrefauthors}%
+Phillips, A\BPBI S.%
+, Deser, C.%
+\BCBL {}\ \BBA {} Fasullo, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A New Tool for Evaluating modes of variability in
+  climate models} {A new tool for evaluating modes of variability in climate
+  models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Eos, Transactions American Geophysical
+  Union}{95}{49}{453--455}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ropelewski%
+\ \BBA {} Halpert%
+}{%
+Ropelewski%
+\ \BBA {} Halpert%
+}{%
+{\protect \APACyear {1987}}%
+}]{%
+ropelewski1987global}
+\APACinsertmetastar {%
+ropelewski1987global}%
+\begin{APACrefauthors}%
+Ropelewski, C\BPBI F.%
+\BCBT {}\ \BBA {} Halpert, M\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1987}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Global and regional scale precipitation patterns
+  associated with the El Ni{\~n}o/Southern Oscillation} {Global and regional
+  scale precipitation patterns associated with the el ni{\~n}o/southern
+  oscillation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Monthly weather review}{115}{8}{1606--1626}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stevenson%
+}{%
+Stevenson%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+stevenson2012significant}
+\APACinsertmetastar {%
+stevenson2012significant}%
+\begin{APACrefauthors}%
+Stevenson, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Significant changes to ENSO strength and impacts in the
+  twenty-first century: Results from CMIP5} {Significant changes to enso
+  strength and impacts in the twenty-first century: Results from cmip5}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{39}{17}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stevenson%
+, Capotondi%
+, Fasullo%
+\BCBL {}\ \BBA {} Otto-Bliesner%
+}{%
+Stevenson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+stevenson2019forced}
+\APACinsertmetastar {%
+stevenson2019forced}%
+\begin{APACrefauthors}%
+Stevenson, S.%
+, Capotondi, A.%
+, Fasullo, J.%
+\BCBL {}\ \BBA {} Otto-Bliesner, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Forced changes to twentieth century ENSO diversity in a
+  last Millennium context} {Forced changes to twentieth century enso diversity
+  in a last millennium context}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Climate Dynamics}{52}{12}{7359--7374}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zheng%
+, Hui%
+\BCBL {}\ \BBA {} Yeh%
+}{%
+Zheng%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+zheng2018response}
+\APACinsertmetastar {%
+zheng2018response}%
+\begin{APACrefauthors}%
+Zheng, X\BHBI T.%
+, Hui, C.%
+\BCBL {}\ \BBA {} Yeh, S\BHBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Response of ENSO amplitude to global warming in CESM
+  large ensemble: uncertainty due to internal variability} {Response of enso
+  amplitude to global warming in cesm large ensemble: uncertainty due to
+  internal variability}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Climate Dynamics}{50}{11-12}{4019--4035}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

@@ -1,0 +1,20 @@
+Dear Dr. Fasullo,
+
+Hello, I hope your spring is going well. I am writing to give you an update on the project and to thank you for working with me this year. I recently presented our study in the Westchester Science and Engineering Fair (WESEF). My presentation won an award from the American Meteorological Society! Thank you so much for your help and commitment to doing this study with me. I value your direction and assistance, and I am really lucky to have a professional scientist who is so willing to help a young person.
+
+I also have a few questions regarding long-term plans for the project. If I am to compete in the same science fair next year, I have to expand on this current study or start a new one. I brainstormed a few possible methods/variables we could look at (some of which we have discussed). Here are a few.
+
+  - Correlation coefficient with other modes of internal variability (AMOC, PDO, etc.), possibly using the CVDP
+  - EOF-based definition of ENSO
+  - Employ signal analysis (fourier transform) to examine changes to ENSO variability on a wider variety of timescales
+  - Role of air currents (Walker Circulation) in modulating ENSO under global warming, such as correlation with vertical air movement/pressure tendency
+  - Changes to seasonal cycle under global warming
+  - Use similar analyses on observed data (not sure how far we will get given the short record period, but it might make for an interesting discussion.)
+  - Use CESM2 and CMIP6 ensembles' data
+
+One other thing that might happen next year is publishing the paper once we finish our analysis. Are you still planning to publish it with the AGU? I understand that the reviewing process can be fairly long, so is there anything I should be doing to prepare (other than drafting the paper)?
+
+Once again, thank you so much.
+
+Sincerely,
+Ben

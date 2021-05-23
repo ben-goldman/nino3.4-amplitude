@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{adjustbox}
+\usepackage[round]{natbib}
+
+\title{The Effect of Natural and Anthropogenic Forcing on ENSO Amplitude in the CESM Large Ensemble}
+\author{Benjamin Goldman}
+
+\begin{document}
+
+\maketitle
+
+\section{Rationale}
+
+El Ni\~{n}o/Southern Oscillation (ENSO) is a cyclical change in the temperature of the equatorial Pacific Ocean. It is accompanied by disturbances to the Walker Circulation and reduced upwelling in the eastern Pacific \citep{bjerknes1969atmospheric}. ENSO has extreme effects on global climate, affecting the intensity of rainfall in the Americas, the location of Rossby Waves, the paths of storms, and much more \citep{liu2007atmospheric}. Because of these critical effects, determining how climate change will affect ENSO is crucial.
+
+Scientists have begun to research the effects of natural and anthropogenic forcing on ENSO. For example, \citet{zhu2017reduced} showed that during the Last Glacial Maximum, lower CO$_{2}$ levels reduced ENSO variability. \citet{levine2017impact} suggested that the Atlantic Multidecadal Oscillation (AMO) may also play a role in determining ENSO amplitude and demonstrated the difficulty in predicting long-term changes to ENSO. Researchers have also shown the effect of natural forcing on ENSO variability. \citet{emile2007nino} suggested the role of ENSO in the effect of solar and orbital forcing on the Earth's climate, and \citet{liu2007atmospheric} determined that ozone changes dampen CO$_{2}$-forced reduction of ENSO amplitude. The conflicting relationship of ozone and CO$_{2}$ has also been shown for ENSO diversity, as \citet{stevenson2019forced} showed that the effects of ozone and greenhouse gasses on the development of Eastern and Central Pacific ENSO events tend to cancel out. \citet{zheng2018response} showed that ENSO variability is highly dependent on internal variability, and therefore a model with a large ensemble is necessary to measure a robust signal.
+
+\section{Research Goals}
+
+\begin{itemize}
+
+	\item Determine the effect of a range of climate factors on Nin\~{o} amplitude.
+	\item Examine mechanisms responsible for observed effect(s)
+	\item The following factors will be considered:
+	\begin{itemize}
+		\item Greenhouse gas emissions
+		\item Aerosol emissions
+		\item Biomass burning
+		\item Land use/cover
+		\item Ozone
+	\end{itemize}
+	
+\end{itemize}
+
+\section{Research Methods}
+
+\subsection{Procedures}
+
+\begin{enumerate}
+
+	\item Data source: Community Earth System Model (CESM LME) output, publicly available but compiled by mentor
+	\begin{itemize}
+		\item Full-forcing and single-forcing ensembles using recorded radiative forcing from 1920-2005, and RCP 8.5 projections from 2005-2100
+		\item 2000-year control run with pre-industrial forcing
+	\end{itemize}
+	\item The Python programming language with the Scipy package will be used to perform all calculations.
+	\item Running centered 20-year Ni\~{n}o 3.4 variance will be calculated for each ensemble member and the PI control.
+
+\end{enumerate}
+
+
+\subsection{Data Analysis}
+
+\begin{enumerate}
+
+	\item Mean and standard error will be calculated for each ensemble.
+	\item Probability Distribution Function (PDF) will be estimated for the control run.
+	\item Ni\~{n}o 3.4 index for single-forcing ensembles will be subtracted from full-forcing ensemble to isolate changes associated with individual factors.
+	\item Mean and standard error for full-forcing and single-forcing cases will be compared to that of the control.
+	\item The bootstrap method will be used to compare the single and full-forcing distributions.
+	\item Control Ni\~{n}o 3.4 variance PDF's will be calculated for high and low AMO and AMOC index using CVDP (Climate Variability Diagnostics Package) provided by mentor.
+	\item Correlation between Ni\~{n}o variance and equatorial Pacific ocean tempecature will be calculated for the full-forcing ensemble.
+	\item A mixed-layer heat budget analysis may be calculated to examine changes to ocean structure.
+	
+\end{enumerate}
+
+\subsection{Risk and Safety}
+
+No risk/safety issues relevant as all methods are digital.
+
+
+\subsection{Role of Mentor and Student}
+
+\begin{adjustbox}{width=1.5\textwidth, center=\textwidth}
+\begin{tabular}{| l | c | r |}
+
+\hline
+Student & Shared & Mentor\\
+\hline
+
+Perform all calculations & Discuss and interpret results and data & Review results and methods\\
+Produce plots and documentation &       & Suggest changes and future calculations\\
+ & & Provide/compile datasets\\
+
+\hline
+
+\end{tabular}
+\end{adjustbox}
+
+\bibliographystyle{apa}
+\bibliography{refs.bib}
+
+\end{document}

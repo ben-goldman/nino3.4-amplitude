@@ -1,0 +1,52 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Bjerknes}{1969}]{bjerknes1969atmospheric}
+Bjerknes, J. (1969).
+\newblock Atmospheric teleconnections from the equatorial pacific.
+\newblock {\em Mon. Wea. Rev}, 97(3):163--172.
+
+\bibitem[\protect\astroncite{Cai et~al.}{2018}]{cai2018increased}
+Cai, W., Wang, G., Dewitte, B., Wu, L., Santoso, A., Takahashi, K., Yang, Y.,
+  Carr{\'e}ric, A., and McPhaden, M.~J. (2018).
+\newblock Increased variability of eastern pacific el ni{\~n}o under greenhouse
+  warming.
+\newblock {\em Nature}, 564(7735):201--206.
+
+\bibitem[\protect\astroncite{Deser et~al.}{2020}]{deser2020isolating}
+Deser, C., Phillips, A.~S., Simpson, I.~R., Rosenbloom, N., Coleman, D.,
+  Lehner, F., Pendergrass, A.~G., DiNezio, P., and Stevenson, S. (2020).
+\newblock Isolating the evolving contributions of anthropogenic aerosols and
+  greenhouse gases: a new cesm1 large ensemble community resource.
+\newblock {\em Journal of Climate}, 33(18):7835--7858.
+
+\bibitem[\protect\astroncite{Levine et~al.}{2017}]{levine2017impact}
+Levine, A.~F., McPhaden, M.~J., and Frierson, D.~M. (2017).
+\newblock The impact of the amo on multidecadal enso variability.
+\newblock {\em Geophysical Research Letters}, 44(8):3877--3886.
+
+\bibitem[\protect\astroncite{Liu and Alexander}{2007}]{liu2007atmospheric}
+Liu, Z. and Alexander, M. (2007).
+\newblock Atmospheric bridge, oceanic tunnel, and global climatic
+  teleconnections.
+\newblock {\em Reviews of Geophysics}, 45(2).
+
+\bibitem[\protect\astroncite{Maher et~al.}{2018}]{maher2018enso}
+Maher, N., Matei, D., Milinski, S., and Marotzke, J. (2018).
+\newblock Enso change in climate projections: Forced response or internal
+  variability?
+\newblock {\em Geophysical Research Letters}, 45(20):11--390.
+
+\bibitem[\protect\astroncite{Zheng et~al.}{2018}]{zheng2018response}
+Zheng, X.-T., Hui, C., and Yeh, S.-W. (2018).
+\newblock Response of enso amplitude to global warming in cesm large ensemble:
+  uncertainty due to internal variability.
+\newblock {\em Climate Dynamics}, 50(11-12):4019--4035.
+
+\bibitem[\protect\astroncite{Zhu et~al.}{2017}]{zhu2017reduced}
+Zhu, J., Liu, Z., Brady, E., Otto-Bliesner, B., Zhang, J., Noone, D., Tomas,
+  R., Nusbaumer, J., Wong, T., Jahn, A., et~al. (2017).
+\newblock Reduced enso variability at the lgm revealed by an isotope-enabled
+  earth system model.
+\newblock {\em Geophysical Research Letters}, 44(13):6984--6992.
+
+\end{thebibliography}

@@ -1,0 +1,60 @@
+BODY, LI {font-family: arial, helvetica, verdana, sans-serif; font-size: 13px;}
+UL, OL {margin-top: 10px; margin-bottom: 10px;}
+HR {color: #E6E6E6; size: 2;}
+.compact {margin-top: 10px; margin-bottom: 10px;}
+.maintext {font-family: arial, helvetica, verdana, sans-serif; font-size: 13px;}
+.smalltext {font-family: arial, helvetica, verdana, sans-serif; font-size: 11px;}
+.tabletext {font-family: arial, helvetica, verdana, sans-serif; font-size: 12px;}
+.smallertext{font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; color: #000000;}
+.size1 {font-size: 10px;}
+.size2 {font-size: 14px;}
+.size3 {font-size: 16px;}
+.biggestheader {font-size: 20px; font-weight: bold; color: #114FAC; text-decoration: none;}
+.bigheader {font-size: 16px; font-weight: bold; color: #114FAC; text-decoration: none;}
+.mainheader {font-size: 14px; font-weight: bold; color: #114FAC; text-decoration: none;}
+.staticlink {color: #114FAC; text-decoration:none;}
+.staticlink2 {color: #114FAC;}
+.adminbigheader {font-size: 16px; font-weight: bold; color: #993300;}
+.adminheader {font-size: 14px; font-weight: bold; color: #993300;}
+.adminlink {font-weight: bold; color: #AA5500;}
+.adminlink2 {font-size: 11px; font-weight: bold; color: #AA5500;}
+.admintext {color: #AA5500;}
+.activelink {font-size: 12px; font-weight: bold; color: #0000AA;}
+.activelink2 {font-size: 11px; font-weight: bold; color: #0000AA;}
+.pendinglink {font-size: 12px; font-weight: bold; color: #00AA00;}
+.pendinglink2 {font-size: 11px; font-weight: bold; color: #00AA00;}
+.deletedlink {font-size: 12px; font-weight: bold; color: #666666;}
+.deletedlink2 {font-size: 11px; font-weight: bold; color: #666666;}
+.inactive {color: #AAAAAA; text-decoration:none;}
+.date {color: #993300;}
+.redtext {color: #FF0000;}
+.sectionnavheader {font-size: 12px; font-weight: bold; color: #98B4D0; text-decoration: none;}
+.bulletL1 {font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; font-weight: bold; color: #000000;}
+.bulletL2 {font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; color: #000000;}
+.bulletL3 {font-family: arial, helvetica, verdana, sans-serif; font-size: 10px; color: #000000;}
+.yesnolink {font-size: 16px; font-weight: bold; color: #0000AA;}
+.newsheader {font-size: 12px; font-weight: bold; color: #FFFFFF;}
+.mainTitle {font-family: arial, helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #ff0000;}
+.mainSubtitle {font-family: arial, helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ff0000;}
+.caption {font-size: 11px; font-weight: bold; color: #6C4188;}
+.headerlinkon {font-family: helvetica, arial, verdana, sans-serif; font-weight: bold; font-size: 13px; color: #FFFFFF; text-decoration: none;}
+.headerlinkoffblue {font-family: helvetica, arial, verdana, sans-serif; font-weight: bold; font-size: 13px; color: #A0BAD8; text-decoration: none;}
+.headerlinkoffgrey {font-family: helvetica, arial, verdana, sans-serif; font-weight: bold; font-size: 13px; color: #8F8F8F; text-decoration: none;}
+.leftnavwhite {font-family: helvetica, arial, verdana, sans-serif; font-weight: bold; font-size: 13px; color: #FFFFFF; text-decoration: none;}
+.leftnavgrey {font-family: helvetica, arial, verdana, sans-serif; font-weight: bold; font-size: 11px; color: #636363; text-decoration: none;}
+.leftnavblack {font-family: helvetica, arial, verdana, sans-serif; font-weight: bold; font-size: 11px; color: #000000; text-decoration: none;}
+.charter {font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; text-decoration: none;}
+.charterlink {font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none;  color: Black;}
+.whiteheader {font-family: arial, helvetica, verdana, sans-serif; font-size: 13px; color: #FFFFFF;}
+.whitelink {font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; text-decoration: none;}
+.requiredtext{font-family: arial, helvetica, verdana, sans-serif; font-size: 14px; color: #AA0000;}
+.requiredsmallertext{font-family: arial, helvetica, verdana, sans-serif; font-size: 12px; color: #AA0000;}
+.peopleTitle {font-family: arial, helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #000000;}
+.peopleSubtitle {font-family: arial, helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #000000;}
+.peopleheader {font-weight: bold; font-style: italic; color: #114FAC; margin-top: 5px; margin-bottom: 5px;}
+.projectTitle {font-family: arial, helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #000000;}
+.projectSubtitle {font-family: arial, helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #000000;}
+.projectheader {font-weight: bold; font-style: italic; color: #114FAC; margin-top: 5px; margin-bottom: 5px;}
+.emaillink {color: #CD6700;}
+.errortext{font-family: arial, helvetica, verdana, sans-serif; font-size: 14px; color: #FF0000;}
+.footer {font-family: arial, helvetica, verdana, sans-serif; font-size: 10px; font-style: normal; line-height: 11px; font-weight: normal; color: #000000}

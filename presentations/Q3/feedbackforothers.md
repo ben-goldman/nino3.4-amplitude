@@ -1,0 +1,4 @@
+- Like how you explained why covid makes this more urgent
+- Briefly justify questions
+- What is collinearity
+- Make the application for question 1 in the conclusions more specific
