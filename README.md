@@ -10,7 +10,7 @@
 - Files with the `.bbl`, `.tex`, and `.out` files are used as support files, and they may be unreadable. 
 - `.pdf`, `.md`, and `.org` files can all be read online, in the browser window. 
 - Other files, like Microsoft Office documents (`.docx`, `.pptx`, `.xlsx`) will have to be downloaded following the instructions below. 
-- Finally, files with the extensions `.odt` and `.odp` can be opened in Word and PowerPoint, respectively
+- Finally, files with the extensions `.odt` and `.odp` can be opened in Word and PowerPoint, respectively.
 
 ## Option 1: Download entire repository to view in file explorer/finder.
 

@@ -1,5 +1,0 @@
-var asdate=new Date();var q='&tz='+asdate.getTimezoneOffset()/60 +'&ck='+(navigator.cookieEnabled?'Y':'N') +'&jv='+(navigator.javaEnabled()?'Y':'N') +'&scr='+screen.width+'x'+screen.height+'x'+screen.colorDepth +'&z='+Math.random() +'&x=0.0056941509246826';var c='';
-c+='<'+'a href="https://g.adspeed.net/ad.php?do=clk&aid=499966&zid=47245&t=1568982804&auth=42808c1612256de800f3e5cc92a466b6" target="_blank" ><'+'img style="border:0;max-width:100%;height:auto;" src="https://ss';
-c+='pcdn.blob.core.windows.net/files/Images/Ads/2019/Advertisers/Albion_300x600.jpg" width="300" height="600" /><'+'/a>';
-document.write(c);
-document.write('<div style="position:absolute;left:0px;top:0px;visibility:hidden;"><img src="https://g.adspeed.net/ad.php?do=imp&aid=499966&zid=47245&t=1568982804&auth=42808c1612256de800f3e5cc92a466b6&oid=2471&wd=-1&ht=-1&ref=https%3A%2F%2Fwww.sciencenews.org%2Ftopic%2Fclimate&uri=https%3A%2F%2Fwww.sciencenews.org%2Farticle%2Fworst-wildfires-can-send-smoke-high-enough-affect-ozone-layer" alt="i" width="1" height="1" /></div>');
