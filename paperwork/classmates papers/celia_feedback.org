@@ -1,8 +1,7 @@
 #+TITLE: Celia Paper Feedback
 #+DATE: 14 May 2021
-#+OPTIONS: toc:nil author:nil date:t num:nil
-#+ATTR_ASCII: width:500
-
+#+LATEX_CLASS: basic
+#+OPTIONS: toc:nil
 
 * Abstract
 - You might want to put everything in past tense or future tense, since the paper will be submitted after you have results
