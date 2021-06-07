@@ -1,0 +1,194 @@
+#+TITLE: The Impact of Anthropogenic Forcing on ENSO Amplitude
+
+#+latex_compiler: pdflatex
+#+startup: beamer
+#+LATEX_CLASS: beamer
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage[orientation=landscape,size=b1,scale=1.0, debug]{beamerposter}
+#+LATEX_HEADER: \renewcommand{\bibsection}{}
+#+LATEX_HEADER: \setbeamertemplate{caption}[numbered]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+Beamer_theme: Madrid
+#+OPTIONS: toc:nil, title:nil
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+
+* Board
+** margin :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.01
+:END:
+** Left Flap :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.24
+:END:
+
+*** Introduction
+**** What is El Niño/Southern Oscillation (ENSO)?
+- Drives extreme weather around the world
+- Oscillation between warm and cold temperature in the Pacific Ocean
+- Some events are more strong than others
+- Significant effect on people: 2015-2016 event
+- Major issue is prediction
+
+#+CAPTION: Changes to tropical Pacific climate during El Niño. https://www.esa.int/ESA_Multimedia/Images/2018/08/El_Nino
+[[./images/el_nino_reduced.jpg]]
+
+**** Long-Term vs Short-Term Chang
+- Long-term change: climate change/global warming
+  + Causes: greenhouse gasses, aerosols (smoke), land use, etc.
+- Short-term change: climate variability
+  + ENSO, seasons, AMO (Atlantic Multidecadal Oscillation), etc.
+
+#+CAPTION: Global average temperature changes since 1880. Red line: smoothed average, black line: unsmoothed average. https://data.giss.nasa.gov/gistemp/graphs_v4
+[[./images/climate_change.pdf]]
+
+**** Review of literature
+- citet:chen2017possible
+  + Past studies disagree about whether ENSO will strengthen or weaken.
+  + Simulation discrepancy caused by modeling of ENSO mechanics.
+- citet:maher2018enso
+  + Used a large dataset of climate predictions.
+  + ENSO may become stronger in the future.
+- citet:cai2018increased
+  + Found that models agree by using a more flexible way of defining ENSO events
+  + ENSO is strengthening because global warming is leading to higher stratification.
+
+**** Research Goals
+- Overall changes to ENSO amplitude
+  + Estimate future changes to ENSO amplitude using the CESM1 dataset.
+- Role of individual factors
+  + Compare contributions of greenhouse gasses, aerosols, land use, biomass burning, and ozone to ENSO intensity.
+- Changes to ocean structure
+  + Examine changes to correlation coefficient between ENSO intensity and ocean temperature for each simulation.
+
+**** Data: the CESM1 Large Ensemble
+- Explore hypothetical scenarios with a computer model citet:kay2015community.
+- Estimation of how the earth's climate actually works.
+- Experimental group: Receives input of rising greenhouse gas and/or aerosol levels.
+- Control group: Emissions fixed at levels before industrial revolution.
+
+** margin :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.01
+:END:
+** Center :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.48
+:END:
+
+*** Methods
+
+**** Left Center :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.48
+:END:
+
+***** Niño 3.4 Variance
+- How to calculate ENSO intensity in the model output?
+- Step 1: Calculate sea temperature in Niño 3.4 region (5°N - 5°S, 120°-170°W) of tropical Pacific Ocean.
+- Step 2: Convert temperature dataset to dataset representing change in temperature variation over time.
+- Calculate variance around one point, move point forward slightly, repeat.
+
+***** Butterfly Effect: The Need for a Large Ensemble
+- Butterfly effect: Small differences in initial conditions can become big differences in end result citep:lorenz1963deterministic.
+- Each simulation by itself is inaccurate.
+- Repeat simulation with slightly different initial conditions.
+- Due to larger sample size, noise can be filtered out by calculating the mean.
+
+#+CAPTION: Niño 3.4 20-year variance for individual members in full forcing ensemble.
+[[./images/variance_3.pdf]]
+
+***** Model Predictions: ENSO in the Future
+- Calculate mean and standard error of ENSO intensity in ensemble and control.
+- ENSO is predicted to intensify in the 21st century!
+- Statistically significant: exceeds 2 standard errors.
+- Decreasing variance after 2060: still under investigation.
+
+#+CAPTION: 20-year variance of Niño 3.4 index for fully-forced ensemble. Grey bar shows control mean and standard errors
+[[./images/variance_2.pdf]]
+
+**** margin :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.01
+:END:
+**** Right Center :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.48
+:END:
+
+***** Analysis of Individual Factors
+- Why is ENSO predicted to intensify? What human impacts play the largest role?
+  + Factors include: Greenhouse gasses, aerosols, natural factors.
+- Separate out individual influences in model output.
+- Single forcing ensembles: forced by all factors except for 1.
+- Subtract “all-but-one” ensembles from original “full-forcing” ensemble.
+- Resulting data represents influence of only one factor.
+
+***** Role of Greenhouse and Aerosol Emissions
+- Greenhouse gasses and aerosols contribute to increase in variance.
+- Aerosols and greenhouse gasses have same sign: disagree with previous studies citep:deser2020isolating.
+- Greenhouse gasses and aerosols are both human-produced.
+
+#+CAPTION: Influence of individual human factors. Yellow is greenhouse gasses, green is aerosols.
+[[./images/bootstrap_2.pdf]]
+
+***** Correlation With Changes in Ocean Temperature
+- Examine relationship between ocean temperature and ENSO intensity in each simulation.
+- Calculate correlation coefficient between ENSO intensity and ocean temperature.
+- Find correlation coefficient at each grid-point.
+
+***** Physical Mediator: Heating Difference
+- Strong negative correlation in fully forced ensemble below surface.
+- Positive correlation in greenhouse ensemble and weak/zero correlation in aerosols ensemble
+- Rising temperatures heat different layers of ocean at different rates, modifying heat transfer.
+
+#+CAPTION: Correlation between ENSO intensity and ocean temperature in 3 major ensembles
+[[./images/diff_tempdt.pdf]]
+
+** margin :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.01
+:END:
+** Right Flap :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.24
+:END:
+
+*** Conclusion and Discussion
+- Predicted increase in variance
+  + There is likely to be an increase in ENSO strength over the next 100 years. Agrees with citet:cai2018increased.
+- Greenhouse gasses and aerosols
+  + Increase is likely caused by the combined influence of greenhouse gasses and aerosols.
+- Heat transfer
+  + Global warming increases ENSO intensity by warming upper layers of the Pacific faster than central layers.
+- Notable disagreement
+  + Greenhouse gasses and aerosols both increase ENSO amplitude, in contrast to citet:deser2020isolating
+
+*** Applications, Next Steps, Limitations
+- Improve prediction ability to help people prepare for increased likelihood of extreme weather.
+- Reduce danger by switching to renewable energy.
+- Limitations:
+  + Only used one climate model.
+  + Niño 3.4 index may not be fully accurate for various models (Cai et. al. 2018).
+- Next steps:
+  + Work with other datasets, such as the new CESM2.
+  + Examine other variables to further analyze mediator process.
+
+*** Acknowledgements
+- This material is based upon work supported by the National Center for Atmospheric Research, which is a major facility sponsored by the National Science Foundation under Cooperative Agreement No. 1852977.
+- Thank you to my teacher, my family, and my mentor!
+- Role of mentor:
+  + Provide raw data from his facility
+  + Suggest methods and interpretations
+  + Provide feedback on results
+  + Make similar calculations to check student's results
+
+*** References
+bibliographystyle:apa
+\fontsize{7pt}{7.2}\selectfont
+bibliography:references.bib
+
+** margin :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.01
+:END:
