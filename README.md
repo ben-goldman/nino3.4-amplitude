@@ -4,9 +4,7 @@ Junior
 
 ## Science Research Portfolio
 
-# HOW TO USE:
-
-## Important note:
+### HOW TO USE:
 
 - There are certain files with the extensions `.org` and `.md`. These files are used to create the `.pdf` files that have the same file name. They will have the same content but slightly different formatting compared to their `.pdf` files. They will also open more easily online and are much smaller in size. If you see a `.org` file with the same name as another file, it is usually easier to view the `.org` because it will not have to be downloaded.
 - Files with the `.bbl` and `.out` files are used as support files, and they may be unreadable.
@@ -14,11 +12,7 @@ Junior
 - Other files, like Microsoft Office documents (`.docx`, `.pptx`, `.xlsx`) will have to be downloaded following the instructions below. 
 - Finally, files with the extensions `.odt` and `.odp` can be opened in Word and PowerPoint, respectively.
 
-## Option 1: Download entire repository to view in file explorer/finder.
-
-![How To Download](readme_imgs/download.png)
-
-## Option 2: Navigate repository on website and download files individually as needed.
+Navigate repository on website and download files individually as needed.
 
 - Navigate by clicking on folder links at top
 - Certain files cannot be viewed online, click "View Raw" to download and open offline.
