@@ -26,9 +26,6 @@ Navigate repository on website and download files individually as needed.
 # Files List
 
 ``` text
-
-
-.
 ├── articles
 │  ├── An2017Feedback.pdf
 │  ├── Bjerknes1969Atmospheric.pdf
