@@ -14,6 +14,8 @@ Junior
 
 #### Generally, most of my products are in `.pdf` form.
 
+#### Files named `readme.md`, `readme.org` are summary/explanation for certain folders, or they contain an online-viewable copy of that folder's content.
+
 Navigate repository on website and download files individually as needed.
 
 - Navigate by clicking on folder links at top
