@@ -1,6 +1,8 @@
 #+TITLE: Hours
 
-These files contain my hours record. The ~.csv~ files can be read online, but you must download the excel file.
+These files contain my hours record. The ~.csv~ files can be read online, but you must download the excel file to read it. They all contain the same data.
+
+
 |       Date | Time Started | Time Ended | Total Time | Activity                                                                                       |
 | 2020-09-16 | 8:20 AM      | 8:50 AM    |       0:30 | How to use google assignment                                                                   |
 | 2020-09-16 | 12:30 PM     | 1:10 PM    |       0:40 | met with ms. Fleming, made new biweekly list, watched student article presentations            |
