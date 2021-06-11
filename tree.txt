@@ -1,31 +1,3 @@
-# Benjamin Goldman
-
-Junior
-
-## Science Research Portfolio
-
-### HOW TO USE:
-
-- There are certain files with the extensions `.org` and `.md`. These files are used to create the `.pdf` files that have the same file name. They will have the same content but slightly different formatting compared to their `.pdf` files. They will also open more easily online and are much smaller in size. If you see a `.org` file with the same name as another file, it is usually easier to view the `.org` because it will not have to be downloaded.
-- Files with the `.bbl` and `.out` files are used as support files, and they may be unreadable.
-- `.pdf`, `.md`, and `.org` files can all be read online, in the browser window. 
-- Other files, like Microsoft Office documents (`.docx`, `.pptx`, `.xlsx`) will have to be downloaded following the instructions below. 
-- Finally, files with the extensions `.odt` and `.odp` can be opened in Word and PowerPoint, respectively.
-
-#### Generally, most of my products are in `.pdf` form.
-
-#### Files named `readme.md`, `readme.org` are summary/explanation for certain folders, or they contain an online-viewable copy of that folder's content.
-
-Navigate repository on website and download files individually as needed.
-
-- Navigate by clicking on folder links at top
-- Certain files cannot be viewed online, click "View Raw" to download and open offline.
-
-![How To Open Individual Files](readme_imgs/viewraw.png)
-
-``` text
-
-
 .
 ├── articles
 │  ├── An2017Feedback.pdf
@@ -789,6 +761,3 @@ Navigate repository on website and download files individually as needed.
 │  ├── Order Receipt.pdf
 │  └── UALTRUCR.pdf
 └── tree.txt
-
-
-```
