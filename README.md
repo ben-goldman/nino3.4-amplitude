@@ -12,6 +12,8 @@ Junior
 - Other files, like Microsoft Office documents (`.docx`, `.pptx`, `.xlsx`) will have to be downloaded following the instructions below. 
 - Finally, files with the extensions `.odt` and `.odp` can be opened in Word and PowerPoint, respectively.
 
+#### Generally, most of my products are in `.pdf` form.
+
 Navigate repository on website and download files individually as needed.
 
 - Navigate by clicking on folder links at top

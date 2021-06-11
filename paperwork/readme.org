@@ -1,0 +1,3 @@
+#+TITLE: Paperwork/Writing
+
+Main paper is saved under =papernew.pdf= under the =paperAndRefsList= folder. =abstract= contains my current abstract, and =abstract_old= has an outdated copy. My main research plan is under =ResearchPlan2= as =plan.pdf=.
