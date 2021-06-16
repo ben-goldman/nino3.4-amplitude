@@ -1,0 +1,781 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{bjerknes1969atmospheric}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=33a6e1b962c204c8c72bb6a22f5a942b}{%
+           family={Bjerknes},
+           familyi={B\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{33a6e1b962c204c8c72bb6a22f5a942b}
+      \strng{fullhash}{33a6e1b962c204c8c72bb6a22f5a942b}
+      \strng{bibnamehash}{33a6e1b962c204c8c72bb6a22f5a942b}
+      \strng{authorbibnamehash}{33a6e1b962c204c8c72bb6a22f5a942b}
+      \strng{authornamehash}{33a6e1b962c204c8c72bb6a22f5a942b}
+      \strng{authorfullhash}{33a6e1b962c204c8c72bb6a22f5a942b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mon. Wea. Rev}
+      \field{number}{3}
+      \field{title}{Atmospheric teleconnections from the equatorial Pacific}
+      \field{volume}{97}
+      \field{year}{1969}
+      \field{pages}{163\bibrangedash 172}
+      \range{pages}{10}
+    \endentry
+    \entry{ropelewski1987global}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=70e18d0af5290455f409a4b277dcff47}{%
+           family={Ropelewski},
+           familyi={R\bibinitperiod},
+           given={Chester\bibnamedelima F},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=91a795a1ea35a3fddbc8842b355d257e}{%
+           family={Halpert},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4413dac2720c3d32d424f3c2070ff062}
+      \strng{fullhash}{4413dac2720c3d32d424f3c2070ff062}
+      \strng{bibnamehash}{4413dac2720c3d32d424f3c2070ff062}
+      \strng{authorbibnamehash}{4413dac2720c3d32d424f3c2070ff062}
+      \strng{authornamehash}{4413dac2720c3d32d424f3c2070ff062}
+      \strng{authorfullhash}{4413dac2720c3d32d424f3c2070ff062}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly weather review}
+      \field{number}{8}
+      \field{title}{Global and regional scale precipitation patterns associated with the El Ni{ñ}o/Southern Oscillation}
+      \field{volume}{115}
+      \field{year}{1987}
+      \field{pages}{1606\bibrangedash 1626}
+      \range{pages}{21}
+    \endentry
+    \entry{boer2000transient}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=efabeab5e3cac2cab52add439ce35e36}{%
+           family={Boer},
+           familyi={B\bibinitperiod},
+           given={GJ},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=82d791f09e41cf6e72f3eb1afb0ba923}{%
+           family={Flato},
+           familyi={F\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d3d172fe6ac4b751cfa47305bfe78adf}{%
+           family={Ramsden},
+           familyi={R\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{67fb031014c345d7000e881e1f5f3be0}
+      \strng{fullhash}{b025cd87f90ac00f9bff3ffee681b572}
+      \strng{bibnamehash}{b025cd87f90ac00f9bff3ffee681b572}
+      \strng{authorbibnamehash}{b025cd87f90ac00f9bff3ffee681b572}
+      \strng{authornamehash}{67fb031014c345d7000e881e1f5f3be0}
+      \strng{authorfullhash}{b025cd87f90ac00f9bff3ffee681b572}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Climate dynamics}
+      \field{number}{6}
+      \field{title}{A transient climate change simulation with greenhouse gas and aerosol forcing: projected climate to the twenty-first century}
+      \field{volume}{16}
+      \field{year}{2000}
+      \field{pages}{427\bibrangedash 450}
+      \range{pages}{24}
+    \endentry
+    \entry{stevenson2012significant}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=2,uniquepart=given,hash=9cbb8a8c3072e8531ad3d6a724ab6d4a}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={SL},
+           giveni={S\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{9cbb8a8c3072e8531ad3d6a724ab6d4a}
+      \strng{fullhash}{9cbb8a8c3072e8531ad3d6a724ab6d4a}
+      \strng{bibnamehash}{9cbb8a8c3072e8531ad3d6a724ab6d4a}
+      \strng{authorbibnamehash}{9cbb8a8c3072e8531ad3d6a724ab6d4a}
+      \strng{authornamehash}{9cbb8a8c3072e8531ad3d6a724ab6d4a}
+      \strng{authorfullhash}{9cbb8a8c3072e8531ad3d6a724ab6d4a}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{number}{17}
+      \field{title}{Significant changes to ENSO strength and impacts in the twenty-first century: Results from CMIP5}
+      \field{volume}{39}
+      \field{year}{2012}
+    \endentry
+    \entry{dewitte2013reinterpreting}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=523d192e25debbb254d8e8c50be61308}{%
+           family={Dewitte},
+           familyi={D\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=24b960441c8f1e038ce33c2a5bd01f59}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Sang-Wook},
+           giveni={S\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=823610d7d30897fb6067cc6ef72505bd}{%
+           family={Thual},
+           familyi={T\bibinitperiod},
+           given={Sulian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{dd5c9c45b0368c718521b7d62e7a8f13}
+      \strng{fullhash}{356cb1d70480d996543c903b270026f2}
+      \strng{bibnamehash}{356cb1d70480d996543c903b270026f2}
+      \strng{authorbibnamehash}{356cb1d70480d996543c903b270026f2}
+      \strng{authornamehash}{dd5c9c45b0368c718521b7d62e7a8f13}
+      \strng{authorfullhash}{356cb1d70480d996543c903b270026f2}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Climate dynamics}
+      \field{number}{3-4}
+      \field{title}{Reinterpreting the thermocline feedback in the western-central equatorial Pacific and its relationship with the ENSO modulation}
+      \field{volume}{41}
+      \field{year}{2013}
+      \field{pages}{819\bibrangedash 830}
+      \range{pages}{12}
+    \endentry
+    \entry{phillips2014evaluating}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=1,uniquepart=given,hash=95838a8d3690205952cf7c7906a5f83d}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={Adam\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=0,uniquepart=base,hash=04321fd7b9dfa8410d5322188b17777f}{%
+           family={Deser},
+           familyi={D\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bf09e5a54ca194275adf8d3ce09fbe1a}{%
+           family={Fasullo},
+           familyi={F\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{1cdaf7e0ba2fe340c88a808769df6efb}
+      \strng{fullhash}{cb9e48b14cd0dd59c0462a3d163fb0e5}
+      \strng{bibnamehash}{cb9e48b14cd0dd59c0462a3d163fb0e5}
+      \strng{authorbibnamehash}{cb9e48b14cd0dd59c0462a3d163fb0e5}
+      \strng{authornamehash}{1cdaf7e0ba2fe340c88a808769df6efb}
+      \strng{authorfullhash}{cb9e48b14cd0dd59c0462a3d163fb0e5}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Eos, Transactions American Geophysical Union}
+      \field{number}{49}
+      \field{title}{A New Tool for Evaluating modes of variability in climate models}
+      \field{volume}{95}
+      \field{year}{2014}
+      \field{pages}{453\bibrangedash 455}
+      \range{pages}{3}
+    \endentry
+    \entry{kay2015community}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{uniquename=0,uniquepart=base,hash=960e451578f3090f1e52b745e767d4f6}{%
+           family={Kay},
+           familyi={K\bibinitperiod},
+           given={Jennifer\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=04321fd7b9dfa8410d5322188b17777f}{%
+           family={Deser},
+           familyi={D\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=1,uniquepart=given,hash=7d4a4822d5c0cd6f5c2de9533cb33793}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=0,uniquepart=base,hash=967614504bc044b08234546415f7c3cb}{%
+           family={Mai},
+           familyi={M\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8947de746f09847bf2963af21599ade5}{%
+           family={Hannay},
+           familyi={H\bibinitperiod},
+           given={Cecile},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6bb0d2ac5fef16ece2eb7edfcdff4382}{%
+           family={Strand},
+           familyi={S\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1b305242d2724d83845ea67a4cae0df2}{%
+           family={Arblaster},
+           familyi={A\bibinitperiod},
+           given={Julie\bibnamedelima Michelle},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5f5325a3e71a781c1b4f9c6bbe7db7c2}{%
+           family={Bates},
+           familyi={B\bibinitperiod},
+           given={SC},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e5ea58590d8cc1d1f6421e52de39fa87}{%
+           family={Danabasoglu},
+           familyi={D\bibinitperiod},
+           given={Gokhan},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6bebc0665eff062a335f6c2ada44f710}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{befb931f13637d4b4dab4919c0794759}
+      \strng{fullhash}{77edff4cc38644813aeffaf067e28c37}
+      \strng{bibnamehash}{5a96c208345298aa4f6d0372f6bbe6ca}
+      \strng{authorbibnamehash}{5a96c208345298aa4f6d0372f6bbe6ca}
+      \strng{authornamehash}{befb931f13637d4b4dab4919c0794759}
+      \strng{authorfullhash}{77edff4cc38644813aeffaf067e28c37}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the American Meteorological Society}
+      \field{number}{8}
+      \field{title}{The Community Earth System Model (CESM) large ensemble project: A community resource for studying climate change in the presence of internal climate variability}
+      \field{volume}{96}
+      \field{year}{2015}
+      \field{pages}{1333\bibrangedash 1349}
+      \range{pages}{17}
+    \endentry
+    \entry{jimenez2016record}{article}{}
+      \name{author}{8}{}{%
+        {{uniquename=0,uniquepart=base,hash=59690ec8acee5fec461cc7c8fb96db63}{%
+           family={Jim{é}nez-Mu{ñ}oz},
+           familyi={J\bibinithyphendelim M\bibinitperiod},
+           given={Juan\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2e55b5e84a9deeb1707a557e72d01289}{%
+           family={Mattar},
+           familyi={M\bibinitperiod},
+           given={Cristian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9f2b299173bf2d454fa69ab9300b54f2}{%
+           family={Barichivich},
+           familyi={B\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c4a0fa99650edeaa747e0c52d9c21de6}{%
+           family={Santamar{ı́}a-Artigas},
+           familyi={S\bibinithyphendelim A\bibinitperiod},
+           given={Andr{é}s},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=85579b0e24dcb169c87b62b6813836da}{%
+           family={Takahashi},
+           familyi={T\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=28fa4f6dd42b76f92c7bdb39c1dca545}{%
+           family={Malhi},
+           familyi={M\bibinitperiod},
+           given={Yadvinder},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ec51c4226a7e6d04999936dfa15ddcd2}{%
+           family={Sobrino},
+           familyi={S\bibinitperiod},
+           given={Jos{é}\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f676fe04a07dce720a2de0edf5e2edf6}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Schrier},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Gerard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{2835d63f1cfed3ba3e0691f07814b698}
+      \strng{fullhash}{3df0c652a9bbbc9452bb5a8e9aa665e5}
+      \strng{bibnamehash}{a18c02e074432cd200459d17ec6752d5}
+      \strng{authorbibnamehash}{a18c02e074432cd200459d17ec6752d5}
+      \strng{authornamehash}{2835d63f1cfed3ba3e0691f07814b698}
+      \strng{authorfullhash}{3df0c652a9bbbc9452bb5a8e9aa665e5}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific reports}
+      \field{title}{Record-breaking warming and extreme drought in the Amazon rainforest during the course of El Ni{ñ}o 2015--2016}
+      \field{volume}{6}
+      \field{year}{2016}
+      \field{pages}{33130}
+      \range{pages}{1}
+    \endentry
+    \entry{levine2017impact}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=6567392eda38e57f0dd9e9165b16913b}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Aaron\bibnamedelima FZ},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=291118fb32e877fd85f9f72d3720d228}{%
+           family={McPhaden},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8bb1cd4c2af4f4174dbbf2096f725dae}{%
+           family={Frierson},
+           familyi={F\bibinitperiod},
+           given={Dargan\bibnamedelima MW},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{a932345a764803118254bdd2555b9774}
+      \strng{fullhash}{a1e9b610fb84e7fa9ec234e9b74609d4}
+      \strng{bibnamehash}{a1e9b610fb84e7fa9ec234e9b74609d4}
+      \strng{authorbibnamehash}{a1e9b610fb84e7fa9ec234e9b74609d4}
+      \strng{authornamehash}{a932345a764803118254bdd2555b9774}
+      \strng{authorfullhash}{a1e9b610fb84e7fa9ec234e9b74609d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{number}{8}
+      \field{title}{The impact of the AMO on multidecadal ENSO variability}
+      \field{volume}{44}
+      \field{year}{2017}
+      \field{pages}{3877\bibrangedash 3886}
+      \range{pages}{10}
+    \endentry
+    \entry{nowack2017role}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=46a878669ce49804041d9d5180b9b2ad}{%
+           family={Nowack},
+           familyi={N\bibinitperiod},
+           given={Peer\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=291b15516adb2b380ae7afb69034c499}{%
+           family={Braesicke},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=90c1a8294c828c09f16bbbe7a6210541}{%
+           family={Luke\bibnamedelima Abraham},
+           familyi={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dd434fdbfa4c6ac291315628106fd88a}{%
+           family={Pyle},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{afe78d2f5679c7d0d4c8bd876297a71b}
+      \strng{fullhash}{9997eb09bae7152c1e2549d5482f614d}
+      \strng{bibnamehash}{9997eb09bae7152c1e2549d5482f614d}
+      \strng{authorbibnamehash}{9997eb09bae7152c1e2549d5482f614d}
+      \strng{authornamehash}{afe78d2f5679c7d0d4c8bd876297a71b}
+      \strng{authorfullhash}{9997eb09bae7152c1e2549d5482f614d}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical research letters}
+      \field{number}{8}
+      \field{title}{On the role of ozone feedback in the ENSO amplitude response under global warming}
+      \field{volume}{44}
+      \field{year}{2017}
+      \field{pages}{3858\bibrangedash 3866}
+      \range{pages}{9}
+    \endentry
+    \entry{kohyama2018weakening}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=b86258f4949f439e28ce612773f3ae4a}{%
+           family={Kohyama},
+           familyi={K\bibinitperiod},
+           given={Tsubasa},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0152855352d84ff5ef6a219726e215c3}{%
+           family={Hartmann},
+           familyi={H\bibinitperiod},
+           given={Dennis\bibnamedelima L},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=772565e37ff7f34c43192e35f0a3e01e}{%
+           family={Battisti},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima S},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{d162c4bdd51179887949e6fc327007c7}
+      \strng{fullhash}{c0ed32f15ca2ef6d0b22aece56d92239}
+      \strng{bibnamehash}{c0ed32f15ca2ef6d0b22aece56d92239}
+      \strng{authorbibnamehash}{c0ed32f15ca2ef6d0b22aece56d92239}
+      \strng{authornamehash}{d162c4bdd51179887949e6fc327007c7}
+      \strng{authorfullhash}{c0ed32f15ca2ef6d0b22aece56d92239}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{number}{16}
+      \field{title}{Weakening of nonlinear ENSO under global warming}
+      \field{volume}{45}
+      \field{year}{2018}
+      \field{pages}{8557\bibrangedash 8567}
+      \range{pages}{11}
+    \endentry
+    \entry{maher2018enso}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=2f888b139efba55972b6ff71d6a006de}{%
+           family={Maher},
+           familyi={M\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3f416aae785626ca85a5288c3c61998f}{%
+           family={Matei},
+           familyi={M\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cde2af9c38c9154d7a32c6fcd5d98b93}{%
+           family={Milinski},
+           familyi={M\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=51e5f562dbdcaaeb4d96617f7dd28105}{%
+           family={Marotzke},
+           familyi={M\bibinitperiod},
+           given={Jochem},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{57a108d556fe17a7617bfe43a7c61603}
+      \strng{fullhash}{9dd789e3000fe789608816e907d88e35}
+      \strng{bibnamehash}{9dd789e3000fe789608816e907d88e35}
+      \strng{authorbibnamehash}{9dd789e3000fe789608816e907d88e35}
+      \strng{authornamehash}{57a108d556fe17a7617bfe43a7c61603}
+      \strng{authorfullhash}{9dd789e3000fe789608816e907d88e35}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{number}{20}
+      \field{title}{ENSO change in climate projections: Forced response or internal variability?}
+      \field{volume}{45}
+      \field{year}{2018}
+      \field{pages}{11\bibrangedash 390}
+      \range{pages}{380}
+    \endentry
+    \entry{zheng2018response}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=c41174b7d7c22fe2364f189e6bef140f}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Xiao-Tong},
+           giveni={X\bibinithyphendelim T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c086d0942eb29528a0eda576dd14c5dd}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Chang},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=24b960441c8f1e038ce33c2a5bd01f59}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Sang-Wook},
+           giveni={S\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a74b22f356b9579c5e79645c8d8de69e}
+      \strng{fullhash}{5d46e534628d5cc0ea3c26f1a2204ca1}
+      \strng{bibnamehash}{5d46e534628d5cc0ea3c26f1a2204ca1}
+      \strng{authorbibnamehash}{5d46e534628d5cc0ea3c26f1a2204ca1}
+      \strng{authornamehash}{a74b22f356b9579c5e79645c8d8de69e}
+      \strng{authorfullhash}{5d46e534628d5cc0ea3c26f1a2204ca1}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Climate Dynamics}
+      \field{number}{11-12}
+      \field{title}{Response of ENSO amplitude to global warming in CESM large ensemble: uncertainty due to internal variability}
+      \field{volume}{50}
+      \field{year}{2018}
+      \field{pages}{4019\bibrangedash 4035}
+      \range{pages}{17}
+    \endentry
+    \entry{stevenson2019forced}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=2,uniquepart=given,hash=d5c9d6c4f7be13191186ec5d12fb1b64}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={Samantha},
+           giveni={S\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=6c3fbc0f10b3261993ff51a8f15f3722}{%
+           family={Capotondi},
+           familyi={C\bibinitperiod},
+           given={Antonietta},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bf09e5a54ca194275adf8d3ce09fbe1a}{%
+           family={Fasullo},
+           familyi={F\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=81691d28c8850f4c577919fec15de7ff}{%
+           family={Otto-Bliesner},
+           familyi={O\bibinithyphendelim B\bibinitperiod},
+           given={Bette},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{dbf369e789563a8de37592fb394924f9}
+      \strng{fullhash}{060e964c839308af652b2be47e6d293f}
+      \strng{bibnamehash}{060e964c839308af652b2be47e6d293f}
+      \strng{authorbibnamehash}{060e964c839308af652b2be47e6d293f}
+      \strng{authornamehash}{dbf369e789563a8de37592fb394924f9}
+      \strng{authorfullhash}{060e964c839308af652b2be47e6d293f}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Climate Dynamics}
+      \field{number}{12}
+      \field{title}{Forced changes to twentieth century ENSO diversity in a last Millennium context}
+      \field{volume}{52}
+      \field{year}{2019}
+      \field{pages}{7359\bibrangedash 7374}
+      \range{pages}{16}
+    \endentry
+    \entry{deser2020isolating}{article}{}
+      \name{author}{9}{}{%
+        {{uniquename=0,uniquepart=base,hash=04321fd7b9dfa8410d5322188b17777f}{%
+           family={Deser},
+           familyi={D\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=95838a8d3690205952cf7c7906a5f83d}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={Adam\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=97ae923eda96bbde9afa12100236cb6a}{%
+           family={Simpson},
+           familyi={S\bibinitperiod},
+           given={Isla\bibnamedelima R},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ac5217fd6cf6acb9a3c4baca2fee962f}{%
+           family={Rosenbloom},
+           familyi={R\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cb816f39fda291abdde0d9f1eddcb9ba}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Dani},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2e155aeca8fe6b2667943ac7bdd13e1f}{%
+           family={Lehner},
+           familyi={L\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=15647a98ab75fa186c2c615e95a08b8c}{%
+           family={Pendergrass},
+           familyi={P\bibinitperiod},
+           given={Angeline\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ce5c0ad7e6c56fd7f8870f206a50f535}{%
+           family={DiNezio},
+           familyi={D\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d5c9d6c4f7be13191186ec5d12fb1b64}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={Samantha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eb4eabf6a0832fa4aee530ecbe6ef808}
+      \strng{fullhash}{85f4a4f57f80051de6578ed481ccbab8}
+      \strng{bibnamehash}{d547ff0fecf4acd9f6e5595f0dad9c35}
+      \strng{authorbibnamehash}{d547ff0fecf4acd9f6e5595f0dad9c35}
+      \strng{authornamehash}{eb4eabf6a0832fa4aee530ecbe6ef808}
+      \strng{authorfullhash}{85f4a4f57f80051de6578ed481ccbab8}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Climate}
+      \field{number}{18}
+      \field{title}{Isolating the evolving contributions of anthropogenic aerosols and greenhouse gases: a new CESM1 large ensemble community resource}
+      \field{volume}{33}
+      \field{year}{2020}
+      \field{pages}{7835\bibrangedash 7858}
+      \range{pages}{24}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
