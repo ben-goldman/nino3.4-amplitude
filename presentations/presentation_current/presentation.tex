@@ -1,4 +1,4 @@
-% Created 2021-06-16 Wed 08:12
+% Created 2021-06-18 Fri 09:11
 % Intended LaTeX compiler: pdflatex
 \documentclass[presentation]{beamer}
 \usepackage[utf8]{inputenc}
@@ -16,6 +16,7 @@
 \usepackage{hyperref}
 \usepackage{natbib}
 \renewcommand{\bibsection}{}
+\DeclareUnicodeCharacter{0303}{\~{n}}
 \usetheme{metropolis}
 \author{Benjamin Goldman}
 \date{\today}
@@ -31,7 +32,7 @@
 
 \maketitle
 
-\begin{frame}[label={sec:orgb1df2b4}]{What is El Niño/Southern Oscillation (ENSO)?}
+\begin{frame}[label={sec:org8153378}]{What is El Niño/Southern Oscillation (ENSO)?}
 \begin{columns}
 \begin{column}{0.6\columnwidth}
 \begin{itemize}
@@ -53,7 +54,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orga0cf916}]{Long-Term vs Short-Term Change}
+\begin{frame}[label={sec:org30dba5e}]{Long-Term vs Short-Term Change}
 \begin{columns}
 \begin{column}{0.4\columnwidth}
 \begin{itemize}
@@ -78,7 +79,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org8f2e28a}]{Review of literature}
+\begin{frame}[label={sec:orge54f468}]{Review of literature}
 \begin{itemize}
 \item \citet{chen2017possible}
 \begin{itemize}
@@ -98,7 +99,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org26b0634}]{Research Goals}
+\begin{frame}[label={sec:org85f5f49}]{Research Goals}
 \begin{itemize}
 \item Overall changes to ENSO amplitude
 \begin{itemize}
@@ -115,16 +116,16 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org389fba7}]{Data: the CESM1 Large Ensemble}
+\begin{frame}[label={sec:org6749e99}]{Data: the CESM1 Large Ensemble}
 \begin{itemize}
-\item Explore hypothetical scenarios with a computer model \citet{kay2015community}.
+\item Explore hypothetical scenarios with a computer model \citep{kay2015community}.
 \item Estimation of how the earth's climate actually works.
 \item Experimental group: Receives input of rising greenhouse gas and/or aerosol levels.
 \item Control group: Emissions fixed at levels before industrial revolution.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org80dd814}]{Niño 3.4 Variance}
+\begin{frame}[label={sec:org650aae3}]{Niño 3.4 Variance}
 \begin{columns}
 \begin{column}{0.6\columnwidth}
 \begin{itemize}
@@ -145,7 +146,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org8592647}]{Butterfly Effect: The Need for a Large Ensemble}
+\begin{frame}[label={sec:orgdfcbcd5}]{Butterfly Effect: The Need for a Large Ensemble}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \begin{itemize}
@@ -166,7 +167,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgf5c3604}]{Model Predictions: ENSO in the Future}
+\begin{frame}[label={sec:org7d549e7}]{Model Predictions: ENSO in the Future}
 \begin{columns}
 \begin{column}{.5\columnwidth}
 \begin{itemize}
@@ -187,7 +188,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org9a47952}]{Analysis of Individual Factors}
+\begin{frame}[label={sec:org3a535ea}]{Analysis of Individual Factors}
 \begin{itemize}
 \item Why is ENSO predicted to intensify? What human impacts play the largest role?
 \begin{itemize}
@@ -200,7 +201,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org0a966de}]{Role of Greenhouse and Aerosol Emissions}
+\begin{frame}[label={sec:org87d91c6}]{Role of Greenhouse and Aerosol Emissions}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \begin{itemize}
@@ -220,7 +221,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org288c45c}]{Correlation With Changes in Ocean Temperature}
+\begin{frame}[label={sec:org1369c26}]{Correlation With Changes in Ocean Temperature}
 \begin{itemize}
 \item Examine relationship between ocean temperature and ENSO intensity in each simulation.
 \item Calculate correlation coefficient between ENSO intensity and ocean temperature.
@@ -228,7 +229,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org8bce193}]{Physical Mediator: Heating Difference}
+\begin{frame}[label={sec:org10d0dfb}]{Physical Mediator: Heating Difference}
 \begin{columns}
 \begin{column}{.62\columnwidth}
 \begin{itemize}
@@ -248,7 +249,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orge890f4d}]{Conclusion and Discussion}
+\begin{frame}[label={sec:orga972c2c}]{Conclusion and Discussion}
 \begin{itemize}
 \item Predicted increase in variance
 \begin{itemize}
@@ -269,7 +270,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orge9c36c0}]{Applications, Next Steps, Limitations}
+\begin{frame}[label={sec:orgb31e23e}]{Applications, Next Steps, Limitations}
 \begin{itemize}
 \item Improve prediction ability to help people prepare for increased likelihood of extreme weather.
 \item Reduce danger by switching to renewable energy.
@@ -286,7 +287,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org4cda3b8}]{Acknowledgements}
+\begin{frame}[label={sec:org35dd772}]{Acknowledgements}
 \begin{itemize}
 \item This material is based upon work supported by the National Center for Atmospheric Research, which is a major facility sponsored by the National Science Foundation under Cooperative Agreement No. 1852977.
 \item Thank you to my teacher, my family, and my mentor!
@@ -300,8 +301,8 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org3d198c1}]{References}
-\bibliographystyle{apa}
+\begin{frame}[label={sec:org98d3ee4}]{References}
+\bibliographystyle{apalike}
 \fontsize{7pt}{7.2}\selectfont
 \bibliography{references}
 \end{frame}

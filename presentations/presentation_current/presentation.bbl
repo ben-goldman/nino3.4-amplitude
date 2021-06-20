@@ -1,26 +1,26 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\astroncite{Cai et~al.}{2018}]{cai2018increased}
+\bibitem[Cai et~al., 2018]{cai2018increased}
 Cai, W., Wang, G., Dewitte, B., Wu, L., Santoso, A., Takahashi, K., Yang, Y.,
   Carr{\'e}ric, A., and McPhaden, M.~J. (2018).
 \newblock Increased variability of eastern pacific el ni{\~n}o under greenhouse
   warming.
 \newblock {\em Nature}, 564(7735):201--206.
 
-\bibitem[\protect\astroncite{Chen et~al.}{2017}]{chen2017possible}
+\bibitem[Chen et~al., 2017]{chen2017possible}
 Chen, L., Li, T., Yu, Y., and Behera, S.~K. (2017).
 \newblock A possible explanation for the divergent projection of enso amplitude
   change under global warming.
 \newblock {\em Climate Dynamics}, 49(11-12):3799--3811.
 
-\bibitem[\protect\astroncite{Deser et~al.}{2020}]{deser2020isolating}
+\bibitem[Deser et~al., 2020]{deser2020isolating}
 Deser, C., Phillips, A.~S., Simpson, I.~R., Rosenbloom, N., Coleman, D.,
   Lehner, F., Pendergrass, A.~G., DiNezio, P., and Stevenson, S. (2020).
 \newblock Isolating the evolving contributions of anthropogenic aerosols and
   greenhouse gases: a new cesm1 large ensemble community resource.
 \newblock {\em Journal of Climate}, 33(18):7835--7858.
 
-\bibitem[\protect\astroncite{Kay et~al.}{2015}]{kay2015community}
+\bibitem[Kay et~al., 2015]{kay2015community}
 Kay, J.~E., Deser, C., Phillips, A., Mai, A., Hannay, C., Strand, G.,
   Arblaster, J.~M., Bates, S., Danabasoglu, G., Edwards, J., et~al. (2015).
 \newblock The community earth system model (cesm) large ensemble project: A
@@ -29,12 +29,12 @@ Kay, J.~E., Deser, C., Phillips, A., Mai, A., Hannay, C., Strand, G.,
 \newblock {\em Bulletin of the American Meteorological Society},
   96(8):1333--1349.
 
-\bibitem[\protect\astroncite{Lorenz}{1963}]{lorenz1963deterministic}
+\bibitem[Lorenz, 1963]{lorenz1963deterministic}
 Lorenz, E.~N. (1963).
 \newblock Deterministic nonperiodic flow.
 \newblock {\em Journal of the atmospheric sciences}, 20(2):130--141.
 
-\bibitem[\protect\astroncite{Maher et~al.}{2018}]{maher2018enso}
+\bibitem[Maher et~al., 2018]{maher2018enso}
 Maher, N., Matei, D., Milinski, S., and Marotzke, J. (2018).
 \newblock Enso change in climate projections: Forced response or internal
   variability?

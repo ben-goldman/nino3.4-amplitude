@@ -1,31 +1,30 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\astroncite{Bjerknes}{1969}]{bjerknes1969atmospheric}
+\bibitem[Bjerknes, 1969]{bjerknes1969atmospheric}
 Bjerknes, J. (1969).
 \newblock Atmospheric teleconnections from the equatorial pacific.
 \newblock {\em Mon. Wea. Rev}, 97(3):163--172.
 
-\bibitem[\protect\astroncite{Boer et~al.}{2000}]{boer2000transient}
+\bibitem[Boer et~al., 2000]{boer2000transient}
 Boer, G., Flato, G., and Ramsden, D. (2000).
 \newblock A transient climate change simulation with greenhouse gas and aerosol
   forcing: projected climate to the twenty-first century.
 \newblock {\em Climate dynamics}, 16(6):427--450.
 
-\bibitem[\protect\astroncite{Deser et~al.}{2020}]{deser2020isolating}
+\bibitem[Deser et~al., 2020]{deser2020isolating}
 Deser, C., Phillips, A.~S., Simpson, I.~R., Rosenbloom, N., Coleman, D.,
   Lehner, F., Pendergrass, A.~G., DiNezio, P., and Stevenson, S. (2020).
 \newblock Isolating the evolving contributions of anthropogenic aerosols and
   greenhouse gases: a new cesm1 large ensemble community resource.
 \newblock {\em Journal of Climate}, 33(18):7835--7858.
 
-\bibitem[\protect\astroncite{Dewitte et~al.}{2013}]{dewitte2013reinterpreting}
+\bibitem[Dewitte et~al., 2013]{dewitte2013reinterpreting}
 Dewitte, B., Yeh, S.-W., and Thual, S. (2013).
 \newblock Reinterpreting the thermocline feedback in the western-central
   equatorial pacific and its relationship with the enso modulation.
 \newblock {\em Climate dynamics}, 41(3-4):819--830.
 
-\bibitem[\protect\astroncite{Jim{\'e}nez-Mu{\~n}oz
-  et~al.}{2016}]{jimenez2016record}
+\bibitem[Jim{\'e}nez-Mu{\~n}oz et~al., 2016]{jimenez2016record}
 Jim{\'e}nez-Mu{\~n}oz, J.~C., Mattar, C., Barichivich, J.,
   Santamar{\'\i}a-Artigas, A., Takahashi, K., Malhi, Y., Sobrino, J.~A., and
   Van Der~Schrier, G. (2016).
@@ -33,7 +32,7 @@ Jim{\'e}nez-Mu{\~n}oz, J.~C., Mattar, C., Barichivich, J.,
   during the course of el ni{\~n}o 2015--2016.
 \newblock {\em Scientific reports}, 6:33130.
 
-\bibitem[\protect\astroncite{Kay et~al.}{2015}]{kay2015community}
+\bibitem[Kay et~al., 2015]{kay2015community}
 Kay, J.~E., Deser, C., Phillips, A., Mai, A., Hannay, C., Strand, G.,
   Arblaster, J.~M., Bates, S., Danabasoglu, G., Edwards, J., et~al. (2015).
 \newblock The community earth system model (cesm) large ensemble project: A
@@ -42,53 +41,52 @@ Kay, J.~E., Deser, C., Phillips, A., Mai, A., Hannay, C., Strand, G.,
 \newblock {\em Bulletin of the American Meteorological Society},
   96(8):1333--1349.
 
-\bibitem[\protect\astroncite{Kohyama et~al.}{2018}]{kohyama2018weakening}
+\bibitem[Kohyama et~al., 2018]{kohyama2018weakening}
 Kohyama, T., Hartmann, D.~L., and Battisti, D.~S. (2018).
 \newblock Weakening of nonlinear enso under global warming.
 \newblock {\em Geophysical Research Letters}, 45(16):8557--8567.
 
-\bibitem[\protect\astroncite{Levine et~al.}{2017}]{levine2017impact}
+\bibitem[Levine et~al., 2017]{levine2017impact}
 Levine, A.~F., McPhaden, M.~J., and Frierson, D.~M. (2017).
 \newblock The impact of the amo on multidecadal enso variability.
 \newblock {\em Geophysical Research Letters}, 44(8):3877--3886.
 
-\bibitem[\protect\astroncite{Maher et~al.}{2018}]{maher2018enso}
+\bibitem[Maher et~al., 2018]{maher2018enso}
 Maher, N., Matei, D., Milinski, S., and Marotzke, J. (2018).
 \newblock Enso change in climate projections: Forced response or internal
   variability?
 \newblock {\em Geophysical Research Letters}, 45(20):11--390.
 
-\bibitem[\protect\astroncite{Nowack et~al.}{2017}]{nowack2017role}
+\bibitem[Nowack et~al., 2017]{nowack2017role}
 Nowack, P.~J., Braesicke, P., Luke~Abraham, N., and Pyle, J.~A. (2017).
 \newblock On the role of ozone feedback in the enso amplitude response under
   global warming.
 \newblock {\em Geophysical research letters}, 44(8):3858--3866.
 
-\bibitem[\protect\astroncite{Phillips et~al.}{2014}]{phillips2014evaluating}
+\bibitem[Phillips et~al., 2014]{phillips2014evaluating}
 Phillips, A.~S., Deser, C., and Fasullo, J. (2014).
 \newblock A new tool for evaluating modes of variability in climate models.
 \newblock {\em Eos, Transactions American Geophysical Union}, 95(49):453--455.
 
-\bibitem[\protect\astroncite{Ropelewski and
-  Halpert}{1987}]{ropelewski1987global}
+\bibitem[Ropelewski and Halpert, 1987]{ropelewski1987global}
 Ropelewski, C.~F. and Halpert, M.~S. (1987).
 \newblock Global and regional scale precipitation patterns associated with the
   el ni{\~n}o/southern oscillation.
 \newblock {\em Monthly weather review}, 115(8):1606--1626.
 
-\bibitem[\protect\astroncite{Stevenson}{2012}]{stevenson2012significant}
+\bibitem[Stevenson, 2012]{stevenson2012significant}
 Stevenson, S. (2012).
 \newblock Significant changes to enso strength and impacts in the twenty-first
   century: Results from cmip5.
 \newblock {\em Geophysical Research Letters}, 39(17).
 
-\bibitem[\protect\astroncite{Stevenson et~al.}{2019}]{stevenson2019forced}
+\bibitem[Stevenson et~al., 2019]{stevenson2019forced}
 Stevenson, S., Capotondi, A., Fasullo, J., and Otto-Bliesner, B. (2019).
 \newblock Forced changes to twentieth century enso diversity in a last
   millennium context.
 \newblock {\em Climate Dynamics}, 52(12):7359--7374.
 
-\bibitem[\protect\astroncite{Zheng et~al.}{2018}]{zheng2018response}
+\bibitem[Zheng et~al., 2018]{zheng2018response}
 Zheng, X.-T., Hui, C., and Yeh, S.-W. (2018).
 \newblock Response of enso amplitude to global warming in cesm large ensemble:
   uncertainty due to internal variability.

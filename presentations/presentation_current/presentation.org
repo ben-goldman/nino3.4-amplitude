@@ -4,6 +4,7 @@
 #+LATEX_CLASS: beamer
 #+LATEX_HEADER: \usepackage{natbib}
 #+LATEX_HEADER: \renewcommand{\bibsection}{}
+#+LATEX_HEADER: \DeclareUnicodeCharacter{0303}{\~{n}}
 #+Beamer_theme: metropolis
 #+OPTIONS: toc:nil
 
@@ -165,7 +166,7 @@
 
 * Data: the CESM1 Large Ensemble
 
-- Explore hypothetical scenarios with a computer model citet:kay2015community.
+- Explore hypothetical scenarios with a computer model citep:kay2015community.
 - Estimation of how the earth's climate actually works.
 - Experimental group: Receives input of rising greenhouse gas and/or aerosol levels.
 - Control group: Emissions fixed at levels before industrial revolution.
@@ -298,6 +299,6 @@
   + Make similar calculations to check student's results
 
 * References
-bibliographystyle:apa
+bibliographystyle:apalike
 \fontsize{7pt}{7.2}\selectfont
 bibliography:references.bib
