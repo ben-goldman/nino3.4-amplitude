@@ -1,4 +1,3 @@
-# TEST
 # Benjamin Goldman
 
 Junior
