@@ -20,12 +20,14 @@
 | <2021-06-18 Fri> |        17:00 |      18:00 |       01:00 | registered for SUNY albany UHS   |
 | <2021-06-20 Sun> |        11:00 |      12:30 |       01:30 | set up suny and contacted mentor |
 | <2021-06-21 Mon> |        18:30 |      19:55 |       01:25 | created hours list               |
+| <2021-06-22 Tue> |        10:00 |      15:00 |       05:00 | downloaded data                  |
+| <2021-06-23 Wed> |        10:00 |      12:21 |       02:21 | organized data                   |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day |
 |------------+------------+----------------------|
-|      03:55 |          3 |             01:18:20 |
+|      11:16 |          5 |             02:15:12 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
 #+TBLFM: @2$3 = @2$1/@2$2;T
