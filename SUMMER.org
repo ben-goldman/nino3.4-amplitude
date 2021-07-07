@@ -24,12 +24,13 @@
 | <2021-06-23 Wed> |        10:00 |      12:21 |       02:21 | organized data                   |
 | <2021-06-24 Thu> |        10:00 |      10:24 |       00:24 | organized data                   |
 | <2021-06-27 Sun> |        16:00 |      17:55 |       01:55 | analyzed data                    |
+| <2021-07-06 Tue> |        17:35 |      19:35 |       02:00 | analyzed data                    |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day |
 |------------+------------+----------------------|
-|      13:35 |          9 |             01:30:33 |
+|      15:35 |         18 |             00:51:56 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
 #+TBLFM: @2$3 = @2$1 / @2$2 ;T
