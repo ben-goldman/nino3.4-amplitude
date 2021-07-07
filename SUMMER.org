@@ -15,23 +15,23 @@
 * Hours
 
 #+NAME: DATA
-| Date             | Time Started | Time Ended | Total Hours | Activity                         |
-|------------------+--------------+------------+-------------+----------------------------------|
-| <2021-06-18 Fri> |        17:00 |      18:00 |       01:00 | registered for SUNY albany UHS   |
-| <2021-06-20 Sun> |        11:00 |      12:30 |       01:30 | set up suny and contacted mentor |
-| <2021-06-21 Mon> |        18:30 |      19:55 |       01:25 | created hours list               |
-| <2021-06-22 Tue> |        10:00 |      15:00 |       05:00 | downloaded data                  |
-| <2021-06-23 Wed> |        10:00 |      12:21 |       02:21 | organized data                   |
-| <2021-06-24 Thu> |        10:00 |      10:24 |       00:24 | organized data                   |
-| <2021-06-27 Sun> |        16:00 |      17:55 |       01:55 | analyzed data                    |
-| <2021-07-06 Tue> |        17:35 |      19:35 |       02:00 | analyzed data                    |
-| <2021-07-07 Wed> |        16:54 |      17:00 |       00:06 | organized reference list         |
+| Date             | Time Started | Time Ended | Total Hours | Activity                             |
+|------------------+--------------+------------+-------------+--------------------------------------|
+| <2021-06-18 Fri> |        17:00 |      18:00 |       01:00 | registered for SUNY albany UHS       |
+| <2021-06-20 Sun> |        11:00 |      12:30 |       01:30 | set up suny and contacted mentor     |
+| <2021-06-21 Mon> |        18:30 |      19:55 |       01:25 | created hours list                   |
+| <2021-06-22 Tue> |        10:00 |      15:00 |       05:00 | downloaded data                      |
+| <2021-06-23 Wed> |        10:00 |      12:21 |       02:21 | organized data                       |
+| <2021-06-24 Thu> |        10:00 |      10:24 |       00:24 | organized data                       |
+| <2021-06-27 Sun> |        16:00 |      17:55 |       01:55 | analyzed data                        |
+| <2021-07-06 Tue> |        17:35 |      19:35 |       02:00 | analyzed data                        |
+| <2021-07-07 Wed> |        16:54 |      18:23 |       01:29 | organized reference list, read paper |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day |
 |------------+------------+----------------------|
-|      15:41 |         19 |             00:49:31 |
+|      17:04 |         19 |             00:53:53 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
 #+TBLFM: @2$3 = @2$1 / @2$2 ;T
