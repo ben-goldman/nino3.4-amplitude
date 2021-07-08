@@ -1,3 +1,31 @@
+#+TITLE: Science Research Portfolio
+
+* Benjamin Goldman
+Junior
+
+** HOW TO USE:
+
+- There are certain files with the extensions ~.org~ and ~.md~. These files are used to create the ~.pdf~ files that have the same file name. They will have the same content but slightly different formatting compared to their ~.pdf~ files. They will also open more easily online and are much smaller in size. If you see a ~.org~ file with the same name as another file, it is usually easier to view the ~.org~ because it will not have to be downloaded.
+- Files with the ~.bbl~ and ~.out~ files are used as support files, and they may be unreadable.
+- ~.pdf~, ~.md~, and ~.org~ files can all be read online, in the browser window.
+- Other files, like Microsoft Office documents (~.docx~, ~.pptx~, ~.xlsx~) will have to be downloaded following the instructions below.
+- Finally, files with the extensions ~.odt~ and ~.odp~ can be opened in Word and PowerPoint, respectively.
+
+*** Generally, most of my documents are in ~.pdf~ form.
+
+*** Files named ~readme.md~, ~readme.org~ are summary/explanation for certain folders, or they contain an online-viewable copy of that folder's content.
+
+Navigate repository on website and download files individually as needed.
+
+- Navigate by clicking on folder links at top
+- Certain files cannot be viewed online, click "View Raw" to download and open offline.
+
+[[./readme_imgs/viewraw.png]]
+
+** Files List
+
+#+BEGIN_SRC text
+
 .
 ├── articles
 │  ├── An2017Feedback.pdf
@@ -15,7 +43,6 @@
 │  ├── Deser2020Isolating.pdf
 │  ├── Dewitte2012Reinterpreting.pdf
 │  ├── Emile2007Nino.pdf
-│  ├── Fernandez2004Analysis.pdf
 │  ├── Graham2014Effectivetess.pdf
 │  ├── Hu2018Cross.pdf
 │  ├── Jia2019Weakening.pdf
@@ -36,13 +63,23 @@
 │  ├── Philips2014Evaluating.pdf
 │  ├── Rashid2015Atmospheric.pdf
 │  ├── README.md
+│  ├── referencelist
+│  │  ├── referencelist.aux
+│  │  ├── referencelist.bbl
+│  │  ├── referencelist.blg
+│  │  ├── referencelist.dvi
+│  │  ├── referencelist.log
+│  │  ├── referencelist.pdf
+│  │  └── referencelist.tex
 │  ├── referencelist.pdf
+│  ├── references.bib
 │  ├── Ropeleweski1987Global.pdf
 │  ├── Son2010Impact.pdf
 │  ├── Stevenson2008ENSO.pdf
 │  ├── Stevenson2011Significant.pdf
 │  ├── Stevenson2012Significant.pdf
 │  ├── Stevenson2017Forced.pdf
+│  ├── Torrence1998Practical.pdf
 │  ├── Vecchi2006Weakening.pdf
 │  ├── Vega2017Analysis.pdf
 │  ├── Wang2016Review.pdf
@@ -189,6 +226,9 @@
 │  └── WaterBottleData.xlsx
 ├── competitions
 │  ├── README.md
+│  ├── sts
+│  │  ├── essay_questions.html
+│  │  └── essay_questions.org
 │  ├── WESEF_2021
 │  │  ├── 1-Checklist-for-Adult-Sponsor.pdf
 │  │  ├── 1-Checklist-for-Adult-Sponsor Ben Goldman.pdf
@@ -204,7 +244,16 @@
 │     ├── 1B-Approval-Form.pdf
 │     └── 7-Continuation.pdf
 ├── data
-│  ├── Code
+│  ├── code
+│  │  ├── aer_var.csv
+│  │  ├── analyzeVariance.r
+│  │  ├── bmb_var.csv
+│  │  ├── extractVariance.r
+│  │  ├── ff_var.csv
+│  │  ├── ghg_var.csv
+│  │  ├── luc_var.csv
+│  │  └── mydate.csv
+│  ├── Code_old
 │  │  ├── 20year_variance.py
 │  │  ├── [jupyter]
 │  │  ├── __init__.py
@@ -215,6 +264,7 @@
 │  │  │  └── variance.cpython-38.pyc
 │  │  ├── control_variance.py
 │  │  ├── correlation_xsections.py
+│  │  ├── extract.sh
 │  │  ├── fix_data.py
 │  │  ├── helpers.py
 │  │  ├── matplotlibrc
@@ -236,7 +286,8 @@
 │  │  ├── tempwep.py
 │  │  ├── variance.py
 │  │  └── variance.r
-│  ├── Data
+│  ├── data
+│  ├── Data_old
 │  │  ├── aer_set.csv
 │  │  ├── aer_tempcep_ps.npy
 │  │  ├── aer_tempcep_rs.npy
@@ -295,7 +346,7 @@
 │  │  ├── oic_set.csv
 │  │  ├── ozo_set.csv
 │  │  └── tempdttimeseries.png
-│  ├── Figures
+│  ├── figures
 │  │  ├── 1.pdf
 │  │  ├── 1.png
 │  │  ├── 3.pdf
@@ -359,12 +410,12 @@
 │  │  ├── feedback.pdf
 │  │  ├── feedback.tex
 │  │  └── feedback4others.org
-│  ├── readme.org
-│  └── Wesef2021
+│  └── readme.org
 ├── hours
-│  ├── Hours.csv
-│  ├── Hours.xlsx
-│  └── README.org
+│  └── Junior
+│     ├── Hours.csv
+│     ├── Hours.xlsx
+│     └── README.org
 ├── mentor
 │  ├── emaildraft.txt
 │  ├── mentor_info.org
@@ -379,13 +430,6 @@
 ├── miscellaneous
 │  ├── Old Things
 │  │  ├── Assessment1
-│  │  │  ├── 5GIArticles
-│  │  │  │  ├── Benjamin @ OneDrive - White Plains Public Schools.pdf
-│  │  │  │  ├── Climate change has altered winter precipitation across the Northern Hemisphere _ NCAR & UCAR News.html
-│  │  │  │  ├── Climate change may make El Niño and La Niña less predictable _ Science News.html
-│  │  │  │  ├── Intense wildfires can push ozone-damaging smoke high into the air _ Science News.html
-│  │  │  │  ├── NASA GISS_ Research Features_ A Devastating Stall by Hurricane Dorian.html
-│  │  │  │  └── NASA GISS_ Research Features_ NCCS Hosts GISS ModelE Simulations Assessing the Impacts of Irrigation on Climate.html
 │  │  │  ├── GIArticleSummaries.docx
 │  │  │  ├── MentorEmailDrafts.docx
 │  │  │  ├── Professional Science Researcher activity for sophomores.docx
@@ -561,7 +605,8 @@
 │  │  ├── elevator.pdf
 │  │  └── readme.md
 │  ├── Latex_submission_guidelines_Sept52019.pdf
-│  ├── paperAndRefsList
+│  ├── paper
+│  │  ├── _region_.tex
 │  │  ├── agu_archive
 │  │  │  ├── agujournal2019.cls
 │  │  │  ├── agutexSI2019.cls
@@ -600,26 +645,47 @@
 │  │  │  └── trackchanges.sty
 │  │  ├── figures
 │  │  │  ├── bootstrap_1.pdf
+│  │  │  ├── bootstrap_1.png
 │  │  │  ├── tempcep.pdf
 │  │  │  ├── tempdt.pdf
 │  │  │  ├── tempeep.pdf
 │  │  │  ├── tempwep.pdf
 │  │  │  └── variance_1.pdf
-│  │  ├── papernew.bbl
-│  │  ├── papernew.org
-│  │  ├── papernew.pdf
-│  │  ├── papernew.tex
+│  │  ├── figures copy
+│  │  │  ├── bootstrap_1.pdf
+│  │  │  ├── tempcep.pdf
+│  │  │  ├── tempdt.pdf
+│  │  │  ├── tempeep.pdf
+│  │  │  ├── tempwep.pdf
+│  │  │  └── variance_1.pdf
+│  │  ├── paper.bbl
+│  │  ├── paper.html
+│  │  ├── paper.org
+│  │  ├── paper.pdf
+│  │  ├── paper.tex
 │  │  ├── paperoutline.md
 │  │  ├── paperoutline.pdf
-│  │  ├── referencelist
-│  │  │  ├── referencelist.aux
-│  │  │  ├── referencelist.bbl
-│  │  │  ├── referencelist.blg
-│  │  │  ├── referencelist.dvi
-│  │  │  ├── referencelist.log
-│  │  │  ├── referencelist.pdf
-│  │  │  └── referencelist.tex
 │  │  └── references.bib
+│  ├── paper_archive
+│  │  ├── paper.aux
+│  │  ├── paper.bbl
+│  │  ├── paper.bcf
+│  │  ├── paper.blg
+│  │  ├── paper.fdb_latexmk
+│  │  ├── paper.fls
+│  │  ├── paper.log
+│  │  ├── paper.out
+│  │  ├── paper.pdf
+│  │  ├── paper.run-Ben’sMacBookPro.xml
+│  │  ├── paper.run.xml
+│  │  ├── paper.synctex.gz
+│  │  └── paper.tex
+│  ├── papernew
+│  │  ├── papernew.bbl
+│  │  ├── papernew.dvi
+│  │  ├── papernew.pdf
+│  │  ├── papernew.tex
+│  │  └── test.tex
 │  ├── Publish_With_AGU.pdf
 │  ├── readme.org
 │  ├── Research Plan
@@ -635,7 +701,6 @@
 │  │  ├── auto
 │  │  │  └── researchplan.el
 │  │  ├── org-ref.org
-│  │  ├── plan.bbl
 │  │  ├── plan.org
 │  │  ├── plan.pdf
 │  │  ├── plan.tex
@@ -676,21 +741,9 @@
 │  │  ├── variance_1.tiff
 │  │  └── variance_2.pdf
 │  ├── outline.md
-│  ├── past
 │  ├── presentation_current
-│  │  ├── board_test-Ben’sMacBookPro-2.aux
 │  │  ├── board_test-Ben’sMacBookPro-2.pdf
-│  │  ├── board_test-Ben’sMacBookPro-3.aux
-│  │  ├── board_test-Ben’sMacBookPro-4.aux
-│  │  ├── board_test-Ben’sMacBookPro-5.aux
-│  │  ├── board_test-Ben’sMacBookPro-6.aux
-│  │  ├── board_test-Ben’sMacBookPro-7.aux
-│  │  ├── board_test-Ben’sMacBookPro.aux
 │  │  ├── board_test-Ben’sMacBookPro.pdf
-│  │  ├── board_test.bbl
-│  │  ├── board_test.org
-│  │  ├── board_test.pdf
-│  │  ├── board_test.tex
 │  │  ├── images
 │  │  │  ├── bootstrap_2.pdf
 │  │  │  ├── climate_change.pdf
@@ -700,8 +753,14 @@
 │  │  │  ├── nino3_4.pdf
 │  │  │  ├── variance_2.pdf
 │  │  │  └── variance_3.pdf
+│  │  ├── presentation-Ben’sMacBookPro-2.pdf
+│  │  ├── presentation-Ben’sMacBookPro-3.pdf
+│  │  ├── presentation-Ben’sMacBookPro-4.pdf
+│  │  ├── presentation-Ben’sMacBookPro-5.pdf
+│  │  ├── presentation-Ben’sMacBookPro.dvi
 │  │  ├── presentation-Ben’sMacBookPro.pdf
 │  │  ├── presentation.bbl
+│  │  ├── presentation.dvi
 │  │  ├── presentation.org
 │  │  ├── presentation.pdf
 │  │  ├── presentation.tex
@@ -712,7 +771,6 @@
 │  │  └── script_old.pdf
 │  ├── Q4
 │  │  ├── JUNIORS_Q4_Presentations.pdf
-│  │  ├── recording.mov
 │  │  └── Rubric_for_Q4_JUNIORS.pdf
 │  ├── readme.org
 │  ├── script.bbl
@@ -721,8 +779,7 @@
 │  ├── script.tex
 │  ├── Symposium
 │  │  ├── presentation.org
-│  │  ├── presentation.pdf
-│  │  └── Screen Recording 2021-06-09 at 3.12.56 PM.mov
+│  │  └── presentation.pdf
 │  ├── WESEF_2021
 │  │  ├── 2021-WESEF-MAIN-rubric.pdf
 │  │  ├── application
@@ -745,19 +802,25 @@
 │  │  ├── script.md
 │  │  ├── script.pdf
 │  │  └── WESEF+Instructions+for+virtual+fair.pdf
-│  ├── WESEF_2022
 │  └── Westlake
 │     ├── 2021+Announcement+Flyer.pdf
 │     ├── 2021+Judge+Solicitation+Letter+WESTLAKE.pdf
 │     ├── 2021+MASTER+SWSF+RUBRIC+(PDF).pdf
 │     └── WESTLAKE+2021+Judging+procedures.pdf
 ├── README.md
+├── README.org
 ├── readme_imgs
 │  ├── download.png
 │  └── viewraw.png
 ├── Science+Research+Virtual+Portfolio+Contents+2020-21.pdf
 ├── Science+Research+Virtual+Portfolio+Grading+Rubric.pdf
-├── SUNY
-│  ├── Order Receipt.pdf
-│  └── UALTRUCR.pdf
-└── tree.txt
+├── SUMMER.org
+└── SUNY
+   ├── 2021
+   │  ├── INSTRUCTIONS FOR THE UHS REDUCED PROGRAM FEE.pdf
+   │  ├── Registration Instructions for Summer Science Research 2021 - 2022 - Fleming, Kimberly - ACAS 209.pdf
+   │  └── UHS Benefits of Participation.pdf
+   ├── Order Receipt.pdf
+   └── UALTRUCR.pdf
+
+#+END_SRC
