@@ -21,6 +21,3 @@ Navigate repository on website and download files individually as needed.
 - Certain files cannot be viewed online, click "View Raw" to download and open offline.
 
 [[./readme_imgs/viewraw.png]]
-
-** Files List
-
