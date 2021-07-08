@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-07-08 Thu 17:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Science Research Portfolio</title>
+<meta name="author" content="Benjamin Goldman" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Science Research Portfolio</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org75f2c3a">1. Benjamin Goldman</a>
+<ul>
+<li><a href="#orgec1352c">1.1. HOW TO USE:</a>
+<ul>
+<li><a href="#orgd52ca1c">1.1.1. Generally, most of my documents are in <code>.pdf</code> form.</a></li>
+<li><a href="#org569f14c">1.1.2. Files named <code>readme.md</code> or <code>readme.org</code> are summary/explanation for certain folders, or they contain an online-viewable copy of that folder&rsquo;s content.</a></li>
+</ul>
+</li>
+<li><a href="#orgba8bbd9">1.2. Files List</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org75f2c3a" class="outline-2">
+<h2 id="org75f2c3a"><span class="section-number-2">1</span> Benjamin Goldman</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Junior
+</p>
+</div>
+
+<div id="outline-container-orgec1352c" class="outline-3">
+<h3 id="orgec1352c"><span class="section-number-3">1.1</span> HOW TO USE:</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>There are certain files with the extensions <code>.org</code> and <code>.md</code>. These files are used to create the <code>.pdf</code> files that have the same file name. They will have the same content but slightly different formatting compared to their <code>.pdf</code> files. They will also open more easily online and are much smaller in size. If you see a <code>.org</code> file with the same name as another file, it is usually easier to view the <code>.org</code> because it will not have to be downloaded.</li>
+<li>Files with the <code>.bbl</code> and <code>.out</code> files are used as support files, and they may be unreadable.</li>
+<li><code>.pdf</code>, <code>.md</code>, and <code>.org</code> files can all be read online, in the browser window.</li>
+<li>Other files, like Microsoft Office documents (<code>.docx</code>, <code>.pptx</code>, <code>.xlsx</code>) will have to be downloaded following the instructions below.</li>
+<li>Finally, files with the extensions <code>.odt</code> and <code>.odp</code> can be opened in Word and PowerPoint, respectively.</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd52ca1c" class="outline-4">
+<h4 id="orgd52ca1c"><span class="section-number-4">1.1.1</span> Generally, most of my documents are in <code>.pdf</code> form.</h4>
+</div>
+
+<div id="outline-container-org569f14c" class="outline-4">
+<h4 id="org569f14c"><span class="section-number-4">1.1.2</span> Files named <code>readme.md</code> or <code>readme.org</code> are summary/explanation for certain folders, or they contain an online-viewable copy of that folder&rsquo;s content.</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+Navigate repository on website and download files individually as needed.
+</p>
+
+<ul class="org-ul">
+<li>Navigate by clicking on folder links at top</li>
+<li>Certain files cannot be viewed online, click &ldquo;View Raw&rdquo; to download and open offline.</li>
+</ul>
+
+
+<div id="orgb6ca430" class="figure">
+<p><img src="./readme_imgs/viewraw.png" alt="viewraw.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgba8bbd9" class="outline-3">
+<h3 id="orgba8bbd9"><span class="section-number-3">1.2</span> Files List</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+<pre class="src src-text">
+.
+&#9500;&#9472;&#9472; articles
+&#9474;  &#9500;&#9472;&#9472; An2017Feedback.pdf
+&#9474;  &#9500;&#9472;&#9472; Bjerknes1969Atmospheric.pdf
+&#9474;  &#9500;&#9472;&#9472; Boer2000Transient.pdf
+&#9474;  &#9500;&#9472;&#9472; book
+&#9474;  &#9474;  &#9500;&#9472;&#9472; c01.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; c02_finalProof.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ftoc.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; summaries.md
+&#9474;  &#9474;  &#9492;&#9472;&#9472; summaries.pdf
+&#9474;  &#9500;&#9472;&#9472; Cai2018Increased.pdf
+&#9474;  &#9500;&#9472;&#9472; Chen2015Causes.pdf
+&#9474;  &#9500;&#9472;&#9472; Chen2017Possible.pdf
+&#9474;  &#9500;&#9472;&#9472; Deser2020Isolating.pdf
+&#9474;  &#9500;&#9472;&#9472; Dewitte2012Reinterpreting.pdf
+&#9474;  &#9500;&#9472;&#9472; Emile2007Nino.pdf
+&#9474;  &#9500;&#9472;&#9472; Graham2014Effectivetess.pdf
+&#9474;  &#9500;&#9472;&#9472; Hu2018Cross.pdf
+&#9474;  &#9500;&#9472;&#9472; Jia2019Weakening.pdf
+&#9474;  &#9500;&#9472;&#9472; Jimenez2016Record.pdf
+&#9474;  &#9500;&#9472;&#9472; Kay2015Community.pdf
+&#9474;  &#9500;&#9472;&#9472; Kestin1997Time.pdf
+&#9474;  &#9500;&#9472;&#9472; Kiladis2009Convectively.pdf
+&#9474;  &#9500;&#9472;&#9472; Kim2014Response.pdf
+&#9474;  &#9500;&#9472;&#9472; Koyhama2018Weakening.pdf
+&#9474;  &#9500;&#9472;&#9472; Levine2017Impact.pdf
+&#9474;  &#9500;&#9472;&#9472; Liu2007Atmospheric.pdf
+&#9474;  &#9500;&#9472;&#9472; Lorentz1963Deterministic.pdf
+&#9474;  &#9500;&#9472;&#9472; Lubbecke2013Assessing.pdf
+&#9474;  &#9500;&#9472;&#9472; Maher2018Enso.pdf
+&#9474;  &#9500;&#9472;&#9472; notes
+&#9474;  &#9474;  &#9492;&#9472;&#9472; Cai2018Increased.md
+&#9474;  &#9500;&#9472;&#9472; Nowak2017Role.pdf
+&#9474;  &#9500;&#9472;&#9472; Philips2014Evaluating.pdf
+&#9474;  &#9500;&#9472;&#9472; Rashid2015Atmospheric.pdf
+&#9474;  &#9500;&#9472;&#9472; README.md
+&#9474;  &#9500;&#9472;&#9472; referencelist
+&#9474;  &#9474;  &#9500;&#9472;&#9472; referencelist.aux
+&#9474;  &#9474;  &#9500;&#9472;&#9472; referencelist.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; referencelist.blg
+&#9474;  &#9474;  &#9500;&#9472;&#9472; referencelist.dvi
+&#9474;  &#9474;  &#9500;&#9472;&#9472; referencelist.log
+&#9474;  &#9474;  &#9500;&#9472;&#9472; referencelist.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; referencelist.tex
+&#9474;  &#9500;&#9472;&#9472; referencelist.pdf
+&#9474;  &#9500;&#9472;&#9472; references.bib
+&#9474;  &#9500;&#9472;&#9472; Ropeleweski1987Global.pdf
+&#9474;  &#9500;&#9472;&#9472; Son2010Impact.pdf
+&#9474;  &#9500;&#9472;&#9472; Stevenson2008ENSO.pdf
+&#9474;  &#9500;&#9472;&#9472; Stevenson2011Significant.pdf
+&#9474;  &#9500;&#9472;&#9472; Stevenson2012Significant.pdf
+&#9474;  &#9500;&#9472;&#9472; Stevenson2017Forced.pdf
+&#9474;  &#9500;&#9472;&#9472; Torrence1998Practical.pdf
+&#9474;  &#9500;&#9472;&#9472; Vecchi2006Weakening.pdf
+&#9474;  &#9500;&#9472;&#9472; Vega2017Analysis.pdf
+&#9474;  &#9500;&#9472;&#9472; Wang2016Review.pdf
+&#9474;  &#9500;&#9472;&#9472; Yeo2016Role.pdf
+&#9474;  &#9500;&#9472;&#9472; Zhang2019Review.pdf
+&#9474;  &#9500;&#9472;&#9472; Zheng2016Intermodel.pdf
+&#9474;  &#9492;&#9472;&#9472; Zheng2017response.pdf
+&#9500;&#9472;&#9472; assessments
+&#9474;  &#9500;&#9472;&#9472; 2020-2021_JUNIORS_summer_assessment-1.pdf
+&#9474;  &#9500;&#9472;&#9472; Junior
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 2
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Ben Goldman BiWeekly #2 List.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; PRESENTATION.pptx
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Screen Shot 2020-10-06 at 7.20.27 PM.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 3
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Benjamin Goldman #3 List.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Screen Shot 2020-10-11 at 7.07.38 PM.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 4
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 3_Inter-Library Loan.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_dataset.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_pptfeedbackpractice.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 6_youtubeupload.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_feedback4others.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 8_side board template each 20 x 48.pptx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 9_PRESENTATION.pptx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 9_script.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 10_paper.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Benjamin Goldman BiWeekly #4 List.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 5
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_observationlog.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_paper.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 6_PRESENTATION.pptx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_practice_feedback.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 8_summaries.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 9_data_command.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 9_data_files.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 10_helping.txt
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Benjamin Goldman #5 List.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 6
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 3_5_wesef_submission.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_paper.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 6_PRESENTATION2.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_feedback.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 9_sean_feedback.png
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Benjamin Goldman BiWeekly 6 List.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 7
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 3_Cai2018Increased.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_elevatorfeedback.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_powerpoint
+&#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; PRESENTATION.odp
+&#9474;  &#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; script.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 6_feedback.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_GitHub - bngldmn_science-research Portfolio.html
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 8_feedbackforothers.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 9_data_switch_to_R.txt
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Benjamin Goldman BiWeekly #7.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Cai2018Increased.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Hours.xlsx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 8
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 3_Wang2019Changes.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 3_wang2019changes_notes.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4+7_MentorEmail.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_diff_tempdt.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_tempdttimeseries.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_presentation.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 6_feedback.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_futureideas.md
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_futureideas.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 8_feedback_for_others.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 10_marcus_paper.docx
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Benjamin Goldman BiWeekly #8.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 9
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 2_Hours.xlsx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 3_mentor_communication.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_WESEF_presentation.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_practice_feedback.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_10_feedback_for_others.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Benjamin Goldman BiWeekly #9.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 10
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 2_Hours.xlsx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_presentation.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_feedback.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 6_Lorentz1963Deterministic.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 6_lorentz1963deterministic_notes.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 8_senioryear.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 9_.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 10_paper.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Benjamin Goldman BiWeekly #10.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 11
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 2_Hours.xlsx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 3_6_isabelle_paper.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 4_plan.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_1-Checklist-for-Adult-Sponsor.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_1A-Student-Checklist-Research-Plan-Instructions.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_1B-Approval-Form.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 5_7-Continuation.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_Hu2018Cross.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 7_Hu2018Cross_notes.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 8_feedback.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 10_data_code.r
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 10_data_new_language.png
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Benjamin Goldman BiWeekly #11.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; 12
+&#9474;  &#9474;     &#9500;&#9472;&#9472; 3_abstract.docx
+&#9474;  &#9474;     &#9500;&#9472;&#9472; 4_plan.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; 5_WESEF_Forms_2022.zip
+&#9474;  &#9474;     &#9500;&#9472;&#9472; 6_Celia Holden Research Paper.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; 8_transcript.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Benajmin Goldman BiWeekly #12.pdf
+&#9474;  &#9474;     &#9492;&#9472;&#9472; Hours.xlsx
+&#9474;  &#9500;&#9472;&#9472; README.md
+&#9474;  &#9492;&#9472;&#9472; Sophomore
+&#9474;     &#9500;&#9472;&#9472; Benjamin Goldman BiWeekly 6 List.pdf
+&#9474;     &#9500;&#9472;&#9472; spring2020_1.pdf
+&#9474;     &#9500;&#9472;&#9472; spring2020_2.pdf
+&#9474;     &#9492;&#9472;&#9472; spring2020_3.pdf
+&#9500;&#9472;&#9472; classwork
+&#9474;  &#9500;&#9472;&#9472; 20201130_224743000_iOS.MOV
+&#9474;  &#9500;&#9472;&#9472; Average_Monthly_Temperatures_Practice_Data.xlsx
+&#9474;  &#9500;&#9472;&#9472; Bias+article+with+questions+(sub+lesson).pdf
+&#9474;  &#9500;&#9472;&#9472; Bias+in+Research+2+26+21.pdf
+&#9474;  &#9500;&#9472;&#9472; Correlation
+&#9474;  &#9474;  &#9500;&#9472;&#9472; CorrelationStudentPractice.xlsx
+&#9474;  &#9474;  &#9492;&#9472;&#9472; GraphinginExcelPart2Correlations.pdf
+&#9474;  &#9500;&#9472;&#9472; COVID-19_vaccine_candidate_shows_promise_research_shows.pdf
+&#9474;  &#9500;&#9472;&#9472; Data+for+Descriptive+Statistics.xlsx
+&#9474;  &#9500;&#9472;&#9472; Data_for_calculating_p-values.xlsx
+&#9474;  &#9500;&#9472;&#9472; Error Bars
+&#9474;  &#9474;  &#9492;&#9472;&#9472; ErrorBarsBenGoldman.xlsx
+&#9474;  &#9500;&#9472;&#9472; giarticle.txt
+&#9474;  &#9500;&#9472;&#9472; Graphing_in_Excel_Part_1.pdf
+&#9474;  &#9500;&#9472;&#9472; Learning+about+Online+Databases+Part+1+-+General+Sites.docx
+&#9474;  &#9500;&#9472;&#9472; Notes+on+inferential+statistics+Day+1.docx
+&#9474;  &#9500;&#9472;&#9472; Notes+on+inferential+statistics+Day+2.docx
+&#9474;  &#9500;&#9472;&#9472; plagiarism_internet_article_activity_10_20_20.docx
+&#9474;  &#9500;&#9472;&#9472; README.md
+&#9474;  &#9500;&#9472;&#9472; Recording_PowerPoint_practice.pptx
+&#9474;  &#9500;&#9472;&#9472; RHSQ+practice+class+assignment+11+12+20.docx
+&#9474;  &#9500;&#9472;&#9472; RHSQ+practice+class+assignment+11+16+20.docx
+&#9474;  &#9500;&#9472;&#9472; Science_Research_Google_Scavenger_Hunt.pdf
+&#9474;  &#9500;&#9472;&#9472; screencast 2020-10-21 12-37-05.mp4
+&#9474;  &#9500;&#9472;&#9472; Vertebrate+Animal+Testing+and+Backstage+Lab+Tour.pdf
+&#9474;  &#9500;&#9472;&#9472; WaterBotleData.docx
+&#9474;  &#9492;&#9472;&#9472; WaterBottleData.xlsx
+&#9500;&#9472;&#9472; competitions
+&#9474;  &#9500;&#9472;&#9472; README.md
+&#9474;  &#9500;&#9472;&#9472; sts
+&#9474;  &#9474;  &#9500;&#9472;&#9472; essay_questions.html
+&#9474;  &#9474;  &#9492;&#9472;&#9472; essay_questions.org
+&#9474;  &#9500;&#9472;&#9472; WESEF_2021
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1-Checklist-for-Adult-Sponsor.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1-Checklist-for-Adult-Sponsor Ben Goldman.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1_filled.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1a_filled.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1B-Approval-Form.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1b_filled.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Research Plan.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; WESEF_abstract-2020.pdf
+&#9474;  &#9492;&#9472;&#9472; WESEF_2022
+&#9474;     &#9500;&#9472;&#9472; 1-Checklist-for-Adult-Sponsor.pdf
+&#9474;     &#9500;&#9472;&#9472; 1A-Student-Checklist-Research-Plan-Instructions.pdf
+&#9474;     &#9500;&#9472;&#9472; 1B-Approval-Form.pdf
+&#9474;     &#9492;&#9472;&#9472; 7-Continuation.pdf
+&#9500;&#9472;&#9472; data
+&#9474;  &#9500;&#9472;&#9472; code
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_var.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; analyzeVariance.r
+&#9474;  &#9474;  &#9500;&#9472;&#9472; bmb_var.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; extractVariance.r
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_var.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_var.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; luc_var.csv
+&#9474;  &#9474;  &#9492;&#9472;&#9472; mydate.csv
+&#9474;  &#9500;&#9472;&#9472; Code_old
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 20year_variance.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; [jupyter]
+&#9474;  &#9474;  &#9500;&#9472;&#9472; __init__.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; __pycache__
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; helpers.cpython-37.pyc
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; helpers.cpython-38.pyc
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; variance.cpython-37.pyc
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; variance.cpython-38.pyc
+&#9474;  &#9474;  &#9500;&#9472;&#9472; control_variance.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; correlation_xsections.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; extract.sh
+&#9474;  &#9474;  &#9500;&#9472;&#9472; fix_data.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; helpers.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; matplotlibrc
+&#9474;  &#9474;  &#9500;&#9472;&#9472; nino_contour.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; open_nino.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; open_tempcep.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; open_tempdt.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; open_tempeep.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; open_tempwep.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; open_xsections.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; openCVDP.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; pptfigs.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; R
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; yay.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; regexes.txt
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempcep.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempdt.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempeep.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempwep.py
+&#9474;  &#9474;  &#9500;&#9472;&#9472; variance.py
+&#9474;  &#9474;  &#9492;&#9472;&#9472; variance.r
+&#9474;  &#9500;&#9472;&#9472; data
+&#9474;  &#9500;&#9472;&#9472; Data_old
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_set.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_tempcep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_tempcep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_tempdt_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_tempdt_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_tempeep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_tempeep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_tempwep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; aer_tempwep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; bmb_set.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ctl.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ctl_amo.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ctl_amoc.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; depth.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempcep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempcep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempdt_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempdt_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempeep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempeep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempwep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempwep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_ghg_tempcep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_ghg_tempcep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_ghg_tempdt_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_ghg_tempdt_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_ghg_tempeep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_ghg_tempeep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_ghg_tempwep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_ghg_tempwep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_1850.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_set.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_tempcep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_tempcep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_tempdt_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_tempdt_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_tempeep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_tempeep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_tempwep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ff_tempwep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_set.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_tempcep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_tempcep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_tempdt_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_tempdt_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_tempeep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_tempeep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_tempwep_ps.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ghg_tempwep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; lat.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; lat1.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; lon.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; lon1.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; luc_set.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; oic_1850.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; oic_set.csv
+&#9474;  &#9474;  &#9500;&#9472;&#9472; ozo_set.csv
+&#9474;  &#9474;  &#9492;&#9472;&#9472; tempdttimeseries.png
+&#9474;  &#9500;&#9472;&#9472; figures
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 3.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 5.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 6.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 7.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 8.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 9.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 10.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 11.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 12.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 13.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 14.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 15.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 16.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 17.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 18.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 24.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 25.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 26.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_1.ps
+&#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_2.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_aer_tempwep_rs.npy
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_tempcep.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_tempdt.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_tempeep.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; diff_tempwep.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; nino.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempcep.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempdt.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempdttimeseries.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempeep.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempwep.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; variance_1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; variance_1.ps
+&#9474;  &#9474;  &#9500;&#9472;&#9472; variance_2.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; variance_3.pdf
+&#9474;  &#9492;&#9472;&#9472; README.md
+&#9500;&#9472;&#9472; feedback
+&#9474;  &#9500;&#9472;&#9472; elevator
+&#9474;  &#9474;  &#9500;&#9472;&#9472; elevatorfeedback.md
+&#9474;  &#9474;  &#9492;&#9472;&#9472; elevatorfeedback.pdf
+&#9474;  &#9500;&#9472;&#9472; JuniorQ1
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback4others.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; observationlog.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; pptfeedback.pdf
+&#9474;  &#9500;&#9472;&#9472; JuniorQ2
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.md
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedbackforothers.md
+&#9474;  &#9474;  &#9492;&#9472;&#9472; feedbackforothers.pdf
+&#9474;  &#9500;&#9472;&#9472; JuniorQ3
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.md
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; feedbackforothers.md
+&#9474;  &#9500;&#9472;&#9472; JuniorQ4
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.org
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.out
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.tex
+&#9474;  &#9474;  &#9492;&#9472;&#9472; feedback4others.org
+&#9474;  &#9492;&#9472;&#9472; readme.org
+&#9500;&#9472;&#9472; hours
+&#9474;  &#9492;&#9472;&#9472; Junior
+&#9474;     &#9500;&#9472;&#9472; Hours.csv
+&#9474;     &#9500;&#9472;&#9472; Hours.xlsx
+&#9474;     &#9492;&#9472;&#9472; README.org
+&#9500;&#9472;&#9472; mentor
+&#9474;  &#9500;&#9472;&#9472; emaildraft.txt
+&#9474;  &#9500;&#9472;&#9472; mentor_info.org
+&#9474;  &#9500;&#9472;&#9472; mentor_info.pdf
+&#9474;  &#9500;&#9472;&#9472; Re_Collaboration on ENSO variance modulation-18280.txt
+&#9474;  &#9500;&#9472;&#9472; readme.org
+&#9474;  &#9500;&#9472;&#9472; transcript_1.pdf
+&#9474;  &#9500;&#9472;&#9472; transcript_2.pdf
+&#9474;  &#9500;&#9472;&#9472; transcript_3.pdf
+&#9474;  &#9500;&#9472;&#9472; transcript_4.pdf
+&#9474;  &#9492;&#9472;&#9472; transcript_5.pdf
+&#9500;&#9472;&#9472; miscellaneous
+&#9474;  &#9500;&#9472;&#9472; Old Things
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Assessment1
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; GIArticleSummaries.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; MentorEmailDrafts.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Professional Science Researcher activity for sophomores.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Professional Science Researcher activity for sophomores.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; scholarBioPages
+&#9474;  &#9474;  &#9474;     &#9500;&#9472;&#9472; Allison Gray.PNG
+&#9474;  &#9474;  &#9474;     &#9500;&#9472;&#9472; Pengfei Yu.PNG
+&#9474;  &#9474;  &#9474;     &#9500;&#9472;&#9472; Screen Shot 2019-09-25 at 7.59.04 PM.png
+&#9474;  &#9474;  &#9474;     &#9500;&#9472;&#9472; Screen Shot 2019-09-29 at 9.48.46 AM.png
+&#9474;  &#9474;  &#9474;     &#9500;&#9472;&#9472; Sonali P McDermid.PNG
+&#9474;  &#9474;  &#9474;     &#9500;&#9472;&#9472; Timothy Hall.PNG
+&#9474;  &#9474;  &#9474;     &#9492;&#9472;&#9472; Tong Lee.PNG
+&#9474;  &#9474;  &#9500;&#9472;&#9472; DataSources.xlsx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; DataSources copy.xlsx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Datasourcescreenshots
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; climatedataguide-ucar.PNG
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; esgf-llnl.PNG
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; rda.ucar.PNG
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Screen Shot 2020-02-12 at 8.18.12 PM.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; EmailDrafts_Mentor_search
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; EmailDrafts4LDEOProfs.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; EmailDrafts11-8-19.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; EmailDrafts11-27-19.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Emails 2-10-20.docx
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; RespomseTimothyHall.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Getting Motivated Videos.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Hours_spring2020.xlsx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Jupyter PDFs
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; large_ensemble_var.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; obs_ENSO_variance.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; LamontDoertyInternship
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 2019 Center for Climate and Life at Lamont.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Application.docx
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Application2.docx
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; Climate-and-Life-Intern-Program-Application-Form.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; LearnPythonData
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; ElNinoHello_PCA_Nino3.4.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; eof0.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; eof1.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; eof2.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; eof3.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; pcs.png
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; TryTry - Jupyter Notebook.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; MentorList.xlsx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Methodology.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Old Useless Things.zip
+&#9474;  &#9474;  &#9500;&#9472;&#9472; referencelist.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Summary.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; WaterBotleData.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; WaterBottleData.xlsx
+&#9474;  &#9474;  &#9492;&#9472;&#9472; WaterBottleData copy.xlsx
+&#9474;  &#9500;&#9472;&#9472; PRESENTATION_very_old.pptx
+&#9474;  &#9500;&#9472;&#9472; Scanned documents
+&#9474;  &#9474;  &#9500;&#9472;&#9472; article4-13-20.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Article5-6-20_P1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Article5-6-20_P2.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; hours_3-23-20.pdf
+&#9474;  &#9500;&#9472;&#9472; senioryear.md
+&#9474;  &#9500;&#9472;&#9472; senioryear.pdf
+&#9474;  &#9500;&#9472;&#9472; Summer2019
+&#9474;  &#9474;  &#9500;&#9472;&#9472; MentorsList.txt
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Screen Shot 2019-08-06 at 4.06.01 PM.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Screen Shot 2019-08-06 at 4.06.40 PM.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Screen Shot 2019-08-06 at 4.07.36 PM.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Screen Shot 2019-08-06 at 4.14.32 PM.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Screen Shot 2019-08-06 at 4.15.52 PM.png
+&#9474;  &#9474;  &#9500;&#9472;&#9472; summerAssignmentSources.docx
+&#9474;  &#9474;  &#9492;&#9472;&#9472; SummerAssignmentSummaries.docx
+&#9474;  &#9500;&#9472;&#9472; Summer2020
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 2020-2021_JUNIORS_summer_assessment-1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Introduction_to_Research_Paper_Assignment-1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Introduction_to_Research_Paper_rubric-1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; MentorInformation.md
+&#9474;  &#9474;  &#9492;&#9472;&#9472; UHSFiles
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Assignments
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; Mentor Information.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; paper.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; referencelist.pdf
+&#9474;  &#9474;     &#9474;  &#9492;&#9472;&#9472; Research Plan.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Code
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 20year_variance.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; control_variance.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; correlation_xsections.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; correlations.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; fix_data.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; helpers.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; open_xsections.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; regexes.txt
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; tempcep.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; tempdt.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; tempeep.py
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; tempwep.py
+&#9474;  &#9474;     &#9474;  &#9492;&#9472;&#9472; variance.py
+&#9474;  &#9474;     &#9500;&#9472;&#9472; EnrollmentForm.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Figures
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 1.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 2.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 3.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 4.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 5.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 6.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 7.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 8.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 9.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 10.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 11.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 12.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 13.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 14.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 15.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 16.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 17.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 18.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 19.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 20.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 21.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 22.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 23.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 24.pdf
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; 25.pdf
+&#9474;  &#9474;     &#9474;  &#9492;&#9472;&#9472; 26.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; FINAL_DRAFT_2210_Student_Parent_Guide.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; HoursSummer2020.xlsx
+&#9474;  &#9474;     &#9500;&#9472;&#9472; HoursSummer2020 copy.xlsx
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Latex_submission_guidelines_Sept52019.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Maher_et_al-2018-Geophysical_Research_Letters.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Mentor email transcript 1.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Mentor email transcript 2.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; MsFlemingEmailTranscript.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Order Receipt.html
+&#9474;  &#9474;     &#9500;&#9472;&#9472; references.bib
+&#9474;  &#9474;     &#9500;&#9472;&#9472; refsSummer2020.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Registration_Instructions_for_Summer_Science_Research_2020_-_2021_-_Fleming_Kimberly_-_ACAS.pdf
+&#9474;  &#9474;     &#9500;&#9472;&#9472; Screenshots
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; Code editor console screenshot.png
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; Dataset screenshot.png
+&#9474;  &#9474;     &#9474;  &#9500;&#9472;&#9472; github project screenshot.png
+&#9474;  &#9474;     &#9474;  &#9492;&#9472;&#9472; learning r tutorial.png
+&#9474;  &#9474;     &#9492;&#9472;&#9472; UHSEnrollmentForm.pdf
+&#9474;  &#9492;&#9472;&#9472; TextbookHW
+&#9474;     &#9500;&#9472;&#9472; Ch4_5.docx
+&#9474;     &#9500;&#9472;&#9472; Ch6_7.docx
+&#9474;     &#9500;&#9472;&#9472; ch8.docx
+&#9474;     &#9500;&#9472;&#9472; CH9.docx
+&#9474;     &#9500;&#9472;&#9472; Ch10.docx
+&#9474;     &#9500;&#9472;&#9472; Ch11.docx
+&#9474;     &#9492;&#9472;&#9472; ch12.docx
+&#9500;&#9472;&#9472; paperwork
+&#9474;  &#9500;&#9472;&#9472; abstract
+&#9474;  &#9474;  &#9500;&#9472;&#9472; abstract.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; abstract.doc
+&#9474;  &#9474;  &#9500;&#9472;&#9472; abstract.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; abstract.odt
+&#9474;  &#9474;  &#9500;&#9472;&#9472; abstract.org
+&#9474;  &#9474;  &#9500;&#9472;&#9472; abstract.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; abstract.tex
+&#9474;  &#9474;  &#9500;&#9472;&#9472; readme.org
+&#9474;  &#9474;  &#9492;&#9472;&#9472; Sample Abstract Format.pdf
+&#9474;  &#9500;&#9472;&#9472; Abstract_old
+&#9474;  &#9474;  &#9492;&#9472;&#9472; Abstract2.docx
+&#9474;  &#9500;&#9472;&#9472; classmates papers
+&#9474;  &#9474;  &#9500;&#9472;&#9472; celia_feedback.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; celia_feedback.org
+&#9474;  &#9474;  &#9500;&#9472;&#9472; celia_feedback.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; celia_feedback.tex
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Celia Holden Research Paper.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; isabelle_paper.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Jimena_Paper.docx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; marcus_paper.docx
+&#9474;  &#9474;  &#9492;&#9472;&#9472; Sean paper.docx
+&#9474;  &#9500;&#9472;&#9472; elevator
+&#9474;  &#9474;  &#9500;&#9472;&#9472; elevator.md
+&#9474;  &#9474;  &#9500;&#9472;&#9472; elevator.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; readme.md
+&#9474;  &#9500;&#9472;&#9472; Latex_submission_guidelines_Sept52019.pdf
+&#9474;  &#9500;&#9472;&#9472; paper
+&#9474;  &#9474;  &#9500;&#9472;&#9472; _region_.tex
+&#9474;  &#9474;  &#9500;&#9472;&#9472; agu_archive
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; agujournal2019.cls
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; agutexSI2019.cls
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; paper.aux
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; paper.bbl
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; paper.blg
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; paper.log
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; paper.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; paper.synctex.gz
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; paper.tex
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; si_template_2019.aux
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; si_template_2019.log
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; si_template_2019.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; si_template_2019.tex
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; trackchanges-0.7.0
+&#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; AUTHORS
+&#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; COPYING
+&#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; LatexPackage
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; license.txt
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; trackchanges.sty
+&#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; PKG-INFO
+&#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; PythonPackage
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; AcceptChanges
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; __init__.py
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; consoleoutput.py
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; linesegment.py
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; acceptchanges.py
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; TrackChanges
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; __init__.py
+&#9474;  &#9474;  &#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; trackchanges.py
+&#9474;  &#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; README
+&#9474;  &#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; testing
+&#9474;  &#9474;  &#9474;  &#9474;     &#9500;&#9472;&#9472; testing_edit.tex
+&#9474;  &#9474;  &#9474;  &#9474;     &#9500;&#9472;&#9472; testing_new.tex
+&#9474;  &#9474;  &#9474;  &#9474;     &#9492;&#9472;&#9472; testing_old.tex
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; trackchanges.sty
+&#9474;  &#9474;  &#9500;&#9472;&#9472; figures
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_1.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_1.png
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; tempcep.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; tempdt.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; tempeep.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; tempwep.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; variance_1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; figures copy
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_1.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; tempcep.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; tempdt.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; tempeep.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; tempwep.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; variance_1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.html
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.org
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.tex
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paperoutline.md
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paperoutline.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; references.bib
+&#9474;  &#9500;&#9472;&#9472; paper_archive
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.aux
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.bcf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.blg
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.fdb_latexmk
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.fls
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.log
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.out
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.run-Ben&#8217;sMacBookPro.xml
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.run.xml
+&#9474;  &#9474;  &#9500;&#9472;&#9472; paper.synctex.gz
+&#9474;  &#9474;  &#9492;&#9472;&#9472; paper.tex
+&#9474;  &#9500;&#9472;&#9472; papernew
+&#9474;  &#9474;  &#9500;&#9472;&#9472; papernew.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; papernew.dvi
+&#9474;  &#9474;  &#9500;&#9472;&#9472; papernew.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; papernew.tex
+&#9474;  &#9474;  &#9492;&#9472;&#9472; test.tex
+&#9474;  &#9500;&#9472;&#9472; Publish_With_AGU.pdf
+&#9474;  &#9500;&#9472;&#9472; readme.org
+&#9474;  &#9500;&#9472;&#9472; Research Plan
+&#9474;  &#9474;  &#9500;&#9472;&#9472; refs.bib
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Research Plan.aux
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Research Plan.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Research Plan.blg
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Research Plan.log
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Research Plan.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; Research Plan.tex
+&#9474;  &#9500;&#9472;&#9472; ResearchPlan2
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 1A-Student-Checklist-Research-Plan-Instructions.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; auto
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; researchplan.el
+&#9474;  &#9474;  &#9500;&#9472;&#9472; org-ref.org
+&#9474;  &#9474;  &#9500;&#9472;&#9472; plan.org
+&#9474;  &#9474;  &#9500;&#9472;&#9472; plan.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; plan.tex
+&#9474;  &#9474;  &#9492;&#9472;&#9472; references.bib
+&#9474;  &#9492;&#9472;&#9472; RHSQ's
+&#9474;     &#9500;&#9472;&#9472; RHSQ1
+&#9474;     &#9474;  &#9500;&#9472;&#9472; aax4111_SM.pdf
+&#9474;     &#9474;  &#9500;&#9472;&#9472; Presesntation outlineScript.docx
+&#9474;     &#9474;  &#9500;&#9472;&#9472; RHSQGlossary.docx
+&#9474;     &#9474;  &#9492;&#9472;&#9472; RHSQSummary.docx
+&#9474;     &#9500;&#9472;&#9472; RHSQ2
+&#9474;     &#9474;  &#9492;&#9472;&#9472; RHSQ2.docx
+&#9474;     &#9500;&#9472;&#9472; RHSQ3
+&#9474;     &#9474;  &#9492;&#9472;&#9472; Rhsq.docx
+&#9474;     &#9492;&#9472;&#9472; RHSQ4
+&#9474;        &#9492;&#9472;&#9472; Rhsq4.docx
+&#9500;&#9472;&#9472; presentations
+&#9474;  &#9500;&#9472;&#9472; 2020_q1
+&#9474;  &#9474;  &#9500;&#9472;&#9472; PRESENTATION.pptx
+&#9474;  &#9474;  &#9492;&#9472;&#9472; script.pdf
+&#9474;  &#9500;&#9472;&#9472; 2020_q2
+&#9474;  &#9474;  &#9500;&#9472;&#9472; PRESENTATION.odp
+&#9474;  &#9474;  &#9500;&#9472;&#9472; script.md
+&#9474;  &#9474;  &#9492;&#9472;&#9472; script.pdf
+&#9474;  &#9500;&#9472;&#9472; elevator
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Ben Goldman.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; elevator.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; IMG_0905.mov
+&#9474;  &#9500;&#9472;&#9472; Figs
+&#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_1.tiff
+&#9474;  &#9474;  &#9500;&#9472;&#9472; graph.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempcep.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempcep.tiff
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempdt.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; tempdt.tiff
+&#9474;  &#9474;  &#9500;&#9472;&#9472; variance_1.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; variance_1.tiff
+&#9474;  &#9474;  &#9492;&#9472;&#9472; variance_2.pdf
+&#9474;  &#9500;&#9472;&#9472; outline.md
+&#9474;  &#9500;&#9472;&#9472; presentation_current
+&#9474;  &#9474;  &#9500;&#9472;&#9472; board_test-Ben&#8217;sMacBookPro-2.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; board_test-Ben&#8217;sMacBookPro.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; images
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; bootstrap_2.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; climate_change.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; diff_tempdt.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; el_nino.jpg
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; el_nino_reduced.jpg
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; nino3_4.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; variance_2.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; variance_3.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation-Ben&#8217;sMacBookPro-2.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation-Ben&#8217;sMacBookPro-3.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation-Ben&#8217;sMacBookPro-4.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation-Ben&#8217;sMacBookPro-5.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation-Ben&#8217;sMacBookPro.dvi
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation-Ben&#8217;sMacBookPro.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation.bbl
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation.dvi
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation.org
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation.tex
+&#9474;  &#9474;  &#9492;&#9472;&#9472; references.bib
+&#9474;  &#9500;&#9472;&#9472; Q3
+&#9474;  &#9474;  &#9500;&#9472;&#9472; JUNIORS+Q3+Presentations.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; PRESENTATION_old.odp
+&#9474;  &#9474;  &#9492;&#9472;&#9472; script_old.pdf
+&#9474;  &#9500;&#9472;&#9472; Q4
+&#9474;  &#9474;  &#9500;&#9472;&#9472; JUNIORS_Q4_Presentations.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; Rubric_for_Q4_JUNIORS.pdf
+&#9474;  &#9500;&#9472;&#9472; readme.org
+&#9474;  &#9500;&#9472;&#9472; script.bbl
+&#9474;  &#9500;&#9472;&#9472; script.org
+&#9474;  &#9500;&#9472;&#9472; script.pdf
+&#9474;  &#9500;&#9472;&#9472; script.tex
+&#9474;  &#9500;&#9472;&#9472; Symposium
+&#9474;  &#9474;  &#9500;&#9472;&#9472; presentation.org
+&#9474;  &#9474;  &#9492;&#9472;&#9472; presentation.pdf
+&#9474;  &#9500;&#9472;&#9472; WESEF_2021
+&#9474;  &#9474;  &#9500;&#9472;&#9472; 2021-WESEF-MAIN-rubric.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; application
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 1-Checklist-for-Adult-Sponsor.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 1-Checklist-for-Adult-Sponsor Ben Goldman.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 1_filled.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 1a_filled.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 1B-Approval-Form.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; 1b_filled.pdf
+&#9474;  &#9474;  &#9474;  &#9500;&#9472;&#9472; Research Plan.pdf
+&#9474;  &#9474;  &#9474;  &#9492;&#9472;&#9472; WESEF_abstract-2020.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.md
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback_for_others.md
+&#9474;  &#9474;  &#9500;&#9472;&#9472; feedback_for_others.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Goldman, Benjamin - WESEF 2021.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; Last Minute Tips for WESEF 2021.pdf
+&#9474;  &#9474;  &#9500;&#9472;&#9472; PRESENTATION.odp
+&#9474;  &#9474;  &#9500;&#9472;&#9472; PRESENTATION_old.pptx
+&#9474;  &#9474;  &#9500;&#9472;&#9472; script.md
+&#9474;  &#9474;  &#9500;&#9472;&#9472; script.pdf
+&#9474;  &#9474;  &#9492;&#9472;&#9472; WESEF+Instructions+for+virtual+fair.pdf
+&#9474;  &#9492;&#9472;&#9472; Westlake
+&#9474;     &#9500;&#9472;&#9472; 2021+Announcement+Flyer.pdf
+&#9474;     &#9500;&#9472;&#9472; 2021+Judge+Solicitation+Letter+WESTLAKE.pdf
+&#9474;     &#9500;&#9472;&#9472; 2021+MASTER+SWSF+RUBRIC+(PDF).pdf
+&#9474;     &#9492;&#9472;&#9472; WESTLAKE+2021+Judging+procedures.pdf
+&#9500;&#9472;&#9472; README.md
+&#9500;&#9472;&#9472; README.org
+&#9500;&#9472;&#9472; readme_imgs
+&#9474;  &#9500;&#9472;&#9472; download.png
+&#9474;  &#9492;&#9472;&#9472; viewraw.png
+&#9500;&#9472;&#9472; Science+Research+Virtual+Portfolio+Contents+2020-21.pdf
+&#9500;&#9472;&#9472; Science+Research+Virtual+Portfolio+Grading+Rubric.pdf
+&#9500;&#9472;&#9472; SUMMER.org
+&#9492;&#9472;&#9472; SUNY
+   &#9500;&#9472;&#9472; 2021
+   &#9474;  &#9500;&#9472;&#9472; INSTRUCTIONS FOR THE UHS REDUCED PROGRAM FEE.pdf
+   &#9474;  &#9500;&#9472;&#9472; Registration Instructions for Summer Science Research 2021 - 2022 - Fleming, Kimberly - ACAS 209.pdf
+   &#9474;  &#9492;&#9472;&#9472; UHS Benefits of Participation.pdf
+   &#9500;&#9472;&#9472; Order Receipt.pdf
+   &#9492;&#9472;&#9472; UALTRUCR.pdf
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Benjamin Goldman</p>
+<p class="date">Created: 2021-07-08 Thu 17:49</p>
+</div>
+</body>
+</html>
