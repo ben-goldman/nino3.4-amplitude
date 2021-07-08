@@ -1,0 +1,60 @@
+#+TITLE: Notes
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \setlist{noitemsep}
+
+
+* cite:bjerknes1969atmospheric
+
+- First big paper on ENSO having a big impact
+- connected changes in ocean currents to Walker Circulation
+- ENSO phase affects behavior of the Indian Ocean monsoon.
+
+* cite:an2017feedback
+
+- Used SVD (Singular Value Decomposition) together with the Mixed Layer Heat Budget Analysis to look at which feedbacks contributed most to ENSO's variation between models
+- Influence of thermocline feedback is determined by how strongly equatorial horizontal winds affect the slope of the thermocline.
+
+* TODO cite:boer2000transient
+
+* cite:cai2018increased
+
+- Increased ENSO variance in most CMIP5 models in EP ENSO center.
+- Likely caused by greenhouse gases
+- Higher ocean stratification allows for stronger communication between atmospheric and oceanic temperatures.
+- Used EOF analysis.
+
+* TODO cite:chen2015causes
+
+* cite:chen2017possible
+
+- Models are disagreeing on ENSO in the future because they have different representations of the mechanics and mean state of the Pacific subtropical cell
+
+* TODO cite:deser2020isolating
+
+- Main documentation for CESM1 Single Forcing Ensemble
+
+* TODO cite:dewitte2012reinterpreting
+
+* cite:emile2007nino
+
+- Analyzed wavelet power spectrum of ENSO variability in models forced by sunspot and orbital changes
+- Orbital changes increase long-term ENSO variability
+- It is possible that ENSO was the mechanic that allowed prehistoric solar/orbital changes to control the earth's climate
+
+* cite:graham2014effectiveness
+
+- tested how accurate the Bjerknes Stability Index is at measuring the mechanics of ENSO in a couple models
+- BJ index overestimates the importance of the Thermocline feedback.
+- BJ index assumes that terms should be linear when combined, but they actually aren't.
+
+* TODO cite:torrence1998practical
+
+- How to use wavelets to estimate power spectrum in timeseries.
+- Uses ENSO data /very niiceee/
+- Windowed Fourier Transform sucks butt because it is dependent on a time step parameter that can muck with the results depending on which value you choose.
+- A wavelet is a short */blirp/* of a wave with a mean of zero and finite amplitude/frequency and limited time domain.
+- To get an ex. Morlet Wavelet take a regular wave and multiply it by a Gaussian (normal bell curve) so that it drops off over time.
+
+
+bibliographystyle:apalike
+bibliography:./references.bib

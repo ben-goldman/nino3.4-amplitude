@@ -1,0 +1,118 @@
+% Created 2021-07-08 Thu 18:46
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\setlist{noitemsep}
+\author{Benjamin Goldman}
+\date{\today}
+\title{Notes}
+\hypersetup{
+ pdfauthor={Benjamin Goldman},
+ pdftitle={Notes},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.2 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+
+\section{\cite{bjerknes1969atmospheric}}
+\label{sec:org2ba3d44}
+
+\begin{itemize}
+\item First big paper on ENSO having a big impact
+\item connected changes in ocean currents to Walker Circulation
+\item ENSO phase affects behavior of the Indian Ocean monsoon.
+\end{itemize}
+
+\section{\cite{an2017feedback}}
+\label{sec:org301fc0b}
+
+\begin{itemize}
+\item Used SVD (Singular Value Decomposition) together with the Mixed Layer Heat Budget Analysis to look at which feedbacks contributed most to ENSO's variation between models
+\item Influence of thermocline feedback is determined by how strongly equatorial horizontal winds affect the slope of the thermocline.
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{boer2000transient}}
+\label{sec:org0861beb}
+
+\section{\cite{cai2018increased}}
+\label{sec:org4e917df}
+
+\begin{itemize}
+\item Increased ENSO variance in most CMIP5 models in EP ENSO center.
+\item Likely caused by greenhouse gases
+\item Higher ocean stratification allows for stronger communication between atmospheric and oceanic temperatures.
+\item Used EOF analysis.
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{chen2015causes}}
+\label{sec:org1579516}
+
+\section{\cite{chen2017possible}}
+\label{sec:org0513968}
+
+\begin{itemize}
+\item Models are disagreeing on ENSO in the future because they have different representations of the mechanics and mean state of the Pacific subtropical cell
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{deser2020isolating}}
+\label{sec:org1861fc1}
+
+\begin{itemize}
+\item Main documentation for CESM1 Single Forcing Ensemble
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{dewitte2012reinterpreting}}
+\label{sec:org0dc6c59}
+
+\section{\cite{emile2007nino}}
+\label{sec:org66963df}
+
+\begin{itemize}
+\item Analyzed wavelet power spectrum of ENSO variability in models forced by sunspot and orbital changes
+\item Orbital changes increase long-term ENSO variability
+\item It is possible that ENSO was the mechanic that allowed prehistoric solar/orbital changes to control the earth's climate
+\end{itemize}
+
+\section{\cite{graham2014effectiveness}}
+\label{sec:orgbe0857b}
+
+\begin{itemize}
+\item tested how accurate the Bjerknes Stability Index is at measuring the mechanics of ENSO in a couple models
+\item BJ index overestimates the importance of the Thermocline feedback.
+\item BJ index assumes that terms should be linear when combined, but they actually aren't.
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{torrence1998practical}}
+\label{sec:org96cb080}
+
+\begin{itemize}
+\item How to use wavelets to estimate power spectrum in timeseries.
+\item Uses ENSO data \emph{very niiceee}
+\item Windowed Fourier Transform sucks butt because it is dependent on a time step parameter that can muck with the results depending on which value you choose.
+\item A wavelet is a short \textbf{\emph{blirp}} of a wave with a mean of zero and finite amplitude/frequency and limited time domain.
+\end{itemize}
+
+
+
+\bibliographystyle{apalike}
+\bibliography{references}
+\end{document}
