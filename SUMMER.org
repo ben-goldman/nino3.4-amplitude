@@ -27,12 +27,13 @@
 | <2021-07-06 Tue> |        17:35 |      19:35 |       02:00 | analyzed data                        |
 | <2021-07-07 Wed> |        16:54 |      18:23 |       01:29 | organized reference list, read paper |
 | <2021-07-08 Thu> |        17:30 |      19:00 |       01:30 | organized portfolio, read paper      |
+| <2021-07-12 Mon> |        20:00 |      21:00 |       01:00 | set up computer for science          |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day |
 |------------+------------+----------------------|
-|      18:34 |         20 |             00:55:42 |
+|      19:34 |         24 |             00:48:55 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
 #+TBLFM: @2$3 = @2$1 / @2$2 ;T
