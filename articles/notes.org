@@ -1,18 +1,19 @@
 #+TITLE: Notes
 #+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \usepackage{natbib}
 #+LATEX_HEADER: \setlist{noitemsep}
 
+
+* cite:an2017feedback
+
+- Used SVD (Singular Value Decomposition) together with the Mixed Layer Heat Budget Analysis to look at which feedbacks contributed most to ENSO's variation between models
+- Influence of thermocline feedback is determined by how strongly equatorial horizontal winds affect the slope of the thermocline.
 
 * cite:bjerknes1969atmospheric
 
 - First big paper on ENSO having a big impact
 - connected changes in ocean currents to Walker Circulation
 - ENSO phase affects behavior of the Indian Ocean monsoon.
-
-* cite:an2017feedback
-
-- Used SVD (Singular Value Decomposition) together with the Mixed Layer Heat Budget Analysis to look at which feedbacks contributed most to ENSO's variation between models
-- Influence of thermocline feedback is determined by how strongly equatorial horizontal winds affect the slope of the thermocline.
 
 * TODO cite:boer2000transient
 
@@ -47,14 +48,68 @@
 - BJ index overestimates the importance of the Thermocline feedback.
 - BJ index assumes that terms should be linear when combined, but they actually aren't.
 
-* TODO cite:torrence1998practical
+* cite:hu2018cross
+* cite:jia2019weakening
+* TODO cite:jimenez2016record
+* cite:kay2015community
+* cite:kestin1998time
+* TODO cite:kim2014response
+* TODO cite:kohyama2018weakening
+* cite:levine2017impact
+* cite:lorenz1963deterministic
+* TODO cite:liu2007atmospheric
+* cite:lubbecke2014assessing
+* cite:maher2018enso
+* cite:nowack2017role
+* cite:phillips2014evaluating
+* TODO cite:rashid2016atmospheric
+* TODO cite:ropelewski1987global
+* TODO cite:son2010impact
+* TODO cite:stevenson2010enso
+* TODO cite:stevenson2012will
+* cite:stevenson2012significant
+* cite:stevenson2017forced
+
+* cite:torrence1998practical
 
 - How to use wavelets to estimate power spectrum in timeseries.
 - Uses ENSO data /very niiceee/
 - Windowed Fourier Transform sucks butt because it is dependent on a time step parameter that can muck with the results depending on which value you choose.
 - A wavelet is a short */blirp/* of a wave with a mean of zero and finite amplitude/frequency and limited time domain.
 - To get an ex. Morlet Wavelet take a regular wave and multiply it by a Gaussian (normal bell curve) so that it drops off over time.
+- Will be using continuous methods, but discrete also works.
+- Use mathematical transforms to vary scale and translation of wavelet as it slides across the time series.
+- Integrate wavelet multiplied by the timeseries while varying scale and shift to generate a power spectrum.
+- Applied wavelet spectrum analysis to Nino 3 timeseries
+- strong variance in 2-8 year frequency area, but with slight changes between 1900 and 1990
+- However, results are highly dependent on which mother wavelet you choose because they all have quite different properties.
+- Trying power spectrum from a DOG (Mexican Hat) wavelet gives overall similar answer as Morelett wavelet, but it is slightly different (more detailed in time, less detailed in frequency.)
+- Use formula to pick scale limits
+- Add zeroes around the timeseries so that the wavelet equation does not misunderstand the data by thinking it is cyclical
+- Create a cone of influence to mark where the edge confusion is able to interfere with the results.
+- Make sure you convert between the wavelet scale to the Fourier period when you make your axes
+- You can also reverse the wavelet transform to get back the timeseries from the power chart if you really want to (I dont think I will).
+- Time for significance analysis!
+- take a background spectrum that serves as the null hypothesis: all spikes in the power spectrum are due to chance, the underlying signal is really random.
+- Comparing to red noise shows that the peaks of ENSO in 2-8 years are statistically significant
+- Calculate 95% confidence interval by taking 95% confidence $\chi^2$ statistic and multiplying by red noise spectrum.
+- Nino3 SST wavelet power from 2-8year frequency is sometimes significantly different from red noise expectations.
+- "The confidence interval is defined as the probability that the true wavelet power at a certain time and scale lies within a certain interval about the estimated wavelet power."
+- $\chi^2$ test is advantageous because it applies to a lot of situations in wavelet analysis.
+- Averaging the wavelet spectrum across the whole time range gives the overall power spectrum which can be significance tested and approximates the Fourier spectrum.
+- Smoothing/averaging increases DOF, allowing to greater significance for the peaks
+- After that, only main ENSO frequency band is shown to be statistically significant.
+- Similar to time averaging, scale averaging is sometimes a good idea
+- Wavelet analysis can be used to denoise an image/timeseries by throwing away the zones who's amplitude does not meet a certain level of significance.
+- Wavelet analysis across spatial and temporal domains when squashed by frequency allows for a great analysis of spatial and temporal variability.
 
+* TODO cite:vecchi2006weakening
+* cite:vega2017analysis
+* TODO cite:wang2016nino
+* TODO cite:yeo2016role
+* TODO cite:zhang2019review
+* TODO cite:zheng2016intermodel
+* cite:zheng2017response
 
 bibliographystyle:apalike
 bibliography:./references.bib
