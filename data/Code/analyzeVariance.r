@@ -23,13 +23,15 @@ aer_se <- apply(X = aer, MARGIN = 1, FUN = se)
 bmb_se <- apply(X = bmb, MARGIN = 1, FUN = se)
 luc_se <- apply(X = luc, MARGIN = 1, FUN = se)
 
-mydate <- read.table("mydate.csv", sep = ",") %>% as.vector()
+date.num <- seq(1920, 2100, length.out = 2172)
+date.str <- read.table("mydate.csv", sep = ",")$x
+mydate <- date.num
 
-ff_df <- data.frame(time = mydate, mean = ff_mean, sterr = ff_se)
-ghg_df <- data.frame(time = mydate, mean = ghg_mean, sterr = ghg_se)
-aer_df <- data.frame(time = mydate, mean = aer_mean, sterr = aer_se)
-bmb_df <- data.frame(time = mydate, mean = bmb_mean, sterr = bmb_se)
-luc_df <- data.frame(time = mydate, mean = luc_mean, sterr = luc_se)
+ff_df <- data.frame(date = mydate, mean = ff_mean, se = ff_se)
+ghg_df <- data.frame(date = mydate, mean = ghg_mean, se = ghg_se)
+aer_df <- data.frame(date = mydate, mean = aer_mean, se = aer_se)
+bmb_df <- data.frame(date = mydate, mean = bmb_mean, se = bmb_se)
+luc_df <- data.frame(date = mydate, mean = luc_mean, se = luc_se)
 
 
 nino <- ff_df %>% mutate(case = factor("Full Forcing")) %>%
@@ -42,7 +44,7 @@ nino <- ff_df %>% mutate(case = factor("Full Forcing")) %>%
   bind_rows(luc_df %>%
               mutate(case = factor("Land Use")))
 
-ggplot(nino, aes(y = mean,x = x, color =case, fill=case, ymin = (mean - sterr), ymax = (mean + sterr)), show.legend = FALSE) +
+ggplot(nino, aes(y = mean, x = date, color =case, fill=case, ymin = (mean - se), ymax = (mean + se)), show.legend = FALSE) +
   geom_line() +
   geom_ribbon(alpha=0.5, color=NA) +
   facet_grid(case ~ .) +
