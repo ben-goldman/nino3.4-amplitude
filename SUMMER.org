@@ -32,12 +32,14 @@
 | <2021-07-13 Tue> |        17:00 |      17:45 |       00:45 | read journal article                                    |
 | <2021-07-13 Tue> |        20:30 |      21:50 |       01:20 | read journal article                                    |
 | <2021-07-15 Thu> |        17:10 |      19:30 |       02:20 | emailed Ms. Fleming, analyzed data                      |
+| <2021-07-18 Sun> |        12:30 |      13:30 |       01:00 | worked on data                                          |
+| <2021-07-18 Sun> |        14:00 |      15:45 |       01:45 | worked on data                                          |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      25:47 |         27 |             00:57:17 |            00:17 |
+|      28:32 |         30 |             00:57:04 |            00:19 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
