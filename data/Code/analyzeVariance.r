@@ -3,6 +3,8 @@ library(ncdf4)
 library(zoo)
 library(dplyr)
 library(ggplot2)
+library(WaveletComp)
+library(reshape2)
 
 # CESM1 LENS and SF
 ff <- read.table("ff_var.csv", sep = ",") %>% as.matrix()
@@ -10,6 +12,8 @@ ghg <- read.table("ghg_var.csv", sep = ",") %>% as.matrix()
 aer <- read.table("aer_var.csv", sep = ",") %>% as.matrix()
 bmb <- read.table("bmb_var.csv", sep = ",") %>% as.matrix()
 luc <- read.table("luc_var.csv", sep = ",") %>% as.matrix()
+
+ff_raw_mean <- read.table("ff_raw.csv", sep = ",") %>% as.matrix() %>% apply(1, mean)
 
 ff_mean <- apply(X = ff, MARGIN = 1, FUN = mean)
 ghg_mean <- apply(X = ghg, MARGIN = 1, FUN = mean)
@@ -71,6 +75,74 @@ ff_compare <-
     cbind(mydate_2)
 colnames(ff_compare) <- c("Mean", "SE", "Case", "Date")
 
+# Bootstrap process to generate sf timeseries
+
+subtract.bootstrap <- function(data1, data2, reps) {
+    len <- dim(data1)[1]
+    num1 <- dim(data1)[2]
+    num2 <- dim(data2)[2]
+    out <- matrix(NA, ncol = reps, nrow = len)
+#    writeLines(as.character(dim(out)))
+#    writeLines(as.character(len))
+    choice1 <- sample(x = 1:num1, size = reps, replace = TRUE)
+    choice2 <- sample(x = 1:num2, size = reps, replace = TRUE)
+    for(i in 1:reps){
+        writeLines(as.character(i))
+#        writeLines(as.character(choice1[i]))
+#        writeLines(as.character(choice2[i]))
+        answer <- data1[, choice1[i]] - data2[, choice2[i]]
+#        writeLines(as.character(length(answer)))
+        out[, i] <- answer
+    }
+    return(out)
+}
+
+reps <- 1000
+se_bs <- function(x, n) {return(sd(x)/sqrt(n))}
+
+ghg_sf <- subtract.bootstrap(ff, ghg, reps)
+ghg_sf_mean <- ghg_sf %>% apply(1, mean)
+ghg_sf_se <- ghg_sf %>% apply(1, se_bs, n = 20)
+
+aer_sf <- subtract.bootstrap(ff, aer, reps)
+aer_sf_mean <- aer_sf %>% apply(1, mean)
+aer_sf_se <- aer_sf %>% apply(1, se_bs, n = 20)
+
+bmb_sf <- subtract.bootstrap(ff, bmb, reps)
+bmb_sf_mean <- bmb_sf %>% apply(1, mean)
+bmb_sf_se <- bmb_sf %>% apply(1, se_bs, n = 15)
+
+luc_sf <- subtract.bootstrap(ff, luc, reps)
+luc_sf_mean <- luc_sf %>% apply(1, mean)
+luc_sf_se <- luc_sf %>% apply(1, se_bs, n = 5)
+
+cesm_1_sf <-
+    data.frame(mean = ghg_sf_mean,
+               se = ghg_sf_se) %>%
+    mutate(case = factor("GHG")) %>%
+    bind_rows(data.frame(mean = aer_sf_mean,
+                         se = aer_sf_se) %>%
+              mutate(case = factor("AER"))) %>%
+    bind_rows(data.frame(mean = bmb_sf_mean,
+                         se = bmb_sf_se) %>%
+              mutate(case = factor("BMB"))) %>%
+    bind_rows(data.frame(mean = luc_sf_mean,
+                         se = luc_sf_se) %>%
+              mutate(case = factor("LUC"))) %>%
+    cbind(mydate)
+colnames(cesm_1_sf) <- c("Mean", "SE", "Case", "Date")
+
+# little bit of wavelet stuff :)
+ff_rw_ts_dec <- ts(ff_raw_mean, frequency = 12) %>% decompose()
+ff_resid <- ff_rw_ts_dec$random
+ff_resid_wvlt_power <- WaveletTransform(ff_resid[7:2166])$Power %>% melt()
+
+ff_reg_wvlt_power <- WaveletTransform(ff_raw_mean)$Power %>% melt
+
+ff_resid_wvlt_power$Var1 <- (2172 / ff_resid_wvlt_power)$Var1 / 12
+ff_reg_wvlt_power$Var1 <- (2172 / ff_reg_wvlt_power$Var1) / 12
+
+# PLOTTING
 
 ggplot(cesm_1, aes(y = mean, x = date, color =case, fill=case, ymin = (mean - se), ymax = (mean + se)), show.legend = FALSE) +
   geom_line() +
@@ -87,3 +159,20 @@ ggplot(ff_compare, aes(y = Mean, x = Date, color = Case, fill = Case, ymin = (Me
     geom_line() +
     geom_ribbon(alpha = 0.5, color = NA)
 ggsave("../figures/compare_cesm1-2.pdf", width = 5, height = 3)
+
+ggplot(cesm_1_sf, aes(y = Mean, x = Date, color = Case, fill = Case, ymin = (Mean - SE), ymax = (Mean + SE))) +
+    facet_grid(Case ~ .) +
+    geom_line() +
+    geom_ribbon(alpha = 0.5, color = NA)
+
+
+breaks <- 10^(0:4)
+minor_breaks <- rep(1:5, 20)*(10^rep(0:10, each = 2))
+
+ggplot(ff_resid_wvlt_power, aes(Var2, Var1, z = value)) +
+    geom_contour_filled() +
+    scale_y_log10()
+
+ggplot(ff_reg_wvlt_power, aes(Var2, Var1, z = value)) +
+    geom_contour_filled() +
+    scale_y_log10()

@@ -60,3 +60,6 @@ write.table(luc_var, file = "luc_var.csv", sep = ",")
 ncin <- nc_open("/Volumes/Extreme SSD/DATA/stacked/CESM1/TREFHT/b.e11.BRCP85C5CNBDRD.f09_g16.001.cam.h0.TREFHT.192001-210012.nc")
 mydate <- as.Date(as.character(ncvar_get(ncin, "date")), "%Y%m%d")
 write.table(mydate, file = "mydate.csv", sep = ",")
+
+ff_raw <- extract_nino3.4(paste(path_ff, file_ff, sep = ""), "TREFHT")
+write.table(ff_raw, file = "ff_raw.csv", sep = ",")
