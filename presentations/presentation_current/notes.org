@@ -1,0 +1,26 @@
+#+TITLE: Presentation Notes
+
+* Introduction
+
+** El Nino
+** Climate Change
+** Chaos/Timeseries analysis
+** Gap/rationale
+** Hypothesis
+
+* Materials, Methods, and Results
+** Climate simulation
+** CESM1 and CESM2, ensembles
+** R and Python tools
+** Role of mentor and student
+** Measuring ENSO - Niño 3.4
+** ENSO intensity - Windowed variance (or wavelets?)
+** Look at the figure? ENSO is becoming stronger
+** It's not that simple - chaos, need for an ensemble
+** Single forcing ensembles - data input setup
+** bootstrap subtraction process
+** figure comparing - major factors are GHG and AER
+** What is causing this difference? Correlation with ocean temperature
+** look at TEMPDT correlations with FF ensemble - stratification is important
+
+* Discussion and Conclusion

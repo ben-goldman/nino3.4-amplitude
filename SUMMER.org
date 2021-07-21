@@ -15,33 +15,33 @@
 * Hours
 
 #+NAME: DATA
-| Date             | Time Started | Time Ended | Total Hours | Activity                                                |
-|------------------+--------------+------------+-------------+---------------------------------------------------------|
-| <2021-06-18 Fri> |        17:00 |      18:00 |       01:00 | registered for SUNY albany UHS                          |
-| <2021-06-20 Sun> |        11:00 |      12:30 |       01:30 | set up suny and contacted mentor                        |
-| <2021-06-21 Mon> |        18:30 |      19:55 |       01:25 | created hours list                                      |
-| <2021-06-22 Tue> |        10:00 |      15:00 |       05:00 | downloaded data                                         |
-| <2021-06-23 Wed> |        10:00 |      12:21 |       02:21 | organized data                                          |
-| <2021-06-24 Thu> |        10:00 |      10:24 |       00:24 | organized data                                          |
-| <2021-06-27 Sun> |        16:00 |      17:55 |       01:55 | analyzed data                                           |
-| <2021-07-06 Tue> |        17:35 |      19:35 |       02:00 | analyzed data                                           |
-| <2021-07-07 Wed> |        16:54 |      18:23 |       01:29 | organized reference list, read paper                    |
-| <2021-07-08 Thu> |        17:30 |      20:00 |       02:30 | organized portfolio, read paper, learned about wavelets |
-| <2021-07-12 Mon> |        20:00 |      21:00 |       01:00 | set up computer for science                             |
-| <2021-07-13 Tue> |         8:32 |       9:20 |       00:48 | read journal article                                    |
-| <2021-07-13 Tue> |        17:00 |      17:45 |       00:45 | read journal article                                    |
-| <2021-07-13 Tue> |        20:30 |      21:50 |       01:20 | read journal article                                    |
-| <2021-07-15 Thu> |        17:10 |      19:30 |       02:20 | emailed Ms. Fleming, analyzed data                      |
-| <2021-07-18 Sun> |        12:30 |      13:30 |       01:00 | worked on data                                          |
-| <2021-07-18 Sun> |        14:00 |      15:45 |       01:45 | worked on data                                          |
-| <2021-07-19 Mon> |        13:50 |      16:30 |       02:40 | learned how to do wavelet analysis in R, worked on data |
-| <2021-07-20 Tue> |        17:30 |      18:30 |       01:00 | worked on Regeneron STS application                     |
+| Date             | Time Started | Time Ended | Total Hours | Activity                                                             |
+|------------------+--------------+------------+-------------+----------------------------------------------------------------------|
+| <2021-06-18 Fri> |        17:00 |      18:00 |       01:00 | registered for SUNY albany UHS                                       |
+| <2021-06-20 Sun> |        11:00 |      12:30 |       01:30 | set up suny and contacted mentor                                     |
+| <2021-06-21 Mon> |        18:30 |      19:55 |       01:25 | created hours list                                                   |
+| <2021-06-22 Tue> |        10:00 |      15:00 |       05:00 | downloaded data                                                      |
+| <2021-06-23 Wed> |        10:00 |      12:21 |       02:21 | organized data                                                       |
+| <2021-06-24 Thu> |        10:00 |      10:24 |       00:24 | organized data                                                       |
+| <2021-06-27 Sun> |        16:00 |      17:55 |       01:55 | analyzed data                                                        |
+| <2021-07-06 Tue> |        17:35 |      19:35 |       02:00 | analyzed data                                                        |
+| <2021-07-07 Wed> |        16:54 |      18:23 |       01:29 | organized reference list, read paper                                 |
+| <2021-07-08 Thu> |        17:30 |      20:00 |       02:30 | organized portfolio, read paper, learned about wavelets              |
+| <2021-07-12 Mon> |        20:00 |      21:00 |       01:00 | set up computer for science                                          |
+| <2021-07-13 Tue> |         8:32 |       9:20 |       00:48 | read journal article                                                 |
+| <2021-07-13 Tue> |        17:00 |      17:45 |       00:45 | read journal article                                                 |
+| <2021-07-13 Tue> |        20:30 |      21:50 |       01:20 | read journal article                                                 |
+| <2021-07-15 Thu> |        17:10 |      19:30 |       02:20 | emailed Ms. Fleming, analyzed data                                   |
+| <2021-07-18 Sun> |        12:30 |      13:30 |       01:00 | worked on data                                                       |
+| <2021-07-18 Sun> |        14:00 |      15:45 |       01:45 | worked on data                                                       |
+| <2021-07-19 Mon> |        13:50 |      16:30 |       02:40 | learned how to do wavelet analysis in R, worked on data              |
+| <2021-07-20 Tue> |        17:30 |      19:45 |       02:15 | worked on Regeneron STS application, did data, outlined presentation |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      32:12 |         32 |             01:00:22 |            00:21 |
+|      33:27 |         32 |             01:02:43 |            00:22 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
