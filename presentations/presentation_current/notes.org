@@ -6,6 +6,7 @@
 *** Climate Change
 **** Only do long term change
 **** examples
+**** Forcing definition: outside influence that affects the earth's climate
 **** Image: global warming trend line
 *** El Niño
 **** Figure with ocean and atmosphere mechanics
@@ -13,9 +14,20 @@
 **** 2-8 year period
 **** some events are stronger than others
 **** We need to predict how it will change in the future
+*** Climate simulation
+**** Run equations that simulate climate on computers
+**** take state of climate at one point and simulate it progressing
+**** can be input with levels of forcing
+**** output climate variables
+*** Climate change and ENSO interact
+**** cite:stevenson2017forced
+***** Intertwining role of multiple forcings in affecting ENSO
+**** cite:cai2018increased
+***** When using EOF analysis and multiple models, signal strengthens
+**** cite:zheng2017response
+***** ENSO's signal is highly clouded, only with a large (>15 models) ensemble can significant changes be detected.
 *** Gap and goal
 *** Research Question
-*** Climate simulation
 *** Signal and noise
 **** show an image of one member and ask for a trend
 **** add other ensemble members to clarify and show importance of ensemble and sample size
@@ -27,7 +39,6 @@
 *** Look at the figure? ENSO is becoming stronger
 *** It's not that simple - chaos, need for an ensemble
 *** Single forcing ensembles - data input setup
-*** bootstrap subtraction process
 *** figure comparing - major factors are GHG and AER
 *** What is causing this difference? Correlation with ocean temperature
 *** look at TEMPDT correlations with FF ensemble - stratification is important
@@ -38,8 +49,3 @@
 *** cite:torrence1998practical
 **** Application of wavelet analysis to ENSO
 **** Development of statistical significance tests for wavelet analysis
-*** cite:stevenson2017forced
-**** Intertwining role of multiple factors in affecting ENSO
-*** cite:cai2018increased
-*** cite:zheng2017response
-**** ENSO's signal is highly clouded, only with a large (>15 models) ensemble can significant changes be detected.
