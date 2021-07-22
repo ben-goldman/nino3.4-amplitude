@@ -36,12 +36,13 @@
 | <2021-07-18 Sun> |        14:00 |      15:45 |       01:45 | worked on data                                                       |
 | <2021-07-19 Mon> |        13:50 |      16:30 |       02:40 | learned how to do wavelet analysis in R, worked on data              |
 | <2021-07-20 Tue> |        17:30 |      19:45 |       02:15 | worked on Regeneron STS application, did data, outlined presentation |
+| <2021-07-21 Wed> |        20:30 |      21:30 |       01:00 |                                                                      |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      33:27 |         32 |             01:02:43 |            00:22 |
+|      34:27 |         33 |             01:02:38 |            00:22 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )

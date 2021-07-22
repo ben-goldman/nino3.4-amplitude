@@ -39,6 +39,8 @@ aer_df <- data.frame(date = mydate, mean = aer_mean, se = aer_se)
 bmb_df <- data.frame(date = mydate, mean = bmb_mean, se = bmb_se)
 luc_df <- data.frame(date = mydate, mean = luc_mean, se = luc_se)
 
+ff_members <- ff %>% melt() %>% mutate(date = (Var1/12 + 1920))
+
 cesm_1 <- ff_df %>% mutate(case = factor("Full Forcing")) %>%
   bind_rows(ghg_df %>%
               mutate(case = factor("Greenhouse"))) %>%
@@ -59,6 +61,8 @@ ff_2_se <- apply(X = ff_2, MARGIN = 1, FUN = se)
 mydate_2 <- seq(1850, 2100, length.out = 3012)
 
 ff_2_df <- data.frame(date = mydate_2, mean = ff_2_mean, se = ff_2_se)
+
+ff_2_members <- ff_2 %>% melt() %>% mutate(date = (Var1/12 + 1850))
 
 #ff_compare <- ff_df %>% mutate(case = factor("CESM1")) %>%
 #    bind_rows(ff_2_df %>%
@@ -155,6 +159,16 @@ ggplot(ff_df, aes(y = mean, x = date, ymin = (mean - se), ymax = (mean + se))) +
     geom_line(color = "Blue") +
     geom_ribbon(alpha = .5, fill = "Blue", color = NA)
 
+ggplot(ff_2_df, aes(y = mean, x = date, ymin = (mean - se), ymax = (mean + se))) +
+    geom_line() +
+    geom_ribbon(alpha = .5)
+
+ggplot(ff_members, aes(x = date, y = value, group = Var2)) +
+    geom_line(alpha = .1) +
+
+ggplot(ff_2_members, aes(x = date, y = value, group = Var2)) +
+    geom_line(alpha = .1)
+
 ggplot(ff_compare, aes(y = Mean, x = Date, color = Case, fill = Case, ymin = (Mean - SE), ymax = (Mean + SE))) +
     geom_line() +
     geom_ribbon(alpha = 0.5, color = NA)
@@ -164,10 +178,6 @@ ggplot(cesm_1_sf, aes(y = Mean, x = Date, color = Case, fill = Case, ymin = (Mea
     facet_grid(Case ~ .) +
     geom_line() +
     geom_ribbon(alpha = 0.5, color = NA)
-
-
-breaks <- 10^(0:4)
-minor_breaks <- rep(1:5, 20)*(10^rep(0:10, each = 2))
 
 ggplot(ff_resid_wvlt_power, aes(Var2, Var1, z = value)) +
     geom_contour_filled() +

@@ -1,26 +1,45 @@
 #+TITLE: Presentation Notes
 
-* Introduction
 
-** El Nino
-** Climate Change
-** Chaos/Timeseries analysis
-** Gap/rationale
-** Hypothesis
+* Outline
 
-* Materials, Methods, and Results
-** Climate simulation
-** CESM1 and CESM2, ensembles
-** R and Python tools
-** Role of mentor and student
-** Measuring ENSO - Niño 3.4
-** ENSO intensity - Windowed variance (or wavelets?)
-** Look at the figure? ENSO is becoming stronger
-** It's not that simple - chaos, need for an ensemble
-** Single forcing ensembles - data input setup
-** bootstrap subtraction process
-** figure comparing - major factors are GHG and AER
-** What is causing this difference? Correlation with ocean temperature
-** look at TEMPDT correlations with FF ensemble - stratification is important
+*** Climate Change
+**** Only do long term change
+**** examples
+**** Image: global warming trend line
+*** El Niño
+**** Figure with ocean and atmosphere mechanics
+**** ENSO is when the temperature of the Pacific Ocean changes between different years
+**** 2-8 year period
+**** some events are stronger than others
+**** We need to predict how it will change in the future
+*** Gap and goal
+*** Research Question
+*** Climate simulation
+*** Signal and noise
+**** show an image of one member and ask for a trend
+**** add other ensemble members to clarify and show importance of ensemble and sample size
+*** CESM1 and CESM2, ensembles
+*** R and Python tools
+*** Role of mentor and student
+*** Measuring ENSO - Niño 3.4
+*** ENSO intensity - Windowed variance (or wavelets?)
+*** Look at the figure? ENSO is becoming stronger
+*** It's not that simple - chaos, need for an ensemble
+*** Single forcing ensembles - data input setup
+*** bootstrap subtraction process
+*** figure comparing - major factors are GHG and AER
+*** What is causing this difference? Correlation with ocean temperature
+*** look at TEMPDT correlations with FF ensemble - stratification is important
 
-* Discussion and Conclusion
+* Which articles to include?
+*** cite:bjerknes1969atmospheric
+**** Connected Walker Circulation to climate outside the Pacific
+*** cite:torrence1998practical
+**** Application of wavelet analysis to ENSO
+**** Development of statistical significance tests for wavelet analysis
+*** cite:stevenson2017forced
+**** Intertwining role of multiple factors in affecting ENSO
+*** cite:cai2018increased
+*** cite:zheng2017response
+**** ENSO's signal is highly clouded, only with a large (>15 models) ensemble can significant changes be detected.
