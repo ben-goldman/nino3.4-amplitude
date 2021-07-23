@@ -11,9 +11,9 @@ Junior
 - Other files, like Microsoft Office documents (=.docx=, =.pptx=, =.xlsx=) will have to be downloaded following the instructions below.
 - Finally, files with the extensions =.odt= and =.odp= can be opened in Word and PowerPoint, respectively.
 
-*** Generally, most of my documents are in =.pdf= form.
+Generally, most of my documents are in =.pdf= form.
 
-*** Files named =readme.md= or =readme.org= are summary/explanation for certain folders, or they contain an online-viewable copy of that folder's content.
+Files named =readme.md= or =readme.org= are summary/explanation for certain folders, or they contain an online-viewable copy of that folder's content.
 
 Navigate repository on website and download files individually as needed.
 
