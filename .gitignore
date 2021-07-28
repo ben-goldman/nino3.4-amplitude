@@ -6,3 +6,6 @@
 *.aux
 *.log
 *.dvi
+*.nav
+*.snm
+*.toc

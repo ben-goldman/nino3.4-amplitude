@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\message{ !name(presentation.tex)}\documentclass{beamer}
 \title{The Impact of Anthropogenic Forcing on ENSO Amplitude}
 \author{Ben Goldman}
 \date{\today}
@@ -8,6 +8,7 @@
 \renewcommand{\bibsection}{}
 
 % \begin{frame}{Example Frame With Text and Image}
+
 %   \begin{columns}
 %     \column{0.5\textwidth}
 %     \begin{itemize}
@@ -25,6 +26,9 @@
 
 
 \begin{document}
+
+\message{ !name(presentation.tex) !offset(-3) }
+
 
 \maketitle
 
@@ -57,7 +61,7 @@
 \end{frame}
 
 \begin{frame}{ENSO in the Future}
-  Problem: What effect does global warming have on ENSO? Can we expect ENSO to become stronger, weaker, or neither?
+
 \end{frame}
 
 \begin{frame}{Gap and Goal}
@@ -74,56 +78,11 @@
 
 \end{frame}
 
-\begin{frame}{Analysis Tools}
-  \begin{columns}[t]
-    \column{.33\textwidth}
-    R:
-    \begin{itemize}
-    \item ncdf4
-    \item zoo
-    \item dplyr
-    \item ggplot2
-    \item WaveletComp
-    \item reshape2
-    \end{itemize}
-    \column{.33\textwidth}
-    Python:
-    \begin{itemize}
-    \item numpy
-    \item pandas
-    \item scipy
-    \item matplotlib
-    \item netCDF4
-    \end{itemize}
-    \column{.33\textwidth}
-    Other:
-    \begin{itemize}
-    \item nco
-    \end{itemize}
-  \end{columns}
+\begin{frame}{R and Python tools}
 
 \end{frame}
 
 \begin{frame}{Role of Mentor and Student}
-  \begin{columns}[t]
-    \column{.5\textwidth}
-    Mentor:
-    \begin{itemize}
-    \item Suggest future methods
-    \item Conduct parallel analysis to complement student work
-    \item Provide raw precollected data
-    \item Interpret data produced by student
-    \item Review student writing
-    \end{itemize}
-    \column{.5\textwidth}
-    Student:
-    \begin{itemize}
-    \item Analyze data on computer
-    \item Produce graphics for analysis and publication
-    \item Write documentation
-    \item Suggest interpretations of data
-    \end{itemize}
-  \end{columns}
 
 \end{frame}
 
@@ -167,8 +126,6 @@
 
 \end{frame}
 
-\section{Conclusion}
-
 \begin{frame}{Conclusions}
 
 \end{frame}
@@ -189,3 +146,5 @@
 \maketitle
 
 \end{document}
+
+\message{ !name(presentation.tex) !offset(-150) }
