@@ -41,12 +41,13 @@
 | <2021-07-22 Thu> |        20:30 |      21:30 |       01:00 | did a little data, showed presentation skeleton to mom               |
 | <2021-07-26 Mon> |        17:00 |      19:30 |       02:30 | data analysis stuff                                                  |
 | <2021-07-27 Tue> |        20:30 |      22:00 |       01:30 | emailed ms. fleming, worked on presentation                          |
+| <2021-07-28 Wed> |        20:30 |      22:00 |       01:30 | data analysis wavelet confusion                                      |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      40:37 |         39 |             01:02:29 |            00:27 |
+|      42:07 |         40 |             01:03:10 |            00:28 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
