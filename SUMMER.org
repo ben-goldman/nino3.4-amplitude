@@ -1,16 +1,16 @@
 #+TITLE: Summer
 
 * Assignment List
-** TODO Research JOURNAL accounts for appropriate time, dates, and tasks spent conducting research both in and outside of class and provides appropriate details
-** TODO Student has documented appropriate hours (1 per day) for this time period (includes additional hours if student requested extra time): HOURS: 90
-** TODO Register for SUNY Albany credits OR write down the reason you did not or can not
-** TODO Email Mrs. Fleming over the summer with an update on your research progress at least once. Work does not need to be submitted. (SUNY Albany students must email Mrs. Fleming every 2 weeks-4 times-by the following dates: 7/9/21, 7/23/21, 8/6/21, 8/20/21).
-** TODO Provide evidence of completed data collection and/or data analysis for new study.
-** TODO Revise PowerPoint presentation of your completed research project.
-** TODO Create a Regeneron Science Talent Search (STS) account. Read through all of the rules and guidelines. Copy & paste the eight essay questions from TASK 7 into a Word document and begin working on the answers (you can copy & paste your responses into the application later) https://sciencetalentsearch.smapply.org
-** TODO Review the STS application and complete all of TASKS 1, 2 (including requesting the 3 recommendations), 8 & 10. Please review the requirements of the recommenders before providing their emails. Mrs. Fleming can be your “Project Recommender” if you aren’t comfortable asking your mentor, but then she can not also be your “Educator recommender” and you will need to ask another person. Your guidance counselor is your “High School Report” Recommender.
-** TODO Communicate with mentor at least once with an update on your research progress and with information about what is needed for publication. Ask for the STS “project recommendation” for the competition. You may also want to mention that the WR-JSHS competition and the WESEF competition both may require form(s) and signatures from your mentor (you can provide those at a later date)
-** TODO Finalize your research paper (“Project Report”) for the STS competition. Read the “Research Report Guidelines” thoroughly and follow their formatting suggestions exactly. This will be graded with a rubric at a later date. Though it can still be edited after September, the version you submit for this summer assignment should include results as well as discussion & conclusions.
+**** TODO Research JOURNAL accounts for appropriate time, dates, and tasks spent conducting research both in and outside of class and provides appropriate details
+**** TODO Student has documented appropriate hours (1 per day) for this time period (includes additional hours if student requested extra time): HOURS: 90
+**** TODO Register for SUNY Albany credits OR write down the reason you did not or can not
+**** TODO Email Mrs. Fleming over the summer with an update on your research progress at least once. Work does not need to be submitted. (SUNY Albany students must email Mrs. Fleming every 2 weeks-4 times-by the following dates: 7/9/21, 7/23/21, 8/6/21, 8/20/21).
+**** TODO Provide evidence of completed data collection and/or data analysis for new study.
+**** TODO Revise PowerPoint presentation of your completed research project.
+**** TODO Create a Regeneron Science Talent Search (STS) account. Read through all of the rules and guidelines. Copy & paste the eight essay questions from TASK 7 into a Word document and begin working on the answers (you can copy & paste your responses into the application later) https://sciencetalentsearch.smapply.org
+**** TODO Review the STS application and complete all of TASKS 1, 2 (including requesting the 3 recommendations), 8 & 10. Please review the requirements of the recommenders before providing their emails. Mrs. Fleming can be your “Project Recommender” if you aren’t comfortable asking your mentor, but then she can not also be your “Educator recommender” and you will need to ask another person. Your guidance counselor is your “High School Report” Recommender.
+**** TODO Communicate with mentor at least once with an update on your research progress and with information about what is needed for publication. Ask for the STS “project recommendation” for the competition. You may also want to mention that the WR-JSHS competition and the WESEF competition both may require form(s) and signatures from your mentor (you can provide those at a later date)
+**** TODO Finalize your research paper (“Project Report”) for the STS competition. Read the “Research Report Guidelines” thoroughly and follow their formatting suggestions exactly. This will be graded with a rubric at a later date. Though it can still be edited after September, the version you submit for this summer assignment should include results as well as discussion & conclusions.
 
 * Hours
 
