@@ -21,3 +21,12 @@ Navigate repository on website and download files individually as needed.
 - Certain files cannot be viewed online, click "View Raw" to download and open offline.
 
 [[./readme_imgs/viewraw.png]]
+
+[[./data/figures/jpg/cesm1.jpg]]
+[[./data/figures/jpg/cesm1_2.jpg]]
+[[./data/figures/jpg/cesm1_sf.jpg]]
+[[./data/figures/jpg/cesm1_sf_2.jpg]]
+[[./data/figures/jpg/cesm1_sf_3.jpg]]
+[[./data/figures/jpg/ff1.jpg]]
+[[./data/figures/jpg/ff2.jpg]]
+[[./data/figures/jpg/ff_compare.jpg]]

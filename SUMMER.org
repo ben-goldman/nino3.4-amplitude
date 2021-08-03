@@ -45,12 +45,13 @@
 | <2021-07-29 Thu> |        17:50 |      18:50 |       01:00 | zoom call with mentor                                                |
 | <2021-07-30 Fri> |        17:00 |      18:00 |       01:00 | zoom call with mentor                                                |
 | <2021-08-01 Sun> |        15:20 |      17:25 |       02:05 | data analysis                                                        |
+| <2021-08-02 Mon> |        19:40 |      21:22 |       01:42 | data analysis                                                        |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      46:12 |         44 |             01:03:00 |            00:30 |
+|      47:54 |         45 |             01:03:52 |            00:31 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )

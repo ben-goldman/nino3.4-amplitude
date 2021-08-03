@@ -52,50 +52,6 @@ make_df <- function(this, this.date, date.start = NA, date.end = NA) {
     return(this.df)
 }
 
-date1 <- seq(1920, 2100, length.out = 2172)
-date2 <- seq(1850, 2100, length.out = 3012)
-
-# CESM1 LENS and SF
-ff1 <- load_variance("./data/CESM1/ff.csv")
-ghg1 <- load_variance("./data/CESM1/ghg.csv")
-aer1 <- load_variance("./data/CESM1/aer.csv")
-bmb1 <- load_variance("./data/CESM1/bmb.csv")
-luc1 <- load_variance("./data/CESM1/luc.csv")
-
-ff1_df <- make_df(ff1, date2, date.start = 840)
-ghg1_df <- make_df(ghg1, date2, date.start = 840)
-aer1_df <- make_df(aer1, date2, date.start = 840)
-bmb1_df <- make_df(bmb1, date2, date.start = 840)
-luc1_df <- make_df(luc1, date2, date.start = 840)
-
-ff2 <- load_variance("./data/CESM2/ff.csv")
-ff2_df <- make_df(ff2, date2)
-
-ff_members <- ff %>% melt() %>% mutate(date = (Var1/12 + 1920))
-
-cesm_1 <- ff1_df %>% mutate(case = factor("Full Forcing")) %>%
-  bind_rows(ghg1_df %>%
-              mutate(case = factor("Greenhouse"))) %>%
-  bind_rows(aer1_df %>%
-              mutate(case = factor("Aerosols"))) %>%
-  bind_rows(bmb1_df %>%
-              mutate(case = factor("Biomass")))  %>%
-  bind_rows(luc1_df %>%
-              mutate(case = factor("Land Use")))
-
-ff_2_members <- ff_2 %>% melt() %>% mutate(date = (Var1/12 + 1850))
-
-#ff_compare <- ff_df %>% mutate(case = factor("CESM1")) %>%
-#    bind_rows(ff_2_df %>%
-#              mutate(case = factor("CESM2")) %>%
-#              rbind)
-
-ff_compare <- ff1_df %>% mutate(case = factor("CESM1")) %>%
-    bind_rows(ff2_df %>% mutate(case = factor("CESM2")))
-
-# Bootstrap process to generate sf timeseries
-
-reps <- 1000
 se_bs <- function(x, n) {return(sd(x)/sqrt(n))}
 
 subtract.bootstrap <- function(data1, data2, reps, date, n) {
@@ -120,52 +76,125 @@ subtract.bootstrap <- function(data1, data2, reps, date, n) {
     return(out.df)
 }
 
+gsave <- function(name, plot = last_plot(), dimensions = c(8, 6), path = "./figures/") {
+    ggsave(name, path = path, width = dimensions[1], height = dimensions[2])
+}
+
+date1 <- seq(1920, 2100, length.out = 2172)
+date2 <- seq(1850, 2100, length.out = 3012)
+
+# CESM1 LENS and SF
+ff1 <- load_variance("./data/CESM1/ff.csv")
+ghg1 <- load_variance("./data/CESM1/ghg.csv")
+aer1 <- load_variance("./data/CESM1/aer.csv")
+bmb1 <- load_variance("./data/CESM1/bmb.csv")
+luc1 <- load_variance("./data/CESM1/luc.csv")
+
+ff1_df <- make_df(ff1, date2, date.start = 840)
+ghg1_df <- make_df(ghg1, date2, date.start = 840)
+aer1_df <- make_df(aer1, date2, date.start = 840)
+bmb1_df <- make_df(bmb1, date2, date.start = 840)
+luc1_df <- make_df(luc1, date2, date.start = 840)
+
+ff1_mean <- mean(ff1_df$mean, na.rm = TRUE)
+
+cesm_1 <- ff1_df %>% mutate(case = factor("Full Forcing")) %>%
+  bind_rows(ghg1_df %>% mutate(case = factor("Greenhouse"))) %>%
+  bind_rows(aer1_df %>% mutate(case = factor("Aerosols"))) %>%
+  bind_rows(bmb1_df %>% mutate(case = factor("Biomass")))  %>%
+  bind_rows(luc1_df %>% mutate(case = factor("Land Use")))
+
+ff2 <- load_variance("./data/CESM2/ff.csv")
+ff2_df <- make_df(ff2, date2)
+
+ff_members <- ff1 %>% melt() %>% mutate(date = (Var1/12 + 1920))
+
+ff2_members <- ff2 %>% melt() %>% mutate(date = (Var1/12 + 1850))
+
+ff_compare <- ff1_df %>% mutate(case = factor("CESM1")) %>%
+    bind_rows(ff2_df %>% mutate(case = factor("CESM2")))
+
+# Bootstrap process to generate sf timeseries
+reps <- 1000
+
 ghg1_sf <- subtract.bootstrap(ff1, ghg1, reps, date2, 20)
 aer1_sf <- subtract.bootstrap(ff1, aer1, reps, date2, 20)
 bmb1_sf <- subtract.bootstrap(ff1, bmb1, reps, date2, 15)
 luc1_sf <- subtract.bootstrap(ff1, luc1, reps, date2, 5)
 
-cesm1_sf <- ghg1_sf %>% mutate(case = factor("GHG")) %>%
+cesm1_sf <- data.frame(date = ff1_df$date, mean = ff1_df$mean - ff1_mean, se = ff1_df$se, case = factor("FF")) %>%
+    bind_rows(ghg1_sf %>% mutate(case = factor("GHG"))) %>%
     bind_rows(aer1_sf %>% mutate(case = factor("AER"))) %>%
     bind_rows(bmb1_sf %>% mutate(case = factor("BMB"))) %>%
     bind_rows(luc1_sf %>% mutate(case = factor("LUC")))
 
-yay <- ggplot(cesm_1, aes(y = mean, x = date, color = case, fill = case, ymin = (mean - 2*se), ymax = (mean + 2*se)), show.legend = FALSE) +
+xlim1 <- c(1930, 2090)
+xlim2 <- c(1860, 2090)
+
+l <- 0.2
+m <- 0.5
+d <- 0.8
+
+ggplot(cesm_1, aes(y = mean, x = date, color = case, fill = case, ymin = (mean - 2*se), ymax = (mean + 2*se)), show.legend = FALSE) +
   geom_line() +
-  geom_ribbon(alpha=0.5, color=NA) +
+  geom_ribbon(alpha = m, color = NA) +
   facet_grid(case ~ .) +
   theme(legend.position = "none") +
-  xlim(c(1920, 2100))
-ggsave("./figures/yay.pdf", yay)
+  xlim(xlim1) +
+  labs(title = "CESM1 20-Year Variance", x = "Date", y = "Variance", color = "Case")
+gsave("cesm1.pdf")
 
-ggplot(ff1_df, aes(y = mean, x = date, ymin = (mean - 2*se), ymax = (mean + 2*se))) +
-    geom_line(color = "Blue") +
-    geom_ribbon(alpha = .5, fill = "Blue", color = NA)
+ggplot(cesm_1, aes(y = mean, x = date, color = case, fill = case, ymin = (mean - 2*se), ymax = (mean + 2*se))) +
+  geom_line() +
+  geom_ribbon(alpha = l, color = NA) +
+  xlim(xlim1) +
+  labs(title = "CESM1 20-Year Variance", x = "Date", y = "Variance", color = "Case", fill = "Case")
+gsave("cesm1_2.pdf")
+
+ggplot(ff1_df, aes(y = mean - ff1_mean, x = date, ymin = (mean - 2 * se - ff1_mean), ymax = (mean + 2 * se - ff1_mean))) +
+  geom_line() +
+  geom_ribbon(alpha = m, color = NA) +
+  xlim(xlim1) +
+  labs(title = "CESM1 LENS 20-Year Variance", x = "Date", y = "Variance", color = "Case", fill = "Case")
+gsave("ff1.pdf")
 
 ggplot(ff2_df, aes(y = mean, x = date, ymin = (mean - 2*se), ymax = (mean + 2*se))) +
-    geom_line() +
-    geom_ribbon(alpha = .5)
+  geom_line() +
+  geom_ribbon(alpha = m, color = NA) +
+  xlim(xlim2) +
+  labs(title = "CESM2 LENS 20-Year Variance", x = "Date", y = "Variance", color = "Case", fill = "Case")
+gsave("ff2.pdf")
+## ggplot(ff_members, aes(x = date, y = value, group = Var2)) +
+##     geom_line(alpha = .1)
 
-ggplot(ff_members, aes(x = date, y = value, group = Var2)) +
-    geom_line(alpha = .1) +
-
-ggplot(ff_2_members, aes(x = date, y = value, group = Var2)) +
-    geom_line(alpha = .1)
+## ggplot(ff2_members, aes(x = date, y = value, group = Var2)) +
+##     geom_line(alpha = .1)
 
 ggplot(ff_compare, aes(y = mean, x = date, color = case, fill = case, ymin = (mean - 2 * se), ymax = (mean + 2 * se))) +
-    geom_line() +
-    geom_ribbon(alpha = 0.5, color = NA)
-ggsave("../figures/compare_cesm1-2.pdf", width = 5, height = 3)
+  geom_line() +
+  geom_ribbon(alpha = l, color = NA) +
+  xlim(xlim2) +
+  labs(title = "LENS 20-Year Variance", x = "Date", y = "Variance", color = "Case", fill = "Case")
+gsave("ff_compare.pdf")
 
 ggplot(cesm1_sf, aes(y = mean, x = date, color = case, fill = case, ymin = (mean - 2 * se), ymax = (mean + 2 * se))) +
-    facet_grid(case ~ .) +
-    geom_line() +
-    geom_ribbon(alpha = 0.5, color = NA)
+  facet_grid(case ~ .) +
+  geom_line() +
+  geom_ribbon(alpha = m, color = NA) +
+  xlim(xlim1) +
+  labs(title = "CESM1 20-Year Variance", subtitle = "Single Forcing Net Impact", x = "Date", y = "Variance", color = "Case", fill = "Case")
+gsave("cesm1_sf.pdf")
 
-ggplot(ff_resid_wvlt_power, aes(Var2, Var1, z = value)) +
-    geom_contour_filled() +
-    scale_y_log10()
+ggplot(cesm1_sf, aes(y = mean, x = date, color = case, fill = case, ymin = (mean - 2 * se), ymax = (mean + 2 * se))) +
+  geom_line() +
+  geom_ribbon(alpha = l, color = NA) +
+  xlim(xlim1) +
+  labs(title = "CESM1 20-Year Variance", subtitle = "Single Forcing Net Impact", x = "Date", y = "Variance", color = "Case", fill = "Case")
+gsave("cesm1_sf_2.pdf")
 
-## ggplot(ff_reg_wvlt_power, aes(Var2, Var1, z = value)) +
-##     geom_contour_filled() +
-##     scale_y_log10()
+ggplot(cesm1_sf %>% filter(case != "LUC"), aes(y = mean, x = date, color = case, fill = case, ymin = (mean - 2 * se), ymax = (mean + 2 * se))) +
+  geom_line() +
+  geom_ribbon(alpha = l, color = NA) +
+  xlim(xlim1) +
+  labs(title = "CESM1 20-Year Variance", subtitle = "Single Forcing Net Impact", x = "Date", y = "Variance", color = "Case", fill = "Case")
+gsave("cesm1_sf_3.pdf")
