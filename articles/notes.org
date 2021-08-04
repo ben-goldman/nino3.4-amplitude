@@ -50,6 +50,17 @@
 
 * cite:hu2018cross
 * cite:jia2019weakening
+:PROPERTIES:
+:NOTER_DOCUMENT: jia2019weakening.pdf
+:END:
+
+** testing
+:PROPERTIES:
+:NOTER_PAGE: 1
+:END:
+
+
+
 * TODO cite:jimenez2016record
 * cite:kay2015community
 * cite:kestin1998time
