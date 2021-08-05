@@ -47,12 +47,13 @@
 | <2021-08-01 Sun> |        15:20 |      17:25 |       02:05 | data analysis                                                        |
 | <2021-08-02 Mon> |        19:40 |      21:22 |       01:42 | data analysis                                                        |
 | <2021-08-03 Tue> |        19:30 |      21:00 |       01:30 | downloaded data, learned to use note-taking plugin                   |
+| <2021-08-04 Wed> |        20:00 |      22:10 |       02:10 | downloaded data and stacked dataset                                  |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      49:24 |         46 |             01:04:26 |            00:32 |
+|      51:34 |         47 |             01:05:49 |            00:34 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
