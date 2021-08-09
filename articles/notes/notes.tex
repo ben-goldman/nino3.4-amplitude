@@ -1,0 +1,201 @@
+% Created 2021-07-13 Tue 22:21
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{natbib}
+\setlist{noitemsep}
+\author{Benjamin Goldman}
+\date{\today}
+\title{Notes}
+\hypersetup{
+ pdfauthor={Benjamin Goldman},
+ pdftitle={Notes},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.2 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+
+\section{\cite{an2017feedback}}
+\label{sec:org3655487}
+
+\begin{itemize}
+\item Used SVD (Singular Value Decomposition) together with the Mixed Layer Heat Budget Analysis to look at which feedbacks contributed most to ENSO's variation between models
+\item Influence of thermocline feedback is determined by how strongly equatorial horizontal winds affect the slope of the thermocline.
+\end{itemize}
+
+\section{\cite{bjerknes1969atmospheric}}
+\label{sec:org136b470}
+
+\begin{itemize}
+\item First big paper on ENSO having a big impact
+\item connected changes in ocean currents to Walker Circulation
+\item ENSO phase affects behavior of the Indian Ocean monsoon.
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{boer2000transient}}
+\label{sec:org04662d3}
+
+\section{\cite{cai2018increased}}
+\label{sec:org328012a}
+
+\begin{itemize}
+\item Increased ENSO variance in most CMIP5 models in EP ENSO center.
+\item Likely caused by greenhouse gases
+\item Higher ocean stratification allows for stronger communication between atmospheric and oceanic temperatures.
+\item Used EOF analysis.
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{chen2015causes}}
+\label{sec:orgd3d49d0}
+
+\section{\cite{chen2017possible}}
+\label{sec:org21b124c}
+
+\begin{itemize}
+\item Models are disagreeing on ENSO in the future because they have different representations of the mechanics and mean state of the Pacific subtropical cell
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{deser2020isolating}}
+\label{sec:org43ffddf}
+
+\begin{itemize}
+\item Main documentation for CESM1 Single Forcing Ensemble
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{dewitte2012reinterpreting}}
+\label{sec:org2367605}
+
+\section{\cite{emile2007nino}}
+\label{sec:orgbb125ce}
+
+\begin{itemize}
+\item Analyzed wavelet power spectrum of ENSO variability in models forced by sunspot and orbital changes
+\item Orbital changes increase long-term ENSO variability
+\item It is possible that ENSO was the mechanic that allowed prehistoric solar/orbital changes to control the earth's climate
+\end{itemize}
+
+\section{\cite{graham2014effectiveness}}
+\label{sec:org7d28ecd}
+
+\begin{itemize}
+\item tested how accurate the Bjerknes Stability Index is at measuring the mechanics of ENSO in a couple models
+\item BJ index overestimates the importance of the Thermocline feedback.
+\item BJ index assumes that terms should be linear when combined, but they actually aren't.
+\end{itemize}
+
+\section{\cite{hu2018cross}}
+\label{sec:org9e81eeb}
+\section{\cite{jia2019weakening}}
+\label{sec:orgc220f64}
+\section{{\bfseries\sffamily TODO} \cite{jimenez2016record}}
+\label{sec:org422a8cd}
+\section{\cite{kay2015community}}
+\label{sec:org5b0d352}
+\section{\cite{kestin1998time}}
+\label{sec:orgffee63b}
+\section{{\bfseries\sffamily TODO} \cite{kim2014response}}
+\label{sec:org1250259}
+\section{{\bfseries\sffamily TODO} \cite{kohyama2018weakening}}
+\label{sec:orgf9af32a}
+\section{\cite{levine2017impact}}
+\label{sec:org4982a37}
+\section{\cite{lorenz1963deterministic}}
+\label{sec:org5b50a4f}
+\section{{\bfseries\sffamily TODO} \cite{liu2007atmospheric}}
+\label{sec:org4049c31}
+\section{\cite{lubbecke2014assessing}}
+\label{sec:org7b0850f}
+\section{\cite{maher2018enso}}
+\label{sec:orgdd094cf}
+\section{\cite{nowack2017role}}
+\label{sec:org9238fee}
+\section{\cite{phillips2014evaluating}}
+\label{sec:org830cbdd}
+\section{{\bfseries\sffamily TODO} \cite{rashid2016atmospheric}}
+\label{sec:orge93d755}
+\section{{\bfseries\sffamily TODO} \cite{ropelewski1987global}}
+\label{sec:org47cae0c}
+\section{{\bfseries\sffamily TODO} \cite{son2010impact}}
+\label{sec:orga87c549}
+\section{{\bfseries\sffamily TODO} \cite{stevenson2010enso}}
+\label{sec:org6de73f7}
+\section{{\bfseries\sffamily TODO} \cite{stevenson2012will}}
+\label{sec:org697dce3}
+\section{\cite{stevenson2012significant}}
+\label{sec:orge1990c0}
+\section{\cite{stevenson2017forced}}
+\label{sec:orgf634322}
+
+\section{\cite{torrence1998practical}}
+\label{sec:org2e0f412}
+
+\begin{itemize}
+\item How to use wavelets to estimate power spectrum in timeseries.
+\item Uses ENSO data \emph{very niiceee}
+\item Windowed Fourier Transform sucks butt because it is dependent on a time step parameter that can muck with the results depending on which value you choose.
+\item A wavelet is a short \textbf{\emph{blirp}} of a wave with a mean of zero and finite amplitude/frequency and limited time domain.
+\item To get an ex. Morlet Wavelet take a regular wave and multiply it by a Gaussian (normal bell curve) so that it drops off over time.
+\item Will be using continuous methods, but discrete also works.
+\item Use mathematical transforms to vary scale and translation of wavelet as it slides across the time series.
+\item Integrate wavelet multiplied by the timeseries while varying scale and shift to generate a power spectrum.
+\item Applied wavelet spectrum analysis to Nino 3 timeseries
+\item strong variance in 2-8 year frequency area, but with slight changes between 1900 and 1990
+\item However, results are highly dependent on which mother wavelet you choose because they all have quite different properties.
+\item Trying power spectrum from a DOG (Mexican Hat) wavelet gives overall similar answer as Morelett wavelet, but it is slightly different (more detailed in time, less detailed in frequency.)
+\item Use formula to pick scale limits
+\item Add zeroes around the timeseries so that the wavelet equation does not misunderstand the data by thinking it is cyclical
+\item Create a cone of influence to mark where the edge confusion is able to interfere with the results.
+\item Make sure you convert between the wavelet scale to the Fourier period when you make your axes
+\item You can also reverse the wavelet transform to get back the timeseries from the power chart if you really want to (I dont think I will).
+\item Time for significance analysis!
+\item take a background spectrum that serves as the null hypothesis: all spikes in the power spectrum are due to chance, the underlying signal is really random.
+\item Comparing to red noise shows that the peaks of ENSO in 2-8 years are statistically significant
+\item Calculate 95\% confidence interval by taking 95\% confidence \(\chi^2\) statistic and multiplying by red noise spectrum.
+\item Nino3 SST wavelet power from 2-8year frequency is sometimes significantly different from red noise expectations.
+\item ``The confidence interval is defined as the probability that the true wavelet power at a certain time and scale lies within a certain interval about the estimated wavelet power.''
+\item \(\chi^2\) test is advantageous because it applies to a lot of situations in wavelet analysis.
+\item Averaging the wavelet spectrum across the whole time range gives the overall power spectrum which can be significance tested and approximates the Fourier spectrum.
+\item Smoothing/averaging increases DOF, allowing to greater significance for the peaks
+\item After that, only main ENSO frequency band is shown to be statistically significant.
+\item Similar to time averaging, scale averaging is sometimes a good idea
+\item Wavelet analysis can be used to denoise an image/timeseries by throwing away the zones who's amplitude does not meet a certain level of significance.
+\item Wavelet analysis across spatial and temporal domains when squashed by frequency allows for a great analysis of spatial and temporal variability.
+\end{itemize}
+
+\section{{\bfseries\sffamily TODO} \cite{vecchi2006weakening}}
+\label{sec:orgb996a82}
+\section{\cite{vega2017analysis}}
+\label{sec:orga1fc1a2}
+\section{{\bfseries\sffamily TODO} \cite{wang2016nino}}
+\label{sec:orge694acd}
+\section{{\bfseries\sffamily TODO} \cite{yeo2016role}}
+\label{sec:orgeaa77a3}
+\section{{\bfseries\sffamily TODO} \cite{zhang2019review}}
+\label{sec:org471ee8c}
+\section{{\bfseries\sffamily TODO} \cite{zheng2016intermodel}}
+\label{sec:org1371712}
+\section{\cite{zheng2017response}}
+\label{sec:org013bb4e}
+
+\bibliographystyle{apalike}
+\bibliography{references}
+\end{document}

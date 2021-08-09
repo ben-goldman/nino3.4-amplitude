@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-07-08 Thu 18:23 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notes</title>
+<meta name="author" content="Benjamin Goldman" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Notes</h1>
+
+<div id="outline-container-org77fe73d" class="outline-2">
+<h2 id="org77fe73d"><span class="section-number-2">1</span> <a class='org-ref-reference' href="#bjerknes1969atmospheric">bjerknes1969atmospheric</a></h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>First big paper on ENSO having a big impact</li>
+<li>connected changes in ocean currents to Walker Circulation</li>
+<li>ENSO phase affects behavior of the Indian Ocean monsoon.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org85b3272" class="outline-2">
+<h2 id="org85b3272"><span class="section-number-2">2</span> <a class='org-ref-reference' href="#an2017feedback">an2017feedback</a></h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>Used SVD (Singular Value Decomposition) together with the Mixed Layer Heat Budget Analysis to look at which feedbacks contributed most to ENSO&rsquo;s variation between models</li>
+<li>Influence of thermocline feedback is determined by how strongly equatorial horizontal winds affect the slope of the thermocline.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org077630a" class="outline-2">
+<h2 id="org077630a"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#boer2000transient">boer2000transient</a></h2>
+</div>
+
+<div id="outline-container-org8a7ce59" class="outline-2">
+<h2 id="org8a7ce59"><span class="section-number-2">4</span> <a class='org-ref-reference' href="#cai2018increased">cai2018increased</a></h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Increased ENSO variance in most CMIP5 models in EP ENSO center.</li>
+<li>Likely caused by greenhouse gases</li>
+<li>Higher ocean stratification allows for stronger communication between atmospheric and oceanic temperatures.</li>
+<li>Used EOF analysis.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org42ea72c" class="outline-2">
+<h2 id="org42ea72c"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#chen2015causes">chen2015causes</a></h2>
+</div>
+
+<div id="outline-container-orgd23626a" class="outline-2">
+<h2 id="orgd23626a"><span class="section-number-2">6</span> <a class='org-ref-reference' href="#chen2017possible">chen2017possible</a></h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Models are disagreeing on ENSO in the future because they have different representations of the mechanics and mean state of the Pacific subtropical cell</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org788a8f7" class="outline-2">
+<h2 id="org788a8f7"><span class="section-number-2">7</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#deser2020isolating">deser2020isolating</a></h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>Main documentation for CESM1 Single Forcing Ensemble</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org42e00f6" class="outline-2">
+<h2 id="org42e00f6"><span class="section-number-2">8</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#dewitte2012reinterpreting">dewitte2012reinterpreting</a></h2>
+</div>
+
+<div id="outline-container-orgc70c409" class="outline-2">
+<h2 id="orgc70c409"><span class="section-number-2">9</span> <a class='org-ref-reference' href="#emile2007nino">emile2007nino</a></h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>Analyzed wavelet power spectrum of ENSO variability in models forced by sunspot and orbital changes</li>
+<li>Orbital changes increase long-term ENSO variability</li>
+<li>It is possible that ENSO was the mechanic that allowed prehistoric solar/orbital changes to control the earth&rsquo;s climate</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org15ea6c7" class="outline-2">
+<h2 id="org15ea6c7"><span class="section-number-2">10</span> <a class='org-ref-reference' href="#graham2014effectiveness">graham2014effectiveness</a></h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>tested how accurate the Bjerknes Stability Index is at measuring the mechanics of ENSO in a couple models</li>
+<li>BJ index overestimates the importance of the Thermocline feedback.</li>
+<li>BJ index assumes that terms should be linear when combined, but they actually aren&rsquo;t.</li>
+</ul>
+
+
+
+<p>
+
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="bjerknes1969atmospheric">[bjerknes1969atmospheric]</a> <a name="bjerknes1969atmospheric"></a>BJERKNES, Atmospheric Teleconnections From the Equatorial Pacific, <i>Monthly Weather Review</i>, <b>97(3)</b>, 163–172 (1969). <a href="http://dx.doi.org/10.1175/1520-0493(1969)097<0163:atftep>2.3.co;2">link</a>. <a href="http://dx.doi.org/10.1175/1520-0493(1969)097<0163:atftep>2.3.co;2">doi</a>.</li>
+<li><a id="an2017feedback">[an2017feedback]</a> <a name="an2017feedback"></a>An, Heo & Kim, Feedback process responsible for intermodel diversity of ENSO variability, <i>Geophysical Research Letters</i>, <b>44(9)</b>, 4272–4279 (2017). <a href="http://dx.doi.org/10.1002/2017gl073203">link</a>. <a href="http://dx.doi.org/10.1002/2017gl073203">doi</a>.</li>
+<li><a id="boer2000transient">[boer2000transient]</a> <a name="boer2000transient"></a>Boer, Flato & Ramsden, A transient climate change simulation with greenhouse gas and aerosol forcing: projected climate to the twenty-first century, <i>Climate Dynamics</i>, <b>16(6)</b>, 427–450 (2000). <a href="http://dx.doi.org/10.1007/s003820050338">link</a>. <a href="http://dx.doi.org/10.1007/s003820050338">doi</a>.</li>
+<li><a id="cai2018increased">[cai2018increased]</a> <a name="cai2018increased"></a>Cai, Wang, Dewitte, Wu, Santoso, Takahashi, Yang, Carréric & McPhaden, Increased variability of eastern Pacific El Niño under greenhouse warming, <i>Nature</i>, <b>564(7735)</b>, 201–206 (2018). <a href="http://dx.doi.org/10.1038/s41586-018-0776-9">link</a>. <a href="http://dx.doi.org/10.1038/s41586-018-0776-9">doi</a>.</li>
+<li><a id="chen2015causes">[chen2015causes]</a> <a name="chen2015causes"></a>Lin Chen, Tim Li & Yongqiang Yu, Causes of Strengthening and Weakening of ENSO Amplitude under Global Warming in Four CMIP5 Models\ast, <i>Journal of Climate</i>, <b>28(8)</b>, 3250-3274 (2015). <a href="https://doi.org/10.1175chen2015causes.pdfjcli-d-14-00439.1">link</a>. <a href="http://dx.doi.org/10.1175/jcli-d-14-00439.1">doi</a>.</li>
+<li><a id="chen2017possible">[chen2017possible]</a> <a name="chen2017possible"></a>Lin Chen, Tim Li, Yongqiang Yu & Swadhin Behera, A possible explanation for the divergent projection of ENSO amplitude change under global warming, <i>Climate Dynamics</i>, <b>49(11-12)</b>, 3799-3811 (2017). <a href="https://doi.org/10.1007chen2017possible.pdfs00382-017-3544-x">link</a>. <a href="http://dx.doi.org/10.1007/s00382-017-3544-x">doi</a>.</li>
+<li><a id="deser2020isolating">[deser2020isolating]</a> <a name="deser2020isolating"></a>Clara Deser, Adam Phillips, Isla Simpson, Nan Rosenbloom, Dani Coleman, Flavio Lehner, Angeline Pendergrass, Pedro DiNezio & Samantha Stevenson, Isolating the Evolving Contributions of Anthropogenic Aerosols and Greenhouse Gases: A New CESM1 Large Ensemble Community Resource, <i>Journal of Climate</i>, <b>33(18)</b>, 7835-7858 (2020). <a href="https://doi.org/10.1175deser2020isolating.pdfjcli-d-20-0123.1">link</a>. <a href="http://dx.doi.org/10.1175/jcli-d-20-0123.1">doi</a>.</li>
+<li><a id="dewitte2012reinterpreting">[dewitte2012reinterpreting]</a> <a name="dewitte2012reinterpreting"></a>Boris Dewitte, Sang-Wook Yeh & Sulian Thual, Reinterpreting the thermocline feedback in the western-central equatorial Pacific and its relationship with the ENSO modulation, <i>Climate Dynamics</i>, <b>41(3-4)</b>, 819-830 (2012). <a href="https://doi.org/10.1007dewitte2012reinterpreting.pdfs00382-012-1504-z">link</a>. <a href="http://dx.doi.org/10.1007/s00382-012-1504-z">doi</a>.</li>
+<li><a id="emile2007nino">[emile2007nino]</a> <a name="emile2007nino"></a>Julien Emile-Geay, Mark Cane, Richard Seager, Alexey Kaplan & Peter Almasi, El Ni\~no as a mediator of the solar influence on climate, <i>Paleoceanography</i>, <b>22(3)</b>, n/a-n/a (2007). <a href="https://doi.org/10.1029emile2007nino.pdf2006pa001304">link</a>. <a href="http://dx.doi.org/10.1029/2006pa001304">doi</a>.</li>
+<li><a id="graham2014effectiveness">[graham2014effectiveness]</a> <a name="graham2014effectiveness"></a>Felicity Graham, Jaclyn Brown, Clothilde Langlais, Simon Marsland, Andrew Wittenberg & Neil Holbrook, Effectiveness of the Bjerknes stability index in representing ocean dynamics, <i>Climate Dynamics</i>, <b>43(9-10)</b>, 2399-2414 (2014). <a href="https://doi.org/10.1007graham2014effectiveness.pdfs00382-014-2062-3">link</a>. <a href="http://dx.doi.org/10.1007/s00382-014-2062-3">doi</a>.</li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Benjamin Goldman</p>
+<p class="date">Created: 2021-07-08 Thu 18:23</p>
+</div>
+</body>
+</html>
