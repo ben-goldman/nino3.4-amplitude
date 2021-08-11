@@ -50,13 +50,14 @@
 | <2021-08-04 Wed> |        20:00 |      22:10 |       02:10 | downloaded data and stacked dataset                                  |
 | <2021-08-05 Thu> |        20:00 |      22:30 |       02:30 | downloaded data and stacked dataset, contacted mentor                |
 | <2021-08-08 Sun> |        13:30 |      15:00 |       01:30 | data analysis                                                        |
-| <2021-08-09 Mon> |        16:50 |      18:00 |       01:10 | worked on paper                                                      |
+| <2021-08-09 Mon> |        16:50 |      19:50 |       03:00 | worked on data                                                       |
+| <2021-08-10 Tue> |        20:00 |      23:00 |       03:00 | worked on data (made very good picture for presentation)             |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      56:44 |         52 |             01:05:27 |            00:37 |
+|      61:34 |         53 |             01:09:41 |            00:41 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
