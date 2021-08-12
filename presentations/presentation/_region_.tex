@@ -8,7 +8,6 @@
 \renewcommand{\bibsection}{}
 
 % \begin{frame}{Example Frame With Text and Image}
-
 %   \begin{columns}
 %     \column{0.5\textwidth}
 %     \begin{itemize}
@@ -24,6 +23,15 @@
 %   \end{columns}
 % \end{frame}
 
+\newcommand{\myfig}[3]{
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/#1}
+    \caption{#2}
+    \label{fig:#3}
+  \end{figure}
+}
+
 
 \begin{document}
 
@@ -37,23 +45,27 @@
 \begin{frame}{Climate Change}
 
   \begin{columns}
-    \column{0.5\textwidth}
+    \column{0.4\textwidth}
     \begin{itemize}
-    \item Here we go...
-    \item \cite{bjerknes1969atmospheric}
+    \item The earth is getting warmer. \citep{pachauri2014climate}
+    \item Climate varies on different scales.
+    \item Long-term trends and short-term noise.
     \end{itemize}
-    \column{0.5\textwidth}
-    \begin{figure}
-      \centering
-      \includegraphics[width=\textwidth]{figures/example.jpg}
-      \caption{This is a very nice figure}
-      \label{fig:this}
-    \end{figure}
+    \column{0.6\textwidth}
+    \myfig{intro_fig_3.pdf}{Global mean land air temperature in GISSTEMP 4 dataset. \citep{gistemp2019giss} and \citep{lenssen2019improvements}}{this}
   \end{columns}
 \end{frame}
 
 \begin{frame}{El Niño}
-
+  \begin{columns}
+    \column{0.4\textwidth}
+    \begin{itemize}
+    \item Warming and cooling of the Pacific Ocean.
+    \item Affects human societies through temperature and rainfall.
+    \item May be affected by climate change.
+    \end{itemize}
+    \mifig{intro_fig.pdf}{Comparison of SST Anomaly Between 1997 El Niño event and 1975 La Niña event in HadISST 1 dataset. \citep{rayner2003global}}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Climate Simulation}
@@ -61,7 +73,6 @@
 \end{frame}
 
 \begin{frame}{ENSO in the Future}
-
 \end{frame}
 
 \begin{frame}{Gap and Goal}
@@ -78,11 +89,56 @@
 
 \end{frame}
 
-\begin{frame}{R and Python tools}
+\begin{frame}{Analysis Tools}
+  \begin{columns}[t]
+    \column{.33\textwidth}
+    R:
+    \begin{itemize}
+    \item ncdf4
+    \item zoo
+    \item dplyr
+    \item ggplot2
+    \item WaveletComp
+    \item reshape2
+    \end{itemize}
+    \column{.33\textwidth}
+    Python:
+    \begin{itemize}
+    \item numpy
+    \item pandas
+    \item scipy
+    \item matplotlib
+    \item netCDF4
+    \end{itemize}
+    \column{.33\textwidth}
+    Other:
+    \begin{itemize}
+    \item nco
+    \end{itemize}
+  \end{columns}
 
 \end{frame}
 
 \begin{frame}{Role of Mentor and Student}
+  \begin{columns}[t]
+    \column{.5\textwidth}
+    Mentor:
+    \begin{itemize}
+    \item Suggest future methods
+    \item Conduct parallel analysis to complement student work
+    \item Provide raw precollected data
+    \item Interpret data produced by student
+    \item Review student writing
+    \end{itemize}
+    \column{.5\textwidth}
+    Student:
+    \begin{itemize}
+    \item Analyze data on computer
+    \item Produce graphics for analysis and publication
+    \item Write documentation
+    \item Suggest interpretations of data
+    \end{itemize}
+  \end{columns}
 
 \end{frame}
 
@@ -126,6 +182,8 @@
 
 \end{frame}
 
+\section{Conclusion}
+
 \begin{frame}{Conclusions}
 
 \end{frame}
@@ -140,6 +198,7 @@
 
 \begin{frame}{References}
   \bibliographystyle{apalike}
+  \fontsize{7pt}{7.2}\selectfont
   \bibliography{references.bib}
 \end{frame}
 
@@ -147,4 +206,4 @@
 
 \end{document}
 
-\message{ !name(presentation.tex) !offset(-150) }
+\message{ !name(presentation.tex) !offset(-209) }

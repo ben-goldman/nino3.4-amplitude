@@ -5,9 +5,9 @@ library(ggplot2)
 library(reshape2)
 library(scico)
 
-ncin <- nc_open("/Volumes/Extreme SSD/DATA/HadISST_sst.nc")
+ncin1 <- nc_open("/Volumes/Extreme SSD/DATA/HadISST_sst.nc")
 
-sst <- ncvar_get(ncin, "sst")
+sst <- ncvar_get(ncin1, "sst")
 sst[sst == -1000] <- NA
 
 date <- ncvar_get(ncin, "time")
@@ -97,3 +97,32 @@ ggplot(sst_anom_compare %>% filter(latitude < 60 &
          fill = " SST \n Anomaly \n (°C)")
 
 gsave("intro_fig_2.pdf")
+
+ncin2 <- nc_open("/Volumes/Extreme SSD/DATA/BEN/air.2x2.1200.mon.anom.land.nc")
+
+temp <- ncvar_get(ncin2, "air")
+
+avg_temp <- temp %>% apply(3, mean, na.rm = TRUE)
+
+index_1 <- data.frame(date = date[6:(1698-6)], air = avg_temp %>% rollapply(width = 12, mean))
+index_5 <- data.frame(date = date[(6 * 5):(1698 - 6 * 5)], air = avg_temp %>% rollapply(width = 12 * 5, mean))
+index_10 <- data.frame(date = date[(6 * 10):(1698 - 6 * 10)], air = avg_temp %>% rollapply(width = 12 * 10, mean))
+index_20 <- data.frame(date = date[(6 * 20):(1698 - 6 * 20)], air = avg_temp %>% rollapply(width = 12 * 20, mean))
+
+reg <- lm(air ~ date, index_1, y = TRUE)
+
+reg_vec <- data.frame(date = date, air = date * reg$coefficients[2] + reg$coefficients[1])
+
+temp_df <- index_1 %>% mutate(case = "1-Year") %>%
+    bind_rows(index_10 %>% mutate(case = "10-Year"))
+    #bind_rows(reg_vec %>% mutate(case = "Linear Model")) %>%
+    # bind_rows(index_20 %>% mutate(case = "20-Year Smoothing"))
+
+ggplot(temp_df, aes(date, air, color = case)) +
+    geom_path() +
+    labs(title = "Mean Land Air Temperature Anomaly",
+         x = "Date",
+         y = "Temperature Anomaly (°C)",
+         color = "Smoothing\nWindow Size")
+
+gsave("intro_fig_3.pdf", dimensions = c(8, 6))
