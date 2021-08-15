@@ -1,0 +1,18 @@
+#+TITLE: Notes for Paper
+
+* Introduction
+** Greenhouse emissions are increasing global temperatures (breifly state)
+** ENSO is a change in the temperature of the pacific ocean with effects around the world
+** If climate change affects ENSO, then we need to find out _now_
+** Climate change affects ENSO
+*** Comparison of amplitude between many models with CMIP5 is mostly inconclusive
+*** CESM-LE shows increase in amplitude that is significant
+** Role of multiple natural and artificial factors
+*** Greenhouse gasses may be increasing ENSO amplitude
+*** aerosol emissions dampen GHG increase in amplitude
+*** What about everything else?
+*** Not using a large ensemble mostly
+** Gap: not enough analysis on how ghg and aer affect ENSO amplitude
+*** how the two factors interact
+*** how their effects look compared to internal variability
+*** What physical mechanisms mediate their effect

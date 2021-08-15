@@ -1,6 +1,7 @@
 #+TITLE: Notes
 #+LATEX_HEADER: \usepackage{enumitem}
 #+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
 #+LATEX_HEADER: \setlist{noitemsep}
 
 
@@ -42,6 +43,10 @@
 - Orbital changes increase long-term ENSO variability
 - It is possible that ENSO was the mechanic that allowed prehistoric solar/orbital changes to control the earth's climate
 
+* cite:gistemp2019giss
+
+- citation for GISSTEMP dataset
+
 * cite:graham2014effectiveness
 
 - tested how accurate the Bjerknes Stability Index is at measuring the mechanics of ENSO in a couple models
@@ -49,37 +54,93 @@
 - BJ index assumes that terms should be linear when combined, but they actually aren't.
 
 * cite:hu2018cross
+
+- Observed and model data used
+- Strengthening in cross-equatorial winds changes ITCZ position, weakening ENSO.
+
 * cite:jia2019weakening
-:PROPERTIES:
-:NOTER_DOCUMENT: jia2019weakening.pdf
-:END:
 
-** testing
-:PROPERTIES:
-:NOTER_PAGE: 1
-:END:
-
-
+- My first paper!
+- Atlantic Niño/Niña is correlated/causes opposite ENSO form
+- Global warming is weakening this connection, impairing prediction efforts
+- CESM5 coupled models used
+- Correlation coefficient
 
 * TODO cite:jimenez2016record
-* cite:kay2015community
+
+* TODO cite:kay2015community
+
+- CESM1 LE citation
+
 * cite:kestin1998time
+
+- apply wavelet and Fourier analysis to ENSO in observed data
+- 2-3 year ENSO reduced from 1920-1960
+- Stochastic model used to simulate ENSO agrees with analysis of observed data
+- Concluded that models are reasonably accurate for simulating decadal ENSO variability
+
 * TODO cite:kim2014response
 * TODO cite:kohyama2018weakening
+
 * cite:levine2017impact
+
+- Observed ICOADS data
+- Inverse relationship between AMO index and ENSO SPB strength
+- Coupled model simulation
+
 * cite:lorenz1963deterministic
+
+- Nonlinear differential equations have solutions that must be solved numerically
+- When graphed in phase space, these solutions form attractors that never repeat themselves
+- Many natural phenomena, including weather, are chaotic
+- Accurate long-term weather prediction is likely impossible
+
 * TODO cite:liu2007atmospheric
+
 * cite:lubbecke2014assessing
+
+- Change in ENSO characteristics after 2000
+- Lower thermocline slope reduces TH feedback, making it harder for strong ENSO to form
+
 * cite:maher2018enso
+
+- Use two different large ensembles
+- ENSO has lots of internal variability in models
+- 30-40 members of an ensemble are needed to detect significant changes to ENSO in the ensemble mean
+- Increase in ENSO amplitude in worst case (RCP8.5) scenario
+
 * cite:nowack2017role
+
+- Model simulations that are forced with differing levels of greenhouse and aerosol emissions
+- Concluded that aerosol forcing decreases greenhouse strengthening of ENSO
+
+* TODO cite:pachauri2014climate
+
+- IPCC report 2014
+
 * cite:phillips2014evaluating
+
+- Citation for CVDP data
+
 * TODO cite:rashid2016atmospheric
 * TODO cite:ropelewski1987global
 * TODO cite:son2010impact
 * TODO cite:stevenson2010enso
 * TODO cite:stevenson2012will
+
 * cite:stevenson2012significant
+
+- CMIP5 dataset
+- No significant change in ENSO amplitude for multi-model mean during 20-21st century
+- Some significant changes in certain models
+- Larger ensembles are needed
+
 * cite:stevenson2017forced
+
+- ENSO diversity: difference between CP and EP ENSO events
+- CESM Last Millennium ensemble
+- Less forced impact on ENSO amplitude, some impact on diversity
+- Lots of natural factors have an impact too
 
 * cite:torrence1998practical
 
@@ -115,12 +176,23 @@
 - Wavelet analysis across spatial and temporal domains when squashed by frequency allows for a great analysis of spatial and temporal variability.
 
 * TODO cite:vecchi2006weakening
+
 * cite:vega2017analysis
+
+- Control and global warming forced simulations
+- Lots of internal variability
+
 * TODO cite:wang2016nino
 * TODO cite:yeo2016role
 * TODO cite:zhang2019review
 * TODO cite:zheng2016intermodel
+
 * cite:zheng2017response
 
+- CESM-LE ensemble
+- Lots of internal variability
+- At least 15 models are necessary to separate forced from internal variability
+
+
 bibliographystyle:apalike
-bibliography:./references.bib
+bibliography:../references.bib

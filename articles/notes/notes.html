@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-07-08 Thu 18:23 -->
+<!-- 2021-08-15 Sun 15:00 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notes</title>
@@ -215,14 +215,95 @@
     /*]]>*///-->
 // @license-end
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
 <h1 class="title">Notes</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf7eefe9">1. cite:an2017feedback</a></li>
+<li><a href="#org6dca0ec">2. cite:bjerknes1969atmospheric</a></li>
+<li><a href="#org2b9e4ee">3. <span class="todo TODO">TODO</span> cite:boer2000transient</a></li>
+<li><a href="#orga2303be">4. cite:cai2018increased</a></li>
+<li><a href="#org2528925">5. <span class="todo TODO">TODO</span> cite:chen2015causes</a></li>
+<li><a href="#orgf2ea952">6. cite:chen2017possible</a></li>
+<li><a href="#orgb5298b2">7. <span class="todo TODO">TODO</span> cite:deser2020isolating</a></li>
+<li><a href="#orgf9c8328">8. <span class="todo TODO">TODO</span> cite:dewitte2012reinterpreting</a></li>
+<li><a href="#org05c21c8">9. cite:emile2007nino</a></li>
+<li><a href="#orgc6e77ef">10. cite:gistemp2019giss</a></li>
+<li><a href="#org572c31c">11. cite:graham2014effectiveness</a></li>
+<li><a href="#orga5e69e9">12. cite:hu2018cross</a></li>
+<li><a href="#orgd704a1c">13. cite:jia2019weakening</a></li>
+<li><a href="#orgf26159b">14. <span class="todo TODO">TODO</span> cite:jimenez2016record</a></li>
+<li><a href="#orgcb5ce62">15. <span class="todo TODO">TODO</span> cite:kay2015community</a></li>
+<li><a href="#org1958cf7">16. cite:kestin1998time</a></li>
+<li><a href="#orgb9dce01">17. <span class="todo TODO">TODO</span> cite:kim2014response</a></li>
+<li><a href="#org39b0ce1">18. <span class="todo TODO">TODO</span> cite:kohyama2018weakening</a></li>
+<li><a href="#orga7f085c">19. cite:levine2017impact</a></li>
+<li><a href="#orgff06242">20. cite:lorenz1963deterministic</a></li>
+<li><a href="#org9c74078">21. <span class="todo TODO">TODO</span> cite:liu2007atmospheric</a></li>
+<li><a href="#orgddd9d14">22. cite:lubbecke2014assessing</a></li>
+<li><a href="#org7fc08d8">23. cite:maher2018enso</a></li>
+<li><a href="#org378bb14">24. cite:nowack2017role</a></li>
+<li><a href="#org2f6cf18">25. <span class="todo TODO">TODO</span> cite:pachauri2014climate</a></li>
+<li><a href="#org637b259">26. cite:phillips2014evaluating</a></li>
+<li><a href="#org98ca39d">27. <span class="todo TODO">TODO</span> cite:rashid2016atmospheric</a></li>
+<li><a href="#org2894c12">28. <span class="todo TODO">TODO</span> cite:ropelewski1987global</a></li>
+<li><a href="#orgd714ef3">29. <span class="todo TODO">TODO</span> cite:son2010impact</a></li>
+<li><a href="#org50f0942">30. <span class="todo TODO">TODO</span> cite:stevenson2010enso</a></li>
+<li><a href="#org34c4c5d">31. <span class="todo TODO">TODO</span> cite:stevenson2012will</a></li>
+<li><a href="#orge9b3fe5">32. cite:stevenson2012significant</a></li>
+<li><a href="#org6e0b74c">33. cite:stevenson2017forced</a></li>
+<li><a href="#orge5834a2">34. cite:torrence1998practical</a></li>
+<li><a href="#org0ee5d9a">35. <span class="todo TODO">TODO</span> cite:vecchi2006weakening</a></li>
+<li><a href="#org96d16fb">36. cite:vega2017analysis</a></li>
+<li><a href="#org037d011">37. <span class="todo TODO">TODO</span> cite:wang2016nino</a></li>
+<li><a href="#org7335695">38. <span class="todo TODO">TODO</span> cite:yeo2016role</a></li>
+<li><a href="#orgdd5c9a6">39. <span class="todo TODO">TODO</span> cite:zhang2019review</a></li>
+<li><a href="#orgf998378">40. <span class="todo TODO">TODO</span> cite:zheng2016intermodel</a></li>
+<li><a href="#orgdb9a9a3">41. cite:zheng2017response</a></li>
+</ul>
+</div>
+</div>
 
-<div id="outline-container-org77fe73d" class="outline-2">
-<h2 id="org77fe73d"><span class="section-number-2">1</span> <a class='org-ref-reference' href="#bjerknes1969atmospheric">bjerknes1969atmospheric</a></h2>
+
+<div id="outline-container-orgf7eefe9" class="outline-2">
+<h2 id="orgf7eefe9"><span class="section-number-2">1</span> <a class='org-ref-reference' href="#an2017feedback">an2017feedback</a></h2>
 <div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Used SVD (Singular Value Decomposition) together with the Mixed Layer Heat Budget Analysis to look at which feedbacks contributed most to ENSO&rsquo;s variation between models</li>
+<li>Influence of thermocline feedback is determined by how strongly equatorial horizontal winds affect the slope of the thermocline.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6dca0ec" class="outline-2">
+<h2 id="org6dca0ec"><span class="section-number-2">2</span> <a class='org-ref-reference' href="#bjerknes1969atmospheric">bjerknes1969atmospheric</a></h2>
+<div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>First big paper on ENSO having a big impact</li>
 <li>connected changes in ocean currents to Walker Circulation</li>
@@ -231,22 +312,12 @@
 </div>
 </div>
 
-<div id="outline-container-org85b3272" class="outline-2">
-<h2 id="org85b3272"><span class="section-number-2">2</span> <a class='org-ref-reference' href="#an2017feedback">an2017feedback</a></h2>
-<div class="outline-text-2" id="text-2">
-<ul class="org-ul">
-<li>Used SVD (Singular Value Decomposition) together with the Mixed Layer Heat Budget Analysis to look at which feedbacks contributed most to ENSO&rsquo;s variation between models</li>
-<li>Influence of thermocline feedback is determined by how strongly equatorial horizontal winds affect the slope of the thermocline.</li>
-</ul>
-</div>
+<div id="outline-container-org2b9e4ee" class="outline-2">
+<h2 id="org2b9e4ee"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#boer2000transient">boer2000transient</a></h2>
 </div>
 
-<div id="outline-container-org077630a" class="outline-2">
-<h2 id="org077630a"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#boer2000transient">boer2000transient</a></h2>
-</div>
-
-<div id="outline-container-org8a7ce59" class="outline-2">
-<h2 id="org8a7ce59"><span class="section-number-2">4</span> <a class='org-ref-reference' href="#cai2018increased">cai2018increased</a></h2>
+<div id="outline-container-orga2303be" class="outline-2">
+<h2 id="orga2303be"><span class="section-number-2">4</span> <a class='org-ref-reference' href="#cai2018increased">cai2018increased</a></h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>Increased ENSO variance in most CMIP5 models in EP ENSO center.</li>
@@ -257,12 +328,12 @@
 </div>
 </div>
 
-<div id="outline-container-org42ea72c" class="outline-2">
-<h2 id="org42ea72c"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#chen2015causes">chen2015causes</a></h2>
+<div id="outline-container-org2528925" class="outline-2">
+<h2 id="org2528925"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#chen2015causes">chen2015causes</a></h2>
 </div>
 
-<div id="outline-container-orgd23626a" class="outline-2">
-<h2 id="orgd23626a"><span class="section-number-2">6</span> <a class='org-ref-reference' href="#chen2017possible">chen2017possible</a></h2>
+<div id="outline-container-orgf2ea952" class="outline-2">
+<h2 id="orgf2ea952"><span class="section-number-2">6</span> <a class='org-ref-reference' href="#chen2017possible">chen2017possible</a></h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>Models are disagreeing on ENSO in the future because they have different representations of the mechanics and mean state of the Pacific subtropical cell</li>
@@ -270,8 +341,8 @@
 </div>
 </div>
 
-<div id="outline-container-org788a8f7" class="outline-2">
-<h2 id="org788a8f7"><span class="section-number-2">7</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#deser2020isolating">deser2020isolating</a></h2>
+<div id="outline-container-orgb5298b2" class="outline-2">
+<h2 id="orgb5298b2"><span class="section-number-2">7</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#deser2020isolating">deser2020isolating</a></h2>
 <div class="outline-text-2" id="text-7">
 <ul class="org-ul">
 <li>Main documentation for CESM1 Single Forcing Ensemble</li>
@@ -279,12 +350,12 @@
 </div>
 </div>
 
-<div id="outline-container-org42e00f6" class="outline-2">
-<h2 id="org42e00f6"><span class="section-number-2">8</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#dewitte2012reinterpreting">dewitte2012reinterpreting</a></h2>
+<div id="outline-container-orgf9c8328" class="outline-2">
+<h2 id="orgf9c8328"><span class="section-number-2">8</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#dewitte2012reinterpreting">dewitte2012reinterpreting</a></h2>
 </div>
 
-<div id="outline-container-orgc70c409" class="outline-2">
-<h2 id="orgc70c409"><span class="section-number-2">9</span> <a class='org-ref-reference' href="#emile2007nino">emile2007nino</a></h2>
+<div id="outline-container-org05c21c8" class="outline-2">
+<h2 id="org05c21c8"><span class="section-number-2">9</span> <a class='org-ref-reference' href="#emile2007nino">emile2007nino</a></h2>
 <div class="outline-text-2" id="text-9">
 <ul class="org-ul">
 <li>Analyzed wavelet power spectrum of ENSO variability in models forced by sunspot and orbital changes</li>
@@ -294,30 +365,328 @@
 </div>
 </div>
 
-<div id="outline-container-org15ea6c7" class="outline-2">
-<h2 id="org15ea6c7"><span class="section-number-2">10</span> <a class='org-ref-reference' href="#graham2014effectiveness">graham2014effectiveness</a></h2>
+<div id="outline-container-orgc6e77ef" class="outline-2">
+<h2 id="orgc6e77ef"><span class="section-number-2">10</span> <a class='org-ref-reference' href="#gistemp2019giss">gistemp2019giss</a></h2>
 <div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>citation for GISSTEMP dataset</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org572c31c" class="outline-2">
+<h2 id="org572c31c"><span class="section-number-2">11</span> <a class='org-ref-reference' href="#graham2014effectiveness">graham2014effectiveness</a></h2>
+<div class="outline-text-2" id="text-11">
 <ul class="org-ul">
 <li>tested how accurate the Bjerknes Stability Index is at measuring the mechanics of ENSO in a couple models</li>
 <li>BJ index overestimates the importance of the Thermocline feedback.</li>
 <li>BJ index assumes that terms should be linear when combined, but they actually aren&rsquo;t.</li>
 </ul>
+</div>
+</div>
 
+<div id="outline-container-orga5e69e9" class="outline-2">
+<h2 id="orga5e69e9"><span class="section-number-2">12</span> <a class='org-ref-reference' href="#hu2018cross">hu2018cross</a></h2>
+<div class="outline-text-2" id="text-12">
+<ul class="org-ul">
+<li>Observed and model data used</li>
+<li>Strengthening in cross-equatorial winds changes ITCZ position, weakening ENSO.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd704a1c" class="outline-2">
+<h2 id="orgd704a1c"><span class="section-number-2">13</span> <a class='org-ref-reference' href="#jia2019weakening">jia2019weakening</a></h2>
+<div class="outline-text-2" id="text-13">
+<ul class="org-ul">
+<li>My first paper!</li>
+<li>Atlantic Niño/Niña is correlated/causes opposite ENSO form</li>
+<li>Global warming is weakening this connection, impairing prediction efforts</li>
+<li>CESM5 coupled models used</li>
+<li>Correlation coefficient</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf26159b" class="outline-2">
+<h2 id="orgf26159b"><span class="section-number-2">14</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#jimenez2016record">jimenez2016record</a></h2>
+</div>
+
+<div id="outline-container-orgcb5ce62" class="outline-2">
+<h2 id="orgcb5ce62"><span class="section-number-2">15</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#kay2015community">kay2015community</a></h2>
+<div class="outline-text-2" id="text-15">
+<ul class="org-ul">
+<li>CESM1 LE citation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1958cf7" class="outline-2">
+<h2 id="org1958cf7"><span class="section-number-2">16</span> <a class='org-ref-reference' href="#kestin1998time">kestin1998time</a></h2>
+<div class="outline-text-2" id="text-16">
+<ul class="org-ul">
+<li>apply wavelet and Fourier analysis to ENSO in observed data</li>
+<li>2-3 year ENSO reduced from 1920-1960</li>
+<li>Stochastic model used to simulate ENSO agrees with analysis of observed data</li>
+<li>Concluded that models are reasonably accurate for simulating decadal ENSO variability</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb9dce01" class="outline-2">
+<h2 id="orgb9dce01"><span class="section-number-2">17</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#kim2014response">kim2014response</a></h2>
+</div>
+<div id="outline-container-org39b0ce1" class="outline-2">
+<h2 id="org39b0ce1"><span class="section-number-2">18</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#kohyama2018weakening">kohyama2018weakening</a></h2>
+</div>
+
+<div id="outline-container-orga7f085c" class="outline-2">
+<h2 id="orga7f085c"><span class="section-number-2">19</span> <a class='org-ref-reference' href="#levine2017impact">levine2017impact</a></h2>
+<div class="outline-text-2" id="text-19">
+<ul class="org-ul">
+<li>Observed ICOADS data</li>
+<li>Inverse relationship between AMO index and ENSO SPB strength</li>
+<li>Coupled model simulation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgff06242" class="outline-2">
+<h2 id="orgff06242"><span class="section-number-2">20</span> <a class='org-ref-reference' href="#lorenz1963deterministic">lorenz1963deterministic</a></h2>
+<div class="outline-text-2" id="text-20">
+<ul class="org-ul">
+<li>Nonlinear differential equations have solutions that must be solved numerically</li>
+<li>When graphed in phase space, these solutions form attractors that never repeat themselves</li>
+<li>Many natural phenomena, including weather, are chaotic</li>
+<li>Accurate long-term weather prediction is likely impossible</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9c74078" class="outline-2">
+<h2 id="org9c74078"><span class="section-number-2">21</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#liu2007atmospheric">liu2007atmospheric</a></h2>
+</div>
+
+<div id="outline-container-orgddd9d14" class="outline-2">
+<h2 id="orgddd9d14"><span class="section-number-2">22</span> <a class='org-ref-reference' href="#lubbecke2014assessing">lubbecke2014assessing</a></h2>
+<div class="outline-text-2" id="text-22">
+<ul class="org-ul">
+<li>Change in ENSO characteristics after 2000</li>
+<li>Lower thermocline slope reduces TH feedback, making it harder for strong ENSO to form</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7fc08d8" class="outline-2">
+<h2 id="org7fc08d8"><span class="section-number-2">23</span> <a class='org-ref-reference' href="#maher2018enso">maher2018enso</a></h2>
+<div class="outline-text-2" id="text-23">
+<ul class="org-ul">
+<li>Use two different large ensembles</li>
+<li>ENSO has lots of internal variability in models</li>
+<li>30-40 members of an ensemble are needed to detect significant changes to ENSO in the ensemble mean</li>
+<li>Increase in ENSO amplitude in worst case (RCP8.5) scenario</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org378bb14" class="outline-2">
+<h2 id="org378bb14"><span class="section-number-2">24</span> <a class='org-ref-reference' href="#nowack2017role">nowack2017role</a></h2>
+<div class="outline-text-2" id="text-24">
+<ul class="org-ul">
+<li>Model simulations that are forced with differing levels of greenhouse and aerosol emissions</li>
+<li>Concluded that aerosol forcing decreases greenhouse strengthening of ENSO</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2f6cf18" class="outline-2">
+<h2 id="org2f6cf18"><span class="section-number-2">25</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#pachauri2014climate">pachauri2014climate</a></h2>
+<div class="outline-text-2" id="text-25">
+<ul class="org-ul">
+<li>IPCC report 2014</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org637b259" class="outline-2">
+<h2 id="org637b259"><span class="section-number-2">26</span> <a class='org-ref-reference' href="#phillips2014evaluating">phillips2014evaluating</a></h2>
+<div class="outline-text-2" id="text-26">
+<ul class="org-ul">
+<li>Citation for CVDP data</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org98ca39d" class="outline-2">
+<h2 id="org98ca39d"><span class="section-number-2">27</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#rashid2016atmospheric">rashid2016atmospheric</a></h2>
+</div>
+<div id="outline-container-org2894c12" class="outline-2">
+<h2 id="org2894c12"><span class="section-number-2">28</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#ropelewski1987global">ropelewski1987global</a></h2>
+</div>
+<div id="outline-container-orgd714ef3" class="outline-2">
+<h2 id="orgd714ef3"><span class="section-number-2">29</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#son2010impact">son2010impact</a></h2>
+</div>
+<div id="outline-container-org50f0942" class="outline-2">
+<h2 id="org50f0942"><span class="section-number-2">30</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#stevenson2010enso">stevenson2010enso</a></h2>
+</div>
+<div id="outline-container-org34c4c5d" class="outline-2">
+<h2 id="org34c4c5d"><span class="section-number-2">31</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#stevenson2012will">stevenson2012will</a></h2>
+</div>
+
+<div id="outline-container-orge9b3fe5" class="outline-2">
+<h2 id="orge9b3fe5"><span class="section-number-2">32</span> <a class='org-ref-reference' href="#stevenson2012significant">stevenson2012significant</a></h2>
+<div class="outline-text-2" id="text-32">
+<ul class="org-ul">
+<li>CMIP5 dataset</li>
+<li>No significant change in ENSO amplitude for multi-model mean during 20-21st century</li>
+<li>Some significant changes in certain models</li>
+<li>Larger ensembles are needed</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6e0b74c" class="outline-2">
+<h2 id="org6e0b74c"><span class="section-number-2">33</span> <a class='org-ref-reference' href="#stevenson2017forced">stevenson2017forced</a></h2>
+<div class="outline-text-2" id="text-33">
+<ul class="org-ul">
+<li>ENSO diversity: difference between CP and EP ENSO events</li>
+<li>CESM Last Millennium ensemble</li>
+<li>Less forced impact on ENSO amplitude, some impact on diversity</li>
+<li>Lots of natural factors have an impact too</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge5834a2" class="outline-2">
+<h2 id="orge5834a2"><span class="section-number-2">34</span> <a class='org-ref-reference' href="#torrence1998practical">torrence1998practical</a></h2>
+<div class="outline-text-2" id="text-34">
+<ul class="org-ul">
+<li>How to use wavelets to estimate power spectrum in timeseries.</li>
+<li>Uses ENSO data <i>very niiceee</i></li>
+<li>Windowed Fourier Transform sucks butt because it is dependent on a time step parameter that can muck with the results depending on which value you choose.</li>
+<li>A wavelet is a short <b><i>blirp</i></b> of a wave with a mean of zero and finite amplitude/frequency and limited time domain.</li>
+<li>To get an ex. Morlet Wavelet take a regular wave and multiply it by a Gaussian (normal bell curve) so that it drops off over time.</li>
+<li>Will be using continuous methods, but discrete also works.</li>
+<li>Use mathematical transforms to vary scale and translation of wavelet as it slides across the time series.</li>
+<li>Integrate wavelet multiplied by the timeseries while varying scale and shift to generate a power spectrum.</li>
+<li>Applied wavelet spectrum analysis to Nino 3 timeseries</li>
+<li>strong variance in 2-8 year frequency area, but with slight changes between 1900 and 1990</li>
+<li>However, results are highly dependent on which mother wavelet you choose because they all have quite different properties.</li>
+<li>Trying power spectrum from a DOG (Mexican Hat) wavelet gives overall similar answer as Morelett wavelet, but it is slightly different (more detailed in time, less detailed in frequency.)</li>
+<li>Use formula to pick scale limits</li>
+<li>Add zeroes around the timeseries so that the wavelet equation does not misunderstand the data by thinking it is cyclical</li>
+<li>Create a cone of influence to mark where the edge confusion is able to interfere with the results.</li>
+<li>Make sure you convert between the wavelet scale to the Fourier period when you make your axes</li>
+<li>You can also reverse the wavelet transform to get back the timeseries from the power chart if you really want to (I dont think I will).</li>
+<li>Time for significance analysis!</li>
+<li>take a background spectrum that serves as the null hypothesis: all spikes in the power spectrum are due to chance, the underlying signal is really random.</li>
+<li>Comparing to red noise shows that the peaks of ENSO in 2-8 years are statistically significant</li>
+<li>Calculate 95% confidence interval by taking 95% confidence \(\chi^2\) statistic and multiplying by red noise spectrum.</li>
+<li>Nino3 SST wavelet power from 2-8year frequency is sometimes significantly different from red noise expectations.</li>
+<li>&ldquo;The confidence interval is defined as the probability that the true wavelet power at a certain time and scale lies within a certain interval about the estimated wavelet power.&rdquo;</li>
+<li>\(\chi^2\) test is advantageous because it applies to a lot of situations in wavelet analysis.</li>
+<li>Averaging the wavelet spectrum across the whole time range gives the overall power spectrum which can be significance tested and approximates the Fourier spectrum.</li>
+<li>Smoothing/averaging increases DOF, allowing to greater significance for the peaks</li>
+<li>After that, only main ENSO frequency band is shown to be statistically significant.</li>
+<li>Similar to time averaging, scale averaging is sometimes a good idea</li>
+<li>Wavelet analysis can be used to denoise an image/timeseries by throwing away the zones who&rsquo;s amplitude does not meet a certain level of significance.</li>
+<li>Wavelet analysis across spatial and temporal domains when squashed by frequency allows for a great analysis of spatial and temporal variability.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0ee5d9a" class="outline-2">
+<h2 id="org0ee5d9a"><span class="section-number-2">35</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#vecchi2006weakening">vecchi2006weakening</a></h2>
+</div>
+
+<div id="outline-container-org96d16fb" class="outline-2">
+<h2 id="org96d16fb"><span class="section-number-2">36</span> <a class='org-ref-reference' href="#vega2017analysis">vega2017analysis</a></h2>
+<div class="outline-text-2" id="text-36">
+<ul class="org-ul">
+<li>Control and global warming forced simulations</li>
+<li>Lots of internal variability</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org037d011" class="outline-2">
+<h2 id="org037d011"><span class="section-number-2">37</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#wang2016nino">wang2016nino</a></h2>
+</div>
+<div id="outline-container-org7335695" class="outline-2">
+<h2 id="org7335695"><span class="section-number-2">38</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#yeo2016role">yeo2016role</a></h2>
+</div>
+<div id="outline-container-orgdd5c9a6" class="outline-2">
+<h2 id="orgdd5c9a6"><span class="section-number-2">39</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#zhang2019review">zhang2019review</a></h2>
+</div>
+<div id="outline-container-orgf998378" class="outline-2">
+<h2 id="orgf998378"><span class="section-number-2">40</span> <span class="todo TODO">TODO</span> <a class='org-ref-reference' href="#zheng2016intermodel">zheng2016intermodel</a></h2>
+</div>
+
+<div id="outline-container-orgdb9a9a3" class="outline-2">
+<h2 id="orgdb9a9a3"><span class="section-number-2">41</span> <a class='org-ref-reference' href="#zheng2017response">zheng2017response</a></h2>
+<div class="outline-text-2" id="text-41">
+<ul class="org-ul">
+<li>CESM-LE ensemble</li>
+<li>Lots of internal variability</li>
+<li>At least 15 models are necessary to separate forced from internal variability</li>
+</ul>
 
 
 <p>
 
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="bjerknes1969atmospheric">[bjerknes1969atmospheric]</a> <a name="bjerknes1969atmospheric"></a>BJERKNES, Atmospheric Teleconnections From the Equatorial Pacific, <i>Monthly Weather Review</i>, <b>97(3)</b>, 163–172 (1969). <a href="http://dx.doi.org/10.1175/1520-0493(1969)097<0163:atftep>2.3.co;2">link</a>. <a href="http://dx.doi.org/10.1175/1520-0493(1969)097<0163:atftep>2.3.co;2">doi</a>.</li>
-<li><a id="an2017feedback">[an2017feedback]</a> <a name="an2017feedback"></a>An, Heo & Kim, Feedback process responsible for intermodel diversity of ENSO variability, <i>Geophysical Research Letters</i>, <b>44(9)</b>, 4272–4279 (2017). <a href="http://dx.doi.org/10.1002/2017gl073203">link</a>. <a href="http://dx.doi.org/10.1002/2017gl073203">doi</a>.</li>
-<li><a id="boer2000transient">[boer2000transient]</a> <a name="boer2000transient"></a>Boer, Flato & Ramsden, A transient climate change simulation with greenhouse gas and aerosol forcing: projected climate to the twenty-first century, <i>Climate Dynamics</i>, <b>16(6)</b>, 427–450 (2000). <a href="http://dx.doi.org/10.1007/s003820050338">link</a>. <a href="http://dx.doi.org/10.1007/s003820050338">doi</a>.</li>
-<li><a id="cai2018increased">[cai2018increased]</a> <a name="cai2018increased"></a>Cai, Wang, Dewitte, Wu, Santoso, Takahashi, Yang, Carréric & McPhaden, Increased variability of eastern Pacific El Niño under greenhouse warming, <i>Nature</i>, <b>564(7735)</b>, 201–206 (2018). <a href="http://dx.doi.org/10.1038/s41586-018-0776-9">link</a>. <a href="http://dx.doi.org/10.1038/s41586-018-0776-9">doi</a>.</li>
+<ul class='org-ref-bib'><li><a id="an2017feedback">[an2017feedback]</a> <a name="an2017feedback"></a>An, Heo & Kim, Feedback process responsible for intermodel diversity of ENSO variability, <i>Geophysical Research Letters</i>, <b>44(9)</b>, 4272-4279 (2017). <a href="http://dx.doi.org/10.1002/2017gl073203">link</a>. <a href="http://dx.doi.org/10.1002/2017gl073203">doi</a>.</li>
+<li><a id="bjerknes1969atmospheric">[bjerknes1969atmospheric]</a> <a name="bjerknes1969atmospheric"></a>Bjerknes, Atmospheric Teleconnections From the Equatorial Pacific, <i>Monthly Weather Review</i>, <b>97(3)</b>, 163-172 (1969). <a href="http://dx.doi.org/10.1175/1520-0493(1969)097<0163:atftep>2.3.co;2">link</a>. <a href="http://dx.doi.org/10.1175/1520-0493(1969)097<0163:atftep>2.3.co;2">doi</a>.</li>
+<li><a id="boer2000transient">[boer2000transient]</a> <a name="boer2000transient"></a>Boer, Flato & Ramsden, A transient climate change simulation with greenhouse gas and aerosol forcing: projected climate to the twenty-first century, <i>Climate Dynamics</i>, <b>16(6)</b>, 427-450 (2000). <a href="http://dx.doi.org/10.1007/s003820050338">link</a>. <a href="http://dx.doi.org/10.1007/s003820050338">doi</a>.</li>
+<li><a id="cai2018increased">[cai2018increased]</a> <a name="cai2018increased"></a>Cai, Wang, Dewitte, Wu, Santoso, Takahashi, Yang, Carr\'eric & McPhaden, Increased variability of eastern Pacific El Ni\~no under greenhouse warming, <i>Nature</i>, <b>564(7735)</b>, 201-206 (2018). <a href="http://dx.doi.org/10.1038/s41586-018-0776-9">link</a>. <a href="http://dx.doi.org/10.1038/s41586-018-0776-9">doi</a>.</li>
 <li><a id="chen2015causes">[chen2015causes]</a> <a name="chen2015causes"></a>Lin Chen, Tim Li & Yongqiang Yu, Causes of Strengthening and Weakening of ENSO Amplitude under Global Warming in Four CMIP5 Models\ast, <i>Journal of Climate</i>, <b>28(8)</b>, 3250-3274 (2015). <a href="https://doi.org/10.1175chen2015causes.pdfjcli-d-14-00439.1">link</a>. <a href="http://dx.doi.org/10.1175/jcli-d-14-00439.1">doi</a>.</li>
 <li><a id="chen2017possible">[chen2017possible]</a> <a name="chen2017possible"></a>Lin Chen, Tim Li, Yongqiang Yu & Swadhin Behera, A possible explanation for the divergent projection of ENSO amplitude change under global warming, <i>Climate Dynamics</i>, <b>49(11-12)</b>, 3799-3811 (2017). <a href="https://doi.org/10.1007chen2017possible.pdfs00382-017-3544-x">link</a>. <a href="http://dx.doi.org/10.1007/s00382-017-3544-x">doi</a>.</li>
 <li><a id="deser2020isolating">[deser2020isolating]</a> <a name="deser2020isolating"></a>Clara Deser, Adam Phillips, Isla Simpson, Nan Rosenbloom, Dani Coleman, Flavio Lehner, Angeline Pendergrass, Pedro DiNezio & Samantha Stevenson, Isolating the Evolving Contributions of Anthropogenic Aerosols and Greenhouse Gases: A New CESM1 Large Ensemble Community Resource, <i>Journal of Climate</i>, <b>33(18)</b>, 7835-7858 (2020). <a href="https://doi.org/10.1175deser2020isolating.pdfjcli-d-20-0123.1">link</a>. <a href="http://dx.doi.org/10.1175/jcli-d-20-0123.1">doi</a>.</li>
 <li><a id="dewitte2012reinterpreting">[dewitte2012reinterpreting]</a> <a name="dewitte2012reinterpreting"></a>Boris Dewitte, Sang-Wook Yeh & Sulian Thual, Reinterpreting the thermocline feedback in the western-central equatorial Pacific and its relationship with the ENSO modulation, <i>Climate Dynamics</i>, <b>41(3-4)</b>, 819-830 (2012). <a href="https://doi.org/10.1007dewitte2012reinterpreting.pdfs00382-012-1504-z">link</a>. <a href="http://dx.doi.org/10.1007/s00382-012-1504-z">doi</a>.</li>
 <li><a id="emile2007nino">[emile2007nino]</a> <a name="emile2007nino"></a>Julien Emile-Geay, Mark Cane, Richard Seager, Alexey Kaplan & Peter Almasi, El Ni\~no as a mediator of the solar influence on climate, <i>Paleoceanography</i>, <b>22(3)</b>, n/a-n/a (2007). <a href="https://doi.org/10.1029emile2007nino.pdf2006pa001304">link</a>. <a href="http://dx.doi.org/10.1029/2006pa001304">doi</a>.</li>
+<li><a id="gistemp2019giss">[gistemp2019giss]</a> <a name="gistemp2019giss"></a>GISTEMP Team & others, GISS surface temperature analysis (GISTEMP), version 4, <i>NASA Goddard Institute for Space Studies</i>,  (2019).</li>
 <li><a id="graham2014effectiveness">[graham2014effectiveness]</a> <a name="graham2014effectiveness"></a>Felicity Graham, Jaclyn Brown, Clothilde Langlais, Simon Marsland, Andrew Wittenberg & Neil Holbrook, Effectiveness of the Bjerknes stability index in representing ocean dynamics, <i>Climate Dynamics</i>, <b>43(9-10)</b>, 2399-2414 (2014). <a href="https://doi.org/10.1007graham2014effectiveness.pdfs00382-014-2062-3">link</a>. <a href="http://dx.doi.org/10.1007/s00382-014-2062-3">doi</a>.</li>
+<li><a id="hu2018cross">[hu2018cross]</a> <a name="hu2018cross"></a>Shineng Hu & Alexey Fedorov, Cross-equatorial winds control El Ni\~no diversity and change, <i>Nature Climate Change</i>, <b>8(9)</b>, 798-802 (2018). <a href="https://doi.org/10.1038hu2018cross.pdfs41558-018-0248-0">link</a>. <a href="http://dx.doi.org/10.1038/s41558-018-0248-0">doi</a>.</li>
+<li><a id="jia2019weakening">[jia2019weakening]</a> <a name="jia2019weakening"></a>Fan Jia, Wenju Cai, Lixin Wu, Bolan Gan, Guojian Wang, Fred Kucharski, Ping Chang & Noel Keenlyside, Weakening Atlantic Ni\~no\textendashPacific connection under greenhouse warming, <i>Science Advances</i>, <b>5(8)</b>, eaax4111 (2019). <a href="https://doi.org/10.1126jia2019weakening.pdfsciadv.aax4111">link</a>. <a href="http://dx.doi.org/10.1126/sciadv.aax4111">doi</a>.</li>
+<li><a id="jimenez2016record">[jimenez2016record]</a> <a name="jimenez2016record"></a>Juan Jim\'enez-Mu\~noz, Cristian Mattar, Jonathan Barichivich, Andr\'es Santamar\'\ia-Artigas, Ken Takahashi, Yadvinder Malhi, Jos\'e Sobrino & Gerard van der Schrier, Record-breaking warming and extreme drought in the Amazon rainforest during the course of El Ni\~no 2015\textendash2016, <i>Scientific Reports</i>, <b>6(1)</b>, (2016). <a href="https://doi.org/10.1038jimenez2016record.pdfsrep33130">link</a>. <a href="http://dx.doi.org/10.1038/srep33130">doi</a>.</li>
+<li><a id="kay2015community">[kay2015community]</a> <a name="kay2015community"></a>Kay, Deser, Phillips, Mai, Hannay, Strand, Arblaster, Bates, Danabasoglu, Edwards, Holland, Kushner, Lamarque, Lawrence, Lindsay, Middleton, Munoz, Neale, Oleson, Polvani & Vertenstein, The Community Earth System Model (CESM) Large Ensemble Project: A Community Resource for Studying Climate Change in the Presence of Internal Climate Variability, <i>Bulletin of the American Meteorological Society</i>, <b>96(8)</b>, 1333-1349 (2015). <a href="https://doi.org/10.1175kay2015community.pdfbams-d-13-00255.1">link</a>. <a href="http://dx.doi.org/10.1175/bams-d-13-00255.1">doi</a>.</li>
+<li><a id="kestin1998time">[kestin1998time]</a> <a name="kestin1998time"></a>Kestin, Karoly, Yano & Rayner, Time-frequency variability of ENSO and stochastic simulations, <i>Journal of Climate</i>, <b>11(9)</b>, 2258-2272 (1998).</li>
+<li><a id="kim2014response">[kim2014response]</a> <a name="kim2014response"></a>Seon Tae Kim, Wenju Cai, Fei-Fei Jin, Agus Santoso, Lixin Wu, Eric Guilyardi & Soon-Il An, Response of El Ni\~no sea surface temperature variability to greenhouse warming, <i>Nature Climate Change</i>, <b>4(9)</b>, 786-790 (2014). <a href="https://doi.org/10.1038kim2014response.pdfnclimate2326">link</a>. <a href="http://dx.doi.org/10.1038/nclimate2326">doi</a>.</li>
+<li><a id="kohyama2018weakening">[kohyama2018weakening]</a> <a name="kohyama2018weakening"></a>Tsubasa Kohyama, Dennis Hartmann & David Battisti, Weakening of Nonlinear ENSO Under Global Warming, <i>Geophysical Research Letters</i>, <b>45(16)</b>, 8557-8567 (2018). <a href="https://doi.org/10.1029kohyama2018weakening.pdf2018gl079085">link</a>. <a href="http://dx.doi.org/10.1029/2018gl079085">doi</a>.</li>
+<li><a id="levine2017impact">[levine2017impact]</a> <a name="levine2017impact"></a>Aaron Levine, Michael McPhaden & Dargan Frierson, The impact of the AMO on multidecadal ENSO variability, <i>Geophysical Research Letters</i>, <b>44(8)</b>, 3877-3886 (2017). <a href="https://doi.org/10.1002levine2017impact.pdf2017gl072524">link</a>. <a href="http://dx.doi.org/10.1002/2017gl072524">doi</a>.</li>
+<li><a id="lorenz1963deterministic">[lorenz1963deterministic]</a> <a name="lorenz1963deterministic"></a>Lorenz, Deterministic nonperiodic flow, <i>Journal of atmospheric sciences</i>, <b>20(2)</b>, 130-141 (1963).</li>
+<li><a id="liu2007atmospheric">[liu2007atmospheric]</a> <a name="liu2007atmospheric"></a>Zhengyu Liu & Mike Alexander, Atmospheric bridge, oceanic tunnel, and global climatic teleconnections, <i>Reviews of Geophysics</i>, <b>45(2)</b>, (2007). <a href="https://doi.org/10.1029liu2007atmospheric.pdf2005rg000172">link</a>. <a href="http://dx.doi.org/10.1029/2005rg000172">doi</a>.</li>
+<li><a id="lubbecke2014assessing">[lubbecke2014assessing]</a> <a name="lubbecke2014assessing"></a>Joke L\"ubbecke & Michael McPhaden, Assessing the Twenty-First-Century Shift in ENSO Variability in Terms of the Bjerknes Stability Index\ast, <i>Journal of Climate</i>, <b>27(7)</b>, 2577-2587 (2014). <a href="https://doi.org/10.1175lubbecke2014assessing.pdfjcli-d-13-00438.1">link</a>. <a href="http://dx.doi.org/10.1175/jcli-d-13-00438.1">doi</a>.</li>
+<li><a id="maher2018enso">[maher2018enso]</a> <a name="maher2018enso"></a>Maher, Matei, Milinski & Marotzke, ENSO Change in Climate Projections: Forced Response or Internal Variability?, <i>Geophysical Research Letters</i>, <b>45(20)</b>, (2018). <a href="https://doi.org/10.1029maher2018enso.pdf2018gl079764">link</a>. <a href="http://dx.doi.org/10.1029/2018gl079764">doi</a>.</li>
+<li><a id="nowack2017role">[nowack2017role]</a> <a name="nowack2017role"></a>Peer Nowack, Peter Braesicke, Luke Abraham & John Pyle, On the role of ozone feedback in the ENSO amplitude response under global warming, <i>Geophysical Research Letters</i>, <b>44(8)</b>, 3858-3866 (2017). <a href="https://doi.org/10.1002nowack2017role.pdf2016gl072418">link</a>. <a href="http://dx.doi.org/10.1002/2016gl072418">doi</a>.</li>
+<li><a id="pachauri2014climate">[pachauri2014climate]</a> <a name="pachauri2014climate"></a>Pachauri, Allen, Barros, Broome, Cramer, Christ, Church, Clarke, Dahe, Dasgupta & others, Climate change 2014: synthesis report. Contribution of Working Groups I, II and III to the fifth assessment report of the Intergovernmental Panel on Climate Change, Ipcc (2014).</li>
+<li><a id="phillips2014evaluating">[phillips2014evaluating]</a> <a name="phillips2014evaluating"></a>Adam Phillips, Clara Deser & John Fasullo, Evaluating Modes of Variability in Climate Models, <i>Eos, Transactions American Geophysical Union</i>, <b>95(49)</b>, 453-455 (2014). <a href="https://doi.org/10.1002phillips2014evaluating.pdf2014eo490002">link</a>. <a href="http://dx.doi.org/10.1002/2014eo490002">doi</a>.</li>
+<li><a id="rashid2016atmospheric">[rashid2016atmospheric]</a> <a name="rashid2016atmospheric"></a>Harun Rashid, Anthony Hirst & Simon Marsland, An atmospheric mechanism for ENSO amplitude changes under an abrupt quadrupling of CO2 concentration in CMIP5 models, <i>Geophysical Research Letters</i>, <b>43(4)</b>, 1687-1694 (2016). <a href="https://doi.org/10.1002rashid2016atmospheric.pdf2015gl066768">link</a>. <a href="http://dx.doi.org/10.1002/2015gl066768">doi</a>.</li>
+<li><a id="ropelewski1987global">[ropelewski1987global]</a> <a name="ropelewski1987global"></a>Ropelewski & Halpert, Global and regional scale precipitation patterns associated with the El Ni\~no/Southern Oscillation, <i>Monthly weather review</i>, <b>115(8)</b>, 1606-1626 (1987).</li>
+<li><a id="son2010impact">[son2010impact]</a> <a name="son2010impact"></a>Son, Gerber, Perlwitz, Polvani, Gillett, Seo, Eyring, Shepherd, Waugh, Akiyoshi, Austin, Baumgaertner, Bekki, Braesicke, Br\"uhl, Butchart, Chipperfield, Cugnet, Dameris, Dhomse, Frith, Garny, Garcia, Hardiman, J\"ockel, Lamarque, Mancini, Marchand, Michou, Nakamura, Morgenstern, Pitari, Plummer, Pyle, Rozanov, Scinocca, Shibata, Smale, Teyss\`edre, Tian & Yamashita, Impact of stratospheric ozone on Southern Hemisphere circulation change: A multimodel assessment, <i>Journal of Geophysical Research</i>, <b>115</b>, (2010). <a href="https://doi.org/10.1029son2010impact.pdf2010jd014271">link</a>. <a href="http://dx.doi.org/10.1029/2010jd014271">doi</a>.</li>
+<li><a id="stevenson2010enso">[stevenson2010enso]</a> <a name="stevenson2010enso"></a>Samantha Stevenson, Baylor Fox-Kemper, Markus Jochum, Balaji Rajagopalan & Stephen Yeager, ENSO Model Validation Using Wavelet Probability Analysis, <i>Journal of Climate</i>, <b>23(20)</b>, 5540-5547 (2010). <a href="https://doi.org/10.1175stevenson2010enso.pdf2010jcli3609.1">link</a>. <a href="http://dx.doi.org/10.1175/2010jcli3609.1">doi</a>.</li>
+<li><a id="stevenson2012will">[stevenson2012will]</a> <a name="stevenson2012will"></a>Samantha Stevenson, Baylor Fox-Kemper, Markus Jochum, Richard Neale, Clara Deser & Gerald Meehl, Will There Be a Significant Change to El Ni\~no in the Twenty-First Century?, <i>Journal of Climate</i>, <b>25(6)</b>, 2129-2145 (2012). <a href="https://doi.org/10.1175stevenson2012will.pdfjcli-d-11-00252.1">link</a>. <a href="http://dx.doi.org/10.1175/jcli-d-11-00252.1">doi</a>.</li>
+<li><a id="stevenson2012significant">[stevenson2012significant]</a> <a name="stevenson2012significant"></a>Stevenson, Significant changes to ENSO strength and impacts in the twenty-first century: Results from CMIP5, <i>Geophysical Research Letters</i>, <b>39(17)</b>, n/a-n/a (2012). <a href="https://doi.org/10.1029stevenson2012significant.pdf2012gl052759">link</a>. <a href="http://dx.doi.org/10.1029/2012gl052759">doi</a>.</li>
+<li><a id="stevenson2017forced">[stevenson2017forced]</a> <a name="stevenson2017forced"></a>Samantha Stevenson, Antonietta Capotondi, John Fasullo & Bette Otto-Bliesner, Forced changes to twentieth century ENSO diversity in a last Millennium context, <i>Climate Dynamics</i>, <b>52(12)</b>, 7359-7374 (2017). <a href="https://doi.org/10.1007stevenson2017forced.pdfs00382-017-3573-5">link</a>. <a href="http://dx.doi.org/10.1007/s00382-017-3573-5">doi</a>.</li>
+<li><a id="torrence1998practical">[torrence1998practical]</a> <a name="torrence1998practical"></a>Torrence & Compo, A practical guide to wavelet analysis, <i>Bulletin of the American Meteorological society</i>, <b>79(1)</b>, 61-78 (1998).</li>
+<li><a id="vecchi2006weakening">[vecchi2006weakening]</a> <a name="vecchi2006weakening"></a>Gabriel Vecchi, Brian Soden, Andrew Wittenberg, Isaac Held, Ants Leetmaa & Matthew Harrison, Weakening of tropical Pacific atmospheric circulation due to anthropogenic forcing, <i>Nature</i>, <b>441(7089)</b>, 73-76 (2006). <a href="https://doi.org/10.1038vecchi2006weakening.pdfnature04744">link</a>. <a href="http://dx.doi.org/10.1038/nature04744">doi</a>.</li>
+<li><a id="vega2017analysis">[vega2017analysis]</a> <a name="vega2017analysis"></a>Benjamin Vega-Westhoff & Ryan Sriver, Analysis of ENSO's response to unforced variability and anthropogenic forcing using CESM, <i>Scientific Reports</i>, <b>7(1)</b>, (2017). <a href="https://doi.org/10.1038vega2017analysis.pdfs41598-017-18459-8">link</a>. <a href="http://dx.doi.org/10.1038/s41598-017-18459-8">doi</a>.</li>
+<li><a id="wang2016nino">[wang2016nino]</a> <a name="wang2016nino"></a>@incollectionwang2016nino,
+	author = Chunzai Wang and Clara Deser and Jin-Yi Yu and Pedro DiNezio and Amy Clement,
+	booktitle = Coral Reefs of the Eastern Tropical Pacific,
+	doi = 10.1007/978-94-017-7499-4_4,
+	month = aug,
+	pages = 85-106,
+	publisher = Springer Netherlands,
+	title = El Ni\~no and Southern Oscillation (ENSO): A Review,
+	url = https://doi.org/10.1007%2F978-94-017-7499-4_4,
+	year = 2016,
+	Bdsk-Url-1 = https://doi.org/10.1007%2F978-94-017-7499-4_4,
+	Bdsk-Url-2 = https://doi.org/10.1007/978-94-017-7499-4_4</li>
+<li><a id="yeo2016role">[yeo2016role]</a> <a name="yeo2016role"></a>Sae-Rim Yeo, Sang-Wook Yeh, Kwang-Yul Kim & WonMoo Kim, The role of low-frequency variation in the manifestation of warming trend and ENSO amplitude, <i>Climate Dynamics</i>, <b>49(4)</b>, 1197-1213 (2016). <a href="https://doi.org/10.1007yeo2016role.pdfs00382-016-3376-0">link</a>. <a href="http://dx.doi.org/10.1007/s00382-016-3376-0">doi</a>.</li>
+<li><a id="zhang2019review">[zhang2019review]</a> <a name="zhang2019review"></a>Rong Zhang, Rowan Sutton, Gokhan Danabasoglu, Young-Oh Kwon, Robert Marsh, Stephen Yeager, Daniel Amrhein & Christopher Little, A Review of the Role of the Atlantic Meridional Overturning Circulation in Atlantic Multidecadal Variability and Associated Climate Impacts, <i>Reviews of Geophysics</i>, <b>57(2)</b>, 316-375 (2019). <a href="https://doi.org/10.1029zhang2019review.pdf2019rg000644">link</a>. <a href="http://dx.doi.org/10.1029/2019rg000644">doi</a>.</li>
+<li><a id="zheng2016intermodel">[zheng2016intermodel]</a> <a name="zheng2016intermodel"></a>Xiao-Tong Zheng, Shang-Ping Xie, Liang-Hong Lv & Zhen-Qiang Zhou, Intermodel Uncertainty in ENSO Amplitude Change Tied to Pacific Ocean Warming Pattern, <i>Journal of Climate</i>, <b>29(20)</b>, 7265-7279 (2016). <a href="https://doi.org/10.1175zheng2016intermodel.pdfjcli-d-16-0039.1">link</a>. <a href="http://dx.doi.org/10.1175/jcli-d-16-0039.1">doi</a>.</li>
+<li><a id="zheng2017response">[zheng2017response]</a> <a name="zheng2017response"></a>Xiao-Tong Zheng, Chang Hui & Sang-Wook Yeh, Response of ENSO amplitude to global warming in CESM large ensemble: uncertainty due to internal variability, <i>Climate Dynamics</i>, <b>50(11-12)</b>, 4019-4035 (2017). <a href="https://doi.org/10.1007zheng2017response.pdfs00382-017-3859-7">link</a>. <a href="http://dx.doi.org/10.1007/s00382-017-3859-7">doi</a>.</li>
 </ul>
 </p>
 </div>
@@ -325,7 +694,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Benjamin Goldman</p>
-<p class="date">Created: 2021-07-08 Thu 18:23</p>
+<p class="date">Created: 2021-08-15 Sun 15:00</p>
 </div>
 </body>
 </html>
