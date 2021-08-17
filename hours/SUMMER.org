@@ -57,12 +57,13 @@
 | <2021-08-15 Sun> |        10:20 |      11:00 |       00:40 | contacted mentor                                                     |
 | <2021-08-15 Sun> |        13:20 |      15:20 |       02:00 | took notes, worked on paper                                          |
 | <2021-08-16 Mon> |        15:00 |      17:15 |       02:15 | sts application, contacted mentor, worked on data                    |
+| <2021-08-17 Tue> |        16:45 |      19:45 |       03:00 | data analysis                                                        |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      69:15 |         59 |             01:10:25 |            00:46 |
+|      72:15 |         60 |             01:12:15 |            00:48 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )

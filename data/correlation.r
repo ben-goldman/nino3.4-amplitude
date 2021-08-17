@@ -4,6 +4,7 @@ library(dplyr)
 library(ggplot2)
 library(WaveletComp)
 library(reshape2)
+library(abind)
 
 # subtract ensemble mean from member
 prepare <- function(x) {
@@ -110,3 +111,53 @@ gsave <- function(name, plot = last_plot(), dimensions = c(6, 8), path = "./figu
 }
 
 gsave("tempdt.pdf", dimensions = c(8, 6))
+
+# Calculate TEMPDT ensemble mean
+# TAKES A VERY LONG TIME!!! BE CAREFUL!!!!!!
+base <- array(NA, dim = c(121, 60, 2172))
+for(r in 1:40) {
+    writeLines(as.character(r))
+    if(r == 1) {
+        base <- tempdt[,,,1]
+    } else {
+        base <- apply(abind(base, tempdt[,,,r], along = 4), c(1, 2, 3), mean)
+    }
+}
+
+write.csv(base, "/Volumes/Extreme SSD/DATA/stacked/CESM1/tempdt_mean.csv", row.names = FALSE)
+
+ggplot(base[,,1] %>% melt, aes(Var1, Var2, z = value)) +
+    geom_contour_filled(bins = 16)
+
+tempdt_diff <- array(NA, dim = dim(tempdt))
+for(r in 1:40) {
+    writeLines(as.character(r))
+    tempdt_diff[,,,r] <- tempdt[,,,r] - base
+}
+
+load_variance_diff <- function(file) (read.table(file, sep = ",") %>% as.matrix %>% prepare() %>% apply(2, rollvar))
+
+nino_var_diff <- load_variance_diff("./data/CESM1/ff.csv")
+
+corrs_diff <- array(NA, dim = dim(tempdt_diff)[c(1, 2, 4)])
+for(r in 1:dim(tempdt_diff)[4]) {
+    corrs_diff[,,r] <- apply(X = tempdt_diff[,,,r],
+                        MARGIN = c(1, 2),
+                        FUN=na_cor,
+                        y = nino_var_diff[,r],
+                        use = "complete.obs")
+    writeLines(as.character(r))
+}
+
+corrs_mean_diff <- apply(corrs_diff, c(1, 2), mean)
+dimnames(corrs_mean_diff) <- list(lon, depth)
+
+ggplot(corrs_mean_diff %>% melt, aes(Var1, log(Var2, base = 10), z = value)) +
+    geom_contour_filled(bins = 20) +
+    labs(title = "Correlation Coefficient Between Niño 3.4 Variance and Ocean Temperature",
+         x = "Longitude",
+         y = "log_10(Depth)",
+         fill = "Correlation\nCoefficient") +
+    scale_y_continuous(trans = "reverse")
+
+gsave("tempdt_diff.pdf", dimensions = c(8, 6))
