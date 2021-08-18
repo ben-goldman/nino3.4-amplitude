@@ -12,7 +12,8 @@
 *** aerosol emissions dampen GHG increase in amplitude
 *** What about everything else?
 *** Not using a large ensemble mostly
-** Gap: not enough analysis on how ghg and aer affect ENSO amplitude
+** Gap: not enough analysis on how ghg, aer, and others affect ENSO amplitude
 *** how the two factors interact
 *** how their effects look compared to internal variability
 *** What physical mechanisms mediate their effect
+** Use some interesting methods: wavelet analysis
