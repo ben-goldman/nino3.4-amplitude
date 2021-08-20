@@ -3,7 +3,7 @@
 * Assignment List
 **** TODO Research JOURNAL accounts for appropriate time, dates, and tasks spent conducting research both in and outside of class and provides appropriate details
 **** TODO Student has documented appropriate hours (1 per day) for this time period (includes additional hours if student requested extra time): HOURS: 90
-**** TODO Register for SUNY Albany credits OR write down the reason you did not or can not
+**** DONE Register for SUNY Albany credits OR write down the reason you did not or can not
 **** TODO Email Mrs. Fleming over the summer with an update on your research progress at least once. Work does not need to be submitted. (SUNY Albany students must email Mrs. Fleming every 2 weeks-4 times-by the following dates: 7/9/21, 7/23/21, 8/6/21, 8/20/21).
 **** TODO Provide evidence of completed data collection and/or data analysis for new study.
 **** TODO Revise PowerPoint presentation of your completed research project.
@@ -60,12 +60,13 @@
 | <2021-08-17 Tue> |        16:45 |      19:45 |       03:00 | data analysis                                                        |
 | <2021-08-18 Wed> |        14:15 |      17:00 |       02:45 | data analysis                                                        |
 | <2021-08-19 Thu> |        18:30 |      21:00 |       02:30 | made paper outline, data analysis now I am confused :(               |
+| <2021-08-20 Fri> |        12:00 |      15:10 |       03:10 | worked on presentation                                               |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      77:30 |         62 |             01:15:00 |            00:51 |
+|      80:40 |         63 |             01:16:49 |            00:53 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )

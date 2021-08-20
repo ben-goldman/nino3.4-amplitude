@@ -4,6 +4,8 @@
 \date{\today}
 \usepackage{natbib}
 \usepackage{tikz}
+\usepackage{varwidth}
+\usetikzlibrary{arrows,snakes,backgrounds}
 \usetheme{metropolis}
 \renewcommand{\bibsection}{}
 \setbeamerfont{caption}{size=\tiny}
@@ -43,13 +45,20 @@
 \begin{frame}{Climate Change}
 
   \begin{columns}
-    \column{0.4\textwidth}
+    \column{0.6\textwidth}
     \begin{itemize}
     \item The earth is getting warmer. \citep{pachauri2014climate}
     \item Climate varies on different scales.
     \item Long-term trends and short-term noise.
+    \item Forcing: any external factor that affects climate
+      \begin{itemize}
+      \item Greenhouse gasses
+      \item Aerosols (natural: volcanic ash, artificial: smoke)
+      \item Biomass burning
+      \item Land use/cover (deforestation, desertification)
+      \end{itemize}
     \end{itemize}
-    \column{0.6\textwidth}
+    \column{0.4\textwidth}
     \myfig{intro_fig_3.pdf}{Global mean land air temperature in GISSTEMP 4 dataset. \citep{gistemp2019giss} and \citep{lenssen2019improvements}}{this}
   \end{columns}
 \end{frame}
@@ -71,6 +80,30 @@
 \end{frame}
 
 \begin{frame}{Climate Simulation}
+
+  \begin{tikzpicture}[node distance = 1.5in, thick]
+
+    \node (input) [rectangle, draw] {
+      \begin{varwidth}{1.5in}
+        Independent variables
+        Ex. greenhouse gas
+      \end{varwidth}};
+
+    \node (model) [right of=input, circle, draw] {
+      \begin{varwidth}{\linewidth}
+        Computer\\Simulation
+      \end{varwidth}};
+
+    \node (output) [right of=model, rectangle, draw] {
+      \begin{varwidth}{1.4in}
+        Dependent variables
+        Model's predictions
+      \end{varwidth}};
+
+    \draw [->] (input.east) -- (model.west);
+    \draw [->] (model.east) -- (output.west);
+
+  \end{tikzpicture}
 
 \end{frame}
 
@@ -144,11 +177,65 @@
 
 \end{frame}
 
-\begin{frame}{Measuring ENSO}
-
+\begin{frame}{Model Setup}
+  Input:
+  \begin{itemize}
+  \item Observed forcing levels from 1850-2005
+  \item Predicted forcing levels from 2005-2100
+  \item \textbf{Simulation ran a total of 40 times with slightly different starting point}
+  \item Control simulation with pre-1850 forcing levels
+  \end{itemize}
+  Model:
+  \begin{itemize}
+  \item CESM1 \citep{kay2015community}
+  \item CESM2 \citep{danabasoglu2020community}
+  \end{itemize}
+  Output: Sea Surface Temperature (SST)
 \end{frame}
 
 \begin{frame}{Measuring ENSO Intensity}
+
+  \tikzstyle{process}=[circle, draw=black!50,fill=black!20, line width = 0.2mm]
+  \tikzstyle{data}=[rectangle, draw=blue!50,fill=blue!20, line width = 0.2mm]
+  \begin{tikzpicture}[node distance = 1.5in, line width = 0.5mm]
+
+    \node [data] (input) {
+      \begin{varwidth}{1.5in}
+        External forcing
+      \end{varwidth}};
+
+    \node [process] (model) [right of=input] {
+      \begin{varwidth}{\linewidth}
+        CESM1\\and\\CESM2
+      \end{varwidth}};
+
+    \node [data] (output) [right of=model] {
+      \begin{varwidth}{1.2in}
+        Sea surface temperature (SST)
+      \end{varwidth}};
+
+    \node [data] (nino) [below of=input] {
+      \begin{varwidth}{1.4in}
+        Niño 3.4 index
+      \end{varwidth}};
+
+    \node [process] (variance) [right of=nino] {
+      \begin{varwidth}{1.4in}
+        Windowed\\variance
+      \end{varwidth}};
+
+    \node [data] (intensity) [right of=variance] {
+      \begin{varwidth}{1.4in}
+        ENSO intensity
+      \end{varwidth}};
+
+    \draw [->] (input) to (model);
+    \draw [->] (model) to (output);
+    \draw [->] (output) to [out = 270, in = 90] (nino);
+    \draw [->] (nino) to (variance);
+    \draw [->] (variance) to (intensity);
+
+  \end{tikzpicture}
 
 \end{frame}
 
@@ -157,10 +244,6 @@
 \end{frame}
 
 \begin{frame}{ENSO is Becoming Stronger}
-
-\end{frame}
-
-\begin{frame}{It's not That Simple}
 
 \end{frame}
 
@@ -177,10 +260,6 @@
 \end{frame}
 
 \begin{frame}{Stratification}
-
-\end{frame}
-
-\begin{frame}{Stratification in Other Ensembles}
 
 \end{frame}
 
