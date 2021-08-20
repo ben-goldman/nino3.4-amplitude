@@ -1,0 +1,269 @@
+% Created 2021-08-19 Thu 20:28
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Benjamin Goldman}
+\date{\today}
+\title{Notes for Paper}
+\hypersetup{
+ pdfauthor={Benjamin Goldman},
+ pdftitle={Notes for Paper},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.2 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:orge21977b}
+\subsection{Rationale}
+\label{sec:org22bff9d}
+\subsubsection{Greenhouse emissions are increasing global temperatures (breifly state)}
+\label{sec:org2d93704}
+\subsubsection{ENSO is a change in the temperature of the pacific ocean with effects around the world}
+\label{sec:org5775d0e}
+\subsubsection{If climate change affects ENSO, then we need to find out \underline{now}}
+\label{sec:org56c62ca}
+\subsection{Review of literature:}
+\label{sec:orge71ba68}
+\subsubsection{Climate change affects ENSO}
+\label{sec:orgddb4469}
+\begin{enumerate}
+\item Comparison of amplitude between many models with CMIP5 is mostly inconclusive
+\label{sec:org0ff3528}
+\item CESM-LE shows increase in amplitude that is significant
+\label{sec:org409cf8d}
+\end{enumerate}
+\subsubsection{Role of multiple natural and artificial factors}
+\label{sec:org7c2bb2f}
+\begin{enumerate}
+\item Greenhouse gasses may be increasing ENSO amplitude
+\label{sec:org2ca497c}
+\item aerosol emissions dampen GHG increase in amplitude
+\label{sec:org21ed145}
+\item What about everything else?
+\label{sec:org5e6776a}
+\item Not using a large ensemble mostly
+\label{sec:org4781853}
+\end{enumerate}
+\subsection{Gap}
+\label{sec:orga9e7bba}
+\subsubsection{not enough analysis on how ghg, aer, and others affect ENSO amplitude}
+\label{sec:org9c142a4}
+\begin{enumerate}
+\item how the two factors interact
+\label{sec:org2cfc500}
+\item how their effects look compared to internal variability
+\label{sec:orgf657ec5}
+\item What physical mechanisms mediate their effect
+\label{sec:org99afee8}
+\end{enumerate}
+\subsubsection{Use some interesting methods: wavelet analysis}
+\label{sec:org8f83908}
+\subsection{Variables:}
+\label{sec:org9774955}
+\subsubsection{Independent variable: external forcing}
+\label{sec:org2e804f0}
+\begin{enumerate}
+\item input climate models with observed and predicted greenhouse gas, aerosol, biomass burning, land use/cover, etc
+\label{sec:org72954cd}
+\item GHG:
+\label{sec:org5622f92}
+\begin{enumerate}
+\item Observed and predicted to increase due to industrial burning
+\label{sec:org6a16208}
+\item Lead to higher air (and water) temperature due to greenhouse effect
+\label{sec:orgda4de99}
+\end{enumerate}
+\item AER:
+\label{sec:orgf592de7}
+\begin{enumerate}
+\item Aerosols produced by industry (smoke) and nature (volcanoes)
+\label{sec:org9b2d67f}
+\item Usually reduce global temperatures by reflecting oncoming sunlight
+\label{sec:orge9600f1}
+\item Location of emission may change as industry moves from US to China
+\label{sec:orgca63294}
+\end{enumerate}
+\item BMB:
+\label{sec:org2a56291}
+\begin{enumerate}
+\item Increased frequency of forest and grassland fires probably due to global warming
+\label{sec:org5a531ca}
+\item Releases CO\textsubscript{2} (GHG) and smoke (AER)
+\label{sec:orgfc5ba1a}
+\end{enumerate}
+\item LULC:
+\label{sec:orgc698b75}
+\begin{enumerate}
+\item Deforestation and desertification
+\label{sec:orgde04da2}
+\item Greenery reduces land temperature
+\label{sec:org231cd88}
+\item Greenery reduces CO\textsubscript{2} levels
+\label{sec:org6abc24d}
+\item Modifies water cycle as leaves increase evaporation
+\label{sec:org2ceaf22}
+\end{enumerate}
+\end{enumerate}
+\section{Data}
+\label{sec:orgf91b064}
+\subsection{CESM1}
+\label{sec:orgdbe1af7}
+\subsubsection{Full forcing}
+\label{sec:org36a19d8}
+\begin{enumerate}
+\item Observed emissions levels 1920-2005
+\label{sec:orgb6bc9c1}
+\item RCP8.5 (worst case) emissions levels 2005-2100
+\label{sec:org33be126}
+\end{enumerate}
+\subsubsection{Single forcing}
+\label{sec:org7605e03}
+\begin{enumerate}
+\item All but one forcing group
+\label{sec:org5ca7629}
+\begin{enumerate}
+\item GHG
+\label{sec:org0bfc156}
+\item AER
+\label{sec:org1fc732e}
+\item BMB
+\label{sec:org31cca4f}
+\item LULC
+\label{sec:orgad3afc0}
+\end{enumerate}
+\item Observed 1920-2005
+\label{sec:orgfc27146}
+\item Predicted emissions 2005-2080
+\label{sec:orgcd0ade9}
+\end{enumerate}
+\subsubsection{Control}
+\label{sec:org3521a66}
+\begin{enumerate}
+\item 1850 fixed emissions levels
+\label{sec:org78d4232}
+\end{enumerate}
+\subsection{CESM2}
+\label{sec:org903fc5c}
+\subsubsection{Higher ensemble size}
+\label{sec:orgfa93ce4}
+\subsubsection{Longer record length}
+\label{sec:org6ef82de}
+\subsubsection{Newer code}
+\label{sec:org1bfcb6e}
+\subsubsection{Full forcing}
+\label{sec:orgad33236}
+\begin{enumerate}
+\item SMBB vs CMIP6 discrepancy
+\label{sec:org7c1e55b}
+\item Observed forcing levels 1850-2005
+\label{sec:org82d9b1c}
+\item Worst case emissions 2006-2100
+\label{sec:org849b535}
+\end{enumerate}
+\subsubsection{Single Forcing}
+\label{sec:org373f00c}
+\begin{enumerate}
+\item Similar to CESM1
+\label{sec:org690c5d6}
+\item Not all members are done yet
+\label{sec:org8ea3d2f}
+\end{enumerate}
+\subsubsection{Control}
+\label{sec:orgb301cb6}
+\begin{enumerate}
+\item Similar to CESM1
+\label{sec:org735b3e3}
+\end{enumerate}
+\subsection{Observed data}
+\label{sec:orgeb1c1df}
+\subsubsection{Might mention in introduction?}
+\label{sec:orga6c7ed4}
+\subsubsection{Used for introductory presentation figures, not yet for actual methods}
+\label{sec:org9778c23}
+\section{Methods and Results}
+\label{sec:org1eb5e61}
+\subsection{For all ensembles and all variables:}
+\label{sec:orgc5525b4}
+\subsubsection{Subtract ensemble mean from each member to derive internal variability i.e. ENSO}
+\label{sec:orgba6e56a}
+\subsection{Niño 3.4 index}
+\label{sec:orgf22a460}
+\subsubsection{Mean temperature in Niño 3.4 region}
+\label{sec:org7245a90}
+\subsubsection{20-year rolling variance for each member}
+\label{sec:org084d966}
+\subsubsection{Ensemble statistics: mean and standard error (dependent on ensemble size)}
+\label{sec:orgdf5efb6}
+\subsubsection{Control?}
+\label{sec:orgb67f98a}
+\subsubsection{Figure 1: CESM1 and CESM2 FF Niño 3.4 variance ensemble means}
+\label{sec:orgdb13ad6}
+\subsubsection{Explanation:}
+\label{sec:org1c938fa}
+\begin{enumerate}
+\item CESM1
+\label{sec:org20d12a8}
+\begin{enumerate}
+\item Starts with low variance, steeply increasing from 1950-2050, dropping slightly after 2050
+\label{sec:orga9e35ea}
+\item Probably nonlinear response to forcing: does not keep increasing
+\label{sec:org97cb690}
+\begin{enumerate}
+\item Are emissions slowing down post-2050?
+\label{sec:org42ff186}
+\end{enumerate}
+\end{enumerate}
+\item CESM2
+\label{sec:org5378e06}
+\begin{enumerate}
+\item Exponential? increase in variance until 2025, then sharp decrease
+\label{sec:org3dea794}
+\begin{enumerate}
+\item Why?
+\label{sec:org487e458}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\subsection{Single forcing ensembles}
+\label{sec:org85701d9}
+\subsubsection{SF ensembles for CESM1 and CESM2}
+\label{sec:org863b2ac}
+\subsubsection{All-but one}
+\label{sec:org55682bb}
+\subsubsection{Figure 2: ENSO amplitude index for SF and FF models}
+\label{sec:org9520816}
+\subsubsection{Explanation}
+\label{sec:orge8bf1b3}
+\begin{enumerate}
+\item -BMB and -LULC means are pretty close to FF mean, signaling little impact
+\label{sec:orge62b262}
+\item -AER and -GHG means are mostly unchanged, signaling stronger impact
+\label{sec:org778cb4f}
+\end{enumerate}
+\subsubsection{Bootstrap}
+\label{sec:org4a237e8}
+\begin{enumerate}
+\item Subtract random SF member from random FF member
+\label{sec:org54d0446}
+\item Leaves behind isolated effect of single factor
+\label{sec:orgf1b88f4}
+\item aeu
+\label{sec:orgbab39ac}
+\end{enumerate}
+\end{document}

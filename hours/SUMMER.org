@@ -59,13 +59,18 @@
 | <2021-08-16 Mon> |        15:00 |      17:15 |       02:15 | sts application, contacted mentor, worked on data                    |
 | <2021-08-17 Tue> |        16:45 |      19:45 |       03:00 | data analysis                                                        |
 | <2021-08-18 Wed> |        14:15 |      17:00 |       02:45 | data analysis                                                        |
+| <2021-08-19 Thu> |        18:30 |      21:00 |       02:30 | made paper outline, data analysis now I am confused :(               |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS
 | Total Time | Total days | Average Time Per Day | Total Percentage |
 |------------+------------+----------------------+------------------|
-|      75:00 |         61 |             01:13:46 |            00:50 |
+|      77:30 |         62 |             01:15:00 |            00:51 |
 #+TBLFM: @2$1 = '(apply '+ '(remote(DATA, @2$4..@>$4))) ;U
 #+TBLFM: @2$4 = '(/ @2$1  90.0) ;U
 #+TBLFM: @2$2 = remote(DATA, @>$1 ) - remote(DATA, @2$1 )
 #+TBLFM: @2$3 = @2$1 / @2$2 ;T
+
+
+AM I SUPPOSED TO SUBTRACT BOOTSTRAP BEFORE OR AFTER CALCULATING 20-YEAR VARIANCE?
+SHOULD I DO A 1-YEAR VARIANCE CALCULATION BEFORE 20-YEAR VARIANCE

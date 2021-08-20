@@ -18,8 +18,19 @@ rollvar <- function(x) {
   return(out)
 }
 
+rollmean <- function(x) {
+  out <- rollapply(x, width = 12, FUN = mean, align = "center", fill = NA)
+  return(out)
+}
+
+getvar <- function(x) {
+    apply(x, 2, rollvar)
+}
+
 # load variance from ensemble file
 load_variance <- function(file) (read.table(file, sep = ",") %>% as.matrix %>% prepare %>% apply(2, rollvar))
+
+load_temp <- function(file) (read.table(file, sep = ",") %>% as.matrix %>% apply(2, rollmean))
 
 se <- function(x, ...) sd(x, ...)/sqrt(length(x))
 
@@ -57,6 +68,14 @@ make_df <- function(this, this.date, date.start = NA, date.end = NA) {
     return(this.df)
 }
 
+make_df_manvar <- function(this, n, this.date, date.start = NA, date.end = NA) {
+    this.mean <- this %>% apply(1, mean)
+    this.se <- this %>% apply(1, se_bs, n = n)
+    writeLines(as.character(length(this.mean)))
+    this.df <- bind_stats(this.date, this.mean, this.se, date.start, date.end)
+    return(this.df)
+}
+
 # calculate standard error in bootstrap process setting
 se_bs <- function(x, n) {return(sd(x)/sqrt(n))}
 
@@ -83,22 +102,41 @@ subtract.bootstrap <- function(data1, data2, reps, date, n) {
     return(out.df)
 }
 
+subtract.bootstrap.raw <- function(data1, data2, reps) {
+    len <- dim(data1)[1]
+    num1 <- dim(data1)[2]
+    num2 <- dim(data2)[2]
+    out <- matrix(NA, ncol = reps, nrow = len)
+#    writeLines(as.character(dim(out)))
+#    writeLines(as.character(len))
+    choice1 <- sample(x = 1:num1, size = reps, replace = TRUE)
+    choice2 <- sample(x = 1:num2, size = reps, replace = TRUE)
+    for(i in 1:reps){
+#        writeLines(as.character(choice1[i]))
+#        writeLines(as.character(choice2[i]))
+        answer <- data1[, choice1[i]] - data2[, choice2[i]]
+#        writeLines(as.character(length(answer)))
+        out[, i] <- answer
+    }
+    return(out)
+}
+
 date1 <- seq(1920, 2100, length.out = 2172)
 date2 <- seq(1850, 2100, length.out = 3012)
 
 # CESM1 LENS and SF
-ff1 <- load_variance("./data/CESM1/ff.csv")
-ghg1 <- load_variance("./data/CESM1/ghg.csv")
-aer1 <- load_variance("./data/CESM1/aer.csv")
-bmb1 <- load_variance("./data/CESM1/bmb.csv")
-luc1 <- load_variance("./data/CESM1/luc.csv")
+ff1 <- load_temp("./data/CESM1/ff.csv")
+ghg1 <- load_temp("./data/CESM1/ghg.csv")
+aer1 <- load_temp("./data/CESM1/aer.csv")
+bmb1 <- load_temp("./data/CESM1/bmb.csv")
+luc1 <- load_temp("./data/CESM1/luc.csv")
 
 # create ensemble statistics dataframe for CESM1 ff and SF
-ff1_df <- make_df(ff1, date2, date.start = 840)
-ghg1_df <- make_df(ghg1, date2, date.start = 840)
-aer1_df <- make_df(aer1, date2, date.start = 840)
-bmb1_df <- make_df(bmb1, date2, date.start = 840)
-luc1_df <- make_df(luc1, date2, date.start = 840)
+ff1_df <- make_df(ff1 %>% prepare () %>% getvar(), date2, date.start = 840)
+ghg1_df <- make_df(ghg1 %>% getvar(), date2, date.start = 840)
+aer1_df <- make_df(aer1 %>% getvar(), date2, date.start = 840)
+bmb1_df <- make_df(bmb1 %>% getvar(), date2, date.start = 840)
+luc1_df <- make_df(luc1 %>% getvar(), date2, date.start = 840)
 
 ff1_mean <- mean(ff1_df$mean, na.rm = TRUE)
 
@@ -111,25 +149,25 @@ cesm_1 <- ff1_df %>% mutate(case = "FF") %>%
 cesm_1$case <- as.factor(cesm_1$case)
 
 # Ensemble statistics for CESM2 FF
-ff2 <- load_variance("./data/CESM2/ff.csv")
-ff2_df <- make_df(ff2, date2)
-ff_members <- ff1 %>% melt() %>% mutate(date = (Var1/12 + 1920))
-ff2_members <- ff2 %>% melt() %>% mutate(date = (Var1/12 + 1850))
+ff2 <- load_temp("./data/CESM2/ff.csv")
+ff2_df <- make_df(ff2 %>% prepare() %>% getvar(), date2)
+ff_members <- ff1 %>% getvar() %>% melt() %>% mutate(date = (Var1/12 + 1920))
+ff2_members <- ff2 %>% getvar() %>% melt() %>% mutate(date = (Var1/12 + 1850))
 
 ff_compare <- ff1_df %>% mutate(case = "CESM1") %>%
     bind_rows(ff2_df %>% mutate(case = "CESM2"))
 ff_compare$case <- as.factor(ff_compare$case)
 
 # Bootstrap process to generate sf timeseries
-reps <- 1000
+reps <- 100
 
-ghg1_sf <- subtract.bootstrap(ff1, ghg1, reps, date2, 20)
-aer1_sf <- subtract.bootstrap(ff1, aer1, reps, date2, 20)
-bmb1_sf <- subtract.bootstrap(ff1, bmb1, reps, date2, 15)
-luc1_sf <- subtract.bootstrap(ff1, luc1, reps, date2, 5)
+ghg1_sf <- subtract.bootstrap.raw(ff1, ghg1, reps) %>% getvar() %>% make_df_manvar(20, date2, date.start = 840)
+aer1_sf <- subtract.bootstrap.raw(ff1, aer1, reps) %>% getvar() %>% make_df_manvar(20, date2, date.start = 840)
+bmb1_sf <- subtract.bootstrap.raw(ff1, bmb1, reps) %>% getvar() %>% make_df_manvar(15, date2, date.start = 840)
+luc1_sf <- subtract.bootstrap.raw(ff1, luc1, reps) %>% getvar() %>% make_df_manvar(5, date2, date.start = 840)
 
 # bootstrap ensemble statistics in single dataframe
-cesm1_sf <- data.frame(date = ff1_df$date, mean = ff1_df$mean - ff1_mean, se = ff1_df$se, case = "FF") %>%
+cesm1_sf <- data.frame(date = ff1_df$date, mean = ff1_df$mean, se = ff1_df$se, case = "FF") %>%
     bind_rows(ghg1_sf %>% mutate(case = "GHG")) %>%
     bind_rows(aer1_sf %>% mutate(case = "AER")) %>%
     bind_rows(bmb1_sf %>% mutate(case = "BMB")) %>%

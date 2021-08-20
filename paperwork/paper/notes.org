@@ -1,19 +1,100 @@
 #+TITLE: Notes for Paper
+#+OPTIONS: toc:nil
 
 * Introduction
-** Greenhouse emissions are increasing global temperatures (breifly state)
-** ENSO is a change in the temperature of the pacific ocean with effects around the world
-** If climate change affects ENSO, then we need to find out _now_
-** Climate change affects ENSO
-*** Comparison of amplitude between many models with CMIP5 is mostly inconclusive
-*** CESM-LE shows increase in amplitude that is significant
-** Role of multiple natural and artificial factors
-*** Greenhouse gasses may be increasing ENSO amplitude
-*** aerosol emissions dampen GHG increase in amplitude
-*** What about everything else?
-*** Not using a large ensemble mostly
-** Gap: not enough analysis on how ghg, aer, and others affect ENSO amplitude
-*** how the two factors interact
-*** how their effects look compared to internal variability
-*** What physical mechanisms mediate their effect
-** Use some interesting methods: wavelet analysis
+** Rationale
+*** Greenhouse emissions are increasing global temperatures (breifly state)
+*** ENSO is a change in the temperature of the pacific ocean with effects around the world
+*** If climate change affects ENSO, then we need to find out _now_
+** Review of literature:
+*** Climate change affects ENSO
+**** Comparison of amplitude between many models with CMIP5 is mostly inconclusive
+**** CESM-LE shows increase in amplitude that is significant
+*** Role of multiple natural and artificial factors
+**** Greenhouse gasses may be increasing ENSO amplitude
+**** aerosol emissions dampen GHG increase in amplitude
+**** What about everything else?
+**** Not using a large ensemble mostly
+** Gap
+*** not enough analysis on how ghg, aer, and others affect ENSO amplitude
+**** how the two factors interact
+**** how their effects look compared to internal variability
+**** What physical mechanisms mediate their effect
+*** Use some interesting methods: wavelet analysis
+** Variables:
+*** Independent variable: external forcing
+**** input climate models with observed and predicted greenhouse gas, aerosol, biomass burning, land use/cover, etc
+**** GHG:
+***** Observed and predicted to increase due to industrial burning
+***** Lead to higher air (and water) temperature due to greenhouse effect
+**** AER:
+***** Aerosols produced by industry (smoke) and nature (volcanoes)
+***** Usually reduce global temperatures by reflecting oncoming sunlight
+***** Location of emission may change as industry moves from US to China
+**** BMB:
+***** Increased frequency of forest and grassland fires probably due to global warming
+***** Releases CO_{2} (GHG) and smoke (AER)
+**** LULC:
+***** Deforestation and desertification
+***** Greenery reduces land temperature
+***** Greenery reduces CO_{2} levels
+***** Modifies water cycle as leaves increase evaporation
+* Data
+** CESM1
+*** Full forcing
+**** Observed emissions levels 1920-2005
+**** RCP8.5 (worst case) emissions levels 2005-2100
+*** Single forcing
+**** All but one forcing group
+***** GHG
+***** AER
+***** BMB
+***** LULC
+**** Observed 1920-2005
+**** Predicted emissions 2005-2080
+*** Control
+**** 1850 fixed emissions levels
+** CESM2
+*** Higher ensemble size
+*** Longer record length
+*** Newer code
+*** Full forcing
+**** SMBB vs CMIP6 discrepancy
+**** Observed forcing levels 1850-2005
+**** Worst case emissions 2006-2100
+*** Single Forcing
+**** Similar to CESM1
+**** Not all members are done yet
+*** Control
+**** Similar to CESM1
+** Observed data
+*** Might mention in introduction?
+*** Used for introductory presentation figures, not yet for actual methods
+* Methods and Results
+** For all ensembles and all variables:
+*** Subtract ensemble mean from each member to derive internal variability i.e. ENSO
+** Niño 3.4 index
+*** Mean temperature in Niño 3.4 region
+*** 20-year rolling variance for each member
+*** Ensemble statistics: mean and standard error (dependent on ensemble size)
+*** Control?
+*** Figure 1: CESM1 and CESM2 FF Niño 3.4 variance ensemble means
+*** Explanation:
+**** CESM1
+***** Starts with low variance, steeply increasing from 1950-2050, dropping slightly after 2050
+***** Probably nonlinear response to forcing: does not keep increasing
+****** Are emissions slowing down post-2050?
+**** CESM2
+***** Exponential? increase in variance until 2025, then sharp decrease
+****** Why?
+** Single forcing ensembles
+*** SF ensembles for CESM1 and CESM2
+*** All-but one
+**** Figure 2: ENSO amplitude index for SF and FF models
+**** Explanation
+***** -BMB and -LULC means are pretty close to FF mean, signaling little impact
+***** -AER and -GHG means are mostly unchanged, signaling stronger impact
+*** Bootstrap
+**** Subtract random SF member from random FF member
+**** Leaves behind isolated effect of single factor
+**** Figure 3:
