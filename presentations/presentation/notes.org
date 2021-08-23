@@ -1,77 +1,29 @@
 #+TITLE: Presentation Notes
 
-* Outline
+* papers to use in ROL
+** maher 2018
+*** Increase in variability due to global warming
+** nowack 2017
+*** Increase from CO2, decrease from 03
+** lubbecke 2014
+*** Higher number of weaker ENSO events from 2000-2010, caused by change in ocean heat distribution
+**** not to be confused with climate change, 10 years is not enough
+** zheng 2017
+*** Large enough CESM gives increased ENSO
+*** Darn internal variability
+** torrence 2017
+*** How to use wavelet analysis on ENSO
+** emile 2007
+*** Sunspots and orbital precession might have changed ENSO in the past
+** zhu 2017
+*** reduced CO2 during ice age may have led to weaker ENSO
+** stevenson 2017
 
-*** Climate Change
-**** Only do long term change
-**** examples
-**** Forcing definition: outside influence that affects the earth's climate
-**** Image: global warming trend line
-*** El Niño
-**** Figure with ocean and atmosphere mechanics
-**** ENSO is when the temperature of the Pacific Ocean changes between different years
-**** 2-8 year period
-**** some events are stronger than others
-**** We need to predict how it will change in the future
-*** Climate simulation
-**** Run equations that simulate climate on computers
-**** take state of climate at one point and simulate it progressing
-**** can be input with levels of forcing
-**** output climate variables
-*** Problem
-**** will ENSO be stronger or weaker in the future?
-**** Are we causing it?
-*** Climate change and ENSO interact
-**** cite:stevenson2017forced
-***** Intertwining role of multiple forcings in affecting ENSO
-**** cite:zheng2017response
-***** ENSO's signal is highly clouded, only with a large (>15 models) ensemble can significant changes be detected.
-**** cite:cai2018increased
-***** When using EOF analysis and multiple models, signal strengthens
-*** Gap and goal
-*** CESM1 and CESM2, ensembles
-*** R and Python tools
-*** Role of mentor and student
-*** Measuring ENSO - Niño 3.4
-*** ENSO intensity - Windowed variance (or wavelets?)
-*** Signal and noise
-**** show an image of one member and ask for a trend
-**** add other ensemble members to clarify and show importance of ensemble and sample size
-*** Look at the figure? ENSO is becoming stronger
-*** It's not that simple - chaos, need for an ensemble
-*** Single forcing ensembles - data input setup
-*** figure comparing - major factors are GHG and AER
-*** What is causing this difference? Correlation with ocean temperature
-*** look at TEMPDT correlations with FF ensemble - stratification is important
-
-* Which articles to include?
-*** cite:bjerknes1969atmospheric
-**** Connected Walker Circulation to climate outside the Pacific
-*** cite:torrence1998practical
-**** Application of wavelet analysis to ENSO
-**** Development of statistical significance tests for wavelet analysis
-
-
-
-* this
-
-Climate Change
-El Niño
-Climate Simulation
-ENSO in the Future
-Gap and Goal
-Research Questions
-Signal and Noise
-Ensembles: CESM1 and CESM2
-R and Python tools
-Role of Mentor and Student
-Measuring ENSO
-Measuring ENSO Intensity
-ENSO is Becoming Stronger
-It's not That Simple
-Single Forcing Ensembles
-Influence of Aerosols and Greenhouse Gasses
-Correlation With Ocean Temperature
-Stratification
-Stratification in Other Ensembles
-References
+* Order
+** Enso changes over time: lubbecke 2014
+** Climate change affected enso in the past
+*** Weakened ENSO due to reduced CO2 during ice age zhu 2017
+*** Correlation between ENSO and sunspot activity emile 2007
+** Possible increased ENSO strength in future maher 2018 zheng 2017
+*** ensembles are necessary
+** Factors other than CO2 are able to affect ENSO nowack 2017 stevenson 2017

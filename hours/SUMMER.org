@@ -61,6 +61,7 @@
 | <2021-08-18 Wed> |        14:15 |      17:00 |       02:45 | data analysis                                                        |
 | <2021-08-19 Thu> |        18:30 |      21:00 |       02:30 | made paper outline, data analysis now I am confused :(               |
 | <2021-08-20 Fri> |        12:00 |      15:10 |       03:10 | worked on presentation                                               |
+| <2021-08-22 Sun> |        15:35 |      16:35 |             | worked on presentation                                               |
 #+TBLFM: $4='(- $3 $2);U
 
 #+NAME: STATS

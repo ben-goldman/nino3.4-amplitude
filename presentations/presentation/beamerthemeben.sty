@@ -1,0 +1,98 @@
+% My very own beamer theme!
+% Copyright Ben Goldman
+% license is GPLv3 i guess
+% August 2021
+
+\mode<presentation>
+\RequirePackage{tikz}
+% Fonts!
+
+\usefonttheme{professionalfonts}
+\setbeamerfont{title}{size = \huge}
+\setbeamerfont{frametitle}{size = \Large}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+\setbeamertemplate{itemize items}{\bf{-}}
+
+% Color
+\definecolor{darkblue}{RGB}{0, 0, 80}
+\definecolor{darkgreen}{RGB}{0, 60, 0}
+\definecolor{darkred}{RGB}{60, 0, 0}
+\definecolor{black}{RGB}{0, 0, 0}
+
+\definecolor{lightblue}{RGB}{0, 0, 200}
+\definecolor{grey}{RGB}{117, 120, 131}
+\definecolor{grey2}{RGB}{45, 48, 58}
+\definecolor{white}{RGB}{242, 242, 242}
+\definecolor{yellow}{RGB}{227, 162, 52}
+\definecolor{red}{RGB}{130, 0, 0}
+\definecolor{orange}{RGB}{161, 101, 0}
+
+% use colors for presentation parts
+
+\setbeamercolor{frametitle}{fg = white}
+\setbeamercolor{caption name}{fg = darkgreen}
+\setbeamercolor{normal text}{fg = black}
+\setbeamercolor{alerted text}{fg=red}
+\setbeamercolor{caption}{fg = black}
+
+\setbeamercolor{title page header}{fg = white}
+\setbeamercolor{author}{fg=white}
+\setbeamercolor{date}{fg=white}
+
+\setbeamercolor{item}{fg = black}
+\setbeamercolor{subitem}{fg = black}
+
+
+% title Slide
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[top color = darkblue!20!black, bottom color=darkblue] (0,3) rectangle (\the\paperwidth,\the\paperheight);
+  \fill[top color=darkred, bottom color = darkred!50!black] (0,0) rectangle(3.90,2.8);
+  \fill[top color=darkgreen, bottom color = darkgreen!50!black] (4.10,0) rectangle(\the\paperwidth,2.8);
+  \ifnum\thepage>1\relax%
+   \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \fi
+  \end{tikzpicture}
+}
+\defbeamertemplate*{title page}{ben}[1][]
+{
+   \vskip4cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=2cm,sep=8pt,#1]{title page header}
+      \usebeamerfont{title}\inserttitle\par%
+    \end{beamercolorbox}%
+    \vskip0.75cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=4.5cm,#1]{author}
+      \usebeamerfont{author}\insertauthor%
+    \end{beamercolorbox}
+     \vskip0.2cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=4.5cm,#1]{date}
+      \usebeamerfont{author}\insertdate%
+    \end{beamercolorbox}
+  \vfill
+}
+
+% Frame title
+\defbeamertemplate*{frametitle}{ben}[1][]
+{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle}
+  \begin{tikzpicture}
+  \useasboundingbox[fill=white](0,-0.1) rectangle(\the\paperwidth,1.3);
+  \fill[left color = darkblue, right color = darkgreen] (0, 0) rectangle(\the\paperwidth,1.3);
+   \ifx\insertframesubtitle\@empty%
+      {\node[anchor=west, white,font=\large] at (0,0.6){\insertframetitle};}
+      \else%
+      {\node[anchor= west, white,font=\large] at (0,0.8){\insertframetitle};%
+       \node[anchor= west, white,font=\small] at (0,0.4){\insertframesubtitle};}%
+      \fi
+  \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+
+
+\mode<all>

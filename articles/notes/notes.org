@@ -181,6 +181,7 @@
 
 - Control and global warming forced simulations
 - Lots of internal variability
+- Decrease in CP ENSO variability
 
 * TODO cite:wang2016nino
 * TODO cite:yeo2016role
@@ -193,6 +194,11 @@
 - Lots of internal variability
 - At least 15 models are necessary to separate forced from internal variability
 
+* cite:zhu2017reduced
+
+- Reduced ENSO variability during last ice age
+- Found out by analyzing fossilized algae
+- less CO_2 back then
 
 bibliographystyle:apalike
 bibliography:../references.bib
