@@ -10,12 +10,13 @@
 
 \usefonttheme{professionalfonts}
 \setbeamerfont{title}{size = \huge}
+\setbeamerfont{caption}{size=\scriptsize}
 \setbeamerfont{frametitle}{size = \Large}
 
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{blocks}[rounded][shadow=true]
-
 \setbeamertemplate{itemize items}{\bf{-}}
+\setbeamertemplate{caption}[numbered]
 
 % Color
 
@@ -26,19 +27,21 @@
 \definecolor{b2}{Hsb}{35, 0.40, 0.40}
 
 \definecolor{c1}{Hsb}{125, 0.40, 0.40}
-\definecolor{c2}{Hsb}{125, 0.40, 0.40}
+\definecolor{c2}{Hsb}{125, 0.80, 0.40}
 
 \definecolor{process}{HTML}{3d5f8f}
 \definecolor{data}{HTML}{8f6d3d}
 
 \definecolor{black}{HTML}{172436}
-\definecolor{white}{HTML}{f1f2f4}
+\definecolor{white}{HTML}{ffffff}
+
+\definecolor{gray}{Hsb}{215, 0.00, 0.40}
 
 % use colors for presentation parts
 \setbeamercolor{frametitle}{fg = white}
-\setbeamercolor{caption name}{fg = c1}
+\setbeamercolor{caption name}{fg = c2}
 \setbeamercolor{normal text}{fg = black}
-\setbeamercolor{alerted text}{fg=c1}
+\setbeamercolor{alerted text}{fg=c2}
 \setbeamercolor{caption}{fg = black}
 
 \setbeamercolor{title page header}{fg = white}
@@ -54,9 +57,9 @@
 \setbeamertemplate{background}{
   \begin{tikzpicture}
   \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-  \fill[top color = a2, bottom color = a1] (0,3) rectangle (\the\paperwidth,\the\paperheight);
-  \fill[top color = c1, bottom color = c2] (0,0) rectangle(3.90,2.8);
-  \fill[top color = b1, bottom color = b2] (4.10,0) rectangle(\the\paperwidth,2.8);
+  \fill[top color = a1, bottom color = a1] (0,3) rectangle (\the\paperwidth,\the\paperheight);
+  \fill[top color = c1, bottom color = c1] (0,0) rectangle(3.90,2.8);
+  \fill[top color = b1, bottom color = b1] (4.10,0) rectangle(\the\paperwidth,2.8);
   \ifnum\thepage>1\relax%
    \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
    \fi
@@ -96,6 +99,19 @@
   \end{beamercolorbox}
 }
 
+\AtBeginSection[]{
+  \begin{frame}
+  \begin{beamercolorbox}[wd=\paperwidth,ht=\paperheight]{frametitle}
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[black!40] (0,6) rectangle (\the\paperwidth,9.7);
+  \fill[left color = a1, right color = b1] (0, 3.8) rectangle(\the\paperwidth,5.8);
+  \fill[black!40] (0,0) rectangle (\the\paperwidth,3.6);
+  \node[anchor=west, white] at (1,4.8){\usebeamerfont{title}\insertsectionhead};
+  \end{tikzpicture}
+  \end{beamercolorbox}
+  \end{frame}
+}
 
 
 \mode<all>

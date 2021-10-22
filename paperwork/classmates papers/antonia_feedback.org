@@ -1,0 +1,24 @@
+#+TITLE: Feedback for Antonia's Paper
+
+Abstract:
+- Really good, except say hypothesize instead of predict.
+
+Introduction:
+- adaa.org link doesn't work
+- Very clear and concise and good tone
+- Like how many citations you used
+
+Methods:
+- A couple typos
+- Especially good analysis
+- Like that you said impact of covid
+- A couple unnecessary words
+
+Results:
+- Really detailed
+- Maybe add some sentences to discuss the importance or takeaway from each correlation?
+
+Conclusion/Discussion:
+- You might not need to restate your hypotheses if they are in the intro
+- Discussion section is overall really good
+- Did you mention applications?

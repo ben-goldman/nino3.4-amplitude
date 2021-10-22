@@ -1,5 +1,5 @@
 #+TITLE: The Impact of Anthropogenic Forcing on ENSO Amplitude
-#+LATEX_HEADER: \usepackage[letterpaper, margins=1in]{geometry}
+#+LATEX_HEADER: \usepackage[letterpaper, margin=1in]{geometry}
 #+LATEX_HEADER: \usepackage{natbib}
 #+OPTIONS: toc:nil
 
@@ -56,7 +56,7 @@ We analyze the role of individual factors using the CESM Single Forcing Ensemble
 In both the fully-forced scenario, and the greenhouse and aerosol only simulations, there is noticeably reduced Niño 3.4 variance in the mid-20^{th} century, below 2 standard errors of the control. We hypothesize that this discrepancy may be the result of anomalous initial conditions caused by internal variability of the control, as the control conditions are used to initialize all the forced runs. To test this hypothesis, we analyzed the impact of the Atlantic Multidecadal Oscillation (AMO) and the Atlantic Meridional Overturning Current (AMOC) on Niño 3.4 variance in the control simulation using records of the AMO and AMOC from the Climate Variability Diagnostics Package (CVDP) citep:phillips2014evaluating. We filtered the 20-year variance of the Niño 3.4 sea surface temperature in the control based on the strength of the AMO/AMOC, separating ENSO variance into groups where AMO < -1$\sigma$, AMO < -2$\sigma$, AMO > 1$\sigma$, AMO >2$\sigma$, and the same for AMOC. We then estimated the probability density function for each group using a kernel density estimator. We observed no consistent difference in the distribution of Niño 3.4 variance between any group. So far the question of reduced variance is unanswered, and it will be addressed in further depth later in the study.
 
 ** Correlation With Ocean Temperature
-Next, we analyzeed the correlation between ENSO amplitude and changes to ocean structure in the CESM1 ensembles. To do this we used 4 slices of ocean temperature from the fully-forced, xghg, and xaer ensembles, including a slice averaged along the equator and slices through the western, central, and eastern Pacific basins. We linearly detrend and smooth with a 30-year windowed mean the timeseries at each gridpoint and the Niño 3.4 variance. Next, we calculated the Pearson's correlation coefficient between each gridpoint and the Niño 3.4 variance timeseries. The correlation coefficients for the equatorial slice are shown in figure ref:fig:tempdt, and for the central slice in figure ref:fig:tempcep.
+Next, we analyzeed the correlation between ENSO amplitude and changes to ocean structure in the CESM1 ensembles. To do this we used 4 slices of ocean temperature from the fully-forced, xghg, and xaer ensembles, including a slice averaged along the equator and slices through the western, central, and eastern Pacific basins. We linearly detrend and smooth with a 30-year windowed mean the timeseries at each gridpoint and the Niño 3.4 variance. Next, we calculated the Pearson's correlation coefficient between each gridpoint and the Niño 3.4 variance timeseries. The correlation coefficients for the equatorial slice are shown in figure ref:fig:tempdt.
 
 Overall, the majority of the Pacific basin exhibits negative correlation with Niño 3.4 variance when linearly detrended and smoothed. The fully-forced simulation contains strongly negative correlation between the subsurface layer of the equatorial Pacific and ENSO amplitude, leading to the hypothesis that forced changes to Pacific Ocean stratification may be connected to ENSO intensity. However, it is unclear whether there is also a causal relationship between the two. Additionally, it is unclear whether the overall warming trend of the upper Pacific ocean is connected to changes to ENSO intensity. We notice that the high levels of correlation between the subsurface layer and Niño 3.4 variance are present in the xGHG and xAER ensembles, as well as the fully forced ensemble, suggesting that there is a relationship between ENSO amplitude and subsurface Pacific Ocean temperature in a variety of forcing scenarios.
 
@@ -64,16 +64,18 @@ Overall, the majority of the Pacific basin exhibits negative correlation with Ni
 #+CAPTION: Correlation coefficient between detrended and smoothed ocean temperature averaged along the equator and detrended and smoothed Niño 3.4 variance.
 [[../../data/figures/tempdt.pdf]]
 
-#+NAME: fig:tempcep
-#+CAPTION: Correlation coefficient between detrended and smoothed ocean temperature of the central pacific slice and detrended and smoothed Niño 3.4 variance.
-[[../../data/figures/tempcep.pdf]]
-
 ** Wavelet Analysis
-Finally, we conduct a wavelet transform on the Niño 3.4 index for the CESM1 and CESM2 Large Ensembles. First, we subtract the ensemble mean from each member and apply a 1-year windowed mean. Next, we construct a power spectrum of the Niño 3.4 index for each member following the methods of cite:torrence1998practical and calculate the ensemble mean of these power spectra, as displayed in figure ref:fig:wavelet_1 for the CESM1. The majority of ENSO variability is contained in the 2 to 8-year frequency band. This band exhibits steadily increasing wavelet power until the mid 21^{st} century, conforming to previous results of this study.
+Finally, we conduct a wavelet analysis of the Niño 3.4 index for the CESM1 and CESM2 Large Ensembles. Wavelet analysis separates a timeseries into time and frequency domains, displaying the amplitude for each frequency at each time step. The wavelet transform works by scaling a specified "mother wavelet" and translating it across the series at each scaling. This method is superior to a windowed Fourier Transform because it has high resolution on both time and frequency domains. First, we subtract the ensemble mean from each member and apply a 1-year windowed mean. Next, we construct a power spectrum of the Niño 3.4 index for each member following the methods of cite:torrence1998practical and calculate the ensemble mean of these power spectra, as displayed in figure ref:fig:wavelet_2. The majority of ENSO variability is contained in the 2 to 8-year frequency band. This band exhibits steadily increasing wavelet power until the mid 21^{st} century, conforming to previous results of this study. Both ensembles show an increase in the dominant ENSO signal, peaking in the 21^{st} century. The CESM2 ENSO amplitude peaks slightly earlier than the CESM1, in accordance with figure ref:fig:variance_2. The CESM2 exhibits a slight decrease in the dominant ENSO period during the 21^{st} century, with the mean power spectrum's ridgeline decreasing from a period of approximately 4 years to 2.5 years. It is unknown whether this period decrease is statistically robust. Finally, the CESM2 has a lower peak wavelet power than the CESM1, in contrast with that shown in figure ref:fig:variance_2.
+
+To further examine the nature of forced changes to the ENSO spectrum, we split ENSO's power spectrum into two records for each ensemble, the two groups having periods less than and greater than 3 years. Then, we calculate the mean power along the time axis, effectively generating records of ENSO amplitude split into two frequency groups. Ensemble mean and standard error are found for each time-step. These records are shown in figure ref:fig:wavelet_2.
 
 #+NAME: fig:wavelet_1
-#+CAPTION: Ensemble mean wavelet power spectrum for the CESM1 Large Ensemble.
-[[../../data/figures/spectrum1.pdf]]
+#+CAPTION: Ensemble mean wavelet power spectra for both large ensembles.
+[[../../data/figures/wavelet2.pdf]]
+
+#+NAME: fig:wavelet_2
+#+CAPTION: Ensemble mean wavelet power records for low and high period ENSO.
+[[../../data/figures/wavelet3.pdf]]
 
 * Conclusion
 

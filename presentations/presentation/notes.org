@@ -1,29 +1,70 @@
 #+TITLE: Presentation Notes
+#+LATEX_CLASS: basic
+#+LATEX_CLASS_OPTIONS: [little]
+#+OPTIONS: toc:nil, num:1
 
-* papers to use in ROL
-** maher 2018
-*** Increase in variability due to global warming
-** nowack 2017
-*** Increase from CO2, decrease from 03
-** lubbecke 2014
-*** Higher number of weaker ENSO events from 2000-2010, caused by change in ocean heat distribution
-**** not to be confused with climate change, 10 years is not enough
-** zheng 2017
-*** Large enough CESM gives increased ENSO
-*** Darn internal variability
-** torrence 2017
-*** How to use wavelet analysis on ENSO
-** emile 2007
-*** Sunspots and orbital precession might have changed ENSO in the past
-** zhu 2017
-*** reduced CO2 during ice age may have led to weaker ENSO
-** stevenson 2017
+* General:
+- Remember to say meaning of axes and colors
+- Talk slower
+- Less detail in results, more in intro?
 
-* Order
-** Enso changes over time: lubbecke 2014
-** Climate change affected enso in the past
-*** Weakened ENSO due to reduced CO2 during ice age zhu 2017
-*** Correlation between ENSO and sunspot activity emile 2007
-** Possible increased ENSO strength in future maher 2018 zheng 2017
-*** ensembles are necessary
-** Factors other than CO2 are able to affect ENSO nowack 2017 stevenson 2017
+* Title
+* Introduction
+** Climate Change and Variability
+- Climate change: long term trends in temp, etc (fig: red line)
+- Climate variability: short (a few years) change in climate (fig: blue line)
+  - May be cyclical or random
+** Climate Forcing
+- External factors that affect climate change and/or variability
+- List factors, ghg, aer, bmb, lulc
+- Sources:
+  - ghg: industry, livestock
+  - aer: industry, volcanoes (smoke, dust, sulphites?)
+  - bmb: wildfires
+  - lulc: deforestation, agriculture, desertification
+- Greenhouse effect
+  - gasses and particulates affect atmospheric chemistry and sunlight reflection/absorption
+  - ghg absorbs "blanket" trapping heat (fig: orange arrows)
+  - aer reflects in upper atmosphere blocking heat out. (fig: yellow arrows)
+  - bmb, lulc affect reflection, absorption on surface (fig: yellow arrows)
+** El Niño (ENSO)
+- Temperature of the pacific ocean
+- Cold -> La Niña
+- Hot -> El Niño
+- Entire cycle: ENSO (El Niño/Southern Oscillation)
+- Affects humans: hot year, dry year, cold year, wet year
+- Figure: temperature differences between strong La Niña year and strong El Niño year
+  - Blue=colder, red=warmer
+  - Point out California hot for El Niño (wildfires)
+** Method: Climate Simulation
+- Main way of making predictions
+- Predictions of forcing levels are fed to computers
+- Computers simulate climate on a grid of data containing temperature and much more
+- Predictions are usually run many times
+- My contain biases but are quite well tested
+** Review of Literature
+- Slide is notes
+** Gap
+- Slide is notes
+** Questions
+- What, why, how
+- Slide is notes
+* Data, Methods, and Results
+** Methods Overview
+- Slide is notes
+** Role of Mentor and Student
+- Slide is notes
+** Model Setup
+- Slide is notes
+** Measuring ENSO Intensity
+- Make sure you talk about what Niño 3.4 index is: number that represents how strong El Niño is at each time
+- Windowed variance calculates amount of variability of the Niño 3.4 index ie how intense the ENSO cycle is
+** ENSO is Becoming Stronger
+** Influence of Aerosols and Greenhouse Gasses
+** Correlation With Ocean Temperature
+** Wavelet Analysis
+* Conclusion
+** Conclusions and Discussion
+** Application, Limitation, and Next Steps
+** Acknowledgments
+** References

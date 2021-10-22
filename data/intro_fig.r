@@ -5,9 +5,9 @@ library(ggplot2)
 library(reshape2)
 library(scico)
 
-ncin1 <- nc_open("/Volumes/Extreme SSD/DATA/HadISST_sst.nc")
+ncin <- nc_open("/Volumes/Extreme-SSD/DATA/HadISST_sst.nc")
 
-sst <- ncvar_get(ncin1, "sst")
+sst <- ncvar_get(ncin, "sst")
 sst[sst == -1000] <- NA
 
 date <- ncvar_get(ncin, "time")
@@ -80,25 +80,27 @@ ggplot(sst_anom_compare %>% filter(latitude < 60 &
     labs(title = "Pacific SST Anomalies Comparison",
          x = "Longitude",
          y = "Latitude",
-         fill = " SST \n Anomaly \n (°C)")
+         fill = " SST \n Anomaly \n (°C)") +
+    theme(text = element_text(size = 20))
 
-gsave("intro_fig.pdf")
+gsave("intro_fig.pdf", dimensions = c(8, 8))
 
-ggplot(sst_anom_compare %>% filter(latitude < 60 &
-                           latitude > -60 &
-                           longitude > 50 &
-                           longitude < 350), aes(longitude, latitude, z = value)) +
-    geom_contour_filled(bins = 20) +
-    facet_wrap(vars(case), nrow = 2, ncol = 1) +
-    scale_fill_scico_d(palette = "vik") +
-    labs(title = "Pacific SST Anomalies Comparison",
-         x = "Longitude",
-         y = "Latitude",
-         fill = " SST \n Anomaly \n (°C)")
+## ggplot(sst_anom_compare %>% filter(latitude < 60 &
+##                            latitude > -60 &
+##                            longitude > 50 &
+##                            longitude < 350), aes(longitude, latitude, z = value)) +
+##     geom_contour_filled(bins = 20) +
+##     facet_wrap(vars(case), nrow = 2, ncol = 1) +
+##     scale_fill_scico_d(palette = "vik") +
+##     labs(title = "Pacific SST Anomalies Comparison",
+##          x = "Longitude",
+##          y = "Latitude",
+##          fill = " SST \n Anomaly \n (°C)") +
+##     theme(text = element_text(size = 20))
 
-gsave("intro_fig_2.pdf")
+## gsave("intro_fig_2.pdf")
 
-ncin2 <- nc_open("/Volumes/Extreme SSD/DATA/BEN/air.2x2.1200.mon.anom.land.nc")
+ncin2 <- nc_open("/Volumes/Extreme-SSD/DATA/BEN/air.2x2.1200.mon.anom.land.nc")
 
 temp <- ncvar_get(ncin2, "air")
 
@@ -123,6 +125,7 @@ ggplot(temp_df, aes(date, air, color = case)) +
     labs(title = "Mean Land Air Temperature Anomaly",
          x = "Date",
          y = "Temperature Anomaly (°C)",
-         color = "Smoothing\nWindow Size")
+         color = "Smoothing\nWindow Size") +
+    theme(text = element_text(size = 20))
 
 gsave("intro_fig_3.pdf", dimensions = c(8, 6))

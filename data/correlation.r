@@ -1,3 +1,4 @@
+library(pracma)
 library(ncdf4)
 library(zoo)
 library(dplyr)
@@ -5,12 +6,7 @@ library(ggplot2)
 library(WaveletComp)
 library(reshape2)
 library(abind)
-
-# subtract ensemble mean from member
-prepare <- function(x) {
-    x.mean <- x %>% apply(1, mean)
-    return(x - x.mean)
-}
+library(scales)
 
 # calculate 20-year rolling variance
 rollvar <- function(x) {
@@ -18,8 +14,22 @@ rollvar <- function(x) {
   return(out)
 }
 
+rollmean <- function(x) {
+  out <- rollapply(x, width = 12, FUN = mean, align = "center", fill = NA)
+  return(out)
+}
+
+getvar <- function(x) {
+    apply(x, 2, rollvar)
+}
+
+prepare <- function(x) {
+    x.mean <- x %>% apply(1, mean)
+    return(x - x.mean)
+}
+
 # load variance from ensemble file
-load_variance <- function(file) (read.table(file, sep = ",") %>% as.matrix %>% apply(2, rollvar))
+load_temp <- function(file) (read.table(file, sep = ",") %>% as.matrix %>% apply(2, rollmean))
 
 se <- function(x, ...) sd(x, ...)/sqrt(length(x))
 
@@ -65,46 +75,44 @@ na_cor <- function(x, y, ...) {
     }
 }
 
-ncin <- nc_open("/Volumes/Extreme SSD/DATA/stacked/CESM1/TEMP/b.e11.BRCP85C5CNBDRD.f09_g16.all.pop.h.TEMPDT.192001-210012.nc")
+date1 <- seq(1920, 2100, length.out = 2172)
+
+ff1 <- load_temp("./data/CESM1/ff.csv")
+ff1_df <- make_df(ff1 %>% prepare () %>% getvar(), date1)
+
+ncin <- nc_open("/Volumes/Extreme-SSD/DATA/stacked/CESM1/TEMP/b.e11.BRCP85C5CNBDRD.f09_g16.all.pop.h.TEMPDT.192001-210012.average.nc")
+
 lon <- ncvar_get(ncin, "lon", start = 21, count = 121)
 depth <- ncvar_get(ncin, "depth") / 100
 date <- ncvar_get(ncin, "time") / 365
 
-tempdt <- ncvar_get(ncin, "TEMPDT", start = c(21, 1, 1, 1), count = c(121, -1, -1, 40), verbose = TRUE)
+tempdt <- ncvar_get(ncin, "TEMPDT", start = c(21, 1, 1), count = c(121, -1, -1), verbose = TRUE)
 
-t_melt <- tempdt[,,1,1] %>% melt
+t_melt <- tempdt[,,1] %>% melt
 
-record <- c(1:40)
+dimnames(tempdt) <- list(lon, depth, date)
 
-dimnames(tempdt) <- list(lon, depth, date, record)
-
-ggplot(tempdt[,,1,1] %>% melt, aes(Var1, Var2, z = value)) +
+ggplot(tempdt[,,1] %>% melt, aes(Var1, Var2, z = value)) +
     geom_contour_filled(bins = 16)
 
-nino_var <- load_variance("./data/CESM1/ff.csv")
+corrs <- apply(X = tempdt,
+                    MARGIN = c(1, 2),
+                    FUN=na_cor,
+                    y = ff1_df$mean,
+                    use = "complete.obs")
 
-corrs <- array(NA, dim = dim(tempdt)[c(1, 2, 4)])
-for(r in 1:dim(tempdt)[4]) {
-    corrs[,,r] <- apply(X = tempdt[,,,r],
-                        MARGIN = c(1, 2),
-                        FUN=na_cor,
-                        y = nino_var[,r],
-                        use = "complete.obs")
-    writeLines(as.character(r))
-}
+dimnames(corrs) <- list(lon, depth)
 
-dimnames(corrs) <- list(lon, depth, record)
 
-corrs_mean <- apply(corrs, c(1, 2), mean)
-dimnames(corrs_mean) <- list(lon, depth)
-
-ggplot(corrs_mean %>% melt, aes(Var1, log(Var2, base = 10), z = value)) +
-    geom_contour_filled(bins = 20) +
+ggplot(corrs[,1:38] %>% melt, aes(Var1, Var2, z = value)) +
+    geom_contour_filled() +
     labs(title = "Correlation Coefficient Between Niño 3.4 Variance and Ocean Temperature",
          x = "Longitude",
-         y = "log_10(Depth)",
+         y = "Depth (m)",
          fill = "Correlation\nCoefficient") +
-    scale_y_continuous(trans = "reverse")
+    scale_color_gradientn(colors = viridis_pal()(9), limits = c(1, 1)) +
+    scale_y_continuous(trans = "reverse") +
+    theme(text = element_text(size = 20))
 
 gsave <- function(name, plot = last_plot(), dimensions = c(6, 8), path = "./figures/") {
     ggsave(name, path = path, width = dimensions[1], height = dimensions[2])
@@ -112,52 +120,3 @@ gsave <- function(name, plot = last_plot(), dimensions = c(6, 8), path = "./figu
 
 gsave("tempdt.pdf", dimensions = c(8, 6))
 
-# Calculate TEMPDT ensemble mean
-# TAKES A VERY LONG TIME!!! BE CAREFUL!!!!!!
-base <- array(NA, dim = c(121, 60, 2172))
-for(r in 1:40) {
-    writeLines(as.character(r))
-    if(r == 1) {
-        base <- tempdt[,,,1]
-    } else {
-        base <- apply(abind(base, tempdt[,,,r], along = 4), c(1, 2, 3), mean)
-    }
-}
-
-write.csv(base, "/Volumes/Extreme SSD/DATA/stacked/CESM1/tempdt_mean.csv", row.names = FALSE)
-
-ggplot(base[,,1] %>% melt, aes(Var1, Var2, z = value)) +
-    geom_contour_filled(bins = 16)
-
-tempdt_diff <- array(NA, dim = dim(tempdt))
-for(r in 1:40) {
-    writeLines(as.character(r))
-    tempdt_diff[,,,r] <- tempdt[,,,r] - base
-}
-
-load_variance_diff <- function(file) (read.table(file, sep = ",") %>% as.matrix %>% prepare() %>% apply(2, rollvar))
-
-nino_var_diff <- load_variance_diff("./data/CESM1/ff.csv")
-
-corrs_diff <- array(NA, dim = dim(tempdt_diff)[c(1, 2, 4)])
-for(r in 1:dim(tempdt_diff)[4]) {
-    corrs_diff[,,r] <- apply(X = tempdt_diff[,,,r],
-                        MARGIN = c(1, 2),
-                        FUN=na_cor,
-                        y = nino_var_diff[,r],
-                        use = "complete.obs")
-    writeLines(as.character(r))
-}
-
-corrs_mean_diff <- apply(corrs_diff, c(1, 2), mean)
-dimnames(corrs_mean_diff) <- list(lon, depth)
-
-ggplot(corrs_mean_diff %>% melt, aes(Var1, log(Var2, base = 10), z = value)) +
-    geom_contour_filled(bins = 20) +
-    labs(title = "Correlation Coefficient Between Niño 3.4 Variance and Ocean Temperature",
-         x = "Longitude",
-         y = "log_10(Depth)",
-         fill = "Correlation\nCoefficient") +
-    scale_y_continuous(trans = "reverse")
-
-gsave("tempdt_diff.pdf", dimensions = c(8, 6))

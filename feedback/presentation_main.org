@@ -1,0 +1,60 @@
+#+TITLE: Feedback for main presentation
+#+LATEX_CLASS: basic
+#+LATEX_CLASS_OPTIONS: [little]
+#+OPTIONS: num:1, toc:nil
+
+* Feedback 1
+Date: <2021-09-26 Sun>
+Time: 20:20
+Listener: Abby Goldman
+** Feedback
+- lots of arm waving. SOOOOMUCH ARM WAVING!!! And very little breathing
+- make a list of “overhead” - make sure all concepts are well defined, in your notes, possibly in your slides
+- summary of what your many slides are — many different crunching of different data to circle around a process that we’re trying to under
+- insert heading slides, overall need a good deal more organization.
+- slide 1: break up into two or even 3?
+- Slide 2: Need to explain more generally what’s in the figure
+- Slide 3: climate simulation — is this method? If so, say so
+- Slide 4: ENSO and climate change slide — have “literature review” in heading.
+- slide about Mentor: do a better job explaining the interactive process between you and your mentor.
+- 3.4 index - whahah? I didn’t follow
+- Single forcing ensembles slide — not sure if all those arrows are working for you. Skip over single forcing setup, maybe?
+- use consistent language about the aerosols and their influence, considering that it’s a prediction
+
+* Feedback 2
+Date: <2021-09-30 Thu>
+Time: 8:20
+Listener: Marcus Chung, Sean O'Donnell, Jimena Perez
+** Feedback:
+- Figure text is too small
+- Caption text can be smaller to make room
+- Say some transition for the conclusion heading slide
+- Clarify difference between El Niño and La Niña
+  + overall make intro 2 more organized
+- Good understanding and well communicated
+- Are some slides too empty-looking?
+- Say fewer words because it is over time and talking too fast
+- Use note cards
+- Periods should be consistent.
+
+* Feedback 3
+Date: <2021-09-30 Thu>
+Time: 16:00
+Listener: Michael Goldman
+** Feedback:
+- Make a few bullets clearer
+- Good tone
+- Slow down pacing
+- Introduction is slightly unclear
+- Use note cards
+
+* Feedback 4
+Date: <2021-10-17 Sun>
+Time: 17:12
+Listener: Jimena Perez
+** Feedback:
+- Make figures bigger and make captions smaller
+- Love how detailed the content is
+- Great application slide
+- Make sure you explain your results in the context of your study, think big picture
+- Intro slide 2 is great we’ll explained

@@ -161,17 +161,16 @@ ff_compare$case <- as.factor(ff_compare$case)
 # Bootstrap process to generate sf timeseries
 reps <- 100
 
-ghg1_sf <- subtract.bootstrap.raw(ff1, ghg1, reps) %>% getvar() %>% make_df_manvar(20, date2, date.start = 840)
-aer1_sf <- subtract.bootstrap.raw(ff1, aer1, reps) %>% getvar() %>% make_df_manvar(20, date2, date.start = 840)
-bmb1_sf <- subtract.bootstrap.raw(ff1, bmb1, reps) %>% getvar() %>% make_df_manvar(15, date2, date.start = 840)
-luc1_sf <- subtract.bootstrap.raw(ff1, luc1, reps) %>% getvar() %>% make_df_manvar(5, date2, date.start = 840)
+ghg1_sf <- subtract.bootstrap.raw(ff1 %>% getvar(), ghg1 %>% getvar(), reps) %>% make_df_manvar(20, date2, date.start = 840)
+aer1_sf <- subtract.bootstrap.raw(ff1 %>% getvar(), aer1 %>% getvar(), reps) %>% make_df_manvar(20, date2, date.start = 840)
+bmb1_sf <- subtract.bootstrap.raw(ff1 %>% getvar(), bmb1 %>% getvar(), reps) %>% make_df_manvar(15, date2, date.start = 840)
+luc1_sf <- subtract.bootstrap.raw(ff1 %>% getvar(), luc1 %>% getvar(), reps) %>% make_df_manvar(5, date2, date.start = 840)
 
 # bootstrap ensemble statistics in single dataframe
-cesm1_sf <- data.frame(date = ff1_df$date, mean = ff1_df$mean, se = ff1_df$se, case = "FF") %>%
-    bind_rows(ghg1_sf %>% mutate(case = "GHG")) %>%
-    bind_rows(aer1_sf %>% mutate(case = "AER")) %>%
-    bind_rows(bmb1_sf %>% mutate(case = "BMB")) %>%
-    bind_rows(luc1_sf %>% mutate(case = "LUC"))
+cesm1_sf <- ghg1_sf %>% mutate(case = "GHG") %>%
+        bind_rows(aer1_sf %>% mutate(case = "AER")) %>%
+        bind_rows(bmb1_sf %>% mutate(case = "BMB")) %>%
+        bind_rows(luc1_sf %>% mutate(case = "LUC"))
 cesm1_sf$case <- as.factor(cesm1_sf$case)
 
 # save all output data

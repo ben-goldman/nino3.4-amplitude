@@ -1,0 +1,8 @@
+#+TITLE: Elevator Speech
+#+LATEX_CLASS: basic
+#+LATEX_HEADER: \author{Ben Goldman}
+#+LATEX_HEADER: \professor{Ms. Fleming}
+#+LATEX_HEADER: \class{Science Research}
+#+OPTIONS: toc:nil, num:nil
+
+Hello, my name is Ben Goldman, and I am a Junior in the Science Research Program at White Plains High School. I am doing research on climate science, and I have found that El Niño, a crucial climate cycle, could intensify in the future due to global warming. El Nino, or ENSO has a great impact on human society, by regulating droughts and flooding all over the world. Research on the impact of climate change on ENSO is important to protect the human societies affected by it. My methodology involves using sets of climate models to determine changes to ENSO intensity. These models use an input of predicted greenhouse gas levels, and then output various aspects of the climate, such as sea temperature. By measuring intensity of El Niño in the model set’s output, I have predicted an increase in ENSO intensity in the mid-21st century, meaning that El Niño could be stronger in the future. Thank you for listening.
