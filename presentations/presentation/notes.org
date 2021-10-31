@@ -60,11 +60,37 @@
 - Make sure you talk about what Niño 3.4 index is: number that represents how strong El Niño is at each time
 - Windowed variance calculates amount of variability of the Niño 3.4 index ie how intense the ENSO cycle is
 ** ENSO is Becoming Stronger
+- Graph axes and colors CESM1 and CESM2
+- Both have increase in ENSO intensity
+- Slowdown/decrease after 2050
+  - Aerosol emissions
 ** Influence of Aerosols and Greenhouse Gasses
+- Data source: single forcing ensembles
+- Explain figure axes, subplots
+- Biggest, constant increase in GHG
+- Significant changes in AER, but not one direction
+- Insignificant changes for others
+- Takeaway
 ** Correlation With Ocean Temperature
+- Calculated correlation coefficient with ocean temp. and ENSO amplitude
+- CESM1 only so far
+- Plot:
+  - Cross section of pacific along equator, x:lon, y:depth, color:correlation
+  - Positive coefficient in surface layer, negative coefficient in subsurface layer
+  - Stratification
+  - More work necessary
 ** Wavelet Analysis
+- WA = mathematical process that takes a signal and derives changes to each frequency over time
+- Plot:
+  - axes, color, subplots
+  - Confirm results from previous steps
 * Conclusion
 ** Conclusions and Discussion
+- Slide is notes
 ** Application, Limitation, and Next Steps
+- Slide is notes
 ** Acknowledgments
+- Thank you to NCAR for running the climate models
+- Thank you to my teacher, family, and mentor
+- Thank you to the software makers
 ** References
