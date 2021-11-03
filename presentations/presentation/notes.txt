@@ -1,0 +1,188 @@
+                                        ━━━━━━━━━━━━━━━━━━━━
+                                         PRESENTATION NOTES
+
+                                          Benjamin Goldman
+                                        ━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+
+1 General:
+══════════
+
+  • Remember to say meaning of axes and colors
+  • Talk slower
+  • Less detail in results, more in intro?
+
+
+2 Title
+═══════
+
+
+3 Introduction
+══════════════
+
+Climate Change and Variability
+──────────────────────────────
+
+  • Climate change: long term trends in temp, etc (fig: red line)
+  • Climate variability: short (a few years) change in climate (fig: blue line)
+    • May be cyclical or random
+
+
+Climate Forcing
+───────────────
+
+  • External factors that affect climate change and/or variability
+  • List factors, ghg, aer, bmb, lulc
+  • Sources:
+    • ghg: industry, livestock
+    • aer: industry, volcanoes (smoke, dust, sulphites?)
+    • bmb: wildfires
+    • lulc: deforestation, agriculture, desertification
+  • Greenhouse effect
+    • gasses and particulates affect atmospheric chemistry and sunlight reflection/absorption
+    • ghg absorbs “blanket” trapping heat (fig: orange arrows)
+    • aer reflects in upper atmosphere blocking heat out. (fig: yellow arrows)
+    • bmb, lulc affect reflection, absorption on surface (fig: yellow arrows)
+
+
+El Niño (ENSO)
+──────────────
+
+  • Temperature of the pacific ocean
+  • Cold -> La Niña
+  • Hot -> El Niño
+  • Entire cycle: ENSO (El Niño/Southern Oscillation)
+  • Affects humans: hot year, dry year, cold year, wet year
+  • Figure: temperature differences between strong La Niña year and strong El Niño year
+    • Blue=colder, red=warmer
+    • Point out California hot for El Niño (wildfires)
+
+
+Method: Climate Simulation
+──────────────────────────
+
+  • Main way of making predictions
+  • Predictions of forcing levels are fed to computers
+  • Computers simulate climate on a grid of data containing temperature and much more
+  • Predictions are usually run many times
+  • My contain biases but are quite well tested
+
+
+Review of Literature
+────────────────────
+
+  • Slide is notes
+
+
+Gap
+───
+
+  • Slide is notes
+
+
+Questions
+─────────
+
+  • What, why, how
+  • Slide is notes
+
+
+4 Data, Methods, and Results
+════════════════════════════
+
+Methods Overview
+────────────────
+
+  • Slide is notes
+
+
+Role of Mentor and Student
+──────────────────────────
+
+  • Slide is notes
+
+
+Model Setup
+───────────
+
+  • Slide is notes
+
+
+Measuring ENSO Intensity
+────────────────────────
+
+  • Make sure you talk about what Niño 3.4 index is: number that represents how strong El Niño is at
+    each time
+  • Windowed variance calculates amount of variability of the Niño 3.4 index ie how intense the ENSO
+    cycle is
+
+
+ENSO is Becoming Stronger
+─────────────────────────
+
+  • Graph axes and colors CESM1 and CESM2
+  • Both have increase in ENSO intensity
+  • Slowdown/decrease after 2050
+    • Aerosol emissions
+
+
+Influence of Aerosols and Greenhouse Gasses
+───────────────────────────────────────────
+
+  • Data source: single forcing ensembles
+  • Explain figure axes, subplots
+  • Biggest, constant increase in GHG
+  • Significant changes in AER, but not one direction
+  • Insignificant changes for others
+  • Takeaway
+
+
+Correlation With Ocean Temperature
+──────────────────────────────────
+
+  • Calculated correlation coefficient with ocean temp. and ENSO amplitude
+  • CESM1 only so far
+  • Plot:
+    • Cross section of pacific along equator, x:lon, y:depth, color:correlation
+    • Positive coefficient in surface layer, negative coefficient in subsurface layer
+    • Stratification
+    • More work necessary
+
+
+Wavelet Analysis
+────────────────
+
+  • WA = mathematical process that takes a signal and derives changes to each frequency over time
+  • Plot:
+    • axes, color, subplots
+    • Confirm results from previous steps
+
+
+5 Conclusion
+════════════
+
+Conclusions and Discussion
+──────────────────────────
+
+  • Slide is notes
+
+
+Application, Limitation, and Next Steps
+───────────────────────────────────────
+
+  • Slide is notes
+
+
+Acknowledgments
+───────────────
+
+  • Thank you to NCAR for running the climate models
+  • Thank you to my teacher, family, and mentor
+  • Thank you to the software makers
+
+
+References
+──────────

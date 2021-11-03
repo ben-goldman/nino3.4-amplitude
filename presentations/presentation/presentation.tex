@@ -35,7 +35,6 @@
 
 \maketitle
 
-\section{Introduction}
 
 \begin{frame}{Climate Change and Variability}
   \begin{columns}
@@ -82,35 +81,6 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Method: Climate Simulation}
-  \begin{itemize}
-  \item Run climate simulation with predicted forcing levels as input.
-  \item \alert{Ensemble:} set of repeated simulations of the same model.
-  \end{itemize}
-  \begin{tikzpicture}[node distance = 1.5in, line width = 0.5mm]
-    \node (input) [data] {
-      \begin{varwidth}{1.5in}
-        Independent variables (forcing)
-      \end{varwidth}};
-    \node (model) [right of=input] [process] {
-      \begin{varwidth}{\linewidth}
-        Computer\\Simulation
-      \end{varwidth}};
-    \node (output) [right of=model] [data] {
-      \begin{varwidth}{1.4in}
-        Dependent variables (climatology)
-      \end{varwidth}};
-    \node (repeat) [above of=model, node distance = 1in] [process] {
-      \begin{varwidth}{0.5in}
-        Repeat
-      \end{varwidth}};
-    \draw [->] (input) to (model);
-    \draw [->] (model) to (output);
-    \draw [->] (model) to [out = 50, in = 330] (repeat);
-    \draw [->] (repeat) to [out = 210, in = 130] (model);
-  \end{tikzpicture}
-\end{frame}
-
 \begin{frame}{Review of Literature}
   \begin{itemize}
   \item ENSO's properties observed vary across different decades. \citep{lubbecke2014assessing}.
@@ -120,7 +90,7 @@
     \item Weakened ENSO during the Ice Age due to reduced CO$_2$ levels \citep{zhu2017reduced}.
     \end{itemize}
   \item Models show possible increasing ENSO activity in the future \citep{zheng2017response} and \citep{maher2018enso}.
-  \item Factors other than CO$_2$ can affect ENSO.
+  \item Factors other than CO\textsubscript{2} can affect ENSO.
     \begin{itemize}
     \item Ozone emissions reduce ENSO activity \citep{nowack2017role}.
     \item Aerosol emissions modify ENSO geographical center \citep{stevenson2017forced}.
@@ -143,7 +113,6 @@
   \end{description}
 \end{frame}
 
-\section{Data, Methods, and Results}
 
 \begin{frame}{Methods Overview}
   \begin{itemize}
@@ -279,7 +248,6 @@
   \end{columns}
 \end{frame}
 
-\section{Conclusion}
 
 \begin{frame}{Conclusions and Discussion}
   \begin{itemize}
