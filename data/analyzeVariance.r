@@ -97,3 +97,12 @@ ggplot(cesm1_sf %>% filter(case != "LUC"), aes(y = mean, x = date, color = case,
     labs(title = "CESM1 20-Year Variance", subtitle = "Single Forcing Net Impact", x = "Date", y = "Variance", color = "Case", fill = "Case") +
     theme(text = element_text(size = 20))
 gsave("cesm1_sf_3.pdf")
+
+ggplot(cesm1_sf %>% filter(case == "AER" | case == "GHG"), aes(y = mean, x = date, color = case, fill = case, ymin = (mean - 2 * se), ymax = (mean + 2 * se))) +
+    facet_wrap(vars(case), dir = "v") +
+    geom_line() +
+    geom_ribbon(alpha = l, color = NA) +
+    xlim(xlim1) +
+    labs(title = "CESM1 20-Year Variance", subtitle = "Single Forcing Net Impact", x = "Date", y = "Variance", color = "Case", fill = "Case") +
+    theme(text = element_text(size = 20))
+gsave("cesm1_sf_4.pdf")

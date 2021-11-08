@@ -112,15 +112,15 @@ ff1_high <- ff1_pwr[34:61, ,] %>% apply(c(2, 3), mean) %>% make_df(mydate1, date
 ff2_low <- ff2_pwr[21:33, ,] %>% apply(c(2, 3), mean) %>% make_df(mydate2, date.start = 840)
 ff2_high <- ff2_pwr[34:61, ,] %>% apply(c(2, 3), mean) %>% make_df(mydate2, date.start = 840)
 
-ff_stuff <- ff1_low %>% as.data.frame() %>% mutate(ensemble = "CESM1", group = "p < 3") %>%
-    bind_rows(ff1_high %>% as.data.frame() %>% mutate(ensemble = "CESM1", group = "p > 3")) %>%
-    bind_rows(ff2_low %>% as.data.frame() %>% mutate(ensemble = "CESM2", group = "p < 3")) %>%
-    bind_rows(ff2_high %>% as.data.frame() %>% mutate(ensemble = "CESM2", group = "p > 3"))
+ff_stuff <- ff1_low %>% as.data.frame() %>% mutate(ensemble = "CESM1", group = "T < 3") %>%
+    bind_rows(ff1_high %>% as.data.frame() %>% mutate(ensemble = "CESM1", group = "T > 3")) %>%
+    bind_rows(ff2_low %>% as.data.frame() %>% mutate(ensemble = "CESM2", group = "T < 3")) %>%
+    bind_rows(ff2_high %>% as.data.frame() %>% mutate(ensemble = "CESM2", group = "T > 3"))
 
 ggplot(ff_stuff, aes(y = mean, x = date, color = group, fill = group, ymin = (mean - 2 * se), ymax = (mean + 2 * se))) +
     geom_line() +
     geom_ribbon(alpha = l, color = NA) +
     facet_wrap(vars(ensemble), dir = "v") +
-    labs(title = "Mean Wavelet Power", x = "Date", y = "Power", color = "Case", fill = "Case") +
+    labs(title = "Mean Wavelet Power", x = "Date", y = "Power", color = "Period", fill = "Period") +
     theme(text = element_text(size = 20))
 gsave("wavelet3.pdf")
