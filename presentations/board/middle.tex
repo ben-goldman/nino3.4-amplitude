@@ -1,0 +1,88 @@
+\documentclass{beamer}
+
+\title{The Impact of Anthropogenic Forcing on ENSO Amplitude}
+\author{Ben Goldman}
+\date{\today}
+
+\usepackage{natbib}
+\usepackage{tikz}
+\usepackage{varwidth}
+\usepackage{hyperref}
+\usepackage[scale=1.4]{beamerposter}
+\geometry{papersize={32in,48in}}
+\usepackage{lipsum}
+
+\usetikzlibrary{arrows,snakes,backgrounds}
+\usetikzlibrary{positioning}
+\tikzstyle{process}=[rectangle, draw=process, fill=process!20, line width = 0.3mm]
+\tikzstyle{data}=[rectangle, draw=data, fill=data!20, line width = 0.3mm]
+\tikzstyle{tight}=[node distance = 0.5in]
+\tikzstyle{loose}=[node distance = 2in]
+\definecolor{process}{HTML}{3d5f8f}
+\definecolor{data}{HTML}{8f6d3d}
+
+\usetheme{ben}
+
+\newcommand{\myfig}[4]{
+  \begin{figure}
+    \centering
+    \includegraphics[width=#3\textwidth]{figures/#1}
+    \caption{#2}
+    \label{fig:#4}
+  \end{figure}
+}
+
+\renewcommand{\bibsection}{}
+
+\begin{document}
+\begin{frame}{The Impact of Anthropogenic Forcing on ENSO Amplitude}{Ben Goldman}
+
+  \begin{block}{ENSO is Becoming Stronger (Past year results)}
+    \begin{columns}
+      \column{0.4\textwidth}
+      \begin{itemize}
+      \item Increase in ENSO intensity in both ensembles.
+      \item Increase slows down in CESM1 and decreases in CESM2 after around 2050.
+      \end{itemize}
+      \column{0.5\textwidth}
+      \myfig{ff_compare.pdf}{ENSO intensity ensemble mean and standard error for CESM1 and CESM2}{1.0}{ff_compare}
+    \end{columns}
+  \end{block}
+
+  \vfill
+
+  \begin{block}{Influence of Aerosols and Greenhouse Gasses (Past year results)}
+    \begin{columns}
+      \column{0.4\textwidth}
+      \begin{itemize}
+      \item Influence of each factor on ENSO amplitude.
+      \item Increased variance due to greenhouse gas emissions.
+      \item Somewhat increased variance from aerosol emissions, but not linear.
+      \end{itemize}
+      \alert{Takeaway:} Human activities are triggering predicted strengthening of ENSO.
+      \column{0.5\textwidth}
+      \myfig{cesm1_sf_4.pdf}{Influence of GHG, AER, and BMB forcing on ENSO amplitude in CESM1}{1.0}{cesm1_sf_4}
+    \end{columns}
+  \end{block}
+
+  \vfill
+
+  \begin{block}{Correlation With Ocean Temperature (Current results)}
+    \begin{columns}
+      \column{0.4\textwidth}
+      \begin{itemize}
+      \item Correlation coefficient between ocean temperature and ENSO amplitude.
+      \item Negative coefficient in subsurface layer.
+      \item Positive coefficient in surface layer.
+      \item Suggests that ocean stratification may be mediating global warming influence on ENSO.
+      \item Difference in heating modifies mechanics of ENSO cycle.
+      \end{itemize}
+      \column{0.5\textwidth}
+      \myfig{tempdt.pdf}{Correlation coefficient between ENSO amplitude and ocean temperature in equatorial cross-section in the fully-forced CESM1 ensemble}{1.0}{tempdt}
+    \end{columns}
+  \end{block}
+
+  \vfill
+
+\end{frame}
+\end{document}

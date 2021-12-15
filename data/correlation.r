@@ -106,7 +106,7 @@ dimnames(corrs) <- list(lon, depth)
 
 ggplot(corrs[,1:38] %>% melt, aes(Var1, Var2, z = value)) +
     geom_contour_filled() +
-    labs(title = "Correlation Coefficient Between Niño 3.4 Variance and Ocean Temperature",
+    labs(title = "Correlation Coefficient",
          x = "Longitude",
          y = "Depth (m)",
          fill = "Correlation\nCoefficient") +

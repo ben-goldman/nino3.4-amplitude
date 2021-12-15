@@ -1,0 +1,118 @@
+\documentclass{beamer}
+
+\title{The Impact of Anthropogenic Forcing on ENSO Amplitude}
+\author{Ben Goldman}
+\date{\today}
+
+\usepackage{natbib}
+\usepackage{tikz}
+\usepackage{varwidth}
+\usepackage{hyperref}
+\usepackage[scale=1.4]{beamerposter}
+\geometry{papersize={20in,48in}}
+\usepackage{lipsum}
+
+\usetheme{ben}
+
+\newcommand{\myfig}[4]{
+  \begin{figure}
+    \centering
+    \includegraphics[width=#3\textwidth]{figures/#1}
+    \caption{#2}
+    \label{fig:#4}
+  \end{figure}
+}
+
+\renewcommand{\bibsection}{}
+
+\begin{document}
+
+\nocite{gistemp2019giss}
+\nocite{lenssen2019improvements}
+\nocite{ropelewski1987global}
+\nocite{rayner2003global}
+\nocite{lubbecke2014assessing}
+\nocite{zhu2017reduced}
+\nocite{zheng2017response}
+\nocite{maher2018enso}
+\nocite{kay2015community}
+\nocite{danabasoglu2020community}
+
+\begin{frame}
+
+  \begin{block}{Wavelet Analysis (Current results)}
+    \begin{itemize}
+    \item Separate ENSO record into changes in period over time.
+    \item Increase in power in late 21\textsuperscript{st} century agrees with previous results.
+    \item In CESM1, increase in ENSO intensity is mainly strengthening of longer-period cycle.
+    \item In CESM2, longer-period ENSO weakens after 2025.
+    \end{itemize}
+    \myfig{wavelet3.pdf}{Wavelet power spectrum for the Niño 3.4 index in the fully-forced CESM1 and CESM2 ensembles}{0.8}{wavelet2}
+  \end{block}
+
+  \vfill
+
+  \begin{block}{Discussion}
+    \begin{itemize}
+    \item Rising greenhouse gas levels increase Pacific Ocean stratification, strengthening ENSO cycle.
+    \item Aerosol influence is nonlinear because aerosol levels are not purely increasing.
+    \item Stronger ENSO may lead to greater temperature variability and extreme weather.
+    \item CESM1 and CESM2 conflict in their prediction of the changes to ENSO's frequency.
+    \end{itemize}
+  \end{block}
+
+  \vfill
+
+  \begin{block}{Limitations and Applications}
+    Limitations:
+    \begin{itemize}
+    \item Niño 3.4 index shown to be inaccurate for some models \citep{cai2018increased}.
+    \item CESM may contain biases.
+    \end{itemize}
+    Application: to improve our ability to predict ENSO and help people prepare for increased likelihood of extreme weather.
+  \end{block}
+
+  \vfill
+
+  \begin{block}{Acknowledgments}
+    \begin{itemize}
+    \item This material is based upon work supported by the National Center for Atmospheric Research, which is a major facility sponsored by the National Science Foundation under Cooperative Agreement No. 1852977.
+    \item Thank you to my teacher, my family, and my mentor!
+    \item Software used: R, ncdf4, zoo, dplyr, ggplot2, WaveletComp, reshape2, nco.
+    \end{itemize}
+  \end{block}
+
+  \vfill
+
+  \begin{block}{Role of Mentor and Student}
+    \begin{columns}[t]
+      \column{.4\textwidth}
+      Student:
+      \begin{itemize}
+      \item Analyze raw data on computer
+      \item Produce graphics for analysis and publication
+      \item Write documentation
+      \item Identify key features of results
+      \end{itemize}
+      \column{.4\textwidth}
+      Mentor:
+      \begin{itemize}
+      \item Review student writing
+      \item Interpret results in the context of climatology
+      \item Conduct parallel analysis
+      \item Provide raw data from facility
+      \end{itemize}
+    \end{columns}
+  \end{block}
+
+  \vfill
+
+  \begin{block}{References}
+    \bibliographystyle{apalike}
+    \scriptsize{\bibliography{references.bib}}
+  \end{block}
+
+  \vfill
+
+\end{frame}
+\end{document}

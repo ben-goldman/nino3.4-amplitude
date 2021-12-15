@@ -1,0 +1,94 @@
+% My very own beamer theme!
+% Copyright Ben Goldman
+% license is GPLv3 i guess
+% August 2021
+% USE ONLY FOR POSTERS!!!!!
+
+\mode<presentation>
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\setbeamersize{text margin left=1in,text margin right=1in}
+
+% Fonts!
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+
+% Color definitions
+\definecolor{a1}{Hsb}{215, 0.40, 0.40}
+\definecolor{a2}{Hsb}{215, 0.40, 0.40}
+
+\definecolor{b1}{Hsb}{35, 0.40, 0.40}
+\definecolor{b2}{Hsb}{35, 0.40, 0.40}
+
+\definecolor{c1}{Hsb}{125, 0.40, 0.40}
+\definecolor{c2}{Hsb}{125, 0.80, 0.40}
+
+\definecolor{process}{HTML}{3d5f8f}
+\definecolor{data}{HTML}{8f6d3d}
+
+\definecolor{black}{HTML}{172436}
+\definecolor{white}{HTML}{ffffff}
+
+\definecolor{gray}{Hsb}{215, 0.00, 0.40}
+
+% use colors for presentation parts
+\setbeamercolor{frametitle}{fg = white}
+\setbeamercolor{caption name}{fg = c2}
+\setbeamercolor{normal text}{fg = black}
+\setbeamercolor{alerted text}{fg=c2}
+\setbeamercolor{caption}{fg = black}
+
+\setbeamercolor{title page header}{fg = white}
+\setbeamercolor{author}{fg=white}
+\setbeamercolor{date}{fg=white}
+
+\setbeamercolor{item}{fg = black}
+\setbeamercolor{subitem}{fg = black}
+
+% blocks
+\setbeamercolor{block title}{bg=black!7, fg=black}
+\setbeamercolor{block body}{bg=black!2}
+%\setbeamerfont{block title}{size=\Large}
+
+\setbeamertemplate{block begin}{
+  \pgfsetfillopacity{0.8}                     %% Transparent on
+  \begin{beamercolorbox}[colsep*=.75ex]{block title}
+    \usebeamerfont*{block title}\vskip-0.0in\bf{\Large\insertblocktitle}\vskip 0.2in%    %% Insert block title with vertical margins
+  \end{beamercolorbox}%
+  {\parskip0pt\par}%
+  \ifbeamercolorempty[bg]{block title}
+  {}
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[colsep*=.75ex,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+    \pgfsetfillopacity{1}                   %% Transparent off
+}
+
+% Slide background
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[top color = a1, bottom color = b1] (0,0) rectangle (\the\paperwidth,\the\paperheight);
+  \end{tikzpicture}
+}
+
+% Frame title
+\defbeamertemplate*{frametitle}{ben}[1]
+{
+    \begin{center}
+      \begin{tikzpicture}
+        \useasboundingbox[](0,-0.1) rectangle(\the\paperwidth,7);
+        \ifx\insertframesubtitle\@empty%
+        {\node[align=center, white] at (0.5\textwidth,4){\insertframetitle};}
+        \else%
+        {\node[align=center, white] at (0.5\textwidth,5){\Huge \insertframetitle};%
+          \node[align=center, white] at (0.5\textwidth,1){\huge \insertframesubtitle};}%
+        \fi
+      \end{tikzpicture}
+    \end{center}
+}
+
+\mode<all>

@@ -34,7 +34,6 @@
 
 \maketitle
 
-
 \begin{frame}{Climate Change and Variability}
   \begin{columns}
     \column{0.4\textwidth}
@@ -43,7 +42,7 @@
     \item Long-term trends vs short-term randomness
     \end{itemize}
     \column{0.6\textwidth}
-    \myfig{intro_fig_3.pdf}{Global mean land air temperature in GISSTEMP 4 dataset. \citep{gistemp2019giss} and \citep{lenssen2019improvements}}{this}
+    \myfig{intro_fig_3.pdf}{Global mean land air temperature in GISSTEMP 4 dataset. \citep{gistemp2019giss} and \citep{lenssen2019improvements}}{woohoo}
   \end{columns}
 \end{frame}
 
@@ -112,37 +111,36 @@
   \end{description}
 \end{frame}
 
-\begin{frame}{Methods Overview}
-  \begin{itemize}
-  \item Precollected predictions of sea surface temperature from climate models.
-  \item Calculate ENSO intensity in model output.
-  \item Use single forcing ensembles to estimate contributions each forcing item.
-  \item Plot correlation between ENSO intensity and ocean temperature to examine relationship between heat transfer, forcing, and ENSO.
-  \item Use wavelet analysis to analyze changes to ENSO at different frequencies.
-  \end{itemize}
-\end{frame}
+% \begin{frame}{Methods Overview}
+%   \begin{itemize}
+%   \item Precollected predictions of sea surface temperature from climate models.
+%   \item Calculate ENSO intensity in model output.
+%   \item Use single forcing ensembles to estimate contributions each forcing item.
+%   \item Plot correlation between ENSO intensity and ocean temperature to examine relationship between heat transfer, forcing, and ENSO.
+%   \item Use wavelet analysis to analyze changes to ENSO at different frequencies.
+%   \end{itemize}
+% \end{frame}
 
-\begin{frame}{Role of Mentor and Student}
-  \begin{columns}[t]
-    \column{.5\textwidth}
-    Student:
-    \begin{itemize}
-    \item Analyze raw data on computer
-    \item Produce graphics for analysis and publication
-    \item Write documentation
-    \item Identify key features of results
-    \end{itemize}
-    \column{.5\textwidth}
-    Mentor:
-    \begin{itemize}
-    \item Review student writing
-    \item Interpret results in the context of climatology
-    \item Conduct parallel analysis
-    \item Provide raw data from facility
-    \end{itemize}
-  \end{columns}
-
-\end{frame}
+% \begin{frame}{Role of Mentor and Student}
+%   \begin{columns}[t]
+%     \column{.5\textwidth}
+%     Student:
+%     \begin{itemize}
+%     \item Analyze raw data on computer
+%     \item Produce graphics for analysis and publication
+%     \item Write documentation
+%     \item Identify key features of results
+%     \end{itemize}
+%     \column{.5\textwidth}
+%     Mentor:
+%     \begin{itemize}
+%     \item Review student writing
+%     \item Interpret results in the context of climatology
+%     \item Conduct parallel analysis
+%     \item Provide raw data from facility
+%     \end{itemize}
+%   \end{columns}
+% \end{frame}
 
 \begin{frame}{Model Setup}
   \begin{itemize}
@@ -195,9 +193,6 @@
     \begin{itemize}
     \item Increase in ENSO intensity in both ensembles.
     \item Increase slows down in CESM1 and decreases in CESM2 after around 2050.
-      \begin{itemize}
-      \item May be caused by aerosol emissions.
-      \end{itemize}
     \end{itemize}
     \column{0.6\textwidth}
     \myfig{ff_compare.pdf}{ENSO intensity ensemble mean and standard error for CESM1 and CESM2}{ff_compare}
@@ -252,27 +247,49 @@
 \begin{frame}{Discussion}
   \begin{itemize}
   \item Rising greenhouse gas levels increase Pacific Ocean stratification, strengthening ENSO cycle.
-  \item Aerosol influence nonlinear because aerosol levels are not purely increasing.
-  \item Stronger ENSO will lead to greater climate variability and extreme weather.
-  \item
+  \item Aerosol influence is nonlinear because aerosol levels are not purely increasing.
+  \item Stronger ENSO may lead to greater temperature variability and extreme weather.
+  \item CESM1 and CESM2 conflict in their prediction of the changes to ENSO's frequency.
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Conclusions and Discussion}
+\begin{frame}{Limitations and Applications}
+  Limitations:
   \begin{itemize}
-  \item There is likely to be an increase in ENSO strength over the next 100 years. Agrees with \citet{cai2018increased}.
-  \item Variance increase is likely caused by the combined influence of greenhouse gasses and aerosols.
-  \item Global warming increases ENSO intensity by warming upper layers of the Pacific faster than central layers.
+  \item Niño 3.4 index shown to be inaccurate for some models \citep{cai2018increased}.
+  \item CESM may contain biases.
   \end{itemize}
+  Application: to improve our ability to predict ENSO and help people prepare for increased likelihood of extreme weather.
 \end{frame}
+% \begin{frame}{Limitations}
+%   \begin{itemize}
+%   \item Niño 3.4 index is inaccurate for certain models.
+%   \item Only one climate model used in analysis.
+%   \item Climate models are all imperfect.
+%   \end{itemize}
+% \end{frame}
 
-\begin{frame}{Application, Limitation, and Next Steps}
-  \begin{description}
-  \item[\alert{Application}] Improve prediction ability to help people prepare for increased likelihood of extreme weather.
-  \item[\alert{Limitation}] Niño 3.4 index may not be fully accurate for various models \citep{cai2018increased}. Also, CESM may contain biases and is not completely accurate.
-  \item[\alert{Next steps}] Examine other variables to further analyze mediator process, continue wavelet analysis methods to focus on individual frequency bands.
-  \end{description}
-\end{frame}
+% \begin{frame}{Future Research}
+%   \begin{itemize}
+%   \item Conduct similar analysis on large ensembles of other climate models.
+%   \end{itemize}
+% \end{frame}
+
+% \begin{frame}{Conclusions and Discussion}
+%   \begin{itemize}
+%   \item There is likely to be an increase in ENSO strength over the next 100 years. Agrees with \citet{cai2018increased}.
+%   \item Variance increase is likely caused by the combined influence of greenhouse gasses and aerosols.
+%   \item Global warming increases ENSO intensity by warming upper layers of the Pacific faster than central layers.
+%   \end{itemize}
+% \end{frame}
+%
+% \begin{frame}{Application, Limitation, and Next Steps}
+%   \begin{description}
+%   \item[\alert{Application}] Improve prediction ability to help people prepare for increased likelihood of extreme weather.
+%   \item[\alert{Limitation}] Niño 3.4 index may not be fully accurate for various models \citep{cai2018increased}. Also, CESM may contain biases and is not completely accurate.
+%   \item[\alert{Next steps}] Examine other variables to further analyze mediator process, continue wavelet analysis methods to focus on individual frequency bands.
+%   \end{description}
+% \end{frame}
 
 \begin{frame}{Acknowledgments}
   \begin{itemize}
