@@ -83,27 +83,16 @@
   \begin{itemize}
   \item ENSO's properties observed vary across different decades. \citep{lubbecke2014assessing}.
   \item ENSO responds to external forcing.
-    \begin{itemize}
-    \item Correlation between ENSO strength and sunspot activity \citep{emile2007nino}.
-    \item Weakened ENSO during the Ice Age due to reduced CO$_2$ levels \citep{zhu2017reduced}.
-    \end{itemize}
+  \item Weakened ENSO during the Ice Age due to reduced CO$_2$ levels \citep{zhu2017reduced}.
   \item Models show possible increasing ENSO activity in the future \citep{zheng2017response} and \citep{maher2018enso}.
-  \item Factors other than CO\textsubscript{2} can affect ENSO.
-    \begin{itemize}
-    \item Ozone emissions reduce ENSO activity \citep{nowack2017role}.
-    \item Aerosol emissions modify ENSO geographical center \citep{stevenson2017forced}.
-    \end{itemize}
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Gap}
+\begin{frame}{Gap and Questions}
   \begin{itemize}
   \item Little research using a large ensemble to examine the effect of individual factors on ENSO.
   \item Considerable disagreement between studies on whether ENSO will strengthen or weaken due to global warming
   \end{itemize}
-\end{frame}
-
-\begin{frame}{Questions}
   \begin{description}
   \item[What?] Do the CESM1 and CESM2 predict increased or decreased ENSO intensity in the future?
   \item[Why?] Is the predicted increase (or decrease) due to human activities?
@@ -111,45 +100,14 @@
   \end{description}
 \end{frame}
 
-% \begin{frame}{Methods Overview}
-%   \begin{itemize}
-%   \item Precollected predictions of sea surface temperature from climate models.
-%   \item Calculate ENSO intensity in model output.
-%   \item Use single forcing ensembles to estimate contributions each forcing item.
-%   \item Plot correlation between ENSO intensity and ocean temperature to examine relationship between heat transfer, forcing, and ENSO.
-%   \item Use wavelet analysis to analyze changes to ENSO at different frequencies.
-%   \end{itemize}
-% \end{frame}
 
-% \begin{frame}{Role of Mentor and Student}
-%   \begin{columns}[t]
-%     \column{.5\textwidth}
-%     Student:
-%     \begin{itemize}
-%     \item Analyze raw data on computer
-%     \item Produce graphics for analysis and publication
-%     \item Write documentation
-%     \item Identify key features of results
-%     \end{itemize}
-%     \column{.5\textwidth}
-%     Mentor:
-%     \begin{itemize}
-%     \item Review student writing
-%     \item Interpret results in the context of climatology
-%     \item Conduct parallel analysis
-%     \item Provide raw data from facility
-%     \end{itemize}
-%   \end{columns}
-% \end{frame}
-
-\begin{frame}{Model Setup}
+\begin{frame}{Model Setup (Data)}
   \begin{itemize}
   \item CESM1 \citep{kay2015community} and CESM2 \citep{danabasoglu2020community}
-  \item Observed forcing levels from 1850-2005
-  \item Predicted forcing levels from 2005-2100
-  \item Ensembles have 40 and 50 simulations respectively
-  \item Control simulation with pre-1850 forcing levels
-  \item Single forcing ensembles that represent influence of single factor
+  \item Predicts climate over 21st century with global warming.
+  \item 40-50 simulations per ensemble.
+  \item Control simulation with pre-1850 forcing levels.
+  \item Single forcing ensembles that represent influence of single factor.
   \end{itemize}
 \end{frame}
 
@@ -261,35 +219,6 @@
   \end{itemize}
   Application: to improve our ability to predict ENSO and help people prepare for increased likelihood of extreme weather.
 \end{frame}
-% \begin{frame}{Limitations}
-%   \begin{itemize}
-%   \item Niño 3.4 index is inaccurate for certain models.
-%   \item Only one climate model used in analysis.
-%   \item Climate models are all imperfect.
-%   \end{itemize}
-% \end{frame}
-
-% \begin{frame}{Future Research}
-%   \begin{itemize}
-%   \item Conduct similar analysis on large ensembles of other climate models.
-%   \end{itemize}
-% \end{frame}
-
-% \begin{frame}{Conclusions and Discussion}
-%   \begin{itemize}
-%   \item There is likely to be an increase in ENSO strength over the next 100 years. Agrees with \citet{cai2018increased}.
-%   \item Variance increase is likely caused by the combined influence of greenhouse gasses and aerosols.
-%   \item Global warming increases ENSO intensity by warming upper layers of the Pacific faster than central layers.
-%   \end{itemize}
-% \end{frame}
-%
-% \begin{frame}{Application, Limitation, and Next Steps}
-%   \begin{description}
-%   \item[\alert{Application}] Improve prediction ability to help people prepare for increased likelihood of extreme weather.
-%   \item[\alert{Limitation}] Niño 3.4 index may not be fully accurate for various models \citep{cai2018increased}. Also, CESM may contain biases and is not completely accurate.
-%   \item[\alert{Next steps}] Examine other variables to further analyze mediator process, continue wavelet analysis methods to focus on individual frequency bands.
-%   \end{description}
-% \end{frame}
 
 \begin{frame}{Acknowledgments}
   \begin{itemize}
@@ -297,6 +226,27 @@
   \item Thank you to my teacher, my family, and my mentor!
   \item Software used: R, ncdf4, zoo, dplyr, ggplot2, WaveletComp, reshape2, nco.
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Role of Mentor and Student}
+  \begin{columns}[t]
+    \column{.4\textwidth}
+    Student:
+    \begin{itemize}
+    \item Analyze raw data on computer
+    \item Produce graphics for analysis and publication
+    \item Write documentation
+    \item Identify key features of results
+    \end{itemize}
+    \column{.4\textwidth}
+    Mentor:
+    \begin{itemize}
+    \item Review student writing
+    \item Interpret results in the context of climatology
+    \item Conduct parallel analysis
+    \item Provide raw data from facility
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{References}

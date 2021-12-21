@@ -16,6 +16,5 @@
 
 - Attended WESEF 2021 competition March 2021
   - Won 2 awards (American Meterological Society Award, 4th place category award)
-- Unlikely to attend Tri-County Fair 2021
-- Plan to attend JSHS fair 2021
-- Plan to attend WESEF fair 2022
+- Registered for JSHS in February 2022
+- Registered for WESEF in March 2022
