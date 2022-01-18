@@ -68,6 +68,7 @@
     \begin{columns}
       \column{0.5\textwidth}
       \begin{itemize}
+      \item ENSO = El Niño/Southern Oscillation
       \item Warming and cooling of the Pacific Ocean.
       \item Affects human societies through temperature and rainfall. \citep{ropelewski1987global}
       \item May be affected by climate change.
@@ -89,21 +90,24 @@
 \end{frame}
 
 \begin{frame}{Gap and Questions}
+  \alert{Gap}
   \begin{itemize}
   \item Little research using a large ensemble to examine the effect of individual factors on ENSO.
   \item Considerable disagreement between studies on whether ENSO will strengthen or weaken due to global warming
   \end{itemize}
+  \alert{Questions}
   \begin{description}
-  \item[What?] Do the CESM1 and CESM2 predict increased or decreased ENSO intensity in the future?
-  \item[Why?] Is the predicted increase (or decrease) due to human activities?
-  \item[How?] What processes are causing greenhouse gasses and aerosols to affect ENSO?
+  \item[\alert{What?}] Do the CESM1 and CESM2 predict increased or decreased ENSO intensity in the future?
+  \item[\alert{Why?}] Is the predicted increase (or decrease) due to human activities?
+  \item[\alert{How?}] What processes are causing greenhouse gasses and aerosols to affect ENSO?
   \end{description}
 \end{frame}
 
+\section{Methods and Results}
 
 \begin{frame}{Model Setup (Data)}
   \begin{itemize}
-  \item CESM1 \citep{kay2015community} and CESM2 \citep{danabasoglu2020community}
+  \item Community Earth System Model (CESM) Versions 1 and 2 \citep{kay2015community} \citep{danabasoglu2020community}.
   \item Predicts climate over 21st century with global warming.
   \item 40-50 simulations per ensemble.
   \item Control simulation with pre-1850 forcing levels.
@@ -113,29 +117,29 @@
 
 \begin{frame}{Measuring ENSO Intensity}
   \begin{tikzpicture}[node distance = 1.5in, line width = 0.5mm]
-    \node [data] (input) {
-      \begin{varwidth}{1.5in}
-        External forcing
+    \node [process] (input) {
+      \begin{varwidth}{1.2in}
+        External forcing records and predictions
       \end{varwidth}};
     \node [process] (model) [right of=input] {
-      \begin{varwidth}{\linewidth}
-        CESM1\\and\\CESM2
+      \begin{varwidth}{1.2in}
+        CESM1 and CESM2 climate models
       \end{varwidth}};
-    \node [data] (output) [right of=model] {
+    \node [process] (output) [right of=model] {
       \begin{varwidth}{1.2in}
         Sea surface temperature (SST)
       \end{varwidth}};
-    \node [data] (nino) [below of=input] {
-      \begin{varwidth}{1.4in}
-        Niño 3.4 index
+    \node [process] (nino) [below of=input] {
+      \begin{varwidth}{1.2in}
+        Mean tropical Pacific temperature
       \end{varwidth}};
     \node [process] (variance) [right of=nino] {
-      \begin{varwidth}{1.4in}
-        Windowed\\variance
+      \begin{varwidth}{1.0in}
+        Windowed variance: Mean variance over every 20 years.
       \end{varwidth}};
-    \node [data] (intensity) [right of=variance] {
-      \begin{varwidth}{1.4in}
-        ENSO intensity
+    \node [process] (intensity) [right of=variance] {
+      \begin{varwidth}{1.2in}
+        Mean and standard error
       \end{varwidth}};
     \draw [->] (input) to (model);
     \draw [->] (model) to (output);
@@ -147,13 +151,34 @@
 
 \begin{frame}{ENSO is Becoming Stronger}
   \begin{columns}
-    \column{0.4\textwidth}
+    \column{0.5\textwidth}
     \begin{itemize}
-    \item Increase in ENSO intensity in both ensembles.
+    \item Increase in ENSO intensity in both ensembles. (Exceeds 2 standard errors)
     \item Increase slows down in CESM1 and decreases in CESM2 after around 2050.
     \end{itemize}
-    \column{0.6\textwidth}
-    \myfig{ff_compare.pdf}{ENSO intensity ensemble mean and standard error for CESM1 and CESM2}{ff_compare}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\textwidth]{figures/ff_compare.pdf}};
+        \coordinate (a) at (0.5, 1.5);
+        \node [red] (b) at (1.0, 1.0) {
+          \begin{varwidth}{0.6in}
+            Increasing variance
+          \end{varwidth}};
+        \coordinate (c) at (3.0, 1.5) {};
+        \draw[red, |-|] (a) to (c);
+
+        \coordinate (d) at (3.2, 1.5);
+        \node [red] (e) at (3.5, 1.0) {
+          \begin{varwidth}{0.6in}
+            Decreasing variance
+          \end{varwidth}};
+        \coordinate (f) at (4.3, 1.5) {};
+        \draw[red, |-|] (d) to (f);
+      \end{tikzpicture}
+      \caption{ENSO intensity ensemble mean and standard error for CESM1 and CESM2}
+      \label{ff_compare}
+    \end{figure}
   \end{columns}
 \end{frame}
 
@@ -191,9 +216,9 @@
     \column{0.5\textwidth}
     \begin{itemize}
     \item Separate ENSO record into changes in period over time.
-    \item Increase in power in late 21\textsuperscript{st} century agrees with previous results.
     \item In CESM1, increase in ENSO intensity is mainly strengthening of longer-period cycle.
     \item In CESM2, longer-period ENSO weakens after 2025.
+    \item Indicates that longer frequency bands are more susceptible to climate change.
     \end{itemize}
     \column{0.5\textwidth}
     \myfig{wavelet3.pdf}{Wavelet power spectrum for the Niño 3.4 index in the fully-forced CESM1 and CESM2 ensembles}{wavelet2}
@@ -216,6 +241,7 @@
   \begin{itemize}
   \item Niño 3.4 index shown to be inaccurate for some models \citep{cai2018increased}.
   \item CESM may contain biases.
+  \item Models are only an approximation of the Earth's actual climate.
   \end{itemize}
   Application: to improve our ability to predict ENSO and help people prepare for increased likelihood of extreme weather.
 \end{frame}

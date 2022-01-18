@@ -84,6 +84,9 @@
 - Plot:
   - axes, color, subplots
   - Confirm results from previous steps
+
+I conducted a wavelet analysis to identify changes to specific frequency bands of ENSO. One way of thinking about wavelet analysis is using a radio to listen to a variety of frequencies, all at once, except with data rather than radio waves. So figure 7 shows, the power, similar to loudness, of the ENSO signal where the period is greater than three years and less than three years, for both the CESM1 and CESM2. Looking at CESM1, much of the increase in power over the 20th century is in the longer-period band, meaning that much of the increase in ENSO intensity is happening in the lower frequencies. Looking at CESM2, one interesting feature is that the decreasing strength we saw earlier is mostly happening in the longer frequency. These results suggest that longer frequency ENSO is more succeptible to climate change than ENSO with a faster cycle.
+
 * Conclusion
 ** Conclusions and Discussion
 - Slide is notes

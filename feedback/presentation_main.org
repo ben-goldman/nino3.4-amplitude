@@ -58,3 +58,16 @@ Listener: Jimena Perez
 - Great application slide
 - Make sure you explain your results in the context of your study, think big picture
 - Intro slide 2 is great we’ll explained
+
+* Feedback 5
+
+Date: <2022-01-06 Thu>
+Time: 09:20
+Listener: Jimena Perez
+** Feedback:
+- Put Student vs mentor role earlier in presentation
+- Slow down speech
+- Write a script for wavelet slide
+- Don't admit you don't understand it
+- No monospace for urls
+- Clean up global warming slide
