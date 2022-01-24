@@ -34,19 +34,16 @@
 
 \maketitle
 
-\begin{frame}{Climate Change and Variability}
-  \begin{columns}
-    \column{0.4\textwidth}
-    \begin{itemize}
-    \item Global warming
-    \item Long-term trends vs short-term randomness
-    \end{itemize}
-    \column{0.6\textwidth}
-    \myfig{intro_fig_3.pdf}{Global mean land air temperature in GISSTEMP 4 dataset. \citep{gistemp2019giss} and \citep{lenssen2019improvements}}{woohoo}
-  \end{columns}
+\begin{frame}{Climate Change: Global Warming vs. Climate Variability}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/intro_fig_3.pdf}
+    \caption{Global mean land air temperature in GISSTEMP 4 dataset. \citep{gistemp2019giss} and \citep{lenssen2019improvements}}
+    \label{fig:woohoo}
+  \end{figure}
 \end{frame}
 
-\begin{frame}{Climate forcing}
+\begin{frame}{Greenhouse Gasses and Friends}
   \begin{columns}
     \column{0.5\textwidth}
     \begin{itemize}
@@ -63,18 +60,18 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{El Niño (ENSO)}
+\begin{frame}{El Niño, La Niña, and ENSO}
   \begin{figure}
     \begin{columns}
       \column{0.5\textwidth}
       \begin{itemize}
       \item ENSO = El Niño/Southern Oscillation
+      \item El Niño is the warm phase, and La Niña is the cool phase.
       \item Warming and cooling of the Pacific Ocean.
       \item Affects human societies through temperature and rainfall. \citep{ropelewski1987global}
-      \item May be affected by climate change.
       \end{itemize}
       \caption{Comparison of SST anomaly between 1975 La Niña event and 1997 El Niño event in HadISST 1 dataset. \citep{rayner2003global}}
-      \column{0.5\textwidth}
+      \column{0.6\textwidth}
       \includegraphics[width = \textwidth]{figures/intro_fig.pdf}
     \end{columns}
   \end{figure}
@@ -83,7 +80,6 @@
 \begin{frame}{Review of Literature}
   \begin{itemize}
   \item ENSO's properties observed vary across different decades. \citep{lubbecke2014assessing}.
-  \item ENSO responds to external forcing.
   \item Weakened ENSO during the Ice Age due to reduced CO$_2$ levels \citep{zhu2017reduced}.
   \item Models show possible increasing ENSO activity in the future \citep{zheng2017response} and \citep{maher2018enso}.
   \end{itemize}
@@ -96,21 +92,19 @@
   \item Considerable disagreement between studies on whether ENSO will strengthen or weaken due to global warming
   \end{itemize}
   \alert{Questions}
-  \begin{description}
-  \item[\alert{What?}] Do the CESM1 and CESM2 predict increased or decreased ENSO intensity in the future?
-  \item[\alert{Why?}] Is the predicted increase (or decrease) due to human activities?
-  \item[\alert{How?}] What processes are causing greenhouse gasses and aerosols to affect ENSO?
-  \end{description}
+  \begin{enumerate}
+  \item Do the CESM1 and CESM2 predict increased or decreased ENSO intensity in the future?
+  \item Is the predicted increase (or decrease) due to human activities?
+  \end{enumerate}
 \end{frame}
 
 \section{Methods and Results}
 
-\begin{frame}{Model Setup (Data)}
+\begin{frame}{Data: Community Earth System Model}
   \begin{itemize}
   \item Community Earth System Model (CESM) Versions 1 and 2 \citep{kay2015community} \citep{danabasoglu2020community}.
   \item Predicts climate over 21st century with global warming.
-  \item 40-50 simulations per ensemble.
-  \item Control simulation with pre-1850 forcing levels.
+  \item Ensemble: collection of multiple simulations.
   \item Single forcing ensembles that represent influence of single factor.
   \end{itemize}
 \end{frame}
@@ -196,20 +190,20 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{Correlation With Ocean Temperature}
-  \begin{columns}
-    \column{0.65\textwidth}
-    \begin{itemize}
-    \item Correlation coefficient between ocean temperature and ENSO amplitude.
-    \item Negative coefficient in subsurface layer.
-    \item Positive coefficient in surface layer.
-    \item Suggests that ocean stratification may be mediating global warming influence on ENSO.
-    \item Difference in heating modifies mechanics of ENSO cycle.
-    \end{itemize}
-    \column{0.5\textwidth}
-    \myfig{tempdt.pdf}{Correlation coefficient between ENSO amplitude and ocean temperature in equatorial cross-section in the fully-forced CESM1 ensemble}{tempdt}
-  \end{columns}
-\end{frame}
+% \begin{frame}{Correlation With Ocean Temperature}
+%   \begin{columns}
+%     \column{0.65\textwidth}
+%     \begin{itemize}
+%     \item Correlation coefficient between ocean temperature and ENSO amplitude.
+%     \item Negative coefficient in subsurface layer.
+%     \item Positive coefficient in surface layer.
+%     \item Suggests that ocean stratification may be mediating global warming influence on ENSO.
+%     \item Difference in heating modifies mechanics of ENSO cycle.
+%     \end{itemize}
+%     \column{0.5\textwidth}
+%     \myfig{tempdt.pdf}{Correlation coefficient between ENSO amplitude and ocean temperature in equatorial cross-section in the fully-forced CESM1 ensemble}{tempdt}
+%   \end{columns}
+% \end{frame}
 
 \begin{frame}{Wavelet Analysis}
   \begin{columns}
@@ -229,10 +223,10 @@
 
 \begin{frame}{Discussion}
   \begin{itemize}
-  \item Rising greenhouse gas levels increase Pacific Ocean stratification, strengthening ENSO cycle.
+  \item Rising greenhouse gas levels strengthen ENSO cycle.
   \item Aerosol influence is nonlinear because aerosol levels are not purely increasing.
   \item Stronger ENSO may lead to greater temperature variability and extreme weather.
-  \item CESM1 and CESM2 conflict in their prediction of the changes to ENSO's frequency.
+  \item External forcing affects lower frequency ENSO more.
   \end{itemize}
 \end{frame}
 
@@ -256,7 +250,7 @@
 
 \begin{frame}{Role of Mentor and Student}
   \begin{columns}[t]
-    \column{.4\textwidth}
+    \column{.5\textwidth}
     Student:
     \begin{itemize}
     \item Analyze raw data on computer
@@ -264,7 +258,7 @@
     \item Write documentation
     \item Identify key features of results
     \end{itemize}
-    \column{.4\textwidth}
+    \column{.5\textwidth}
     Mentor:
     \begin{itemize}
     \item Review student writing

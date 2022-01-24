@@ -1,0 +1,200 @@
+% Created 2022-01-18 Tue 20:19
+% Intended LaTeX compiler: pdflatex
+\documentclass[little]{basic}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\setcounter{secnumdepth}{1}
+\author{Benjamin Goldman}
+\date{\today}
+\title{Presentation Notes}
+\hypersetup{
+ pdfauthor={Benjamin Goldman},
+ pdftitle={Presentation Notes},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.2 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{General:}
+\label{sec:org2299927}
+\begin{itemize}
+\item Remember to say meaning of axes and colors
+\item Talk slower
+\item Less detail in results, more in intro?
+\end{itemize}
+
+\section{Title}
+\label{sec:org95ba26f}
+\section{Introduction}
+\label{sec:orgee84b8b}
+\subsection*{Climate Change and Variability}
+\label{sec:org68534c1}
+\begin{itemize}
+\item Climate change: long term trends in temp, etc (fig: red line)
+\item Climate variability: short (a few years) change in climate (fig: blue line)
+\begin{itemize}
+\item May be cyclical or random
+\end{itemize}
+\end{itemize}
+\subsection*{Climate Forcing}
+\label{sec:orga3b6ea1}
+\begin{itemize}
+\item External factors that affect climate change and/or variability
+\item List factors, ghg, aer, bmb, lulc
+\item Sources:
+\begin{itemize}
+\item ghg: industry, livestock
+\item aer: industry, volcanoes (smoke, dust, sulphites?)
+\item bmb: wildfires
+\item lulc: deforestation, agriculture, desertification
+\end{itemize}
+\item Greenhouse effect
+\begin{itemize}
+\item gasses and particulates affect atmospheric chemistry and sunlight reflection/absorption
+\item ghg absorbs ``blanket'' trapping heat (fig: orange arrows)
+\item aer reflects in upper atmosphere blocking heat out. (fig: yellow arrows)
+\item bmb, lulc affect reflection, absorption on surface (fig: yellow arrows)
+\end{itemize}
+\end{itemize}
+\subsection*{El Niño (ENSO)}
+\label{sec:org3e6158d}
+\begin{itemize}
+\item Temperature of the pacific ocean
+\item Cold -> La Niña
+\item Hot -> El Niño
+\item Entire cycle: ENSO (El Niño/Southern Oscillation)
+\item Affects humans: hot year, dry year, cold year, wet year
+\item Figure: temperature differences between strong La Niña year and strong El Niño year
+\begin{itemize}
+\item Blue=colder, red=warmer
+\item Point out California hot for El Niño (wildfires)
+\end{itemize}
+\end{itemize}
+\subsection*{Method: Climate Simulation}
+\label{sec:orgc27209d}
+\begin{itemize}
+\item Main way of making predictions
+\item Predictions of forcing levels are fed to computers
+\item Computers simulate climate on a grid of data containing temperature and much more
+\item Predictions are usually run many times
+\item My contain biases but are quite well tested
+\end{itemize}
+\subsection*{Review of Literature}
+\label{sec:org4631399}
+\begin{itemize}
+\item Slide is notes
+\end{itemize}
+\subsection*{Gap}
+\label{sec:org64f4a3a}
+\begin{itemize}
+\item Slide is notes
+\end{itemize}
+\subsection*{Questions}
+\label{sec:org41ce2a5}
+\begin{itemize}
+\item What, why, how
+\item Slide is notes
+\end{itemize}
+\section{Data, Methods, and Results}
+\label{sec:org4f1184c}
+\subsection*{Methods Overview}
+\label{sec:orgea6d725}
+\begin{itemize}
+\item Slide is notes
+\end{itemize}
+\subsection*{Role of Mentor and Student}
+\label{sec:org996c977}
+\begin{itemize}
+\item Slide is notes
+\end{itemize}
+\subsection*{Model Setup}
+\label{sec:org8ffde0b}
+\begin{itemize}
+\item Slide is notes
+\end{itemize}
+\subsection*{Measuring ENSO Intensity}
+\label{sec:org8f32f98}
+\begin{itemize}
+\item Make sure you talk about what Niño 3.4 index is: number that represents how strong El Niño is at each time
+\item Windowed variance calculates amount of variability of the Niño 3.4 index ie how intense the ENSO cycle is
+\end{itemize}
+\subsection*{ENSO is Becoming Stronger}
+\label{sec:org5844385}
+\begin{itemize}
+\item Graph axes and colors CESM1 and CESM2
+\item Both have increase in ENSO intensity
+\item Slowdown/decrease after 2050
+\begin{itemize}
+\item Aerosol emissions
+\end{itemize}
+\end{itemize}
+\subsection*{Influence of Aerosols and Greenhouse Gasses}
+\label{sec:org80018e5}
+\begin{itemize}
+\item Data source: single forcing ensembles
+\item Explain figure axes, subplots
+\item Biggest, constant increase in GHG
+\item Significant changes in AER, but not one direction
+\item Insignificant changes for others
+\item Takeaway
+\end{itemize}
+\subsection*{Correlation With Ocean Temperature}
+\label{sec:org403aa1c}
+\begin{itemize}
+\item Calculated correlation coefficient with ocean temp. and ENSO amplitude
+\item CESM1 only so far
+\item Plot:
+\begin{itemize}
+\item Cross section of pacific along equator, x:lon, y:depth, color:correlation
+\item Positive coefficient in surface layer, negative coefficient in subsurface layer
+\item Stratification
+\item More work necessary
+\end{itemize}
+\end{itemize}
+\subsection*{Wavelet Analysis}
+\label{sec:orgb0f8166}
+\begin{itemize}
+\item WA = mathematical process that takes a signal and derives changes to each frequency over time
+\item Plot:
+\begin{itemize}
+\item axes, color, subplots
+\item Confirm results from previous steps
+\end{itemize}
+\end{itemize}
+
+I conducted a wavelet analysis to identify changes to specific frequency bands of ENSO. One way of thinking about wavelet analysis is using a radio to listen to a variety of frequencies, all at once, except with data rather than radio waves. So figure 7 shows, the power, similar to loudness, of the ENSO signal where the period is greater than three years and less than three years, for both the CESM1 and CESM2. Looking at CESM1, much of the increase in power over the 20th century is in the longer-period band, meaning that much of the increase in ENSO intensity is happening in the lower frequencies. Looking at CESM2, one interesting feature is that the decreasing strength we saw earlier is mostly happening in the longer frequency. These results suggest that longer frequency ENSO is more succeptible to climate change than ENSO with a faster cycle.
+
+\section{Conclusion}
+\label{sec:org92a7dae}
+\subsection*{Conclusions and Discussion}
+\label{sec:orge52295e}
+\begin{itemize}
+\item Slide is notes
+\end{itemize}
+\subsection*{Application, Limitation, and Next Steps}
+\label{sec:org0c817e6}
+\begin{itemize}
+\item Slide is notes
+\end{itemize}
+\subsection*{Acknowledgments}
+\label{sec:orgeaf66eb}
+\begin{itemize}
+\item Thank you to NCAR for running the climate models
+\item Thank you to my teacher, family, and mentor
+\item Thank you to the software makers
+\end{itemize}
+\subsection*{References}
+\label{sec:org0630c81}
+\end{document}
