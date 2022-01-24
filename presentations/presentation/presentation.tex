@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[aspectratio=1610]{beamer}
 
 \title{The Impact of Anthropogenic Forcing on ENSO Amplitude}
 \author{Ben Goldman}
@@ -37,7 +37,7 @@
 \begin{frame}{Climate Change: Global Warming vs. Climate Variability}
   \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/intro_fig_3.pdf}
+    \includegraphics[width=0.9\textheight]{figures/intro_fig_3.pdf}
     \caption{Global mean land air temperature in GISSTEMP 4 dataset. \citep{gistemp2019giss} and \citep{lenssen2019improvements}}
     \label{fig:woohoo}
   \end{figure}
@@ -71,7 +71,7 @@
       \item Affects human societies through temperature and rainfall. \citep{ropelewski1987global}
       \end{itemize}
       \caption{Comparison of SST anomaly between 1975 La Niña event and 1997 El Niño event in HadISST 1 dataset. \citep{rayner2003global}}
-      \column{0.6\textwidth}
+      \column{0.5\textwidth}
       \includegraphics[width = \textwidth]{figures/intro_fig.pdf}
     \end{columns}
   \end{figure}
@@ -110,7 +110,7 @@
 \end{frame}
 
 \begin{frame}{Measuring ENSO Intensity}
-  \begin{tikzpicture}[node distance = 1.5in, line width = 0.5mm]
+  \begin{tikzpicture}[node distance = .37\textwidth, line width = 0.5mm]
     \node [process] (input) {
       \begin{varwidth}{1.2in}
         External forcing records and predictions
@@ -154,20 +154,20 @@
     \begin{figure}
       \begin{tikzpicture}
         \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\textwidth]{figures/ff_compare.pdf}};
-        \coordinate (a) at (0.5, 1.5);
-        \node [red] (b) at (1.0, 1.0) {
+        \coordinate (a) at (1.0, 1.5);
+        \node [red] (b) at (1.3, 1.0) {
           \begin{varwidth}{0.6in}
             Increasing variance
           \end{varwidth}};
-        \coordinate (c) at (3.0, 1.5) {};
+        \coordinate (c) at (3.8, 1.5) {};
         \draw[red, |-|] (a) to (c);
 
-        \coordinate (d) at (3.2, 1.5);
-        \node [red] (e) at (3.5, 1.0) {
+        \coordinate (d) at (4.0, 1.5);
+        \node [red] (e) at (4.3, 1.0) {
           \begin{varwidth}{0.6in}
             Decreasing variance
           \end{varwidth}};
-        \coordinate (f) at (4.3, 1.5) {};
+        \coordinate (f) at (5.0, 1.5) {};
         \draw[red, |-|] (d) to (f);
       \end{tikzpicture}
       \caption{ENSO intensity ensemble mean and standard error for CESM1 and CESM2}
@@ -178,7 +178,7 @@
 
 \begin{frame}{Influence of Aerosols and Greenhouse Gasses}
   \begin{columns}
-    \column{0.65\textwidth}
+    \column{0.5\textwidth}
     \begin{itemize}
     \item Influence of each factor on ENSO amplitude.
     \item Increased variance due to greenhouse gas emissions.
@@ -219,7 +219,26 @@
   \end{columns}
 \end{frame}
 
-% SPLIT UP CONCLUSIONS DISCUSSION
+\begin{frame}{Role of Mentor and Student}
+  \begin{columns}[t]
+    \column{.5\textwidth}
+    Student:
+    \begin{itemize}
+    \item Analyze raw data on computer
+    \item Produce graphics for analysis and publication
+    \item Write documentation
+    \item Identify key features of results
+    \end{itemize}
+    \column{.5\textwidth}
+    Mentor:
+    \begin{itemize}
+    \item Review student writing
+    \item Interpret results in the context of climatology
+    \item Conduct parallel analysis
+    \item Provide raw data from facility
+    \end{itemize}
+  \end{columns}
+\end{frame}
 
 \begin{frame}{Discussion}
   \begin{itemize}
@@ -248,27 +267,6 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Role of Mentor and Student}
-  \begin{columns}[t]
-    \column{.5\textwidth}
-    Student:
-    \begin{itemize}
-    \item Analyze raw data on computer
-    \item Produce graphics for analysis and publication
-    \item Write documentation
-    \item Identify key features of results
-    \end{itemize}
-    \column{.5\textwidth}
-    Mentor:
-    \begin{itemize}
-    \item Review student writing
-    \item Interpret results in the context of climatology
-    \item Conduct parallel analysis
-    \item Provide raw data from facility
-    \end{itemize}
-  \end{columns}
-\end{frame}
-
 \begin{frame}{References}
   \bibliographystyle{apalike}
   \fontsize{4pt}{5}\selectfont
@@ -276,9 +274,3 @@
 \end{frame}
 
 \end{document}
-
-
-
-
-
-% hi
