@@ -84,4 +84,25 @@ Listener: Abby Goldman
 - Good introduction
 
 * Feedback 7
+Date: <2022-01-20 Thu>
+Time: 9:25
+Listener: Jimena Perez
+** Feedback:
+- Love how the intro slides flow, the flow chart in the methodology slide becomes easier to understand every time you present it
+- Maintain speaking pace, describe implications of methodology while you're going through methodolgy.
+
 * Feedback 8
+Date: <2022-01-25 Tue>
+Time: 9:25
+Listener: Sean O'Donnell
+** Feedback:
+- Don't have to say ziggy zaggy line on 2nd slide (say red line or blue line)
+- Don't think you described figure 2
+- Liked explanation of figure 3 and El Nino/La nina in general
+- Yes, def mention ENSO first before EL Nino and La nina in introduction
+- Liked simplicity of powerpoint design, made it very easy to follow
+- Maybe mention CESM before stating research questions so people can understand its background (may not be necessary though)?
+- Strong explanation of methodology (liked the flowchart)
+- Liked the addition of "increasing variance" and decreasing variance" to Figure 4
+- What's difference between CESM1 and CESM 2 (may have missed this in presentation)?
+- Yes, def note software used before acknowledgements (don't have to describe each database)

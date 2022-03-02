@@ -43,7 +43,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Greenhouse Gasses and Friends}
+\begin{frame}{Climate Forcing}
   \begin{columns}
     \column{0.5\textwidth}
     \begin{itemize}
@@ -56,7 +56,7 @@
       \end{description}
     \end{itemize}
     \column{0.6\textwidth}
-    \myfig{greenhouse_Effect.jpg}{Factors that contribute to the greenhouse effect. \url{https://www.coolaustralia.org/the-greenhouse-effect-secondary}}{this}
+    \myfig{greenhouse_Effect.jpg}{Factors that contribute to the greenhouse effect.}{this}
   \end{columns}
 \end{frame}
 
@@ -86,14 +86,14 @@
 \end{frame}
 
 \begin{frame}{Gap and Questions}
-  \alert{Gap}
+  \alert{Research Gap}
   \begin{itemize}
   \item Little research using a large ensemble to examine the effect of individual factors on ENSO.
   \item Considerable disagreement between studies on whether ENSO will strengthen or weaken due to global warming
   \end{itemize}
   \alert{Questions}
   \begin{enumerate}
-  \item Do the CESM1 and CESM2 predict increased or decreased ENSO intensity in the future?
+  \item Do the CESM1 and CESM2 climate models predict increased or decreased ENSO intensity in the future?
   \item Is the predicted increase (or decrease) due to human activities?
   \end{enumerate}
 \end{frame}
@@ -106,6 +106,7 @@
   \item Predicts climate over 21st century with global warming.
   \item Ensemble: collection of multiple simulations.
   \item Single forcing ensembles that represent influence of single factor.
+  \item Software used: R, ncdf4, zoo, dplyr, ggplot2, WaveletComp, reshape2, nco.
   \end{itemize}
 \end{frame}
 
@@ -240,13 +241,15 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{Discussion}
-  \begin{itemize}
-  \item Rising greenhouse gas levels strengthen ENSO cycle.
-  \item Aerosol influence is nonlinear because aerosol levels are not purely increasing.
-  \item Stronger ENSO may lead to greater temperature variability and extreme weather.
-  \item External forcing affects lower frequency ENSO more.
-  \end{itemize}
+\begin{frame}{Conclusion and Discussion}
+  \begin{enumerate}
+  \item Do the CESM1 and CESM2 climate models predict increased or decreased ENSO intensity in the future?
+  \item Is the predicted increase (or decrease) due to human activities?
+  \end{enumerate}
+  \begin{enumerate}
+  \item Yes, ENSO variance increases significantly over the 21$^{st}$ century
+  \item Yes, the major factor contributing to this increase is greenhouse gasses, with aerosol emissions playing a secondary role.
+  \end{enumerate}
 \end{frame}
 
 \begin{frame}{Limitations and Applications}
@@ -263,14 +266,14 @@
   \begin{itemize}
   \item This material is based upon work supported by the National Center for Atmospheric Research, which is a major facility sponsored by the National Science Foundation under Cooperative Agreement No. 1852977.
   \item Thank you to my teacher, my family, and my mentor!
-  \item Software used: R, ncdf4, zoo, dplyr, ggplot2, WaveletComp, reshape2, nco.
   \end{itemize}
 \end{frame}
 
 \begin{frame}{References}
   \bibliographystyle{apalike}
-  \fontsize{4pt}{5}\selectfont
+  \fontsize{6pt}{5}\selectfont
   \bibliography{references.bib}
+  \url{https://www.coolaustralia.org/the-greenhouse-effect-secondary}
 \end{frame}
 
 \end{document}
