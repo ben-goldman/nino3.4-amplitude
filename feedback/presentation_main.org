@@ -106,3 +106,29 @@ Listener: Sean O'Donnell
 - Liked the addition of "increasing variance" and decreasing variance" to Figure 4
 - What's difference between CESM1 and CESM 2 (may have missed this in presentation)?
 - Yes, def note software used before acknowledgements (don't have to describe each database)
+
+* Feedback 9
+Date: <2022-03-16 Wed>
+Time: 9:25
+Listener: Giovanni
+** Feedback:
+- Good overall
+- Slow down
+- Weird spacing
+
+* Feedback 10
+Date: <2022-03-17 Thu>
+Time: 9:25
+Listener: Nurashau
+** Feedback:
+- Slow down
+- Weird spacing
+- Mispronouncing "statistically"
+
+* Feedback 11
+Date: <2022-03-18 Fri>
+Time: 9:25
+Listener: Abby Goldman
+** Feedback:
+- Slow down
+- Improve hook and application to be a little more specific
