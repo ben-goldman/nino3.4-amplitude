@@ -1,7 +1,6 @@
 #+TITLE: Science Research Portfolio
 
 * Benjamin Goldman
-Junior
 
 ** HOW TO USE:
 
